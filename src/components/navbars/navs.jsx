@@ -1,12 +1,15 @@
-
-import React from 'react'
+import React from 'react';
 import BottomNavbar from './bottomnav/BottomNav'
+import TopNav from './topnav/TopNav';
 
 const Navs = () => {
   return (
-    <div>
-      <BottomNavbar/>
-    </div>
+    <>
+      <nav>
+        <TopNav/>
+        <BottomNavbar/>
+      </nav>
+    </>
   )
 }
 

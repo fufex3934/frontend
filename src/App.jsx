@@ -1,5 +1,5 @@
 import React from 'react'
-import Navs from './components/navbars/navs'
+import Navs from './components/navbars/Navs'
 
 const App = () => {
   return (
