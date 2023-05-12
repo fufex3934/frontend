@@ -1,13 +1,13 @@
 import React from 'react'
-import BottomNavbar from './components/navbars/bottomnav/BottomNav'
+import Navs from './components/navbars/navs'
 
 const App = () => {
   return (
     <div>
-      <BottomNavbar/>
+      <Navs/>
     </div>
   )
 }
 
-export default App
+export default App;
 
