@@ -1,7 +1,13 @@
-export default function App() {
+import React from 'react'
+import BottomNavbar from './components/navbars/bottomnav/BottomNav'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-purple-400">
-      Hello world I am Fufi from me!
-    </h1>
+    <div>
+      <BottomNavbar/>
+    </div>
   )
 }
+
+export default App
+
