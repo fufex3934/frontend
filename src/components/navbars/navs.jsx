@@ -4,9 +4,11 @@ import BottomNavbar from './bottomnav/BottomNav'
 
 const Navs = () => {
   return (
-    <div>
-      <BottomNavbar/>
-    </div>
+    <>
+     <nav>
+     <BottomNavbar/>
+     </nav>
+    </>
   )
 }
 
