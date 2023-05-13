@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Language from './Language';
 
-
 const BottomNavbar = () => {
 
   return (
@@ -152,19 +151,11 @@ const BottomNavbar = () => {
     <li className='mr-5'>  
       <Language/>
     </li>
-
-    
   <li className="text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif">
     <button className="bg-transparent hover:bg-orange-700 text-blue-500 font-semibold hover:text-white py-1 px-1 border border-blue-700 rounded overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
       Report an Issue
     </button>
-  </li>
-
-
-
-    
-    
-    
+  </li>   
 </ul>
 
     </div>
