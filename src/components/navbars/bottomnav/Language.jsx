@@ -30,12 +30,12 @@ const Language = () => {
   );
 
   return (
-    <div className="bg-white h-20 p-4">
-      <ul className="w-full flex items-center">
+    <li className=" ">
+      <ul className=" flex items-center">
         {/* Your existing code */}
         {languageDropdown}
       </ul>
-    </div>
+    </li>
   );
 };
 

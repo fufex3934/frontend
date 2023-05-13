@@ -1,35 +1,46 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-
-const WelcomePage = () => {
-  const [textIndex, setTextIndex] = useState(0);
-  const texts = ['Welcome', 'Bienvenue', 'أهلاً بك'];
+const Welcome = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    './harar.jpg',
+    './harar.jpg',
+    '/harar.jpg',
+  ];
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 3000);
-
-    return () => {
-      clearInterval(intervalId);
+    // Function to handle the automatic image sliding
+    const slideImages = () => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
-  }, [texts.length]);
+
+    // Set the time interval for sliding (e.g., every 3 seconds)
+    const interval = setInterval(slideImages, 3000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div
-      className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: "./harar-city.jpg" }}
-    >
-      <h1 className="text-4xl text-white animate-slide-down">
-        <span className="animated-text">{texts[textIndex]}</span>
-      </h1>
-      <img
-        className="max-w-md animate-slide-up"
-        src="/harar-city.jpg"
-        alt="Animated Image"
-      />
+    <div className="flex">
+      <nav className="flex-1 bg-gray-200 py-4">
+        {/* Navbar content goes here */}
+      </nav>
+      <div className="relative flex-1">
+        <img
+          className="h-64 w-full object-cover"
+          src={images[currentImageIndex]}
+          alt="Slider Image"
+        />
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+          <h1 className="text-4xl font-bold text-white">Welcome Text</h1>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-900 text-white">
+          <p className="text-xl">Other Text</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default WelcomePage;
+export default Welcome;
