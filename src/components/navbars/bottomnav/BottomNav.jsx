@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Language from './Language';
-import Search from './Search';
+
 
 const BottomNavbar = () => {
 
