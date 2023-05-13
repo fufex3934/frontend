@@ -5,13 +5,33 @@ const Welcome = () => {
   const [carouselData, setCarouselData] = useState([
     {
       image: '/city.jpg',
-      title: 'Fastest Growing City in Ethiopia',
-      detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Fastest Growing City in Ethiopia Harar',
+      detail: 'Every Year 2 million People from the worldwide visiting here.',
     },
     {
       image: '/harar-city.jpg',
-      title: 'Beautiful City of Harar',
-      detail: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    {
+      image: '/c1.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    {
+      image: '/c2.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    {
+      image: '/c3.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    {
+      image: '/c5.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
     },
     // Add more carousel data objects as needed
   ]);
@@ -86,13 +106,13 @@ const Welcome = () => {
               data-carousel-item
             >
               <img src={item.image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-              <div className="absolute top-1/3 left-0 p-6 text-white">
-  <h2 className="text-2xl font-bold">{item.title}</h2>
-  <p className="mt-2">{item.detail}</p>
-  <button className="mt-4 px-4 py-2 text-white bg-orange-500 hover:bg-blue-500 transition-colors duration-300 ease-in-out">
-    Discover More
-  </button>
-</div>
+              <div className="absolute top-1/4 left-0 p-8 text-white">
+                    <h2 className="text-4xl font-bold">{item.title}</h2>
+                    <p className="mt-2 ml-2">{item.detail}</p>
+                    <button className="mt-4 px-4 py-2 text-white bg-orange-700 hover:bg-blue-900 transition-colors duration-300 ease-in-out">
+                      Discover More
+                     </button>
+                         </div>
 
             </div>
           ))}
