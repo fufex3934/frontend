@@ -1,25 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Language from './Language';
+import '../../styles/navbar.css';
 
 
 const BottomNavbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="bg-white h-20 p-4">
-      <ul class="w-full flex items-center">
+    <nav className={showNavbar ? '' : ' navbar'}>
+      <div className="bg-white h-20 p-4">
+      <ul class=" flex items-center">
       <div className="mr-2">
   <a href="#">
-    <img className="h-6 w-6 rounded-full shadow-md hover:scale-110 transition-transform duration-300" src="./harar.png" alt="Logo" />
+  <img className="h-12 w-12 rounded-full" src="./harar.png" alt="Logo" />
   </a>
 </div>
 
-    <div className='mr-12 flex items-center'>
+
 <a href="#">
-<h1 className='text-gray-500 font-bold'>HGCAOffice</h1>
+<h1 className='text-gray-500 font-bold flex-grow mr-3'>HGCAOffice</h1>
 </a>
-    </div>
+    
   
-  <li className="group  relative dropdown  text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+  <li className="group z-10 relative dropdown  text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex  w-full justify-center gap-x-0  bg-white px-1 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Home
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -28,7 +47,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto ">
         
-        <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+        <ul className="top-0 w-48  bg-white  px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-gray-900  text-base  hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-gray-900  text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-gray-900  text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -38,7 +57,7 @@ const BottomNavbar = () => {
         </div>
     </li>
 
-    <li className="group  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       About
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -56,7 +75,7 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className="group  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Timely
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -74,7 +93,7 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className="group  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Politics
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -92,7 +111,7 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className="group  relative dropdown  text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10 relative dropdown  text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Economic
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -110,7 +129,7 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className="group  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Tourism
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -129,7 +148,7 @@ const BottomNavbar = () => {
         </div>
     </li>
 
-    <li className="group  relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+    <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   bg-white px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Social
       <svg className="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -162,6 +181,7 @@ const BottomNavbar = () => {
 </ul>
 
     </div>
+    </nav>
   );
 };
 
