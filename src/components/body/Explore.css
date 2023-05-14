@@ -1,0 +1,14 @@
+.image{
+    cursor: pointer;
+}
+.image:hover{
+        transform: translate(5px,-10px);
+        transition: 2s;
+
+}
+.image:hover img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ .image:hover a{
+    background-color: red; 
+}

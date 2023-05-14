@@ -12,7 +12,7 @@ const TopNav = () => {
   }
 
   return (
-    <div className="bg-gray-800 w-full p-2 flex flex-col sm:flex-row justify-between items-center">
+    <div className="bg-gray-800 w-full  p-2 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-col sm:flex-row items-center">
         <a
           href="tel:+25164963831"
