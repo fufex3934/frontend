@@ -109,11 +109,11 @@ const Welcome = () => {
             >
               <img
                 src={item.image}
-                className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2"
+                className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2 transition-all duration-300"
                 alt="..."
               />
               <div className="absolute top-1/4 left-0 p-8 text-white">
-                <h2 className="text-4xl font-bold">{item.title}</h2>
+                <h2 className="text-4xl font-bold transition-all duration-300">{item.title}</h2>
                 <p className="mt-2 ml-2">{item.detail}</p>
                 <button className="mt-4 px-4 py-2 text-white bg-orange-700 hover:bg-blue-900 transition-colors duration-300 ease-in-out">
                   Discover More
