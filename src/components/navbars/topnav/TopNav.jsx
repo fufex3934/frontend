@@ -3,6 +3,14 @@ import { HiOutlinePhone } from 'react-icons/hi';
 import { BiAlarm } from 'react-icons/bi';
 
 const TopNav = () => {
+  // Check if the device is a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Render the navbar only if it's not a mobile device
+  if (isMobile) {
+    return null;
+  }
+
   return (
     <div className="bg-gray-800 w-full p-2 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-col sm:flex-row items-center">

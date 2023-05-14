@@ -6,7 +6,7 @@ const Welcome = () => {
     {
       image: '/city.jpg',
       title: 'Fastest Growing City in Ethiopia Harar',
-      detail: 'Every Year 2 million People from the worldwide visiting here.',
+      detail: `Every Year 2 million People from the worldwide visiting here.`,
     },
     {
       image: '/harar-city.jpg',
@@ -96,40 +96,46 @@ const Welcome = () => {
 
   return (
     <div>
-      <div id="default-carousel" className="relative w-full" data-carousel="slide">
+      <div id="default-carousel" className="relative w-screen h-screen" data-carousel="slide">
         {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative h-96 md:h-80 lg:h-96  overflow-hidden rounded-lg">
           {carouselData.map((item, index) => (
             <div
               key={index}
-              className={`hidden duration-700 ease-in-out ${index === currentIndex ? '' : 'hidden'}`}
+              className={`hidden duration-700 ease-in-out ${
+                index === currentIndex ? '' : 'hidden'
+              }`}
               data-carousel-item
             >
-              <img src={item.image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+              <img
+                src={item.image}
+                className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
               <div className="absolute top-1/4 left-0 p-8 text-white">
-                    <h2 className="text-4xl font-bold">{item.title}</h2>
-                    <p className="mt-2 ml-2">{item.detail}</p>
-                    <button className="mt-4 px-4 py-2 text-white bg-orange-700 hover:bg-blue-900 transition-colors duration-300 ease-in-out">
-                      Discover More
-                     </button>
-                         </div>
-
+                <h2 className="text-4xl font-bold">{item.title}</h2>
+                <p className="mt-2 ml-2">{item.detail}</p>
+                <button className="mt-4 px-4 py-2 text-white bg-orange-700 hover:bg-blue-900 transition-colors duration-300 ease-in-out">
+                  Discover More
+                </button>
+              </div>
             </div>
           ))}
         </div>
         {/* Slider indicators */}
-       
         <div className="absolute flex items-center justify-center w-full h-6 -bottom-6">
           {carouselData.map((_, index) => (
             <div
               key={index}
-              className={`h-2 w-2 mx-1 rounded-full ${index === currentIndex ? 'bg-white' : 'bg-gray-300'}`}
+              className={`h-2 w-2 mx-1 rounded-full ${
+                index === currentIndex ? 'bg-white' : 'bg-gray-300'
+              }`}
             />
           ))}
         </div>
         {/* Navigation buttons */}
         <button
-          className="absolute top-1/2 -translate-y-1/2 left-4 p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-opacity duration-300"
+          className="hidden md:block absolute top-1/2 -translate-y-1/2 left-4 p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-opacity duration-300"
           data-carousel-prev
         >
           <svg
@@ -139,16 +145,11 @@ const Welcome = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
-          className="absolute top-1/2 -translate-y-1/2 right-4 p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-opacity duration-300"
+          className="hidden md:block absolute top-1/2 -translate-y-1/2 right-4 p-2 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-opacity duration-300"
           data-carousel-next
         >
           <svg
@@ -158,17 +159,15 @@ const Welcome = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
     </div>
   );
+  
+  
+  
 };
 
 export default Welcome;
