@@ -95,10 +95,10 @@ const Welcome = () => {
   }, [currentIndex, carouselData]);
 
   return (
-    <div>
-      <div id="default-carousel" className="relative w-screen h-screen" data-carousel="slide">
+    <div className=' overflow-x-hidden'>
+      <div id="default-carousel" className="relative w-screen  " data-carousel="slide">
         {/* Carousel wrapper */}
-        <div className="relative h-96 md:h-80 lg:h-96  overflow-hidden rounded-lg">
+        <div className="relative h-96 md:h-80 lg:h-96 overflow-hidden  ">
           {carouselData.map((item, index) => (
             <div
               key={index}
@@ -109,7 +109,7 @@ const Welcome = () => {
             >
               <img
                 src={item.image}
-                className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2 transition-all duration-300"
+                className="absolute block w-full h-auto object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2 transition-all duration-300"
                 alt="..."
               />
               <div className="absolute top-1/4 left-0 p-8 text-white">
@@ -163,7 +163,27 @@ const Welcome = () => {
           </svg>
         </button>
       </div>
+      <div className='bg-orange-600 h-48 w-full flex justify-center items-end relative'>
+  <div className='bg-white/100 h-40 mx-2 flex items-center justify-center absolute -top-16 left-8 right-8'>
+    {/* Content */}
+  </div>
+  <p className='text-white font-serif font-medium pb-8'>
+    The official guide to living, working, visiting and investing in Texas
+    <span>
+      <button className="ml-4 hover:bg-gray-900 text-white font-serif font-medium py-2 px-4 border-orange-500 hover:border-transparent">
+        Let's explore more
+      </button>
+    </span>
+  </p>
+</div>
+
+
+
+
+
+
     </div>
+    
   );
   
   
