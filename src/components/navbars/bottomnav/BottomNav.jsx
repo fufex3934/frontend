@@ -24,7 +24,7 @@ const BottomNavbar = () => {
 
   return (
     <nav className={showNavbar ? '' : ' navbar'}>
-      <div className="bg-white h-20 p-4">
+      <div className="bg-white/100 h-24 p-4">
       <ul class=" flex items-center">
       <div className="mr-2">
   <a href="#">
