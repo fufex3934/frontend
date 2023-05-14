@@ -10,7 +10,7 @@ const Welcome = () => {
     },
     {
       image: '/harar-city.jpg',
-      title: 'Welcome the Harar City of Peace',
+      title: 'Welcome to the Harar City of Peace',
       detail: 'Harari is the city of Peace in Ethiopia.',
     },
     {
