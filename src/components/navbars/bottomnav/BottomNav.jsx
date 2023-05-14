@@ -168,7 +168,7 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className='mr-5'>  
+    <li className='mr-5 '>  
       <Language/>
     </li>
 
