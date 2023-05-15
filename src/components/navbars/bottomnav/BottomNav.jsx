@@ -2,7 +2,6 @@ import React, { useState,useEffect } from 'react';
 import Language from './Language';
 import '../../styles/navbar.css';
 
-
 const BottomNavbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
