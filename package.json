@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "icons": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-scroll-motion": "^0.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
