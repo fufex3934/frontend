@@ -4,9 +4,9 @@ import './Explore.css'
 const Explore = () => {
     return (
         <>
-            <div className='block m-[150px] ms-[110px] p-5'>
+            <div className='block m-[150px] mb-[130px] mt-[90px] ms-[110px] p-5'>
 
-                <div className='inline w-full '>
+                <div className='inline w-full main1'>
                     <div className="block float-left">
                         <h3 className="text-4xl font-bold text-slate-600 font-sans">
                             Let’s explore local services,
@@ -16,25 +16,25 @@ const Explore = () => {
                         </h3>
                     </div>
                     <div className="float-right mt-8">
-                        <button class="bg-black text-2xl hover:bg-red-500 font-normal font-serif rounded-none hover:bg-blue-700 text-white font-bold py-2 px-4 -me-10 rounded">
+                        <button class=" explore bg-black text-2xl hover:bg-red-500 font-normal font-serif rounded-none hover:bg-blue-700 text-white font-bold py-2 px-4 -me-10 rounded">
                             Explore Service
                         </button>
                     </div>
                 </div>
             </div>
             <div class="grid mx-[150px] mb-[100px]">
-                <div class="h-[200px] grid grid-rows-1 grid-flow-col gap-5 mb-8">
+                <div class="h-[200px] grid grid-rows-1 grid-flow-col gap-5 mb-8 main2">
                     <div className='text-center image relative'>
                         <img className='' src="images/explore.jpg" alt="" />
-                        <a href="" className='text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>Service Departments</a>
+                        <a href="" className='a font-serif text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>Service Departments</a>
                     </div>
                     <div className='text-center image relative'>
                         <img src="images/explore.jpg" alt="" />
-                        <a href="" className='text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>Service Departments</a>
+                        <a href="" className='a font-serif text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>City Visitors Guide</a>
                     </div>
                     <div className='text-center image relative'>
                         <img src="images/explore.jpg" alt="" />
-                        <a href="" className='text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>Service Departments</a>
+                        <a href="" className=' a font-serif text-xl absolute -bottom-20 text-white bg-black p-3 hover:shadow-lg left-20'>Administrations</a>
                     </div>
                 </div>
             </div>

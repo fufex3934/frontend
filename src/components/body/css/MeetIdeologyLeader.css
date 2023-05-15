@@ -1,0 +1,78 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+    margin-left: 150px;
+    gap: 100px;
+    margin-top: 190px;
+    margin-bottom: 200px;
+}
+.main .main-text h1{
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #07173b;
+    line-height: 40px;
+}
+.main .main-text .p1{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: large;
+    color: grey;
+}
+.main .main-text .p2{
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: grey;
+}
+.qouet{
+    border-left: 3px solid red;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(70, 116, 168);
+}
+.qouet span{
+    margin-left:30px;
+    font-size: 20px;
+}
+.main-image{
+    position: relative;
+}
+.main-image .person{
+    z-index: 10;
+}
+.main-image .city{
+    position: absolute;
+    top: 40%;
+    right: -20%;
+    z-index: -10;
+    border-bottom-right-radius:50px ;
+}
+.youtubeIcon{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    background-color: rgb(240, 51, 51);
+    border-radius: 50%;
+}
+.triangle{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+}
+.span{
+    position: relative;
+    top: -65px;
+    left: 90px;
+    font-size: larger;
+    font-weight: 600;
+    color: #07173b;
+}
