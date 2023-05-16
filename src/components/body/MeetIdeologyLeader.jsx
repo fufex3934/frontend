@@ -28,10 +28,10 @@ const MeetIdeologyLeader = () => {
             </p>
             <a href="">
                 <div className='youtubeIcon'>
-                    <div className='triangle'></div>
+                    <div className='triangle' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000"></div>
                 </div>
             </a>
-            <span className='span' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">Video Intro<br/>
+            <span className='span' data-aos-duration="5000" data-aos="fade-up" data-aos-easing="linear">Video Intro<br/>
                 About Our Municipal
             </span>
         </div>
