@@ -6,7 +6,7 @@ const Explore = () => {
    
     return (
         <>
-            <div className='block ms-[150px] me-[150px] mt-[51px] p-5'>
+            <div className='block ms-[150px] me-[150px] mt-[50px] p-5'>
 
                 <div className='inline w-full'>
                     <div className="block text-start float-left">
