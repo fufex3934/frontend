@@ -7,10 +7,12 @@
 
   .inner {
     position: relative; /* Change from absolute to relative */
-    padding: 80px;
+    padding: 70px;
     transform: translate(-50%, 0); /* Adjust only horizontal positioning */
     left: 50%;
-    margin-top: 90px; /* Add margin-top to separate from the outer div */
+    margin-top: 90px;
+    margin-left: 2px;
+    margin-right: 2px; /* Add margin-top to separate from the outer div */
     background-color: #ffffff; /* Set background color for the inner div */
   }
 

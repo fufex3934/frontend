@@ -154,7 +154,7 @@ const Welcome = () => {
 
 <div className='bg-red-500 outer  w-full flex justify-center items-end relative '>
   <div className='bg-white inner md:mx-8 -top-14 md:-top-16 absolute  md:grid-cols-6 gap-4 '>
-  <div className="hover:shadow-xl flex flex-col items-center justify-center p-5">
+  <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-red-500 hover:rounded-full">
     <svg
       className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300"
@@ -183,7 +183,7 @@ const Welcome = () => {
   <span className="text-sm font-medium text-slate-700">Your Government</span>
 </div>
 
-    <div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
+    <div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
   <div className="p-5  hover:bg-red-500 hover:rounded-full ">
     
 <svg   className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +215,7 @@ c26 -11 52 -27 56 -35z"/>
 </div>
 
 
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
   <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Business and Industry</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
   <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Roads and Transport</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
   <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +300,7 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Culture and Recreation</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
   <div className="p-5 hover:bg-red-500 hover:rounded-full">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
