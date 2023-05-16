@@ -33,11 +33,11 @@ const Explore = () => {
                     <div className='text-center image relative' data-aos="fade-up"
                         data-aos-duration="1500">
                         <img src="images/explore.jpg" alt="" />
-                        <a href="" className='text-lg  absolute -bottom-10  text-white bg-black p-3 hover:shadow-lg left-20'>City Visitors Guide</a>
+                        <a href="" className='text-lg md:text-xl absolute -bottom-10  text-white bg-black p-3 hover:shadow-lg left-20'>City Visitors Guide</a>
                     </div>
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                         <img src="images/explore.jpg" alt="" />
-                        <a href="" className='text-lg  absolute -bottom-10 text-white bg-black p-3 hover:shadow-lg left-20'>Administrations</a>
+                        <a href="" className='text-lg md:text-xl absolute -bottom-10 text-white bg-black p-3 hover:shadow-lg left-20'>Administrations</a>
                     </div>
                 </div>
             </div>
@@ -45,4 +45,3 @@ const Explore = () => {
     )
 }
 
-export default Explore;
