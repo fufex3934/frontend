@@ -15,14 +15,14 @@ const Explore = () => {
                             programs & initiatives.
                         </h3>
                     </div>
-                    <div className="mt-4 md:mt-8 text-center md:text-right">
+                    <div className="mt-4 text-center ">
                         <button className="bg-black text-xl md:text-2xl font-serif hover:bg-orange-700 text-white font-bold py-2 px-4 -me-10 rounded">
                             Explore Service
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="grid mx-5 md:mx-[150px] mb-5 md:mb-[100px]">
+            <div className="grid mx-5  mb-5 ">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
                     <div className='text-center image relative'>
                         <img className='' src="images/explore.jpg" alt="" />
