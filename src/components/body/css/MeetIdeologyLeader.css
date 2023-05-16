@@ -4,7 +4,7 @@
     margin-right: 150px;
     margin-left: 150px;
     gap: 100px;
-    margin-top: 190px;
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 .main .main-text h1{
@@ -29,9 +29,17 @@
 .qouet{
     border-left: 3px solid red;
     padding-left: 50px;
-    font-size: 25px;
-    font-weight: 400;
-    color: rgb(70, 116, 168);
+    font-size: 20px;
+    font-weight: 350;
+    color: rgb(23, 100, 187);
+}
+.qouet span{
+    position: relative;
+    left: -30px;
+    top: 10px;
+    color: #07173b;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .qouet span{
     margin-left:30px;
@@ -60,13 +68,14 @@
 }
 .triangle{
     position: absolute;
-    top: 15px;
-    left: 30px;
+    top: 13px;
+    left: 25px;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid white;
+    border-left: 25px solid white;
+    border-radius: 10px;
 }
 .span{
     position: relative;
@@ -75,4 +84,38 @@
     font-size: larger;
     font-weight: 600;
     color: #07173b;
+}
+@media screen and (max-width:700px) {
+    .main{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .main-text{
+        padding-left: -100px;
+    }
+    .main .main-text h1{
+        font-size: 20px;
+        white-space: nowrap;
+        font-weight: lighter;
+        line-height: 10px;
+
+    }
+    .main .main-text .p1{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .qouet{
+        padding-left: 20px;
+        font-size: large;
+    }
+    .qouet span{
+        font-size: large;
+    }
+    .main-image{
+        left: 0%;
+    }
+    .main-image .person{
+        top: auto;
+        left: auto;
+    }
 }

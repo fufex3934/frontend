@@ -45,3 +45,16 @@
     background-color: transparent;
   }
 }
+@media screen and (max-width:600px){
+    .main{
+        margin-top: -100px;
+    }
+    .sub{
+        display: flex;
+        white-space: nowrap;
+        line-height: 0px;
+    }
+    .sub h3{
+        font-size: 10px;
+    }
+}
