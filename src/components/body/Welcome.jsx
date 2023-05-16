@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import './css/Welcome.css';
 const Welcome = () => {
   const timerRef = useRef(null);
   const [carouselData, setCarouselData] = useState([
@@ -114,7 +114,7 @@ const Welcome = () => {
         <div className="absolute top-1/4 left-0 p-8 text-white">
           <h2 className="text-3xl font-bold transition-all duration-300">{item.title}</h2>
           <p className="mt-2 ml-2">{item.detail}</p>
-          <button className="mt-4 px-6 py-2 text-white bg-orange-700 hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
+          <button className="mt-4 px-6 py-2 text-white bg-red-500 hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
             Discover More
           </button>
         </div>
@@ -152,12 +152,12 @@ const Welcome = () => {
   </div>
 </div>
 
-<div className='bg-orange-600 h-48 md:h-72 w-full flex justify-center items-end relative'>
-  <div className='bg-white h-40 md:h-48 mx-2 md:mx-8 items-center justify-center absolute -top-14 md:-top-16 left-8 right-8 grid grid-cols-6 gap-4'>
-  <div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5 hover:bg-orange-600 hover:rounded-full">
+<div className='bg-red-500 outer  w-full flex justify-center items-end relative '>
+  <div className='bg-white inner md:mx-8 -top-14 md:-top-16 absolute  md:grid-cols-6 gap-4 '>
+  <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
+  <div className="p-5 hover:bg-red-500 hover:rounded-full">
     <svg
-      className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300"
+      className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300"
       xmlns="http://www.w3.org/2000/svg"
       enableBackground="new 0 0 24 24"
       height="24px"
@@ -183,10 +183,10 @@ const Welcome = () => {
   <span className="text-sm font-medium text-slate-700">Your Government</span>
 </div>
 
-    <div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5  hover:bg-orange-600 hover:rounded-full ">
+    <div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+  <div className="p-5  hover:bg-red-500 hover:rounded-full ">
     
-<svg   className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg   className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
@@ -215,10 +215,10 @@ c26 -11 52 -27 56 -35z"/>
 </div>
 
 
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5 hover:bg-orange-600 hover:rounded-full ">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+  <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
-<svg className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
@@ -239,10 +239,10 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Business and Industry</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5 hover:bg-orange-600 hover:rounded-full ">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+  <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
-<svg className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -263,10 +263,10 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Roads and Transport</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5 hover:bg-orange-600 hover:rounded-full ">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+  <div className="p-5 hover:bg-red-500 hover:rounded-full ">
     
-<svg className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -300,10 +300,10 @@ fill="#fffff" stroke="none">
   </div>
   <span className="text-sm font-medium text-slate-700">Culture and Recreation</span>
 </div>
-<div className="hover:shadow-xl flex flex-col items-center justify-center p-10">
-  <div className="p-5 hover:bg-orange-600 hover:rounded-full">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+  <div className="p-5 hover:bg-red-500 hover:rounded-full">
     
-<svg className="w-12 h-12 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
@@ -323,10 +323,10 @@ fill="#fffff" stroke="none">
 </div>
     
   </div>
-  <p className='text-white font-serif font-medium text-lg md:text-xl pb-8'>
+  <p className='text-white welcome-p font-serif font-medium text-lg md:text-xl pb-8'>
     The official guide to living, working, visiting, and investing in Texas
     <span>
-      <button className="ml-4 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
+      <button className="ml-4 mt-4 pb-5 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
         Let's explore more
       </button>
     </span>
