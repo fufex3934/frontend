@@ -1,17 +1,47 @@
-.image{
-    cursor: pointer;
+/* Common styles for both desktop and mobile */
+.image {
+  cursor: pointer;
 }
-.image:hover{
-        transform: translate(5px,-10px);
-        transition: 2s;
 
+.image:hover {
+  transform: translate(5px, -10px);
+  transition: 2s;
 }
-.image:hover img{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+.image:hover img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.a{
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+.a {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
- .image:hover a{
-    background-color: hwb(0 0% 0%); 
+
+.image:hover a {
+  background-color: hwb(0 0% 0%);
+}
+
+/* Mobile specific styles */
+@media (max-width: 767px) {
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image:hover {
+    transform: none;
+  }
+
+  .image:hover img {
+    box-shadow: none;
+  }
+
+  .a {
+    box-shadow: none;
+  }
+
+  .image:hover a {
+    background-color: transparent;
+  }
 }

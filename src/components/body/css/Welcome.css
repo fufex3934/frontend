@@ -1,0 +1,53 @@
+@media (max-width: 767px) {
+  .outer {
+    position: relative; /* Make the outer div a positioning context */
+    height: 1600px; /* Adjust the height as needed */
+    padding-top: 10px;
+  }
+
+  .inner {
+    position: relative; /* Change from absolute to relative */
+    padding: 80px;
+    transform: translate(-50%, 0); /* Adjust only horizontal positioning */
+    left: 50%;
+    margin-top: 90px; /* Add margin-top to separate from the outer div */
+    background-color: #ffffff; /* Set background color for the inner div */
+  }
+
+  .welcome-p {
+    text-align: center;
+    margin-bottom: -15px;
+    font-size: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .outer {
+    display: flex; /* Display inner div horizontally */
+    align-items: center; /* Center the inner div vertically */
+    justify-content: center; /* Center the inner div horizontally */
+    height: 60vh; /* Adjust the height as needed */
+
+  }
+
+  .inner {
+    padding: 20px;
+    background-color: #ffffff; /* Set background color for the inner div */
+    display: grid; /* Display contents in a grid form */
+    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 24px;
+    height: 50vh; /* Adjust the gap between grid items as needed */
+  }
+
+  .welcome-p {
+    text-align: center;
+    margin-bottom: -15px;
+    font-size: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
