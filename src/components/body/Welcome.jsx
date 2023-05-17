@@ -36,7 +36,6 @@ const Welcome = () => {
     // Add more carousel data objects as needed
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
     const carousel = document.querySelector('#default-carousel');
     const prevButton = document.querySelector('[data-carousel-prev]');
@@ -96,6 +95,7 @@ const Welcome = () => {
 
   return (
     <div className=' overflow-x-hidden'>
+      
       <div id="default-carousel" className="relative w-screen" data-carousel="slide">
   {/* Carousel wrapper */}
   <div className="relative h-96 md:h-[100vh] lg:h-[100vh] overflow-hidden">
@@ -109,7 +109,7 @@ const Welcome = () => {
         <img
           src={item.image}
           className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2 transition-all duration-300"
-          alt="..."
+          alt="..." 
         />
         <div className="absolute top-1/4 left-0 p-8 text-white">
           <h2 className="text-3xl md:text-5xl decoration-8  font-bold transition-all duration-300">{item.title}</h2>
@@ -153,7 +153,7 @@ const Welcome = () => {
 </div>
 
 <div className='bg-orange-700 outer  w-full flex justify-center items-end relative '>
-  <div className='bg-white inner md:mx-8 -top-14 md:-top-16 absolute  md:grid-cols-6 gap-4 '>
+  <div className='bg-white inner  md:mx-8 -top-14 md:-top-16 absolute  md:grid-cols-6 gap-4 '>
   <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full">
     <svg
@@ -180,10 +180,15 @@ const Welcome = () => {
       </g>
     </svg>
   </div>
-  <span className="text-sm font-medium text-slate-700">Your Government</span>
+  <span className="text-sm font-medium text-slate-700
+   hover:text-orange-700 hover:cursor-pointer
+    hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+    Your Government
+    </span>
+  
 </div>
 
-    <div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+    <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5  hover:bg-orange-700 hover:rounded-full ">
     
 <svg   className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -211,11 +216,15 @@ c26 -11 52 -27 56 -35z"/>
 </svg>
 
   </div>
-  <span className="text-sm font-medium text-slate-700">Jobs and Unemployment</span>
+  <span className="text-sm 
+  font-medium text-slate-700 hover:text-orange-700 hover:cursor-pointer
+  hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+    Jobs and Unemployment
+    </span>
 </div>
 
 
-<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -237,9 +246,13 @@ fill="#fffff" stroke="none">
 </g>
 </svg>
   </div>
-  <span className="text-sm font-medium text-slate-700">Business and Industry</span>
+  <span className="text-sm 
+  font-medium text-slate-700 hover:text-orange-700 hover:cursor-pointer
+  hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+    Business and Industry
+    </span>
 </div>
-<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -261,9 +274,13 @@ fill="#fffff" stroke="none">
 </svg>
 
   </div>
-  <span className="text-sm font-medium text-slate-700">Roads and Transport</span>
+  <span className="text-sm 
+  font-medium text-slate-700 hover:text-orange-700 hover:cursor-pointer
+  hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+    Roads and Transport
+    </span>
 </div>
-<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full ">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -298,9 +315,13 @@ fill="#fffff" stroke="none">
 </svg>
 
   </div>
-  <span className="text-sm font-medium text-slate-700">Culture and Recreation</span>
+  <span className="text-sm 
+  font-medium text-slate-700 hover:text-orange-700 hover:cursor-pointer
+  hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+    Culture and Recreation
+    </span>
 </div>
-<div className="hover:shadow-2xl flex flex-col items-center justify-center p-10">
+<div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full">
     
 <svg className="w-10 h-10 text-orange-600 fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -319,7 +340,12 @@ fill="#fffff" stroke="none">
 </svg>
 
   </div>
-  <span className="text-sm font-medium text-slate-700">Justice, Safety and the Law</span>
+  <span className="text-sm
+   font-medium text-slate-700 hover:text-orange-700 hover:cursor-pointer
+   hover:border-b-2  md:hover:py-2
+    hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
+    Justice, Safety and the Law
+    </span>
 </div>
     
   </div>

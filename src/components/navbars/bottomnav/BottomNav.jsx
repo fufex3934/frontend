@@ -27,13 +27,15 @@ const BottomNavbar = () => {
       <ul className=" flex items-center">
       <div className="mr-2">
   <a href="#">
-  <img className="h-12 w-12 rounded-full" src="./harar.png" alt="Logo" />
+  <img className="h-12 md:h-10 w-12 md:w-10  rounded-full" src="./harar.png" alt="Logo" />
   </a>
 </div>
 
 
 <a href="#">
-<h1 className='text-gray-500 font-bold flex-grow mr-3'>HGCAOffice</h1>
+<h1 className='text-indigo-800 font-bold flex-grow mr-3 whitespace-wrap md:text-xs'>
+  Harar Government Communication Affairs Office
+  </h1>
 </a>
     
 <div className="block lg:hidden  items-center ml-auto">
