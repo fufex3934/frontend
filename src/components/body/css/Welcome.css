@@ -1,15 +1,16 @@
 @media (max-width: 767px) {
   .outer {
     position: relative; /* Make the outer div a positioning context */
-    height: 1600px; /* Adjust the height as needed */
+    height: 1350px; /* Adjust the height as needed */
     padding-top: 10px;
   }
 
   .inner {
     position: relative; /* Change from absolute to relative */
-    padding: 70px;
+    padding: 80px;
     transform: translate(-50%, 0); /* Adjust only horizontal positioning */
     left: 50%;
+    width: 45vh;
     margin-top: 90px;
     margin-left: 2px;
     margin-right: 2px; /* Add margin-top to separate from the outer div */
