@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     z-index: 50;
-    transition: all 0.3s ease-in-out;
+    transition: all 300s ease-in-out;
   }
   
   .navbar.hidden {
