@@ -9,7 +9,9 @@ const BottomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 100) {
+      const hideHeight = 100; // Height at which you want to hide the navbar
+
+      if (scrollPosition > hideHeight) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
@@ -24,7 +26,7 @@ const BottomNavbar = () => {
 
   return (
     <nav className={`navbar ${showNavbar ? '' : 'hidden'} lg:block`}>
-      <div className="bg-white/100 h-24 p-4">
+      <div className="bg-white/100  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-2">
@@ -40,7 +42,7 @@ const BottomNavbar = () => {
 
           {!isOpen && (
             <a href="#">
-              <h1 className="text-indigo-800 font-bold flex-grow mr-3 whitespace-wrap md:text-xs">
+              <h1 className="text-indigo-800 font-bold flex-grow mr-3 whitespace-wrap md:text-xs lg:hidden">
                 Harar Government Communication Affairs Office
               </h1>
             </a>
@@ -230,7 +232,7 @@ const BottomNavbar = () => {
                 </button>
               </div>
               <div className="flex flex-col items-start h-full p-4 w-full  md:w-80">
-  <ul className="space-y-4">
+  <ul className="space-y-4 ">
   <li className="group z-10 relative dropdown   text-white hover:mb-56 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Home
