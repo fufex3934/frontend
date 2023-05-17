@@ -102,23 +102,24 @@ const Welcome = () => {
     {/* Carousel items */}
     {carouselData.map((item, index) => (
       <div
-        key={index}
-        className={`hidden duration-700 ease-in-out ${index === currentIndex ? '' : 'hidden'}`}
-        data-carousel-item
-      >
-        <img
-          src={item.image}
-          className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/4 lg:-translate-x-1/2 top-1/2 left-1/2 transition-all duration-300"
-          alt="..." 
-        />
-        <div className="absolute top-1/4 left-0 p-8 text-white">
-          <h2 className="text-3xl md:text-5xl decoration-8  font-bold transition-all duration-300">{item.title}</h2>
-          <p className="mt-2 ml-2">{item.detail}</p>
-          <button className="mt-8 px-6 py-2 text-white bg-red-500 hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
-            Discover More
-          </button>
-        </div>
+      key={index}
+      className={`hidden duration-700 ease-in-out ${index === currentIndex ? '' : 'hidden'}`}
+      data-carousel-item
+    >
+      <img
+        src={item.image}
+        className="absolute block w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-all duration-300"
+        alt="..."
+      />
+      <div className="absolute top-1/4 left-0 p-8 text-white">
+        <h2 className="sm:text-3xl md:text-5xl lg:text-6xl decoration-8 font-bold transition-all duration-300">{item.title}</h2>
+        <p className="mt-2 ml-2">{item.detail}</p>
+        <button className="mt-8 px-6 py-2 text-white bg-red-500 hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
+          Discover More
+        </button>
       </div>
+    </div>
+    
     ))}
     {/* Navigation buttons */}
     <button
@@ -152,8 +153,8 @@ const Welcome = () => {
   </div>
 </div>
 
-<div className='bg-orange-700 outer  w-full flex justify-center items-end relative '>
-  <div className='bg-white inner  md:mx-8 -top-14 md:-top-16 absolute  md:grid-cols-6 gap-4 '>
+<div className='bg-orange-700 outer  w-full flex justify-center items-end relative sm:h-[100vh] md:h-[68vh] lg:h-[60vh]'>
+  <div className='bg-white inner  md:w-full lg:w-auto md:mt-[10vh] lg:mt-auto md:mx-8 -top-14 md:-top-16 absolute md:grid-cols-3  lg:grid-cols-6 gap-4 '>
   <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
   <div className="p-5 hover:bg-orange-700 hover:rounded-full">
     <svg
