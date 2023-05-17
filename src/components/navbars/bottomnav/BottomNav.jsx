@@ -9,7 +9,9 @@ const BottomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 100) {
+      const hideHeight = 100; // Height at which you want to hide the navbar
+
+      if (scrollPosition > hideHeight) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
@@ -24,7 +26,7 @@ const BottomNavbar = () => {
 
   return (
     <nav className={`navbar ${showNavbar ? '' : 'hidden'} lg:block`}>
-      <div className="bg-white/100 h-24 p-4">
+      <div className="bg-white/100  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-2">
@@ -40,7 +42,7 @@ const BottomNavbar = () => {
 
           {!isOpen && (
             <a href="#">
-              <h1 className="text-indigo-800 font-bold flex-grow mr-3 whitespace-wrap md:text-xs">
+              <h1 className="text-indigo-800 font-bold flex-grow mr-3 whitespace-wrap md:text-xs lg:hidden">
                 Harar Government Communication Affairs Office
               </h1>
             </a>
@@ -210,7 +212,7 @@ const BottomNavbar = () => {
           </div>
 
           {isOpen && (
-            <div className="fixed top-0 left-0 w-30% h-screen bg-gray-900 text-white">
+            <div className="fixed top-0 left-0 w-30% h-screen bg-black text-white">
               <div className="flex justify-end p-4">
                 <button
                   className="text-white"
@@ -230,7 +232,7 @@ const BottomNavbar = () => {
                 </button>
               </div>
               <div className="flex flex-col items-start h-full p-4 w-full  md:w-80">
-  <ul className="space-y-4">
+  <ul className="space-y-4 ">
   <li className="group z-10 relative dropdown   text-white hover:mb-56 hover:text-orange-600 cursor-pointer text-md font-serif ">
   <a  className="inline-flex w-full justify-center gap-x-0   px-3 py-2 text-sm " id="menu-button" aria-expanded="true" aria-haspopup="true">
       Home
@@ -240,7 +242,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -258,7 +260,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -276,7 +278,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -294,7 +296,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -312,7 +314,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -330,7 +332,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -348,7 +350,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>

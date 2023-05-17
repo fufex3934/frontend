@@ -1,4 +1,5 @@
-.navbar {
+@media (max-width: 1024px) {
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,8 +7,8 @@
     z-index: 50;
     transition: all 300s ease-in-out;
   }
-  
+
   .navbar.hidden {
     transform: translateY(-100%);
   }
-  
+}
