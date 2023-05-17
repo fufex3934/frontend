@@ -210,7 +210,7 @@ const BottomNavbar = () => {
           </div>
 
           {isOpen && (
-            <div className="fixed top-0 left-0 w-30% h-screen bg-black text-white">
+            <div className="fixed top-0 left-0 w-30% h-screen bg-gray-900 text-white">
               <div className="flex justify-end p-4">
                 <button
                   className="text-white"
@@ -240,7 +240,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -258,7 +258,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -276,7 +276,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -294,7 +294,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -312,7 +312,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -330,7 +330,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
@@ -348,7 +348,7 @@ const BottomNavbar = () => {
     </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
-        <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
+        <ul className="top-0 w-40 bg-gray-900 px-6 py-8 shadow  ">
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
             <li className="py-1"><a className="block text-white text-base hover:bg-orange-600 hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>

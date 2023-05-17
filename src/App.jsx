@@ -11,6 +11,7 @@ const App = () => {
       <Welcome/>
       <Explore/>
       <MeetIdeologyLeader/>
+    
     </div>
   )
 }
