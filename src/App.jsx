@@ -12,7 +12,9 @@ const App = () => {
       <Welcome/>
       <Explore/>
       <MeetIdeologyLeader/>
-      <HararData/>
+      {/* <HararData/> */}
+      
+      
     
     </div>
   )
