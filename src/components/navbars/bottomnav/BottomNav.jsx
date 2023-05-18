@@ -12,9 +12,9 @@ const BottomNavbar = () => {
       const hideHeight = 100; // Height at which you want to hide the navbar
 
       if (scrollPosition > hideHeight) {
-        setShowNavbar(false);
-      } else {
         setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
       }
     };
 
