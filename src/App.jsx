@@ -13,8 +13,10 @@ const App = () => {
       <Welcome/>
       <Explore/>
       <MeetIdeologyLeader/>
-      <HararData />
+       <HararData /> 
       <UpcomingEvent/>
+      
+    
     </div>
   )
 }

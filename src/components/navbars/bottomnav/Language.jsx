@@ -31,7 +31,7 @@ const Language = () => {
 
   return (
     <ul>
-      <li className=" flex items-center text-black  ">
+      <li className=" flex items-center text-[#1e293b]  ">
         {/* Your existing code */}
         {languageDropdown}
       </li>

@@ -1,8 +1,9 @@
 import React from 'react'
 import { RiFileTextFill } from 'react-icons/ri';
-import { MdOutlineAlarm }from 'react-icons/md'
-import { IoLocationOutline }from 'react-icons/io5'
-import './css/UpcomingEvent.css'
+import { MdOutlineAlarm }from 'react-icons/md';
+import { IoLocationOutline }from 'react-icons/io5';
+import './css/UpcomingEvent.css';
+
 const UpcomingEvent = () => {
   return (
     <div className='main-upcoming-event'>
