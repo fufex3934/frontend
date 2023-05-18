@@ -24,7 +24,7 @@ const MiddleNav = () => {
                     < FaTwitterSquare className='h-6 w-6 mt-8 mr-4 text-[#06b6d4] hover:text-orange-500'/>
                         </a>  
                         <a href="">
-                    < FaYoutube className='h-6 w-6 mt-8 text-[#b91c1c] hover:text-orange-500'/>
+                    < FaYoutube className='h-6 w-6 mt-8 text-[#dc2626] hover:text-orange-500'/>
                         </a>
                     </div>  
                         
