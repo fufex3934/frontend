@@ -19,10 +19,10 @@ const Language = () => {
     <select
       value={selectedLanguage}
       onChange={(e) => languageChangeHandler(e.target.value)}
-      className="ml-4 border border-gray-200 rounded-full px-2 py-1 "
+      className="ml-4 border border-black rounded-full px-2 py-1 "
     >
       {languageOptions.map((option) => (
-        <option key={option.value} value={option.value}>
+        <option key={option.value} value={option.value} >
           {option.label}
         </option>
       ))}
@@ -30,8 +30,8 @@ const Language = () => {
   );
 
   return (
-    <ul className=" ">
-      <li className=" flex items-center ">
+    <ul>
+      <li className=" flex items-center text-black  ">
         {/* Your existing code */}
         {languageDropdown}
       </li>
