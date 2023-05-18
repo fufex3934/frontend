@@ -1,0 +1,101 @@
+.main-upcoming-event{
+    display: flex;
+    flex-direction: row;
+    columns: 2;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 150px;
+    position: relative;
+    margin-top: 100px;
+    top: -100px;
+    padding: 20px;
+}
+.main-upcoming-event .sub-main-upcoming-event-left{
+    box-shadow: rgba(233, 25, 25, 0.35) 0px 5px 15px;
+    width: 60%;
+    display: block;
+    margin-right: 0%;
+    padding-right: 3%;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top{
+    display: flex;
+    position: relative;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top .float-left{
+    float: left;
+    font-size: 40px;
+    position: absolute;
+    left: 0%;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top .float-left h1{
+    color: #08143c;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right{
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 0%;
+    margin-top: 2%;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right a{
+    color: rgb(62, 62, 244);
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right:hover a{
+    color: red;
+}
+.main-upcoming-event .sub-main-upcoming-event-right{
+    box-shadow: rgba(60, 4, 244, 0.35) 0px 5px 15px;
+    width: 40%;
+    padding-left: 70px;
+    background-color: #f2edeb;
+    padding-bottom: 2%;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-bottom {
+    display: flex;
+    columns: 2;
+    margin-top: 10%;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-bottom .one{
+  box-shadow: grey 0px 5px 15px;
+  padding: 20px;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-bottom .one{
+    margin-right: 20px;
+}
+.main-upcoming-event .sub-main-upcoming-event-left .text-bottom .two{
+    box-shadow: grey 0px 5px 15px;
+    margin-left: 20px;
+    padding: 20px;
+}
+.main-upcoming-event .sub-main-upcoming-event-right .left-top-icon{
+    border-radius: 10%;
+    background-color: red;
+    width: 90%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.main-upcoming-event .sub-main-upcoming-event-right h1{
+    color: #08143c;
+    font-size: 40px;
+    font-weight: 400;
+}
+.main-upcoming-event .sub-main-upcoming-event-right .unnderline{
+    margin-top: 5%;
+    box-shadow: #08143c 0px 5px 15px;
+    margin-right: 200px;
+    padding: 10%;
+    padding-bottom: 1%;
+    background-color: white;
+}
+.main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line{
+    border-bottom: 1px solid grey;
+    padding-bottom: 5%;
+    padding-top:10% ;
+}
+.main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line a{
+    color: #08143c;
+    font-weight: bold;
+}
+.main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line a:hover{
+    color: red;
+}

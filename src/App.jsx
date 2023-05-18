@@ -4,6 +4,7 @@ import Welcome from './components/body/Welcome';
 import Explore from './components/body/Explore';
 import MeetIdeologyLeader from './components/body/MeetIdeologyLeader';
 import HararData from './components/body/HararData';
+import UpcomingEvent from './components/body/UpcomingEvent';
 
 const App = () => {
   return (
@@ -12,8 +13,8 @@ const App = () => {
       <Welcome/>
       <Explore/>
       <MeetIdeologyLeader/>
-      {/* <HararData/> */}
-      
+       <HararData /> 
+      <UpcomingEvent/>
       
     
     </div>
