@@ -26,13 +26,13 @@ const BottomNavbar = () => {
 
   return (
     <nav className={`navbar ${showNavbar ? '' : 'hidden'} lg:block`}>
-      <div className="bg-white/100  p-4">
+      <div className="bg-white/100   p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-2">
               <a href="#">
                 <img
-                  className="h-12 md:h-10 w-12 md:w-10 rounded-full lg:hidden"
+                  className="h-12 md:h-12 w-12 md:w-12 rounded-full lg:hidden"
                   src="./harar.png"
                   alt="Logo"
                 />
@@ -42,7 +42,8 @@ const BottomNavbar = () => {
 
           {!isOpen && (
             <a href="#">
-              <h1 className="text-indigo-800 font-bold flex-grow  whitespace-wrap md:text-xs  lg:hidden">
+              <h1 className="text-[#083344] md:ml-2 font-bold flex-grow 
+               whitespace-wrap md:text-lg md:uppercase  lg:hidden">
                 Harar Government Communication Affairs Office
               </h1>
             </a>
