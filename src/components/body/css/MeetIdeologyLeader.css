@@ -148,11 +148,11 @@
         margin-right: 20%;
     }
 }
-@media screen and (min-width:320px) {
+ @media screen and (min-width:320px) {
     .main .main-text h1 {
         font-size: 25px;
     }
-}
+} 
 @media screen and (min-width:768px) and (max-width:1113px) {
     .main{
         flex-direction: column;

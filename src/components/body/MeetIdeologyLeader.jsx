@@ -32,7 +32,7 @@ const MeetIdeologyLeader = () => {
                 </div>
             </a>
             <span className='span' data-aos-duration="5000" data-aos="fade-up" data-aos-easing="linear">Video Intro<br/>
-                About Our Municipal
+                About Our Mayor
             </span>
         </div>
         <div className='main-image'>
