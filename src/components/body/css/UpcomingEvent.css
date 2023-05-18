@@ -6,6 +6,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 150px;
     position: relative;
+    margin-top: 100px;
     top: -100px;
     padding: 20px;
 }
