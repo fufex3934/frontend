@@ -13,6 +13,7 @@ const App = () => {
       <Explore/>
       <MeetIdeologyLeader/>
       <HararData/>
+      
     
     </div>
   )

@@ -46,7 +46,7 @@ const HararData = () => {
   }, []);
 
   return (
-    <div className="bg-svg-background bg-cover bg-center relative">
+    <div className=" bg-cover bg-center relative">
       <div className="absolute inset-0 bg-[#07173b]"></div>
       <div className="container mx-auto py-16">
         <div className="grid grid-cols-4 gap-8">
