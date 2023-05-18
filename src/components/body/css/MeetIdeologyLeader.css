@@ -153,7 +153,7 @@
         font-size: 25px;
     }
 }
-@media screen and (min-width:768px) and (max-width:1114px) {
+@media screen and (min-width:768px) and (max-width:1113px) {
     .main{
         flex-direction: column;
         margin-top: 50px;
