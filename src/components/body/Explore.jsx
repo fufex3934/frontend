@@ -11,7 +11,7 @@ const Explore = () => {
                 <div className='inline w-full sub-main'>
                     <div className="block text-start float-left sub-sub-main">
                         <h3 className="text-3xl  font-bold text-slate-600 font-serif" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-                            Let’s Explore Local Services,
+                            Let's Explore Local Services,
                         </h3>
                         <h3 className="text-3xl  font-bold text-slate-600 font-serif" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
                             Programs & Initiatives.

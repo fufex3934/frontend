@@ -153,3 +153,27 @@
         font-size: 25px;
     }
 }
+@media screen and (min-width:768px) and (max-width:1114px) {
+    .main{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .main .main-image{
+        margin-top: -100px;
+    }
+    .main .main-text h1{
+        font-size: 40px;
+    }
+    .main .main-text .p1{
+        font-size: 30px;
+    }
+    .main .main-text .p2{
+        font-size: 30px;
+    }
+    .qouet{
+        font-size: 25px;
+    }
+    .span{
+        font-size: 30px;
+    }
+}
