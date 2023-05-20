@@ -4,7 +4,7 @@ import {FaTwitterSquare} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 const MiddleNav = () => {
   return (
-    <div className=' hidden md:hidden lg:flex bg-[#164e63] h-20 '>
+    <div className=' hidden md:hidden lg:flex bg-[#164e63] h-20 relative'>
            <a href="#">
                 <img
                   className="h-32 md:h-10 w-32  md:w-10 rounded-full ml-6 mt-4"
@@ -16,7 +16,7 @@ const MiddleNav = () => {
                 mt-6 font-semibold font-serif text-sm '>
                     Harar Government Communications Affairs Office
                     </h1>
-                   <div className='flex justify-evenly ml-72'>
+                   <div className='flex justify-evenly absolute right-8'>
                    <a href="">
                     < FaFacebookSquare className='h-6 w-6 mr-4 mt-8 text-[#3b82f6] hover:text-orange-500'/>
                         </a>  

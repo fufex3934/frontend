@@ -22,9 +22,9 @@ const OnlineService = () => {
   };
 
   return (
-    <div className="bg-[#08143c] h-80 w-screen">
+    <div className="bg-[#08143c] h-80 w-screen ">
       <div className="px-10 py-16">
-        <p className="text-white text-3xl font-bold">
+        <p className="text-white text-3xl font-bold ">
           Explore Online <br />
           Services & Resource
         </p>

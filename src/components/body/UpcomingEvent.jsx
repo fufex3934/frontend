@@ -33,7 +33,7 @@ const UpcomingEvent = () => {
                       </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <IoLocationOutline className='relative top-1' />
-                          <span className='pl-2'>32 Quincy Street, Cambridge, MA</span>
+                          <span className='pl-2'>32 Jogol Street, Harari, MA</span>
                       </div>
                     <div className="mt-8">
                         <a href="" className='hover:bg-red-500 hover:text-white'style={{border:'1px solid grey',padding:'10px'}}>More Details</a>
@@ -55,7 +55,7 @@ const UpcomingEvent = () => {
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <IoLocationOutline className='relative top-1'/>
-                        <span className='pl-2'>32 Quincy Street, Cambridge, MA</span>
+                        <span className='pl-2'>32 Jogol Street, Harari, MA</span>
                     </div>
                     <div className="mt-8">
                         <a href="" className='hover:bg-red-500 hover:text-white' style={{ border: '1px solid grey', padding: '10px' }}>More Details</a>
@@ -85,7 +85,7 @@ const UpcomingEvent = () => {
                   <a href="">Economy Growth Report</a><br />
                   <span>July 24, 2020</span>
                 </div>
-                <div className='pt-8 ms-[70px] mb-5'>
+                <div className='pt-4 ms-[70px] mb-5'>
                     <a href="" className='text-blue-600/100 hover:text-red-600'>More Documents &gt;</a>
                 </div>
             </div>

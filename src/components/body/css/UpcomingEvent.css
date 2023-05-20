@@ -3,7 +3,8 @@
     flex-direction: row;
     columns: 2;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    border-bottom: #08143c 1px solid; */
     margin-left: 150px;
     position: relative;
     margin-top: 100px;
@@ -11,11 +12,12 @@
     padding: 20px;
 }
 .main-upcoming-event .sub-main-upcoming-event-left{
-    box-shadow: rgba(233, 25, 25, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(233, 25, 25, 0.35) 0px 5px 15px; */
     width: 60%;
     display: block;
     margin-right: 0%;
     padding-right: 3%;
+    /* border-bottom: #08143c 1px solid; */
 }
 .main-upcoming-event .sub-main-upcoming-event-left .text-top{
     display: flex;
@@ -44,7 +46,7 @@
     color: red;
 }
 .main-upcoming-event .sub-main-upcoming-event-right{
-    box-shadow: rgba(60, 4, 244, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(60, 4, 244, 0.35) 0px 5px 15px; */
     width: 40%;
     padding-left: 70px;
     background-color: #f2edeb;
@@ -57,10 +59,8 @@
 }
 .main-upcoming-event .sub-main-upcoming-event-left .text-bottom .one{
   box-shadow: grey 0px 5px 15px;
+  margin-right: 20px;
   padding: 20px;
-}
-.main-upcoming-event .sub-main-upcoming-event-left .text-bottom .one{
-    margin-right: 20px;
 }
 .main-upcoming-event .sub-main-upcoming-event-left .text-bottom .two{
     box-shadow: grey 0px 5px 15px;
@@ -90,7 +90,7 @@
 .main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line{
     border-bottom: 1px solid grey;
     padding-bottom: 5%;
-    padding-top:10% ;
+    padding-top:5% ;
 }
 .main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line a{
     color: #08143c;

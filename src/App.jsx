@@ -5,6 +5,7 @@ import Explore from './components/body/Explore';
 import MeetIdeologyLeader from './components/body/MeetIdeologyLeader';
 import HararData from './components/body/HararData';
 import UpcomingEvent from './components/body/UpcomingEvent';
+import News from './components/body/News';
 import OnlineService from './components/body/OnlineService';
 
 const App = () => {
@@ -16,9 +17,8 @@ const App = () => {
       <MeetIdeologyLeader/>
        <HararData /> 
       <UpcomingEvent/>
+      <News/>
       <OnlineService/>
-      
-    
     </div>
   )
 }
