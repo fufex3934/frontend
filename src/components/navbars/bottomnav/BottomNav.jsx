@@ -9,7 +9,7 @@ const BottomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const hideHeight = 100; // Height at which you want to hide the navbar
+      const hideHeight = 200; // Height at which you want to hide the navbar
 
       if (scrollPosition > hideHeight) {
         setShowNavbar(true);
