@@ -8,7 +8,7 @@
     margin-bottom: 200px;
 }
 
-.main .main-text h1 {
+.main .main-text .h1 {
     font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
@@ -17,14 +17,14 @@
 }
 
 .main .main-text .p1 {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: medium;
     color: grey;
 }
 
 .main .main-text .p2 {
-    font-size: large;
+    font-size: medium;
     margin-top: 20px;
     margin-bottom: 30px;
     color: grey;
@@ -33,7 +33,7 @@
 .qouet {
     border-left: 3px solid red;
     padding-left: 50px;
-    font-size: 20px;
+    font-size: large;
     font-weight: 350;
     color: rgb(23, 100, 187);
 }
@@ -86,7 +86,6 @@
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 25px solid white;
-    border-radius: 10px;
 }
 
 .span {
@@ -98,7 +97,7 @@
     color: #07173b;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:414px) {
     .main {
         margin-left: 5px;
         margin-right: 5px;
@@ -112,9 +111,8 @@
     }
 
     .main .main-text h1 {
-        font-size: 30px;
+        font-size: large;
         white-space: wrap;
-        font-weight: bold;
         line-height: 40px;
         margin-left: 10px;
     }
@@ -126,7 +124,7 @@
 
     .qouet {
         padding-left: 20px;
-        font-size: large;
+        font-size: medium;
     }
 
     .qouet span {
@@ -153,7 +151,7 @@
         font-size: 25px;
     }
 } 
-@media screen and (min-width:768px) and (max-width:1113px) {
+@media screen and (max-width:768px) {
     .main{
         flex-direction: column;
         margin-top: 50px;
@@ -162,18 +160,18 @@
         margin-top: -100px;
     }
     .main .main-text h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .main .main-text .p1{
-        font-size: 30px;
-    }
-    .main .main-text .p2{
-        font-size: 30px;
-    }
-    .qouet{
         font-size: 25px;
     }
+    .main .main-text .p2{
+        font-size: 25px;
+    }
+    .qouet{
+        font-size: 20px;
+    }
     .span{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
