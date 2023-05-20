@@ -25,7 +25,7 @@ const BottomNavbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${showNavbar ? '' : 'hidden'} lg:block`}>
+    <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out' : ''} lg:block`}>
       <div className="bg-white/100   p-4">
         <ul className="flex items-center">
           {!isOpen && (
@@ -54,7 +54,7 @@ const BottomNavbar = () => {
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
               Home
-              <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
               </svg>
             </a>
@@ -72,7 +72,7 @@ const BottomNavbar = () => {
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
               <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                 About
-                <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
               </a>
@@ -89,7 +89,7 @@ const BottomNavbar = () => {
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Economic
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -106,7 +106,7 @@ const BottomNavbar = () => {
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">Timely
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -123,7 +123,7 @@ const BottomNavbar = () => {
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Politics
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -140,7 +140,7 @@ const BottomNavbar = () => {
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Social
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -157,7 +157,7 @@ const BottomNavbar = () => {
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
         Tourism
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -174,7 +174,7 @@ const BottomNavbar = () => {
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
       <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Videos
-        <svg className="-mr-1 h-4 w-4 mt-1  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
