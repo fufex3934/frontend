@@ -6,7 +6,19 @@ import { BiChevronRight } from 'react-icons/bi';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#132244] mt-52 h-96">
+    <div className='mt-52'>
+      <div className='bg-[#132244] h-24 w-screen '>
+           <div className='flex py-8 px-14'>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>About Us</span>
+            <span className='text-slate-300 text-sm mr-3 cursor-pointer hover:text-red-500'>Services</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
+
+           </div>
+      </div>
+      <hr className='border-b border-gray-700 h-px'/>
+      <footer className="bg-[#132244]  h-96 mt-0">
       <div className="container mx-auto py-8 px-4">
         <div className="flex pt-10 ">
           <a href="#">
@@ -120,6 +132,7 @@ const Footer = () => {
       Communication Affairs Office. All rights reserved.</p>
       </div>
     </footer>
+    </div>
   );
 };
 
