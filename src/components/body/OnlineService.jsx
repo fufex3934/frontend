@@ -91,7 +91,7 @@ const OnlineService = () => {
             <span className={`-ml-11 icon-transition ${leftHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderLeftIcon(4)}</span>
           </span>
           <span
-            className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
+            className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3  hover:cursor-pointer text-sm font-medium`}
             onMouseEnter={() => handleLeftHover(5)}
             onMouseLeave={handleLeave}
           >
@@ -142,7 +142,7 @@ const OnlineService = () => {
             <span className={`-ml-9 icon-transition ${rightHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderRightIcon(4)}</span>
           </span>
           <span
-            className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
+            className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3  hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
             onMouseEnter={() => handleRightHover(5)}
             onMouseLeave={handleLeave}
           >
