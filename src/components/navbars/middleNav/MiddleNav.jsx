@@ -4,7 +4,7 @@ import {FaTwitterSquare} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 const MiddleNav = () => {
   return (
-    <div className='flex bg-[#164e63] h-20 relative'>
+    <div className=' hidden md:hidden lg:flex bg-[#164e63] h-20 relative'>
            <a href="#">
                 <img
                   className="h-32 md:h-10 w-32  md:w-10 rounded-full ml-6 mt-4"
@@ -26,10 +26,7 @@ const MiddleNav = () => {
                         <a href="">
                     < FaYoutube className='h-6 w-6 mt-8 text-[#dc2626] hover:text-orange-500'/>
                         </a>
-                    </div>  
-                    
-                         
-                                
+                    </div>                                                                       
     </div>
   )
 }
