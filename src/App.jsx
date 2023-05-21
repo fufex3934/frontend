@@ -9,6 +9,7 @@ import News from './components/body/News';
 import OnlineService from './components/body/OnlineService';
 import Footer from './components/body/Footer';
 import BottomImages from './components/body/BottomImages';
+import CityCouncil from './components/body/CityCouncil';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <UpcomingEvent/>
       <News/>
       <OnlineService/>
+      <CityCouncil/>
       <BottomImages/>
       <Footer/>
     </div>
