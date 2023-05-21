@@ -34,8 +34,6 @@ const Footer = () => {
                       p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
                       </span>
                       
-                      
-
            </div>
       </div>
       <hr className='border-b border-gray-700 h-px'/>
