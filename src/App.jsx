@@ -8,6 +8,7 @@ import UpcomingEvent from './components/body/UpcomingEvent';
 import News from './components/body/News';
 import OnlineService from './components/body/OnlineService';
 import Footer from './components/body/Footer';
+import BottomImages from './components/body/BottomImages';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <UpcomingEvent/>
       <News/>
       <OnlineService/>
+      <BottomImages/>
       <Footer/>
     </div>
   )

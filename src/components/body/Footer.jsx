@@ -1,19 +1,40 @@
 import React from 'react';
-import { BiAlarm } from 'react-icons/bi';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { FiMail } from 'react-icons/fi';
-import { BiChevronRight } from 'react-icons/bi';
-
+import { BiChevronRight,BiAlarm } from 'react-icons/bi';
+import {FaTwitter,FaInstagram,FaYoutube,FaFacebookSquare} from 'react-icons/fa';
 const Footer = () => {
   return (
-    <div className='mt-52'>
-      <div className='bg-[#132244] h-24 w-screen '>
+    <div className=''>
+      <div className='bg-[#132244] h-24 w-screen flex '>
            <div className='flex py-8 px-14'>
-            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>About Us</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500 whitespace-nowrap'>About Us</span>
             <span className='text-slate-300 text-sm mr-3 cursor-pointer hover:text-red-500'>Services</span>
-            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
-            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
-            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Services</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Events</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>News</span>
+            <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Contact</span>
+
+           </div>
+           <div className='ml-72 mt-10  flex'>
+             <p className='text-slate-300 text-sm'>Connect With Us</p>
+                    <span className='ml-6 -mt-1'>
+                     <FaFacebookSquare className='rounded-full bg-white
+                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+                      </span>
+                      <span className='ml-1 -mt-1'>
+                     <FaTwitter className='rounded-full bg-white
+                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+                      </span>
+                      <span className='ml-1 -mt-1'>
+                     <FaInstagram className='rounded-full bg-white
+                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+                      </span>
+                      <span className='ml-1 -mt-1'>
+                     <FaYoutube className='rounded-full bg-white
+                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+                      </span>
+                      
+                      
 
            </div>
       </div>
