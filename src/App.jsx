@@ -60,6 +60,10 @@ const App = () => {
        <HararData /> 
       <UpcomingEvent/>
       <News/>
+      <OnlineService/>
+      <ExploreCity data={data}/>
+      <CityCouncil/>
+      <Footer/>
     </div>
   )
 }

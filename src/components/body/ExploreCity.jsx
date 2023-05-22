@@ -18,9 +18,9 @@ const ExploreCity = (props) => {
   const newData=props.data.map((item,index)=>{
     
     return (
-      <div key={index}>
+      <div className='indexs' key={index}>
           <img src={item.image} alt="" />
-          <div>
+          <div className='link-div'>
             <p><a href="">{item.text1}</a></p>
             <h1><a href="">{item.text2}</a></h1>
             <span>{item.icon}</span>
