@@ -60,11 +60,11 @@ const BottomNavbar = () => {
                   </a>
                   <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                     <ul className="top-0 w-48 bg-white px-6 py-8 shadow">
-                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5 hover:py-1 cursor-pointer">Item1</a></li>
-                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5 hover:py-1 cursor-pointer">Item1</a></li>
-                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
-                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
-                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
+                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5 hover:py-1 cursor-pointer">Item1</a></li>
+                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5 hover:py-1 cursor-pointer">Item1</a></li>
+                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
+                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
+                      <li className="py-1"><a className="block text-gray-900 text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5 cursor-pointer">Item1</a></li>
                     </ul>
                   </div>
                 </li>
@@ -78,11 +78,11 @@ const BottomNavbar = () => {
               </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
                 </ul>
               </div>
             </li>
@@ -96,11 +96,11 @@ const BottomNavbar = () => {
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
                 </ul>
                 </div>
             </li>
@@ -112,15 +112,15 @@ const BottomNavbar = () => {
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
                 </ul>
               </div>
           </li>
-          <li className="hover:text-[#3bb5b5] group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+          <li className="hover:text-[#3bb5b5] group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
             <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
               Politics
               <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -129,11 +129,11 @@ const BottomNavbar = () => {
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
               </ul>
               </div>
           </li>
@@ -146,11 +146,11 @@ const BottomNavbar = () => {
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto"> 
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
               </ul>
               </div>
           </li>
@@ -163,11 +163,11 @@ const BottomNavbar = () => {
               </a>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                    <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
                 </ul>
                 </div>
             </li>
@@ -180,11 +180,11 @@ const BottomNavbar = () => {
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+                  <li className="py-1"><a className="block text-gray-900  text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
               </ul>
               </div>
           </li>
@@ -256,11 +256,11 @@ const BottomNavbar = () => {
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -274,11 +274,11 @@ const BottomNavbar = () => {
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -292,11 +292,11 @@ const BottomNavbar = () => {
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -310,11 +310,11 @@ const BottomNavbar = () => {
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -326,11 +326,11 @@ const BottomNavbar = () => {
       </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -342,11 +342,11 @@ const BottomNavbar = () => {
       </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
@@ -359,11 +359,11 @@ const BottomNavbar = () => {
       </a>
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
         <ul className="top-0 w-40 bg-black px-6 py-8 shadow  ">
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
-            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5t] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
+            <li className="py-1"><a className="block text-white text-base hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Item1</a></li>
         </ul>
         </div>
     </li>
