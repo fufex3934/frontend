@@ -28,6 +28,29 @@ const App = () => {
       text2: 'OPs',
       icon: '->'
     },
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: '->'
+    },
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: '->'
+    },
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: '->'
+    },{
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: '->'
+    },
     // Rest of the data array items
   ];
 
