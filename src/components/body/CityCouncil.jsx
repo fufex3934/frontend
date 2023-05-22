@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebook, FaTwitter,FaPhoneAlt,
+   FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const CityCouncil = () => {
