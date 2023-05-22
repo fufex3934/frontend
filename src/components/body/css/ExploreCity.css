@@ -1,0 +1,15 @@
+.main-container{
+    box-shadow: grey 0px 5px 15px;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.main-container .heading{
+    text-align: center;
+    box-shadow: grey 0px 5px 15px;
+}
+.main-container .heading h1{
+    font-size: 40px;
+    color: #07173b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
