@@ -12,28 +12,28 @@ const TopNav = () => {
   }
 
   return (
-    <div className="bg-gray-800 w-full  p-2 flex flex-col sm:flex-row justify-between items-center">
+    <div className="bg-[#3bb5b5] w-full  p-2 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-col sm:flex-row items-center relative left-8">
         <a
           href="tel:+25164963831"
-          className="text-white transition ease-in-out duration-300 decoration-0 flex items-center hover:text-blue-400 sm:mr-8"
+          className="text-white transition ease-in-out duration-300 decoration-0 flex items-center hover:text-orange-600 sm:mr-8"
         >
-          <HiOutlinePhone className="text-red-500 mr-2 text-2xl" />
+          <HiOutlinePhone className="text-orange-500 mr-2 text-2xl" />
           <span className="text-sm font-semibold">Call on: 1800 123 4567</span>
         </a>
         <span className="text-white flex items-center mt-4 sm:mt-0">
-          <BiAlarm className="text-red-500 mr-2 text-2xl" />
+          <BiAlarm className="text-orange-500 mr-2 text-2xl" />
           <span className="text-sm font-semibold">Open Hours: Mon - Fri 8.00 am - 6.00 pm</span>
         </span>
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
-        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-blue-400">
+        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           Council
         </a>
-        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-blue-400">
+        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           Vacancies
         </a>
-        <a href="#" className="text-white ml-6 sm:ml-0 hover:text-blue-400">
+        <a href="#" className="text-white ml-6 sm:ml-0 hover:text-orange-600">
           Complaints
         </a>
       </div>
