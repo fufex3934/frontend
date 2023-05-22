@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter,FaPhoneAlt,
    FaLinkedin, FaInstagram } from 'react-icons/fa';
+
 import { AiOutlineMail } from 'react-icons/ai';
 
 const CityCouncil = () => {
@@ -15,7 +16,7 @@ const CityCouncil = () => {
   };
 
   return (
-    <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-52'>
+    <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-48'>
       <p className='text-[#202b5d] ml-[90vh] text-2xl font-extrabold font-serif whitespace-nowrap pt-24'>
         Meet City Council
       </p>

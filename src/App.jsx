@@ -63,6 +63,7 @@ const App = () => {
       <OnlineService/>
       <ExploreCity data={data}/>
       <CityCouncil/>
+      <BottomImages/>
       <Footer/>
     </div>
   )
