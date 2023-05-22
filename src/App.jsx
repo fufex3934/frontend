@@ -10,8 +10,47 @@ import OnlineService from './components/body/OnlineService';
 import Footer from './components/body/Footer';
 import BottomImages from './components/body/BottomImages';
 import CityCouncil from './components/body/CityCouncil';
+import ExploreCity from './components/body/ExploreCity';
 
 const App = () => {
+  const data = [
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'OPs',
+      icon:'->'
+    }, 
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'Ops',
+      icon:'->'
+    },
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'OPs',
+      icon:'->'
+    }, 
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'Ops',
+      icon:'->'
+    },
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'OPs',
+      icon:'->'
+    }, 
+    {
+      image: 'images/explore.jpg',
+      text1: 'Hello, world!',
+      text2:'Ops',
+      icon:'->'
+    }
+  ]
   return (
     <div>
       <Navs/>
@@ -22,8 +61,8 @@ const App = () => {
       <UpcomingEvent/>
       <News/>
       <OnlineService/>
+      <ExploreCity data={data}/>
       <CityCouncil/>
-      <BottomImages/>
       <Footer/>
     </div>
   )

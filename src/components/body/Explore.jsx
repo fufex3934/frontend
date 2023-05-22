@@ -1,5 +1,5 @@
 import React from 'react';
-import './Explore.css';
+import './css/Explore.css';
 import 'aos/dist/aos.css'
 
 const Explore = () => {
