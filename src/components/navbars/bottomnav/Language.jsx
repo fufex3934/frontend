@@ -19,7 +19,7 @@ const Language = () => {
     <select
       value={selectedLanguage}
       onChange={(e) => languageChangeHandler(e.target.value)}
-      className="ml-4 border text-lg rounded-0 p-2 border-grey h-12 w-24 "
+      className="ml-4 border text-lg rounded-0 p-2 border-grey h-12 w-40 "
     >
       {languageOptions.map((option) => (
         <option key={option.value} value={option.value} >

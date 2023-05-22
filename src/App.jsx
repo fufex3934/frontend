@@ -6,6 +6,10 @@ import MeetIdeologyLeader from './components/body/MeetIdeologyLeader';
 import HararData from './components/body/HararData';
 import UpcomingEvent from './components/body/UpcomingEvent';
 import News from './components/body/News';
+import OnlineService from './components/body/OnlineService';
+import Footer from './components/body/Footer';
+import BottomImages from './components/body/BottomImages';
+import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 
 const App = () => {
@@ -56,7 +60,6 @@ const App = () => {
        <HararData /> 
       <UpcomingEvent/>
       <News/>
-      <ExploreCity data={data}/>
     </div>
   )
 }

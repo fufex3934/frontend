@@ -9,7 +9,7 @@ const BottomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const hideHeight = 100; // Height at which you want to hide the navbar
+      const hideHeight = 200; // Height at which you want to hide the navbar
 
       if (scrollPosition > hideHeight) {
         setShowNavbar(true);
@@ -25,7 +25,7 @@ const BottomNavbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${showNavbar ? '' : 'hidden'} lg:block`}>
+    <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out' : ''} lg:block`}>
       <div className="bg-white/100   p-4">
         <ul className="flex items-center">
           {!isOpen && (
@@ -50,11 +50,11 @@ const BottomNavbar = () => {
           )}
 
           <div className="hidden lg:block">
-            <ul className="flex items-center space-x-6">
+            <ul className="flex items-center space-x-2">
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
               Home
-              <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
               </svg>
             </a>
@@ -70,9 +70,9 @@ const BottomNavbar = () => {
         </div>
             </li>
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-              <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                 About
-                <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
               </a>
@@ -87,9 +87,9 @@ const BottomNavbar = () => {
               </div>
             </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Economic
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -105,8 +105,8 @@ const BottomNavbar = () => {
         </div>
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">Timely
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">Timely
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -121,9 +121,9 @@ const BottomNavbar = () => {
         </div>
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Politics
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -138,9 +138,9 @@ const BottomNavbar = () => {
         </div>
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Social
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -155,9 +155,9 @@ const BottomNavbar = () => {
         </div>
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
         Tourism
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -172,9 +172,9 @@ const BottomNavbar = () => {
         </div>
     </li>
     <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-      <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-lg text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <a  className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
         Videos
-        <svg className="-mr-1 h-6 w-6 mt-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </a>
@@ -188,11 +188,12 @@ const BottomNavbar = () => {
         </ul>
         </div>
     </li>
-    <li className='relative left-[120px] p-0'>
+    <li className=''>
       <Language/>
     </li>
-    <li className="text-gray-600 hover:text-orange-600 cursor-pointer relative left-[100px] font-serif">
-      <button className="bg-transparent hover:bg-orange-700 text-blue-500 text-lg font-semibold hover:text-white p-2 border border-blue-700 rounded-0 overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
+    <li className="text-gray-600 hover:text-orange-600 cursor-pointer relative left-[10px] font-serif">
+      <button className="bg-transparent hover:bg-orange-700 text-blue-500 text-sm font-semibold hover:text-white p-2 border border-blue-700 
+      rounded-0 overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
         Report an Issue
       </button>
     </li>
