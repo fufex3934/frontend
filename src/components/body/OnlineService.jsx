@@ -36,7 +36,7 @@ const OnlineService = () => {
   };
 
   return (
-    <div className="bg-[#08143c] h-80 w-screen">
+    <div className="bg-[#08143c] h-80 w-screen mt-2 mb-[35vh]">
       <div className="px-10 py-16">
         <p className="text-white text-3xl font-bold">
           Explore Online <br />
@@ -100,7 +100,7 @@ const OnlineService = () => {
           </span>
         </div>
         {/* right div  */}
-        <div className="bg-red-500 h-80 w-[60vh] py-10 px-4">
+        <div className="bg-[#3bb5b5] h-80 w-[60vh] py-10 px-4">
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
             onMouseEnter={() => handleRightHover(0)}
