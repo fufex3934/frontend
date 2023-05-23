@@ -22,7 +22,7 @@ const UpcomingEvent = () => {
                         <img src="images/explore.jpg" alt="" />
                     </div>
                     <div className='pt-4'>
-                        <a href="" className='text-blue-600/100 text-lg'>Conference</a><br />
+                          <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
                         <a href="" className='text-xl font-semibold'>The Strategically Build Your<br />Business</a>
@@ -44,7 +44,7 @@ const UpcomingEvent = () => {
                         <img src="images/explore.jpg" alt="" />
                     </div>
                     <div className='pt-4'>
-                        <a href="" className='text-blue-600/100 text-lg'>Conference</a><br />
+                          <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
                         <a href="" className='text-xl font-semibold'>The Strategically Build Your<br />Business</a>

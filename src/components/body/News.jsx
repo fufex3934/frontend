@@ -10,10 +10,11 @@ const News = () => {
             <p>The news about recent activities<br/>for needed peoples.</p>
             <button>More News</button>
         </div>
+
         <div className='news-show'>
             <a href="">
                 <img src="images/explore.jpg" alt="" />
-                <span className='text-white bg-red-500 p-2 ms-8'>July 24, 2020</span>
+                  <span className='text-white bg-[#329898] p-2 ms-8'>July 24, 2020</span>
             </a>
             <div className="p-6">
                 <p className=''>In
@@ -25,10 +26,11 @@ const News = () => {
                 <a href="" className='text-md flex font-light mt-6'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>
+
         <div className='news-show'>
             <a href="">
                 <img src="images/explore.jpg" alt="" />
-                <span className='text-white bg-red-500 p-2 ms-8'>July 24, 2020</span>
+                  <span className='text-white bg-[#329898] p-2 ms-8'>July 24, 2020</span>
             </a>
             <div className="p-6">
                   <p className=''>In
@@ -40,10 +42,11 @@ const News = () => {
                   <a href="" className='text-md flex font-light mt-6'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>
+
         <div className='news-show'>
             <a href="">
                 <img src="images/explore.jpg" alt="" />
-                <span className='text-white bg-red-500 p-2 ms-8'>July 24, 2020</span>
+                <span className='text-white bg-[#329898] p-2 ms-8'>July 24, 2020</span>
             </a>
             <div className="p-6">
                 <p className=''>In
@@ -55,6 +58,7 @@ const News = () => {
                 <a href="" className='text-md flex font-light mt-6'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>
+
     </div>
   )
 }
