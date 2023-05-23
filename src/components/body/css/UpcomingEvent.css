@@ -40,7 +40,7 @@
     margin-top: 2%;
 }
 .main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right a{
-    color: rgb(62, 62, 244);
+    color: #329898;
 }
 .main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right:hover a{
     color: red;
@@ -69,7 +69,7 @@
 }
 .main-upcoming-event .sub-main-upcoming-event-right .left-top-icon{
     border-radius: 10%;
-    background-color: red;
+    background-color: #329898;
     width: 90%;
     padding-bottom: 20px;
     padding-top: 20px;

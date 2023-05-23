@@ -1,18 +1,18 @@
 .main-container{
-    box-shadow: grey 0px 5px 15px;
+    /* box-shadow: grey 0px 5px 15px; */
     width: 100%;
     padding-top: 2%;
     padding-bottom: 5%;
     margin-top: 10%;
 }
 .main-container .heading{
-    box-shadow: rgb(202, 48, 48) 0px 5px 15px;
+    /* box-shadow: rgb(202, 48, 48) 0px 5px 15px; */
     margin-bottom: 2%;
 
 }
 .main-container .heading h1{
     font-size: 40px;
-    color: #07173b;
+    color: #329898;
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     left: 35%;
@@ -21,8 +21,22 @@
 .main-container .slideshow-container .indexs{
     padding-left: 3%;
     padding-right: 3%;
+    position: relative;
+    cursor: pointer;
 }
 .main-container .slideshow-container .indexs .link-div{
-    border: 1px solid green;
-    padding-left: 20%;
+    /* border: 1px solid green; */
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+    transition-duration: 1s;
+}
+.main-container .slideshow-container .indexs:hover .link-div{
+    bottom: 5%;
+}
+.main-container .slideshow-container .indexs .link-div p a{
+    color: white;
+}
+.main-container .slideshow-container .indexs .link-div h1 a{
+    color: white;
 }

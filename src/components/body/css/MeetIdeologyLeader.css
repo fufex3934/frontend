@@ -12,7 +12,7 @@
     font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
-    color: #07173b;
+    color: #329898;
     line-height: 40px;
 }
 
@@ -35,7 +35,7 @@
     padding-left: 50px;
     font-size: large;
     font-weight: 350;
-    color: rgb(23, 100, 187);
+    color: #329898;
 }
 
 .qouet span {
@@ -94,7 +94,8 @@
     left: 90px;
     font-size: larger;
     font-weight: 600;
-    color: #07173b;
+    color: #329898;
+    cursor: pointer;
 }
 
 @media screen and (max-width:414px) {

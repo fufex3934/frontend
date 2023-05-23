@@ -192,7 +192,7 @@ const BottomNavbar = () => {
               <Language/>
             </li>
           <li className="text-gray-600 hover:text-orange-600 cursor-pointer relative left-[10px] font-serif">
-            <button className="bg-transparent hover:bg-orange-700 text-blue-500 text-sm font-semibold hover:text-white p-2 border border-blue-700 
+                <button className="bg-transparent hover:bg-orange-700 text-[#329898] text-sm font-semibold hover:text-white p-3 border border-[#329898] 
             rounded-0 overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
               Report an Issue
             </button>

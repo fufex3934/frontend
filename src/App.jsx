@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BsArrowRightCircle } from 'react-icons/bs'
 import Navs from './components/navbars/navs';
 import Welcome from './components/body/Welcome';
 import Explore from './components/body/Explore';
@@ -26,30 +27,31 @@ const App = () => {
       image: 'images/explore.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
-      icon: '->'
+      icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500'/>
     },
     {
       image: 'images/explore.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
-      icon: '->'
+      icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
     },
     {
       image: 'images/explore.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
-      icon: '->'
+      icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
     },
     {
       image: 'images/explore.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
-      icon: '->'
-    },{
+      icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
+    },
+    {
       image: 'images/explore.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
-      icon: '->'
+      icon: <BsArrowRightCircle className='text-4xl fill-[#329898] hover:fill-red-500' />
     },
     // Rest of the data array items
   ];

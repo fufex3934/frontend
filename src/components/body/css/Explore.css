@@ -21,7 +21,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .main2 .sub-main-2 .image a{
-  background-color: #07173b;
+  background-color:#329898;
 }
 
 .a {
@@ -29,7 +29,7 @@
 }
 
 .main2 .sub-main-2 .image:hover a {
-  background-color: hwb(0 0% 0%);
+  background-color: #ff0000;
 }
 @media screen and (max-width:429px) {
     .main{

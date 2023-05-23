@@ -2,7 +2,7 @@
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 6%;
-    margin-top: -8%;
+    margin-top: -7%;
     display: flex;
     /* flex-wrap: nowrap; */
     justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 .main-news .sub-news h1{
     font-size: xx-large;
-    color: #08143c;
+    color: #329898;
     line-height: 40px;
     font-weight: 500;
 }
@@ -26,9 +26,9 @@
     margin-bottom: 10px;
 }
 .main-news .sub-news button{
-    color: rgb(16, 83, 206);
+    color: #329898;
     font-size: large;
-    border: 1px solid rgb(16, 83, 206);
+    border: 1px solid#329898;
     margin-top: 7%;
     padding: 3% 5%;
 }
