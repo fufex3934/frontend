@@ -120,8 +120,8 @@ const BottomNavbar = () => {
                 </ul>
               </div>
           </li>
-          <li className="hover:text-[#3bb5b5] group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
-            <a className="inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+          <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
+            <a className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
               Politics
               <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
