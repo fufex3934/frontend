@@ -36,7 +36,7 @@ const OnlineService = () => {
   };
 
   return (
-    <div className="bg-[#08143c] h-80 w-screen mt-2 mb-[35vh]">
+    <div className="bg-[#08143c] h-80 w-screen mt-2">
       <div className="px-10 py-16">
         <p className="text-white text-3xl font-bold">
           Explore Online <br />
@@ -56,7 +56,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Parking Permission
-            <span className={`icon-transition ${leftHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderLeftIcon(0)}</span>
+            <span className={`ml-24 icon-transition ${leftHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderLeftIcon(0)}</span>
           </span>
           <span
             className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -64,7 +64,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             File a tax Return
-            <span className={`ml-4 icon-transition ${leftHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderLeftIcon(1)}</span>
+            <span className={`ml-28 icon-transition ${leftHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderLeftIcon(1)}</span>
           </span>
           <span
             className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -72,7 +72,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Order Birth certificate
-            <span className={`-ml-5 icon-transition ${leftHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderLeftIcon(2)}</span>
+            <span className={`ml-[75px] icon-transition ${leftHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderLeftIcon(2)}</span>
           </span>
           <span
             className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -80,7 +80,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Get Building Permission
-            <span className={`-ml-9 icon-transition ${leftHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderLeftIcon(3)}</span>
+            <span className={`ml-[60px] icon-transition ${leftHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderLeftIcon(3)}</span>
           </span>
           <span
             className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -88,7 +88,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Apply for Driving License
-            <span className={`-ml-11 icon-transition ${leftHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderLeftIcon(4)}</span>
+            <span className={`ml-[50px] icon-transition ${leftHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderLeftIcon(4)}</span>
           </span>
           <span
             className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3  hover:cursor-pointer text-sm font-medium`}
@@ -96,7 +96,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Report Pollution
-            <span className={`ml-2 icon-transition ${leftHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderLeftIcon(5)}</span>
+            <span className={`ml-[105px] icon-transition ${leftHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderLeftIcon(5)}</span>
           </span>
         </div>
         {/* right div  */}
@@ -107,7 +107,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Public Service Identity
-            <span className={`icon-transition ${rightHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderRightIcon(0)}</span>
+            <span className={`ml-[120px] icon-transition ${rightHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderRightIcon(0)}</span>
           </span>
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
@@ -115,7 +115,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Apply for City Job
-            <span className={`ml-6 icon-transition ${rightHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderRightIcon(1)}</span>
+            <span className={`ml-[149px] icon-transition ${rightHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderRightIcon(1)}</span>
           </span>
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
@@ -123,7 +123,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Professional Licenses
-            <span className={`ml-1 icon-transition ${rightHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderRightIcon(2)}</span>
+            <span className={`ml-[130px] icon-transition ${rightHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderRightIcon(2)}</span>
           </span>
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
@@ -131,7 +131,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             National Planning Framework
-            <span className={`-ml-12 icon-transition ${rightHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderRightIcon(3)}</span>
+            <span className={`ml-[75px] icon-transition ${rightHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderRightIcon(3)}</span>
           </span>
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3 border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
@@ -139,7 +139,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Apply for Business Licenses
-            <span className={`-ml-9 icon-transition ${rightHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderRightIcon(4)}</span>
+            <span className={`ml-[12vh] icon-transition ${rightHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderRightIcon(4)}</span>
           </span>
           <span
             className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3  hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
@@ -147,7 +147,7 @@ const OnlineService = () => {
             onMouseLeave={handleLeave}
           >
             Online Court Services
-            <span className={`-ml-1 icon-transition ${rightHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderRightIcon(5)}</span>
+            <span className={`ml-32 icon-transition ${rightHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderRightIcon(5)}</span>
           </span>
         </div>
       </div>

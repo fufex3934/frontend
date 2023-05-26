@@ -16,6 +16,7 @@ const UpcomingEvent = () => {
                     <a href="">See All Events &gt;</a>
                 </div>
             </div>
+
             <div className='text-bottom'>
                   <div className='one'>
                     <div className=''>
@@ -36,9 +37,10 @@ const UpcomingEvent = () => {
                           <span className='pl-2'>32 Jogol Street, Harari, MA</span>
                       </div>
                     <div className="mt-8">
-                        <a href="" className='hover:bg-red-500 hover:text-white'style={{border:'1px solid grey',padding:'10px'}}>More Details</a>
+                        <a href="" className='hover:bg-[#329898] hover:text-white'style={{border:'1px solid grey',padding:'10px'}}>More Details</a>
                     </div>
                 </div>
+
                 <div className='two'>
                     <div className=''>
                         <img src="images/explore.jpg" alt="" />
@@ -58,11 +60,12 @@ const UpcomingEvent = () => {
                         <span className='pl-2'>32 Jogol Street, Harari, MA</span>
                     </div>
                     <div className="mt-8">
-                        <a href="" className='hover:bg-red-500 hover:text-white' style={{ border: '1px solid grey', padding: '10px' }}>More Details</a>
+                        <a href="" className='hover:bg-[#329898] hover:text-white' style={{ border: '1px solid grey', padding: '10px' }}>More Details</a>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div className='sub-main-upcoming-event-right'>
             <h1>City Document</h1>
             <div className='unnderline'>
