@@ -16,14 +16,14 @@ const CityCouncil = () => {
   };
 
   return (
-    <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-8'>
-      <p className='text-[#202b5d] ml-[90vh] text-2xl font-extrabold font-serif whitespace-nowrap pt-24'>
+    <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-8 '>
+      <p className='text-[#202b5d] mx-4 md:ml-[90vh] text-2xl font-extrabold font-serif whitespace-nowrap pt-8'>
         Meet City Council
       </p>
-      <p className='ml-[67vh] text-slate-400'>
+      <p className='ml-5 md:ml-[67vh] text-slate-400 mt-3'>
         The city council has the real superpowers as administration to lead the country.
       </p>
-      <div className='grid grid-cols-4 gap-8 mx-8 mt-8'>
+      <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mx-8 mt-8'>
         <div
           className='shadow relative'
           onMouseEnter={() => handleMouseEnter(0)}

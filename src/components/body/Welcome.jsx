@@ -16,7 +16,7 @@ const Welcome = () => {
     {
       image: '/c1.jpg',
       title: 'We build basis for Ethiopian Development',
-      detail: 'Harari is the city of Peace in Ethiopia.',
+      detail: 'Harari is the attractive city for tourism in Ethiopia.',
     },
     {
       image: '/c2.jpg',
@@ -115,10 +115,10 @@ const Welcome = () => {
         style={{ animationDelay: `${index * 0.2}s` }} // Add delay for each item
       />
       <div className="absolute top-1/4 left-0 p-8 text-white">
-        <h2 className="sm:text-2xl md:text-3xl lg:text-4xl decoration-8 font-bold transition-all duration-300">
+        <h2 className="text-3xl md:text-5xl  decoration-8 font-bold transition-all duration-300">
           {item.title}
         </h2>
-        <p className="mt-2 ml-2">{item.detail}</p>
+        <p className="mt-2 ml-2 text-xl">{item.detail}</p>
         <button className="mt-8 px-6 py-2 text-white bg-[#3bb5b5] hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
           Discover More
         </button>
@@ -187,7 +187,7 @@ const Welcome = () => {
       </g>
     </svg>
   </div>
-  <span className="text-sm font-medium text-slate-700
+  <span className="text-sm  text-slate-700
    hover:text-[#3bb5b5] hover:cursor-pointer
     hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
     Your Government
