@@ -52,30 +52,31 @@ const HararData = () => {
   }, [counters]);
 
   return (
-    <div id="harar-data" className="bg-[#3bb5b5] h-[60vh] w-screen">
-      <div className="grid grid-cols-4 justify-between py-16">
-        <div className="flex flex-col items-center">
-          <RiRunLine className="text-[#a5ff00] w-12 h-12" />
-          <span className="text-white text-3xl font-bold mt-2 my-4 font-mono">{counters.peopleCount}K</span>
-          <span className="text-white/95 text-sm">Total People lived<br/>in our city</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <TbDirections className="text-[#a5ff00] w-12 h-12" />
-          <span className="text-white text-3xl font-bold mt-2 my-4 font-mono">{counters.regionSize.toFixed(1)}K</span>
-          <span className="text-white/95 text-sm">Square kilometers<br/>region covers</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <RiPlantLine className="text-[#a5ff00] w-12 h-12" />
-          <span className="text-white text-3xl font-bold mt-2 my-4 font-mono">{counters.gardenLand}%</span>
-          <span className="text-white/95 text-sm">Private & domestic<br/>garden land</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <GiArchBridge className="text-[#a5ff00] w-12 h-12" />
-          <span className="text-white text-3xl font-bold mt-2 my-4 font-mono">{counters.homeOwnership.toFixed(2)}th</span>
-          <span className="text-white/95 text-sm">Average Costs of Home<br/>Ownership</span>
-        </div>
-      </div>
+    <div id="harar-data" className="bg-[#3bb5b5] h-auto w-screen flex flex-col items-center py-16">
+  <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
+    <div className="flex flex-col items-center">
+      <RiRunLine className="text-[#a5ff00] w-12 h-12" />
+      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.peopleCount}K</span>
+      <span className="text-white/95 text-sm">Total People lived in our city</span>
     </div>
+    <div className="flex flex-col items-center">
+      <TbDirections className="text-[#a5ff00] w-12 h-12" />
+      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.regionSize.toFixed(1)}K</span>
+      <span className="text-white/95 text-sm">Square kilometers region covers</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <RiPlantLine className="text-[#a5ff00] w-12 h-12" />
+      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.gardenLand}%</span>
+      <span className="text-white/95 text-sm">Private & domestic garden land</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <GiArchBridge className="text-[#a5ff00] w-12 h-12" />
+      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.homeOwnership.toFixed(2)}th</span>
+      <span className="text-white/95 text-sm">Average Costs of Home Ownership</span>
+    </div>
+  </div>
+</div>
+
   );
 };
 
