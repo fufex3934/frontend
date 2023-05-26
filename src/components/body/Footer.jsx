@@ -6,46 +6,42 @@ import {FaTwitter,FaInstagram,FaYoutube,FaFacebookSquare} from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className=''>
-      <div className='bg-[#132244] h-24 w-screen flex '>
-           <div className='flex py-8 px-14'>
+      <div className='bg-[#132244] h-24 w-screen flex'>
+          <div className='flex py-8 px-14'>
             <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500 whitespace-nowrap'>About Us</span>
             <span className='text-slate-300 text-sm mr-3 cursor-pointer hover:text-red-500'>Services</span>
             <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Events</span>
             <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>News</span>
             <span className='text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500'>Contact</span>
+          </div>
 
-           </div>
-           <div className='ml-72 mt-10  flex'>
-             <p className='text-slate-300 text-sm'>Connect With Us</p>
-                    <span className='ml-6 -mt-1'>
-                     <FaFacebookSquare className='rounded-full bg-white
-                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
-                      </span>
-                      <span className='ml-1 -mt-1'>
-                     <FaTwitter className='rounded-full bg-white
-                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
-                      </span>
-                      <span className='ml-1 -mt-1'>
-                     <FaInstagram className='rounded-full bg-white
-                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
-                      </span>
-                      <span className='ml-1 -mt-1'>
-                     <FaYoutube className='rounded-full bg-white
-                      p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
-                      </span>
-                      
-           </div>
+          <div className='ml-[90vh] mt-10  flex'>
+            <p className='text-slate-300 text-sm'>Connect With Us</p>
+            <span className='ml-6 -mt-1 mr-2'>
+              <FaFacebookSquare className='rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+            </span>
+            <span className='ml-1 -mt-1 mr-2'>
+              <FaTwitter className='rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+            </span>
+            <span className='ml-1 -mt-1 mr-2'>
+              <FaInstagram className='rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+            </span>
+            <span className='ml-1 -mt-1'>
+              <FaYoutube className='rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white' />
+            </span>  
+          </div>
       </div>
-      <hr className='border-b border-gray-700 h-px'/>
-      <footer className="bg-[#132244]  h-96 mt-0">
+
+      <hr className='border-b border-gray-700 h-px '/>
+
+      <footer className="bg-[#132244]  h-96 mt-0 ">
+      <div className='main-footer'>
+
+      </div>
       <div className="container mx-auto py-8 px-4 ">
         <div className="flex pt-10 ">
           <a href="#">
-            <img
-              className="h-12 md:h-12 w-12 md:w-12 rounded-full"
-              src="./harar.png"
-              alt="Logo"
-            />
+            <img className="h-12 md:h-12 w-12 md:w-12 rounded-full" src="./harar.png" alt="Logo" />
           </a>
           <a href="#">
             <h1 className="text-[#dfe1e6] md:ml-2 font-bold whitespace-wrap md:text-sm">
@@ -53,10 +49,7 @@ const Footer = () => {
             </h1>
           </a>
         </div>
-        <p className="text-sm text-[#8c95a4] mt-2">
-          95 FF3, App Street Avenue<br />
-          NSW 96209, Canada
-        </p>
+        <p className="text-sm text-[#8c95a4] ms-8 mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
         <div className="flex mt-1">
           <BiAlarm className="text-[#8c95a4] mt-1 mr-4" />
           <span className="text-white">Opening Hours:</span>
@@ -77,7 +70,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="container mx-auto -mt-[51vh] ml-[75vh]">
+
+      <div className="container mx-auto -mt-[40vh] ml-[75vh]">
         <p className="text-white text-lg mt-8 font-bold">Service Request</p>
         <div className="py-3">
           <span className="hover:text-red-600 text-sm text-[#8c95a4] py-1 cursor-pointer flex items-center">
@@ -100,7 +94,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="container -mt-[51vh] ml-[120vh]">
+
+      <div className="container -mt-[33vh] ml-[120vh]">
         <p className="text-white text-lg mt-8 font-bold">Useful Links</p>
         <div className="py-3">
           <span className="hover:text-red-600 text-sm text-[#8c95a4] py-1 cursor-pointer flex items-center">
@@ -123,7 +118,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="container mx-auto -mt-[51vh] ml-[155vh]">
+
+      <div className="container mx-auto -mt-[33vh] ml-[155vh]">
         <p className="text-white text-lg mt-8 font-bold">City News & Updates</p>
         <p className="text-sm text-[#8c95a4] py-3 pr-[10vh] ">
           The latest Harar Government <br/>Communication Affairs Office <br/>news, articles,
@@ -145,11 +141,14 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className='bg-[#06163a]  h-20  w-screen mt-[15vh]'>
-      <p className="text-center pt-8 text-[#8c95a4] italic">
-        © {new Date().getFullYear()} Harar Government 
-      Communication Affairs Office. All rights reserved.</p>
+
+      <div className='bg-[#06163a]  h-20  w-screen mt-[10vh]'>
+        <p className="text-center pt-8 text-[#8c95a4] italic">
+          © {new Date().getFullYear()} Harar Government 
+            Communication Affairs Office. All rights reserved.
+        </p>
       </div>
+
     </footer>
     </div>
   );

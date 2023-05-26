@@ -36,8 +36,8 @@ const MeetIdeologyLeader = () => {
             </a>
         </div>
         <div className='main-image'>
-            <img src="images/mayor.jpeg" alt="" className="person" data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear" />
-            <img src="images/hararicity.jpg" alt="" className='city' data-aos-easing="linear" data-aos-duration="1500" data-aos="zoom-in-left" />   
+            <img src="images/mayor.jpeg" alt="" className="person" data-aos-duration="2000" data-aos="fade-up" data-aos-easing="linear" />
+            <img src="images/hararicity.jpg" alt="" className='city' data-aos-easing="linear" data-aos-duration="2500" data-aos="zoom-in-left" />   
         </div>
     </div>
     </>

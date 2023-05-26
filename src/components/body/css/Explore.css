@@ -91,6 +91,7 @@
   }
   .main .sub-main .sub-sub-main h3{
     white-space: nowrap;
+    font-size: medium;
   }
   .main .sub-main .sub-sub-main1 button{
     visibility: hidden;
@@ -104,6 +105,6 @@
   .main2 .sub-main-2 div a{
     right: 70px;
     left: 70px;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
