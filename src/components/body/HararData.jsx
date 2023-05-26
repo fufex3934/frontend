@@ -31,7 +31,7 @@ const HararData = () => {
     const handleScroll = () => {
       const container = document.getElementById('harar-data');
       const rect = container.getBoundingClientRect();
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (rect.top >= 0 && rect.top <= window.innerHeight && !counters.peopleCount) {
         const interval = setInterval(() => {
