@@ -17,10 +17,10 @@ const CityCouncil = () => {
 
   return (
     <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-8 '>
-      <p className='text-[#202b5d] mx-4 md:ml-[90vh] text-2xl font-extrabold font-serif whitespace-nowrap pt-8'>
+      <p className='text-[#202b5d] mx-4  md:ml-[30vh] lg:ml-[75vh] text-2xl md:text-3xl lg:text-4xl font-extrabold font-serif whitespace-nowrap pt-8 md:pt-24'>
         Meet City Council
       </p>
-      <p className='ml-5 md:ml-[67vh] text-slate-400 mt-3'>
+      <p className='ml-7 md:ml-[18vh] lg:ml-[50vh] text-slate-400 mt-3'>
         The city council has the real superpowers as administration to lead the country.
       </p>
       <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mx-8 mt-8'>
