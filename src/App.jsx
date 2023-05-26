@@ -64,7 +64,7 @@ const App = () => {
         </div>
       ) : (
         <div>
-          <Navs />
+          <Navs/>
           <Welcome />
           <Explore />
           <MeetIdeologyLeader />
