@@ -26,7 +26,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                          <a href="" className='text-xl font-semibold'>The Strategically Build Your<br />Heritage</a>
+                        <a href="" className='text-xl text-slate-600 font-semibold'>The Strategically Build Your<br />Business</a>
                     </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <MdOutlineAlarm className='relative top-1' />
@@ -49,7 +49,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl font-semibold'>The Strategically Build Your<br />Community</a>
+                        <a href="" className='text-xl text-slate-600 font-semibold'>The Strategically Build Your<br />Business</a>
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <MdOutlineAlarm className='relative top-1'/>
