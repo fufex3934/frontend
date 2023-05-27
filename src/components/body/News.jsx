@@ -22,7 +22,7 @@ const News = () => {
                     <a href="" className='ms-1 hover:text-red-600 op'>Economic Culture</a><br />
                     <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
                 </p>
-                <a href="" className='text-2xl hover:text-red-600 font-serif'>Metro Road Design Plan <br />2025</a><br />
+                <a href="" className='text-2xl hover:text-red-600 font-serif a'>Metro Road Design Plan <br />2025</a><br />
                 <a href="" className='text-md flex font-light mt-6 continue'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>
@@ -34,11 +34,11 @@ const News = () => {
             </a>
             <div className="p-6">
                   <p className=''>In
-                      <a href="" className='ms-1 hover:text-red-600'>New Ustralian</a>,
-                      <a href="" className='ms-1 hover:text-red-600'>Economic Culture</a><br />
+                      <a href="" className='ms-1 hover:text-red-600 op'>New Ustralian</a>,
+                      <a href="" className='ms-1 hover:text-red-600 op'>Economic Culture</a><br />
                       <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
                   </p>
-                  <a href="" className='text-2xl hover:text-red-600 font-serif'>Metro Road Design Plan <br />2025</a><br />
+                  <a href="" className='text-2xl hover:text-red-600 font-serif a'>Metro Road Design Plan <br />2025</a><br />
                   <a href="" className='text-md flex font-light mt-6 continue'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>
@@ -50,11 +50,11 @@ const News = () => {
             </a>
             <div className="p-6">
                 <p className=''>In
-                    <a href="" className='ms-1 hover:text-red-600'>New Ustralian</a>,
-                    <a href="" className='ms-1 hover:text-red-600'>Economic Culture</a><br />
+                    <a href="" className='ms-1 hover:text-red-600 op'>New Ustralian</a>,
+                    <a href="" className='ms-1 hover:text-red-600 op'>Economic Culture</a><br />
                     <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
                 </p>
-                <a href="" className='text-2xl hover:text-red-600 font-serif'>Metro Road Design Plan <br />2025</a><br />
+                <a href="" className='text-2xl hover:text-red-600 font-serif a'>Metro Road Design Plan <br />2025</a><br />
                 <a href="" className='text-md flex font-light mt-6 continue'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
             </div>
         </div>

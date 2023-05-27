@@ -12,6 +12,8 @@
 }
 .main2 .sub-main-2 .image {
   cursor: pointer;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .main2 .sub-main-2 .image:hover{
   transform: translate(5px, -10px);

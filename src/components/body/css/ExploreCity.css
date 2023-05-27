@@ -4,7 +4,6 @@
     padding-top: 2%;
     padding-bottom: 5%;
     margin-top: 10%;
-    position: relative;
 }
 
 .main-container .heading {
@@ -68,7 +67,9 @@
     .main-container {
         box-shadow: red 0px 5px 15px;
         padding-bottom: 10%;
-        margin-top: 30%
+        margin-top: 30%;
+        position: relative;
+        top: -50%;
     }
 
     .main-container .heading {
