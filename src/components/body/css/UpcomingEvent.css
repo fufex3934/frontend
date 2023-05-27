@@ -99,3 +99,94 @@
 .main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line a:hover{
     color: red;
 }
+@media screen and (max-width:415px) {
+    .main-upcoming-event{
+        flex-direction: column;
+        margin-left: 0;
+        columns:1;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left{
+            width: 100%;
+            display: block;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-top{
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-top .float-left{
+        font-size: 25px;
+        margin-right: 70px;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right a{
+        font-size: 15px;
+        top: 20%;
+        font-weight: bold;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-bottom .one{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-bottom .two{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right h1 {
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right .unnderline {
+            margin-top: 5%;
+            box-shadow: #08143c 0px 5px 15px;
+            margin-right: 0px;
+            margin-left: 0%;
+            padding: 8%;
+            background-color: white;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .main-upcoming-event{
+        margin-left: 0%;
+       flex-direction: column;
+        columns: 1;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left{
+        width: 100%;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-top{
+        margin-bottom: 15%;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-left .text-top .float-right{
+        margin-top: 4%;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right{
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right h1 {
+        font-weight: 600;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right .unnderline{
+        margin-right: 60px;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right .unnderline .div-under-line a {
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .main-upcoming-event .sub-main-upcoming-event-right .unnderline div .more{
+        font-size: larger;
+        font-weight: bold;
+        margin-left: 50%;
+    }
+}

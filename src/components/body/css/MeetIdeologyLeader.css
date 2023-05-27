@@ -98,7 +98,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:415px) {
     .main {
         margin-left: 5px;
         margin-right: 5px;
@@ -111,16 +111,12 @@
         padding-left: -100px;
     }
 
-    .main .main-text h1 {
-        font-size: large;
-        white-space: wrap;
-        line-height: 40px;
-        margin-left: 10px;
+    .main .main-text .h1{
+        font-size: 25px;
     }
 
-    .main .main-text .p1 {
-        margin-top: 20px;
-        margin-bottom: 10px;
+    .main .main-text .p1{
+        font-size: 17px;
     }
 
     .qouet {
@@ -133,8 +129,7 @@
     }
 
     .main .main-image {
-        top: -60px;
-        left: 0%;
+       margin-top: -40%;
     }
 
     .main-image .person {
@@ -147,32 +142,33 @@
         margin-right: 20%;
     }
 }
- @media screen and (min-width:320px) {
-    .main .main-text h1 {
-        font-size: 25px;
-    }
-} 
-@media screen and (max-width:768px) {
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
     .main{
-        flex-direction: column;
-        margin-top: 50px;
+        /* box-shadow: #329898 0px 5px 15px; */
+        padding: 5%;
+        padding-bottom: 0%;
+        margin-top: -11%;
     }
-    .main .main-image{
-        margin-top: -100px;
-    }
-    .main .main-text h1{
+    .main .main-text .h1 {
         font-size: 30px;
     }
     .main .main-text .p1{
-        font-size: 25px;
-    }
-    .main .main-text .p2{
-        font-size: 25px;
-    }
-    .qouet{
         font-size: 20px;
     }
-    .span{
-        font-size: 25px;
+    .main .main-text .p2{
+        font-size: 20px;
+    }
+    .qouet{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    .main .main-image{
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+    .main .main-image .city{
+        top: 26%;
+        right: -7%;
     }
 }

@@ -1,42 +1,84 @@
-.main-container{
+.main-container {
     /* box-shadow: grey 0px 5px 15px; */
     width: 100%;
     padding-top: 2%;
     padding-bottom: 5%;
     margin-top: 10%;
+    position: relative;
 }
-.main-container .heading{
+
+.main-container .heading {
     /* box-shadow: rgb(202, 48, 48) 0px 5px 15px; */
     margin-bottom: 2%;
 
 }
-.main-container .heading h1{
+
+.main-container .heading h1 {
     font-size: 40px;
     color: #329898;
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     left: 35%;
-    
+
 }
-.main-container .slideshow-container .indexs{
+
+.main-container .slideshow-container .indexs {
     padding-left: 3%;
     padding-right: 3%;
     position: relative;
     cursor: pointer;
 }
-.main-container .slideshow-container .indexs .link-div{
+
+.main-container .slideshow-container .indexs .link-div {
     /* border: 1px solid green; */
     position: absolute;
     bottom: -20%;
     left: 10%;
     transition-duration: 1s;
 }
-.main-container .slideshow-container .indexs:hover .link-div{
+
+.main-container .slideshow-container .indexs:hover .link-div {
     bottom: 5%;
 }
-.main-container .slideshow-container .indexs .link-div p a{
+
+.main-container .slideshow-container .indexs .link-div p a {
     color: white;
 }
-.main-container .slideshow-container .indexs .link-div h1 a{
+
+.main-container .slideshow-container .indexs .link-div h1 a {
     color: white;
+}
+
+@media screen and (max-width:415px) {
+    .main-container {
+        margin-top: 0%;
+    }
+
+    .main-container .heading h1 {
+        left: 3%;
+        font-size: 27px;
+    }
+
+    .main-container .slideshow-container .indexs {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-container {
+        box-shadow: red 0px 5px 15px;
+        padding-bottom: 10%;
+        margin-top: 30%
+    }
+
+    .main-container .heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .main-container .heading h1 {
+        left: 0%;
+    }
+
 }

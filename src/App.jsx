@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     window.onload = () => {
-      setIsLoading(true);
+      setIsLoading(false);
       window.setInterval(1000)
     };
   }, []);
