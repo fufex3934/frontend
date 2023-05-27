@@ -13,7 +13,7 @@ const News = () => {
 
         <div className='news-show'>
             <a href="">
-                <img src="images/explore.jpg" alt="" />
+                <img src="images/new1.jpg" alt="" />
                 <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2020</span>
             </a>
             <div className="p-6">
@@ -29,7 +29,7 @@ const News = () => {
 
         <div className='news-show'>
             <a href="">
-                <img src="images/explore.jpg" alt="" />
+                <img src="images/new2.jpg" alt="" />
                 <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2020</span>
             </a>
             <div className="p-6">
@@ -45,7 +45,7 @@ const News = () => {
 
         <div className='news-show'>
             <a href="">
-                <img src="images/explore.jpg" alt="" />
+                <img  src="images/new3.jpg" alt="" />
                 <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2020</span>
             </a>
             <div className="p-6">

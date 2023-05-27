@@ -20,7 +20,7 @@ const UpcomingEvent = () => {
             <div className='text-bottom'>
                   <div className='one'>
                     <div className=''>
-                        <img src="images/explore.jpg" alt="" />
+                        <img src="images/up1.jpg" alt="" />
                     </div>
                     <div className='pt-4'>
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
@@ -43,7 +43,7 @@ const UpcomingEvent = () => {
 
                 <div className='two'>
                     <div className=''>
-                        <img src="images/explore.jpg" alt="" />
+                        <img src="images/up2.jpg" alt="" />
                     </div>
                     <div className='pt-4'>
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
