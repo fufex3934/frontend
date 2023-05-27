@@ -6,7 +6,7 @@ import './css/UpcomingEvent.css';
 
 const UpcomingEvent = () => {
   return (
-    <div className='main-upcoming-event '>
+    <div className='main-upcoming-event'>
         <div className='sub-main-upcoming-event-left'>
             <div className='text-top'>
                 <div className='float-left'>
@@ -89,7 +89,7 @@ const UpcomingEvent = () => {
                   <span>July 24, 2020</span>
                 </div>
                 <div className='pt-4 ms-[70px] mb-5'>
-                    <a href="" className='text-blue-600/100 hover:text-red-600'>More Documents &gt;</a>
+                    <a href="" className='text-blue-600/100 hover:text-red-600 more'>More Documents &gt;</a>
                 </div>
             </div>
         </div>
