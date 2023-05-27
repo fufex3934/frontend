@@ -36,7 +36,7 @@ const OnlineService = () => {
   };
 
   return (
-    <div className="bg-[#08143c]   md:h-[50vh] lg:h-[70vh] w-full mt-2 mb-[50vh] drop-shadow-2xl">
+    <div className="bg-[#08143c]   md:h-[50vh] lg:h-[70vh] w-full mt-2 mb-[35vh] drop-shadow-2xl">
               <div className="px-6 sm:px-10 py-8 sm:py-16">
                 <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
                   Explore Online <br />
