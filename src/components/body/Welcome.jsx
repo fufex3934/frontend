@@ -4,35 +4,48 @@ const Welcome = () => {
   const timerRef = useRef(null);
   const [carouselData, setCarouselData] = useState([
     {
-      image: '/city.jpg',
+      image: '/images/car1.jpg',
       title: 'Fastest Growing City in Ethiopia Harar',
       detail: `Every Year 2 million People from the worldwide visiting here.`,
     },
     {
-      image: '/images/hararicity.jpg',
+      image: '/images/car2.jpg',
       title: 'Welcome to the Harar City of Peace',
       detail: 'Harari is the city of Peace in Ethiopia.',
     },
     {
-      image: '/c1.jpg',
+      image: '/images/car3.jpg',
       title: 'We build basis for Ethiopian Development',
       detail: 'Harari is the attractive city for tourism in Ethiopia.',
     },
     {
-      image: '/c2.jpg',
+      image: '/images/car4.jpg',
       title: 'Harari is The best Place to Live in Ethiopia',
       detail: 'Harari is the city of Peace in Ethiopia.',
     },
     {
-      image: '/c3.jpg',
+      image: '/images/car5.jpg',
       title: 'Welcome to Harar City of Nations and Nationalities of Ethiopia',
       detail: 'Harari is the city of Peace in Ethiopia.',
     },
     {
-      image: '/c5.jpg',
+      image: '/images/car6.jpg',
       title: 'Welcome the Harar City of Peace',
       detail: 'Harari is the city of Peace in Ethiopia.',
     },
+    {
+      image: '/images/hararicity.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    
+    {
+      image: '/images/car10.jpg',
+      title: 'Welcome the Harar City of Peace',
+      detail: 'Harari is the city of Peace in Ethiopia.',
+    },
+    
+    
     // Add more carousel data objects as needed
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);

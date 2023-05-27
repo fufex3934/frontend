@@ -24,31 +24,43 @@ const App = () => {
 
   const data = [
     {
-      image: 'images/explore.jpg',
+      image: 'images/c12.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
       icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500'/>
     },
     {
-      image: 'images/explore.jpg',
+      image: 'images/car1.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
       icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
     },
     {
-      image: 'images/explore.jpg',
+      image: 'images/car10.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
       icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
     },
     {
-      image: 'images/explore.jpg',
+      image: 'images/car6.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
       icon: <BsArrowRightCircle className='text-4xl  fill-[#329898] hover:fill-red-500' />
     },
     {
-      image: 'images/explore.jpg',
+      image: 'images/car7.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: <BsArrowRightCircle className='text-4xl fill-[#329898] hover:fill-red-500' />
+    },
+    {
+      image: 'images/car8.jpg',
+      text1: 'Hello, world!',
+      text2: 'OPs',
+      icon: <BsArrowRightCircle className='text-4xl fill-[#329898] hover:fill-red-500' />
+    },
+    {
+      image: 'images/car13.jpg',
       text1: 'Hello, world!',
       text2: 'OPs',
       icon: <BsArrowRightCircle className='text-4xl fill-[#329898] hover:fill-red-500' />

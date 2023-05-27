@@ -31,7 +31,7 @@ const CityCouncil = () => {
         >
           <img
             className='cursor-pointer'
-            src='/images/8.png'
+            src='/images/lema.jpg'
             alt='Administrator 1'
           />
           {hoveredIndexes.includes(0) && (
@@ -75,7 +75,7 @@ const CityCouncil = () => {
         >
           <img
             className='cursor-pointer'
-            src='/images/7.png'
+            src='/images/adanech.jpg'
             alt='Administrator 2'
           />
           {hoveredIndexes.includes(1) && (
@@ -119,7 +119,7 @@ const CityCouncil = () => {
         >
           <img
             className='cursor-pointer'
-            src='/images/6.png'
+            src='/images/abiy.jpg'
             alt='Administrator 3'
           />
           {hoveredIndexes.includes(2) && (
@@ -163,7 +163,7 @@ const CityCouncil = () => {
         >
           <img
             className='cursor-pointer'
-            src='/images/single-1.jpg'
+            src='/images/xayiba.jpg'
             alt='Administrator 4'
           />
           {hoveredIndexes.includes(3) && (
