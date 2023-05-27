@@ -3,7 +3,7 @@ import { HiOutlinePhone } from 'react-icons/hi';
 import { FiMail } from 'react-icons/fi';
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
 import { FaTwitter, FaInstagram, FaYoutube, FaFacebookSquare } from 'react-icons/fa';
-
+import './css/Footer.css';
 const Footer = () => {
   return (
     <div className="bg-[#132244]">
@@ -145,7 +145,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="bg-[#06163a] h-20 w-full mt-10">
+          <div className="bg-[#06163a] h-20 w-full absolute mt-[64px] left-0 ">
             <p className="text-center pt-8 text-slate-500 italic">
               © {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
             </p>

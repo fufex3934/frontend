@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+    .mobile-margin {
+      margin: 20px; /* Adjust the margin value as per your requirement */
+    }
+  }
