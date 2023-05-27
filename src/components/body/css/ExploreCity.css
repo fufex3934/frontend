@@ -81,5 +81,9 @@
     .main-container .heading h1 {
         left: 0%;
     }
-
+}
+@media screen and (min-width:1279px){
+    .main-container .slideshow-container .indexs .link-div{
+        bottom: -25%;
+    }
 }

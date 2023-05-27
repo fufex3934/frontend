@@ -14,7 +14,7 @@ import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     window.onload = () => {
