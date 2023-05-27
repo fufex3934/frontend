@@ -25,6 +25,9 @@
 .main2 .sub-main-2 .image a{
   background-color:#329898;
   font-size: large;
+  position: relative;
+  top: -5%;
+  left: -10%;
 }
 .main2 .sub-main-2 .image:hover a {
   background-color: #ff0000;

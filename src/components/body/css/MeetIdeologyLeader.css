@@ -62,13 +62,15 @@
 
 .main-image .person {
     z-index: 10;
+    width: 80%;
 }
 
 .main .main-image .city {
     position: absolute;
-    top: 40%;
-    right: -20%;
+    top: 45%;
+    right: -5%;
     z-index: -10;
+    width: 80%;
     border-bottom-right-radius: 50px;
 }
 
