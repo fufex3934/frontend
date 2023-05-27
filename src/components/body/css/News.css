@@ -98,3 +98,12 @@
         color: #329898;
     }
 }
+@media screen and (min-width:1279px){
+    .main-news .news-show div .a{
+        white-space: nowrap;
+
+    }
+    .main-news .news-show div p .op{
+        white-space: nowrap;
+    }
+}
