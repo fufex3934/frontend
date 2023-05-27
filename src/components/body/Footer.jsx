@@ -144,7 +144,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div className="bg-[#06163a] h-20 w-full absolute mt-[64px] left-0 ">
             <p className="text-center pt-8 text-slate-500 italic">
               © {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.

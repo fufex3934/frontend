@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Language from './Language';
 import '../../styles/navbar.css';
-
 const BottomNavbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +69,7 @@ const BottomNavbar = () => {
               </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><a className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</a></li>
+                    <li className="py-1"><a   className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</a></li>
                     <li className="py-1"><a className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</a></li>
                     <li className="py-1"><a className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">History</a></li>
                 </ul>
