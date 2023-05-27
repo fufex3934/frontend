@@ -199,10 +199,10 @@ const BottomNavbar = () => {
           </div>
 
           {isOpen && (
-            <div className="fixed top-0 left-0  w-80% h-screen bg-[#1e293b] text-white">
+            <div className="fixed top-0 left-0 animate-slide-in  w-80% h-screen bg-[#1e293b] text-white">
               <div className="flex justify-end p-4">
                 <button
-                  className="text-white"
+                  className="text-white "
                   onClick={() => setIsOpen(false)}
                 >
                   <svg
