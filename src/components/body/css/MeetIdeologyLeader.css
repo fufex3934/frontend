@@ -5,9 +5,13 @@
     margin-left: 150px;
     gap: 100px;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 200px;
 }
-
+@media (min-width: 767px) {
+    .medium-margin {
+      margin-bottom: 60px; /* Adjust the margin value as per your requirement */
+    }
+  }
 .main .main-text .h1 {
     font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
