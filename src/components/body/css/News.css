@@ -33,8 +33,8 @@
     padding: 3% 5%;
 }
 .main-news .sub-news button:hover{
-    color: rgb(206, 16, 16);
-    border: 1px solid rgb(206, 35, 16);
+    color: white;
+    background-color: #329898;
 }
 .main-news .news-show{
     /* box-shadow: #08143c 0px 5px 15px; */
