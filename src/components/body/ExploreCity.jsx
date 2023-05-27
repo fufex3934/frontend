@@ -10,8 +10,8 @@ const ExploreCity = (props) => {
     infinite: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 1500,
-    speed: 1500,
+    autoplaySpeed: 2000,
+    speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -45,7 +45,7 @@ const ExploreCity = (props) => {
     
     return (
       <div className='indexs' key={index}>
-          <img className='h-44 w-72' src={item.image} alt="" />
+          <img className='h-44 w-full ' src={item.image} alt="" />
           <div className='link-div'>
             <p className='pb-3'><a href="">{item.text1}</a></p>
             <h1 className='pb-3'><a href="">{item.text2}</a></h1>
