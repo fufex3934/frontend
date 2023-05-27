@@ -27,17 +27,17 @@ const Explore = () => {
             <div className="main2">
                 <div className="sub-main-2">
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                        <img className='' src="images/dept.jpg" alt="" />
-                        <a href="" className='text-md md:text-lg lg:text-sm absolute -bottom-10 text-white p-2 hover:shadow-lg left-20'>Service Departments</a>
+                        <img  src="images/dept.jpg" alt="" />
+                        <a href="" className='text-md md:text-sm lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-7 whitespace-nowrap'>Service Departments</a>
                     </div>
                     <div className='text-center image relative' data-aos="fade-up"
                         data-aos-duration="1500">
                         <img src="images/visitor.jpg" alt="" />
-                        <a href="" className='text-md md:text-lg lg:text-sm absolute -bottom-10  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</a>
+                        <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</a>
                     </div>
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                         <img src="images/admin.jpg" alt="" />
-                        <a href="" className='text-md md:text-lg lg:text-sm absolute -bottom-10 text-white p-2 hover:shadow-lg left-20'>Administrations</a>
+                        <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>Administrations</a>
                     </div>
                 </div>
             </div>
