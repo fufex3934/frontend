@@ -8,7 +8,7 @@ const MeetIdeologyLeader = () => {
     },[])
   return (
     <>
-    <div className='main '>
+    <div className='main medium-margin'>
         <div className='main-text'>
             <h1 className='h1'data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
                 Meet Ideological leader for youth generation

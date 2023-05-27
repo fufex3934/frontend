@@ -17,7 +17,7 @@ const CityCouncil = () => {
 
   return (
     <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-8 '>
-      <p className='text-[#202b5d] mx-4  md:ml-[30vh] lg:ml-[75vh] text-2xl md:text-3xl lg:text-4xl font-extrabold font-serif whitespace-nowrap pt-8 md:pt-24'>
+      <p className='text-[#202b5d] mx-4  md:ml-[30vh] lg:ml-[75vh] text-2xl md:text-3xl lg:text-4xl font-extrabold font-serif whitespace-nowrap pt-8 md:pt-20'>
         Meet City Council
       </p>
       <p className='ml-7 md:ml-[18vh] lg:ml-[50vh] text-slate-400 mt-3'>
