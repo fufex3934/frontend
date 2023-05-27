@@ -45,7 +45,7 @@ const ExploreCity = (props) => {
     
     return (
       <div className='indexs' key={index}>
-          <img src={item.image} alt="" />
+          <img className='h-44 w-72' src={item.image} alt="" />
           <div className='link-div'>
             <p className='pb-3'><a href="">{item.text1}</a></p>
             <h1 className='pb-3'><a href="">{item.text2}</a></h1>
