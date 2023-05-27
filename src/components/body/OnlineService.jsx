@@ -100,7 +100,7 @@ const OnlineService = () => {
               </span>
       </div>
       {/* Right div */}
-      <div className="bg-[#3bb5b5] sm:h-80 md:h-[35vh] lg:h-[70vh] sm:w-[60vh] md:w-[60vh] py-6 sm:py-10 px-4  mb-12 md:mb-0 md:mx-0 md:mr-8 mobile-margin">
+      <div className="bg-[#065f46] sm:h-80 md:h-[35vh] lg:h-[70vh] sm:w-[60vh] md:w-[60vh] py-6 sm:py-10 px-4  mb-12 md:mb-0 md:mx-0 md:mr-8 mobile-margin">
                    <span 
                         className={`flex text-white whitespace-nowrap hover:text-slate-700 hover:shadow-sm py-3  border-b-[1px] hover:bg-white px-3 border-white/40 hover:cursor-pointer text-sm font-medium`}
                         onMouseEnter={() => handleRightHover(0)}
