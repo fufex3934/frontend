@@ -47,7 +47,7 @@ const OnlineService = () => {
                   services to people who need help
                 </p>
               </div>
-    <div className="flex flex-col md:flex-row lg:ml-auto relative lg:-top-48 lg:w-[120vh] md:mr-20 ">
+    <div className="flex flex-col md:flex-row lg:ml-auto relative lg:-top-48 lg:w-[120vh] md:mr-2 lg:mr-8 ">
       {/* Left div */}
      <div className="bg-white sm:h-80 md:h-[35vh] lg:h-[70vh] sm:w-[60vh] md:w-[60vh] py-6 px-4 sm:py-10   mb-4 md:mb-0 md:mx-0  md:ml-8 mobile-margin ">
             <span
@@ -56,7 +56,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 Parking Permission
-                <span className={`ml-1 icon-transition ${leftHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderLeftIcon(0)}</span>
+                <span className={`ml-7 md:ml-1 icon-transition ${leftHoveredIndex === 0 ? 'animate-icon' : ''}`}>{renderLeftIcon(0)}</span>
               </span>
               <span
                 className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -64,7 +64,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 File a tax Return
-                <span className={`ml-5 icon-transition ${leftHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderLeftIcon(1)}</span>
+                <span className={`ml-11 md:ml-5 icon-transition ${leftHoveredIndex === 1 ? 'animate-icon' : ''}`}>{renderLeftIcon(1)}</span>
               </span>
               <span
                 className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -72,7 +72,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 Order Birth certificate
-                <span className={`-ml-4 icon-transition ${leftHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderLeftIcon(2)}</span>
+                <span className={`ml-2 md:-ml-4 icon-transition ${leftHoveredIndex === 2 ? 'animate-icon' : ''}`}>{renderLeftIcon(2)}</span>
               </span>
               <span
                 className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -80,7 +80,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 Get Building Permission
-                <span className={`-ml-8 icon-transition ${leftHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderLeftIcon(3)}</span>
+                <span className={`-ml-2 md:-ml-8 icon-transition ${leftHoveredIndex === 3 ? 'animate-icon' : ''}`}>{renderLeftIcon(3)}</span>
               </span>
               <span
                 className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3 border-b-[1px] hover:cursor-pointer text-sm font-medium`}
@@ -88,7 +88,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 Apply for Driving License
-                <span className={`-ml-10 icon-transition ${leftHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderLeftIcon(4)}</span>
+                <span className={`-ml-4 md:-ml-10 icon-transition ${leftHoveredIndex === 4 ? 'animate-icon' : ''}`}>{renderLeftIcon(4)}</span>
               </span>
               <span
                 className={`flex text-slate-700 whitespace-nowrap hover:text-red-500 hover:shadow-sm py-3  hover:cursor-pointer text-sm font-medium`}
@@ -96,7 +96,7 @@ const OnlineService = () => {
                 onMouseLeave={handleLeave}
               >
                 Report Pollution
-                <span className={`ml-4 icon-transition ${leftHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderLeftIcon(5)}</span>
+                <span className={`ml-9 md:ml-4 icon-transition ${leftHoveredIndex === 5 ? 'animate-icon' : ''}`}>{renderLeftIcon(5)}</span>
               </span>
       </div>
       {/* Right div */}
