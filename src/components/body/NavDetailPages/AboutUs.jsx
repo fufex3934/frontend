@@ -51,10 +51,10 @@ const AboutUs = () => {
         </div>
         <div className="value">
           <div className="heading">
-            <h1>Core Values</h1>
+            <h1>Values</h1>
           </div>
           <div className="content">
-            <p> Core Values</p>
+            <p>Values</p>
           </div>
         </div>
       </div>
