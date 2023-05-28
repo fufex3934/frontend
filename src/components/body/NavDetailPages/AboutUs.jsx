@@ -5,7 +5,7 @@ import Navs from '../../navbars/navs'
 
 const AboutUs = () => {
   return (
-    <div>
+    <>
       <Navs/>
       <div className='about'>
         <div className="heading-top">
@@ -47,7 +47,7 @@ const AboutUs = () => {
         </div>
       </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 export default AboutUs;
