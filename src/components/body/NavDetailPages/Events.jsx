@@ -2,16 +2,16 @@ import React from 'react'
 import Navs from '../../navbars/navs'
 import Footer from '../Footer'
 
-const History = () => {
+const Events = () => {
   return (
     <>
     <Navs/>
       <div>
-      History Page
+      Events and Conferences Page
       </div>
       <Footer/>
     </>
   )
 }
 
-export default History
+export default Events

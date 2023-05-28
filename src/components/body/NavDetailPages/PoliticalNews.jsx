@@ -2,16 +2,16 @@ import React from 'react'
 import Navs from '../../navbars/navs'
 import Footer from '../Footer'
 
-const History = () => {
+const PoliticalNews = () => {
   return (
     <>
     <Navs/>
-      <div>
-      History Page
-      </div>
-      <Footer/>
+     <div>
+     Political News Page
+     </div>
+     <Footer/>
     </>
   )
 }
 
-export default History
+export default PoliticalNews

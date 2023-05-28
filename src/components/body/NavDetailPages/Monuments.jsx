@@ -1,17 +1,17 @@
 import React from 'react'
-import Navs from '../../navbars/navs'
 import Footer from '../Footer'
+import Navs from '../../navbars/navs'
 
-const History = () => {
+const Monuments = () => {
   return (
     <>
     <Navs/>
       <div>
-      History Page
+      Monuments Page
       </div>
       <Footer/>
     </>
   )
 }
 
-export default History
+export default Monuments
