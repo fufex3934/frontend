@@ -33,14 +33,6 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="motto">
-          <div className="heading">
-            <h1>Motto</h1>
-          </div>
-          <div className="content">
-            <p>Building the Basis for Development!</p>
-          </div>
-        </div>
         <div className="goal">
           <div className='heading'>
             <h1>Goal</h1>
