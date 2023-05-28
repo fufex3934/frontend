@@ -39,13 +39,23 @@
 .main-container .slideshow-container .indexs:hover .link-div {
     bottom: 5%;
 }
-
-.main-container .slideshow-container .indexs .link-div p a {
+.main-container .slideshow-container .indexs:hover .link-div a{
     color: white;
 }
 
+.main-container .slideshow-container .indexs .link-div p a {
+    color: aqua;
+}
+.main-container .slideshow-container .indexs .link-div p a:hover{
+    color:#329898;
+}
+
 .main-container .slideshow-container .indexs .link-div h1 a {
-    color: white;
+    color: aqua;
+    font-size: x-large;
+}
+.main-container .slideshow-container .indexs .link-div h1 a:hover{
+    color: #329898;
 }
 
 @media screen and (max-width:415px) {
@@ -65,7 +75,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-container {
-        box-shadow: red 0px 5px 15px;
+        /* box-shadow: red 0px 5px 15px; */
         padding-bottom: 10%;
         margin-top: 30%;
         position: relative;
