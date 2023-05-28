@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const Documentary = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       Documentary Videos page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 
