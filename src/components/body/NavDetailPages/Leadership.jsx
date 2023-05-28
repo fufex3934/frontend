@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Navs from '../../navbars/navs';
 import Footer from '../Footer';
 import { motion } from 'framer-motion';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const leaders = [
   {
     name: 'Mr. Ordin Bedri',
@@ -218,12 +219,23 @@ const Leadership = () => {
   const closeProfileModal = () => {
     setSelectedLeader(null);
   };
+  useEffect(()=>{
+    Aos.init();
+},[])
 
   return (
     <>
       <Navs />
-      <div className="container mx-auto px-4 mt-32 mb-32">
-        <h1 className="text-3xl font-bold text-[#334155] text-center mt-8 mb-8">Harar Government Leadership</h1>
+      <div className="container mx-auto px-4 mt-20 mb-32">
+        <h1 className="text-3xl font-bold
+         text-[#334155]  border-b-4 border-s-2 border-t-4 border-e-2 py-2
+         text-center mt-8 mb-12 bg-[#fef2f2]" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+          Harar Government Leadership</h1>
+        <p className='my-12 text-lg text-slate-500' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
+          Members of the Harar Regional Government 
+           leadership team continue to redefine Good Governance 
+           and the critical role it plays in our global future.
+          </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-16">
           {leaders.map((leader, index) => (
             <motion.div
@@ -240,6 +252,7 @@ const Leadership = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear"
               />
               <div className="p-4 flex flex-col items-center">
                 <h2 className="text-xl font-semibold text-[#334155] mb-2">{leader.name}</h2>
