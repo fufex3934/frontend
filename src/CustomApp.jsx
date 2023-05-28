@@ -24,45 +24,45 @@ const CustomApp = () => {
 
   const data = [
     {
-      image: 'images/c12.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
+      image: 'images/c9.jpg',
+      text1: 'Leading,Culture',
+      text2: 'Convetional Leaders',
       icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500'/>
     },
     {
-      image: 'images/car1.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
-      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
-    },
-    {
-      image: 'images/car10.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
+      image: 'images/car4.jpg',
+      text1: 'Economics,Culture',
+      text2: 'Business Agence',
       icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
     },
     {
       image: 'images/car6.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
+      text1: 'City Culture',
+      text2: 'City Center',
       icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
     },
     {
-      image: 'images/car7.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
-      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
-    },
-    {
       image: 'images/car8.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
+      text1: 'Business',
+      text2: 'Cinema Teater',
+      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
+    },
+    {
+      image: 'images/hararicity.jpg',
+      text1: 'Bussiness,Culture',
+      text2: 'Historic Building',
       icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
     },
     {
-      image: 'images/car13.jpg',
-      text1: 'Hello, world!',
-      text2: 'OPs',
+      image: 'images/new2.jpg',
+      text1: 'Business,Culture',
+      text2: 'Animal Exibition',
+      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
+    },
+    {
+      image: 'images/musume.jpg',
+      text1: 'Business ,Culture',
+      text2: 'Harari Musume',
       icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
     },
     // Rest of the data array items
