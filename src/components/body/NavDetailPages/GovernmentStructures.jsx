@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const GovernmentStructures = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       Government Structures Page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

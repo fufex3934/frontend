@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const Testimonials = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       Testimonials Videos Page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

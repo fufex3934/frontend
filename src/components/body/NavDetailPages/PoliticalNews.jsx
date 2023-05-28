@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const PoliticalNews = () => {
   return (
-    <div>
-      Political News Page
-    </div>
+    <>
+    <Navs/>
+     <div>
+     Political News Page
+     </div>
+     <Footer/>
+    </>
   )
 }
 

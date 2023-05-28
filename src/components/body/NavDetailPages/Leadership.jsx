@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const Leadership = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       LeaderShip Page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

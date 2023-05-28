@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const History = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       History Page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

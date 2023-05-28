@@ -1,10 +1,16 @@
 import React from 'react'
+import Footer from '../Footer'
+import Navs from '../../navbars/navs'
 
 const Monuments = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       Monuments Page
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

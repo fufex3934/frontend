@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const Sectors = () => {
   return (
-    <div>
-      Sectors Page
-    </div>
+    <>
+    <Navs/>
+     <div>
+     Sectors Page
+     </div>
+     <Footer/>
+    </>
   )
 }
 

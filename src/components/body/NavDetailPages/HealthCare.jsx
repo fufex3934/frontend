@@ -1,10 +1,16 @@
 import React from 'react'
+import Navs from '../../navbars/navs'
+import Footer from '../Footer'
 
 const HealthCare = () => {
   return (
-    <div>
+    <>
+    <Navs/>
+      <div>
       HealthCarePage
-    </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 
