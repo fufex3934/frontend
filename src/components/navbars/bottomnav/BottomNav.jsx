@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Language from './Language';
 import '../../styles/navbar.css';
+import { useNavigate } from 'react-router-dom';
 const BottomNavbar = () => {
+  const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,7 +26,8 @@ const BottomNavbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block`}>
+    
+      <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block`}>
       <div className="bg-white/100   p-4">
         <ul className="flex items-center">
           {!isOpen && (
@@ -50,14 +53,13 @@ const BottomNavbar = () => {
 
           <div className="hidden lg:block">
             <ul className="flex items-center space-x-2">
-                            <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
-                  <a className="inline-flex w-full cursor-pointer 
+              <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
+                  <a href='/' className="inline-flex w-full cursor-pointer 
                   justify-center gap-x-0 bg-white px-3 py-2 text-sm
                    text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white" 
                   id="menu-button" aria-expanded="true" aria-haspopup="true">
                     Home
-                  </a>
-                  
+                  </a>   
                 </li>
 
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
@@ -69,9 +71,9 @@ const BottomNavbar = () => {
               </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><a   className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</a></li>
-                    <li className="py-1"><a className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">History</a></li>
+                    <li className="py-1"><button onClick={()=>navigate('about')}  className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</button></li>
+                    <li className="py-1"><button onClick={()=>navigate('about-leadership')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</button></li>
+                    <li className="py-1"><button onClick={()=>navigate('about-history')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">History</button></li>
                 </ul>
               </div>
             </li>
@@ -234,7 +236,7 @@ const BottomNavbar = () => {
                           <div className="group-hover:block dropdown-menu relative hidden h-auto ">
                           
                           <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><a className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</a></li>
+                              <li className="py-1"><a  className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</a></li>
                               <li className="py-1"><a className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</a></li>
                               <li className="py-1"><a className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">History</a></li>
                           </ul>
@@ -338,6 +340,7 @@ const BottomNavbar = () => {
         </ul>
       </div>
     </nav>
+     
   );
 };
 

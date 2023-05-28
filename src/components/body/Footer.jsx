@@ -4,6 +4,7 @@ import { FiMail } from 'react-icons/fi';
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
 import { FaTwitter, FaInstagram, FaYoutube, FaFacebookSquare } from 'react-icons/fa';
 import './css/Footer.css';
+
 const Footer = () => {
   return (
     <div className="bg-[#132244]">
@@ -47,35 +48,45 @@ const Footer = () => {
         <hr className="border-b border-gray-700 mt-6" />
 
         <footer className="container mx-auto py-8">
-          <div className="flex items-center">
-            <a href="#">
-              <img className="h-12 w-12 rounded-full" src="./harar.png" alt="Logo" />
-            </a>
-            <a href="#">
-              <h1 className="text-slate-300 text-base ml-2 font-bold md:text-sm">
-                Harar Government<br /> Communication Affairs Office
-              </h1>
-            </a>
-          </div>
-          <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
-          <div className="flex items-center mt-1">
-            <BiAlarm className="text-slate-500 mr-2" />
-            <span className="text-white">Opening Hours:</span>
-            <span className="ml-2 text-slate-500">Mon - Fri 8.00 am - 6.00 pm</span>
-          </div>
-          <div className="relative my-2 flex items-center">
-            <HiOutlinePhone className="text-slate-500" />
-            <span className="text-white ml-4">Phone:</span>
-            <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
-              1800 123 4567
-            </span>
-          </div>
-          <div className="relative my-2 flex items-center">
-            <FiMail className="text-slate-500" />
-            <span className="text-white ml-4">Email:</span>
-            <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
-              harar@gmail.com
-            </span>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* left div */}
+            <div className="flex items-center">
+              <a href="#">
+                <img className="h-16 w-16 rounded-full" src="./harar.png" alt="Logo" />
+              </a>
+              <a href="#">
+                <h1 className="text-slate-300 text-base ml-2 font-bold md:text-xl">
+                  Harar Government<br /> Communication Affairs Office
+                </h1>
+              </a>
+            </div>
+            {/* right div */}
+            <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 md:ml-8">
+              <div className="flex flex-col items-center md:items-start">
+                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
+                <div className="flex items-center mt-1">
+                  <BiAlarm className="text-slate-500 mr-2" />
+                  <span className="text-white">Opening Hours:</span>
+                  <span className="ml-2 text-slate-500">Mon - Fri 8.00 am - 6.00 pm</span>
+                </div>
+              </div>
+              <div className="flex flex-col items-center mt-4 md:mt-0 md:ml-8">
+                <div className="relative my-2 flex items-center">
+                  <HiOutlinePhone className="text-slate-500" />
+                  <span className="text-white ml-4">Phone:</span>
+                  <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
+                    1800 123 4567
+                  </span>
+                </div>
+                <div className="relative my-2 flex items-center">
+                  <FiMail className="text-slate-500" />
+                  <span className="text-white ml-4">Email:</span>
+                  <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
+                    harar@gmail.com
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
@@ -113,41 +124,35 @@ const Footer = () => {
                   <BiChevronRight /> Our History
                 </span>
                 <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Documentation
+                  <BiChevronRight /> Support Center
                 </span>
                 <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Environmental
+                  <BiChevronRight /> Privacy Policy
                 </span>
                 <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Town Gallery
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Department
+                  <BiChevronRight /> Terms of Service
                 </span>
               </div>
             </div>
 
             <div>
-              <p className="text-white text-lg font-bold">City News & Updates</p>
-              <p className="text-slate-500 text-sm py-3">
-                The latest Harar Government Communication Affairs Office news, articles, and resources, sent straight to your inbox every month.
-              </p>
-              <div className="flex">
-                <input
-                  className="py-2 px-2 focus:outline-none"
-                  type="email"
-                  placeholder="Your Email"
-                />
-                <button className="uppercase bg-red-500 text-white hover:bg-blue-600 px-2 py-2 -ml-10">
-                  Subscribe
-                </button>
+              <p className="text-white text-lg font-bold">Newsletter</p>
+              <div className="py-3">
+                <p className="text-slate-500 text-sm">
+                  Sign up for our newsletter and get the latest news and updates directly to your inbox.
+                </p>
+                <div className="mt-4">
+                  <input
+                    className="w-full bg-white rounded-md py-2 px-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <button className="bg-red-500 rounded-md py-2 px-4 mt-2 text-white text-sm hover:bg-red-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500">
+                    Subscribe
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="bg-[#06163a] h-20 w-full absolute mt-[64px] left-0 ">
-            <p className="text-center pt-8 text-slate-500 italic">
-              © {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
-            </p>
           </div>
         </footer>
       </div>
