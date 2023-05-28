@@ -1,16 +1,12 @@
 import React from 'react'
-import TopNav from '../../navbars/topnav/TopNav'
-import MiddleNav from '../../navbars/middleNav/MiddleNav'
-import BottomNavbar from '../../navbars/bottomnav/BottomNav'
 import Footer from '../Footer'
 import '../../body/css/AboutUs.css'
+import Navs from '../../navbars/navs'
 
 const AboutUs = () => {
   return (
     <div>
-      <TopNav/>
-      <MiddleNav/>
-      <BottomNavbar/>
+      <Navs/>
       <div className='about'>
         <div className="heading-top">
           <h1>Harari Government Communication Affairs Office</h1>
