@@ -63,7 +63,7 @@
         word-break: break-all;
     }
 }
-@media screen and (min-width:7670px) and (max-width:885px) {
+@media screen and (min-width:767px) and (max-width:885px) {
     .about{
         margin: 15% 3% 5%;
     }

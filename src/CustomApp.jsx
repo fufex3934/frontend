@@ -10,6 +10,7 @@ import News from './components/body/News';
 import OnlineService from './components/body/OnlineService';
 import Footer from './components/body/Footer';
 import BottomImages from './components/body/BottomImages';
+import Aos from 'aos';
 import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 const CustomApp = () => {
@@ -21,6 +22,9 @@ const CustomApp = () => {
       window.setInterval(1000)
     };
   }, []);
+  useEffect(() => {
+    Aos.init();
+  }, [])
 
   const data = [
     {

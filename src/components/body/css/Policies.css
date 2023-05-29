@@ -1,0 +1,61 @@
+.container{
+    padding: 1% 15% 5% 13%;
+}
+.container .header{
+    text-align: center;
+}
+.container .header h1{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3bb;
+    border-bottom: 2px solid #3bb;
+    margin: 10%;
+    padding-bottom: 1%;
+}
+.container .policies{
+    border-bottom: 1px grey solid;
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+}
+.container .policies .heading{
+    color: #3bb;
+    font-size: x-large;
+    margin-bottom: 1%;
+}
+@media screen and (max-width: 428px) {
+    .container{
+        margin-top: 30%;
+        padding: 2%;
+    }
+    .container .header{
+        padding: 0%;
+    }
+    .container .header h1 {
+        font-size: larger;
+        margin: 0% 0% 5%;
+    }
+    .container .policies .heading {
+        font-size: large;
+    }
+    .container .policies .description{
+        font-size: small;
+       font-weight: 500;
+    }
+}
+@media screen and (min-width:767px) and (max-width:888px) {
+    .container{
+        padding:3%;
+        margin-top: 5%;
+    }
+    .container .header h1 {
+        font-size: xx-large; 
+        border-bottom: 2px solid #3bb;
+        margin: 10% 2% 5%;
+        padding-bottom: 1%;
+    }
+    .container .policies .description {
+        font-size: medium;
+        font-weight: 500;
+    }
+    
+}

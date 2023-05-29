@@ -1,24 +1,40 @@
 import React from 'react'
+import Aos from 'aos';
 import { RiFileTextFill } from 'react-icons/ri';
 import { MdOutlineAlarm }from 'react-icons/md';
 import { IoLocationOutline }from 'react-icons/io5';
 import './css/UpcomingEvent.css';
 
+const event= [
+    {name:'event',text1: 'Upcoming Events'},
+    { name: 'event', text2: `See All Events >` }
+];
+
 const UpcomingEvent = () => {
   return (
     <div className='main-upcoming-event'>
         <div className='sub-main-upcoming-event-left'>
-            <div className='text-top'>
+              {event.map((item) => (
+                  <div key={item.name} className='text-top'>
+                       <div className='float-left'>
+                          <h1>{item.text1}</h1>
+                      </div>
+                       <div className='float-right'>
+                          <a href="">{item.text2}</a>
+                        </div>
+                  </div>
+              ))}
+            {/* <div className='text-top'>
                 <div className='float-left'>
                     <h1>Upcoming Events</h1>
                 </div>
                 <div className='float-right'>
                     <a href="">See All Events &gt;</a>
                 </div>
-            </div>
+            </div> */}
 
             <div className='text-bottom'>
-                  <div className='one'>
+                  <div className='one' data-aos-duration="1000" data-aos="zoom-in" data-aos-easing="linear">
                     <div className=''>
                         <img src="images/up1.jpg" alt="" />
                     </div>
@@ -41,7 +57,7 @@ const UpcomingEvent = () => {
                     </div>
                 </div>
 
-                <div className='two'>
+                  <div className='two' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
                     <div className=''>
                         <img src="images/up2.jpg" alt="" />
                     </div>

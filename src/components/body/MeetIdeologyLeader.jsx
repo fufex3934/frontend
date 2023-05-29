@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react'
 import './css/MeetIdeologyLeader.css'
-import Aos from 'aos'
 import 'aos/dist/aos.css'
 const MeetIdeologyLeader = () => {
-    useEffect(()=>{
-        Aos.init();
-    },[])
+    
   return (
     <>
     <div className='main medium-margin'>
         <div className='main-text'>
-            <h1 className='h1'data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+            <h1 className='h1' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
                 Meet Ideological leader for youth generation
             </h1>
             <p className='p1' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
