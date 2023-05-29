@@ -48,7 +48,7 @@ const App = () => {
       <Route path='/video-success' element={<SuccessStories />} />
       <Route path='/video-tour' element={<TourismsPromotions />} />
       <Route path='/video-event' element={<Events />} />
-      <Route path='report' element={<ReportIssues/>}/>
+      <Route path='/report' element={<ReportIssues/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
