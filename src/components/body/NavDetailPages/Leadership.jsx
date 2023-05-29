@@ -226,7 +226,7 @@ const Leadership = () => {
   return (
     <>
       <Navs />
-      <div className="container mx-auto px-4 mt-20 mb-32">
+      <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
         <h1 className="text-3xl font-bold
          text-[#334155]  border-b-4 border-s-2 border-t-4 border-e-2 py-2
          text-center mt-8 mb-12 bg-[#fef2f2]" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
