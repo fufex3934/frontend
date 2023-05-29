@@ -27,7 +27,7 @@ const BottomNavbar = () => {
 
   return (
     
-      <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block`}>
+      <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
       <div className="bg-white/100   p-4">
         <ul className="flex items-center">
           {!isOpen && (
@@ -173,7 +173,7 @@ const BottomNavbar = () => {
               <Language/>
             </li>
           <li className="text-gray-600 hover:text-orange-600 cursor-pointer relative left-[10px] font-serif">
-                <button onClick={()=>navigate('report')} className="bg-transparent hover:bg-orange-700 text-[#329898] text-sm font-semibold hover:text-white p-3 border border-[#329898] 
+                <button onClick={()=>navigate('/report')} className="bg-transparent hover:bg-orange-700 text-[#329898] text-sm font-semibold hover:text-white p-3 border border-[#329898] 
             rounded-0 overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
               Report an Issue
             </button>
