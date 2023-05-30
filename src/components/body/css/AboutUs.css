@@ -1,13 +1,12 @@
 .about{
-    box-shadow: grey 0px 5px 15px;
     display: flex;
     flex-direction: column;
     margin: 0.5%;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 .about .heading-top{
-    /* box-shadow: red 0px 5px 15px; */
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     justify-content: center;
     display: flex;
 }
@@ -19,20 +18,22 @@
 }
 .about .both{
     display: flex;
-    box-shadow: #3bb 0px 0px 15px;
     margin: 0% 0.5% 2% 10%;
 }
 .about .both .left-content{
-    box-shadow: red 0px 0px 15px;
     width: 50%;
     margin-bottom: 2%;
     margin-right: 3%;
 }
-
 .about .both .left-content .content-container{
     padding-bottom:5% ;
     border-bottom: 1px solid rgb(180, 178, 178 ,0.4);
     margin-bottom: 5%;
+}
+.about .both .left-content .content-container .content{
+    font-size: large;
+    margin-left: 2%;
+    color: rgb(56, 54, 54);
 }
 .about .left-content .heading{
     padding: 1%;
@@ -44,20 +45,24 @@
 .value .content ul li {
     list-style: inside;
     margin-left: 5%;
+    font-size: large;
+    color: rgb(56, 54, 54);
 }
 .about .both .right-map{
-    box-shadow: yellow 0px 0px 15px;
     margin-bottom: 2%;
 }
 .about .both .right-map .header h1{
     font-weight: bolder;
     font-size: xx-large;
+    color: #3bb;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about .both .right-map .map{
+    margin-top: 3%;
 }
 @media screen and (max-width:428px){
     .about{
-        margin: 30% 2% 3% 2%;
-
+        margin: 35% 2% 3% 2%;
     }
     .about .heading-top{
         text-align: center;
@@ -66,24 +71,58 @@
         font-size: larger;
         font-weight: bold;
     }
-    .about div {
-        padding: 0%;
-        margin-bottom: 3%;
-    }
-   
-    .about .origanaizational-structure .heading h1{
-        font-size: medium;
-        white-space: nowrap;
+    .about .both {
+        flex-direction: column;
         margin-left: 0%;
-        margin-right: 0%;
+        justify-content: center;
+    }
+    .about .both .left-content{
+        width: 100%;
     }
     .about div .content p {
         font-size: medium;
-        word-break: break-all;
+    }
+    .about .both .right-map{
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+    .about .both .right-map .map  iframe {
+        width: auto;
+        height: 450px;
+        margin: auto;
     }
 }
 @media screen and (min-width:767px) and (max-width:885px) {
     .about{
-        margin: 15% 3% 5%;
+        margin: 20% 4% 0% 4%;
+    }
+    .about .heading-top h1{
+        text-align: center;
+        border-bottom: 2px solid #3bb;
+        padding-bottom: 2%;
+    }
+    .about .both {
+        flex-direction: column;
+        margin-left: 0%;
+        justify-content: center;
+    }
+    
+    .about .both .left-content {
+        width: 100%;
+    }
+    .about .heading h1{
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .about div .content p {
+        font-size: larger;
+    }
+    .value .content ul li{
+        font-size: larger;
+    }
+    .about .both .right-map .map iframe {
+        width: 600px;
+        height: 600px;
+        margin: auto;
     }
 }
