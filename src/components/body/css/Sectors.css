@@ -1,0 +1,97 @@
+
+.layout{
+    margin: 1%;
+    padding: 1%;
+}
+.layout .main-con{
+   
+    padding: 1%;
+}
+.layout .main-con .header{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.layout .main-con .header h1{
+    font-size: xx-large;
+    color: #3bb;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    border-bottom: #3bb inset 2px;
+    padding-bottom: 1%;
+}
+.layout .main-con .content{
+    display: flex;
+    margin-top: 2%;
+}
+.layout .main-con .content .content-container{
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 25%;
+}
+.layout .main-con .content .content-container .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    border-bottom: 1px dashed #3bb;
+    margin-bottom: 3%;
+    border-right: #3bb 2px dotted;
+}
+.layout .main-con .content .content-container .top h1{
+    font-size: x-large;
+    margin-bottom: 10%;
+}
+.layout .main-con .content .content-container .top .icon{
+    border-radius: 50%;
+}
+@media screen and (max-width:429px) {
+    .layout {
+        margin-top: 30%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        /* box-shadow: red 0px 0px 15px; */
+    }
+   
+    .layout .main-con .header h1{
+        font-size: large;
+    }
+    .layout .main-con .content{
+        flex-direction: column;
+    }
+    .layout .main-con .content .content-container {
+        width: 100%;
+        border-bottom: #3bb inset 2px;
+        padding-bottom: 5%;
+    }
+    .layout .main-con .content .content-container .top{
+        border: none;
+
+    }
+    
+}
+@media screen and (min-width:767px) and (max-width:889px) {
+    .layout{
+        margin-top: 20%;
+    }
+    .layout .main-con .content {
+        flex-direction: column;
+    }
+    .layout .main-con .content .content-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        columns: 2;
+        border-bottom: 2px dashed #3bb;
+    }
+    .layout .main-con .content .content-container .top {
+        border: none;
+    }
+    .layout .main-con .content .content-container .bottom{
+        padding-top: 25%;
+    }
+    .layout .main-con .content .content-container .bottom p{
+        font-size: larger;
+    }
+}
