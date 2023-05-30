@@ -2,8 +2,8 @@
     box-shadow: grey 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    padding: 5% 2%;
-    margin: 3% 15%;
+    margin: 0.5%;
+    margin-bottom: 2%;
 }
 .about .heading-top{
     /* box-shadow: red 0px 5px 15px; */
@@ -17,23 +17,42 @@
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.about div{
-    padding: 1%;
+.about .both{
+    display: flex;
+    box-shadow: #3bb 0px 0px 15px;
+    margin: 0% 0.5% 2% 10%;
 }
-.about div .heading{
-    text-align: center;
+.about .both .left-content{
+    box-shadow: red 0px 0px 15px;
+    width: 50%;
     margin-bottom: 2%;
+    margin-right: 3%;
+}
+
+.about .both .left-content .content-container{
+    padding-bottom:5% ;
+    border-bottom: 1px solid rgb(180, 178, 178 ,0.4);
+    margin-bottom: 5%;
+}
+.about .left-content .heading{
+    padding: 1%;
 }
 .about div .heading h1 {
     font-size: x-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 3px grey solid;
-    padding-bottom: 1%;
-    margin-left: 30%;
-    margin-right: 30%;
 }
-.about div .content p {
-    font-size: large;
+.value .content ul li {
+    list-style: inside;
+    margin-left: 5%;
+}
+.about .both .right-map{
+    box-shadow: yellow 0px 0px 15px;
+    margin-bottom: 2%;
+}
+.about .both .right-map .header h1{
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media screen and (max-width:428px){
     .about{
