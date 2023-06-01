@@ -13,7 +13,6 @@ const Sectors = () => {
         <div className="header">
             <h1>A Long-Term View Is Key To Our Approach...</h1>
         </div>
-        
         <div className="content">
           {
             data.map((item)=>(
