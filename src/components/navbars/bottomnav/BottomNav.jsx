@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Language from './Language';
 import '../../styles/navbar.css';
+import './BottomNav.css'
 import { useNavigate } from 'react-router-dom';
 import {AiFillHome,AiFillMoneyCollect,AiTwotoneVideoCamera} from "react-icons/ai";
 import { IoNewspaper } from 'react-icons/io5';
@@ -64,14 +65,14 @@ const BottomNavbar = () => {
                   justify-center gap-x-0 bg-white px-3 py-2 text-xl
                    text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white" 
                   id="menu-button" aria-expanded="true" aria-haspopup="true">
-                    <AiFillHome className='mr-1 w-6 h-6 '/>
+                    <AiFillHome className='mr-1 w-6 text-[#3bb] change h-6'/>
                     Home
                   </button>  
                 </li>
 
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
               <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <BsFillBookmarkFill className='mr-1 w-6 h-6'/>
+              <BsFillBookmarkFill className='mr-1 w-6 h-6 text-[#3bb] change'/>
                 About
                 
               </a>
@@ -85,7 +86,7 @@ const BottomNavbar = () => {
             </li>
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
               <a className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                <IoNewspaper className='mr-1 w-6 h-6'/>
+                  <IoNewspaper className='mr-1 w-6 h-6 text-[#3bb] change'/>
                 Timely        
               </a>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -98,7 +99,7 @@ const BottomNavbar = () => {
             </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <AiFillMoneyCollect className='mr-1  w-6 h-6'/>
+                  <AiFillMoneyCollect className='mr-1  w-6 h-6 text-[#3bb] change'/>
               Economic
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -110,7 +111,7 @@ const BottomNavbar = () => {
           </li>
           <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
             <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <MdLocalPolice className='ml-1 h-6 w-6'/>
+              <MdLocalPolice className='ml-1 h-6 w-6 text-[#3bb] change'/>
               Politics
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -123,7 +124,7 @@ const BottomNavbar = () => {
           </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <SiSociety6 className='mr-1 h-6 w-6'/>
+                  <SiSociety6 className='mr-1 h-6 w-6 text-[#3bb] change'/>
               Social
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto"> 
@@ -135,7 +136,7 @@ const BottomNavbar = () => {
           </li>
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
               <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
-                <MdTour className='mr-1 h-6 w-6'/>
+                  <MdTour className='mr-1 h-6 w-6 text-[#3bb] change '/>
                 Tourism
                 
               </a>
@@ -150,7 +151,7 @@ const BottomNavbar = () => {
             </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <AiTwotoneVideoCamera className='mr-1 h-6 w-6'/>
+                  <AiTwotoneVideoCamera className='mr-1 h-6 w-6 text-[#3bb] change'/>
               Videos
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
