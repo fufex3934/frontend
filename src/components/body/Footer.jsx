@@ -50,9 +50,9 @@ const Footer = () => {
         <footer className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* left div */}
-            <div className="flex items-center">
+            <div className="flex items-center -ml-5">
               <a href="#">
-                <img className="h-16 w-16 rounded-full" src="./harar.png" alt="Logo" />
+                <img className="h-20 w-28 rounded-full object-cover" src="./harar.png" alt="Logo" />
               </a>
               <a href="#">
                 <h1 className="text-slate-300 text-base ml-2 font-bold md:text-xl">
@@ -63,7 +63,7 @@ const Footer = () => {
             {/* right div */}
             <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 md:ml-8">
               <div className="flex flex-col items-center md:items-start">
-                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
+                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Harar</p>
                 <div className="flex items-center mt-1">
                   <BiAlarm className="text-slate-500 mr-2" />
                   <span className="text-white">Opening Hours:</span>
@@ -141,13 +141,13 @@ const Footer = () => {
                 <p className="text-slate-500 text-sm">
                   Sign up for our newsletter and get the latest news and updates directly to your inbox.
                 </p>
-                <div className="mt-4">
+                <div className="mt-4 flex md:-ml-10 lg:-ml-0">
                   <input
-                    className="w-full bg-white rounded-md py-2 px-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
+                    className="w-64 bg-white  py-2 px-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                     type="email"
                     placeholder="Enter your email"
                   />
-                  <button className="bg-red-500 rounded-md py-2 px-4 mt-2 text-white text-sm hover:bg-red-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500">
+                  <button className="bg-red-500  py-3 px-3   text-white text-sm hover:bg-red-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500">
                     Subscribe
                   </button>
                 </div>
