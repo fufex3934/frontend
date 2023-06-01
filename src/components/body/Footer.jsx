@@ -50,9 +50,9 @@ const Footer = () => {
         <footer className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* left div */}
-            <div className="flex items-center -ml-5">
+            <div className="flex items-start md:-ml-10 lg:-ml-44 l">
               <a href="#">
-                <img className="h-20 w-28 rounded-full object-cover" src="./harar.png" alt="Logo" />
+                <img className="h-16 w-16 rounded-full " src="./harar.png" alt="Logo" />
               </a>
               <a href="#">
                 <h1 className="text-slate-300 text-base ml-2 font-bold md:text-xl">
@@ -61,27 +61,29 @@ const Footer = () => {
               </a>
             </div>
             {/* right div */}
-            <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 md:ml-8">
-              <div className="flex flex-col items-center md:items-start">
-                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Harar</p>
-                <div className="flex items-center mt-1">
-                  <BiAlarm className="text-slate-500 mr-2" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
+              <div className="flex flex-col items-center md:items-start md:-ml-4 lg:-ml-36">
+                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
+                <div className="flex flex-col ">
+                <div className='flex'>
+                <BiAlarm className="text-slate-500 mr-2 mt-1" />
                   <span className="text-white">Opening Hours:</span>
+                </div>
                   <span className="ml-2 text-slate-500">Mon - Fri 8.00 am - 6.00 pm</span>
                 </div>
               </div>
-              <div className="flex flex-col items-center mt-4 md:mt-0 md:ml-8">
+              <div className="flex flex-col items-center mt-4 md:mt-0 ">
                 <div className="relative my-2 flex items-center">
                   <HiOutlinePhone className="text-slate-500" />
                   <span className="text-white ml-4">Phone:</span>
-                  <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
+                  <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer whitespace-nowrap">
                     1800 123 4567
                   </span>
                 </div>
                 <div className="relative my-2 flex items-center">
                   <FiMail className="text-slate-500" />
-                  <span className="text-white ml-4">Email:</span>
-                  <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer">
+                  <span className="text-white ml-5">Email:</span>
+                  <span className="-mr-4 text-slate-500 hover:text-red-600 cursor-pointer">
                     harar@gmail.com
                   </span>
                 </div>
@@ -89,8 +91,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-12">
+            <div className='ml-16 md:ml-0'>
               <p className="text-white text-lg font-bold">Service Request</p>
               <div className="py-3">
                 <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
@@ -114,7 +116,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className='ml-16 md:ml-0'>
               <p className="text-white text-lg font-bold">Useful Links</p>
               <div className="py-3">
                 <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
@@ -135,13 +137,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className='ml-16 md:ml-0'>
               <p className="text-white text-lg font-bold">Newsletter</p>
               <div className="py-3">
                 <p className="text-slate-500 text-sm">
                   Sign up for our newsletter and get the latest news and updates directly to your inbox.
                 </p>
-                <div className="mt-4 flex md:-ml-10 lg:-ml-0">
+                <div className="mt-4 flex -ml-10 md:-ml-10 lg:-ml-0">
                   <input
                     className="w-64 bg-white  py-2 px-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                     type="email"
