@@ -86,7 +86,7 @@ const BottomNavbar = () => {
               </a>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 
-                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
                     <li className="py-1"><button onClick={()=>navigate('/timely-news')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">News</button></li>
                     <li className="py-1"><button onClick={()=>navigate('/timely-emergence')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Emergency</button></li>
                 </ul>
