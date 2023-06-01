@@ -6,8 +6,8 @@ import { IoLocationOutline }from 'react-icons/io5';
 import './css/UpcomingEvent.css';
 
 const event= [
-    {name:'event',text1: 'Upcoming Events'},
-    { name: 'event', text2: `See All Events >` }
+    {id:1,name:'event',text1: 'Upcoming Events'},
+    {id:2, name: 'event', text2: `See All Events >` }
 ];
 
 const UpcomingEvent = () => {
@@ -15,7 +15,7 @@ const UpcomingEvent = () => {
     <div className='main-upcoming-event'>
         <div className='sub-main-upcoming-event-left'>
               {event.map((item) => (
-                  <div key={item.name} className='text-top'>
+                  <div key={item.id} className='text-top'>
                        <div className='float-left'>
                           <h1>{item.text1}</h1>
                       </div>

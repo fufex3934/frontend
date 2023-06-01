@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Language from './Language';
 import '../../styles/navbar.css';
 import { useNavigate } from 'react-router-dom';
+import {AiFillHome,AiFillMoneyCollect,AiTwotoneVideoCamera} from "react-icons/ai";
+import { IoNewspaper } from 'react-icons/io5';
+import{FcAbout} from 'react-icons/fc';
+import {MdLocalPolice,MdTour} from 'react-icons/md';
+import {SiSociety6} from 'react-icons/si';
+import {BsFillBookmarkFill} from 'react-icons/bs';
 const BottomNavbar = () => {
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(true);
@@ -54,20 +60,20 @@ const BottomNavbar = () => {
           <div className="hidden lg:block">
             <ul className="flex items-center space-x-2">
               <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
-                  <button onClick={()=>navigate('/')} className="inline-flex w-full cursor-pointer 
-                  justify-center gap-x-0 bg-white px-3 py-2 text-sm
+              <button onClick={()=>navigate('/')} className="inline-flex w-full cursor-pointer 
+                  justify-center gap-x-0 bg-white px-3 py-2 text-xl
                    text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white" 
                   id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <AiFillHome className='mr-1 w-6 h-6 '/>
                     Home
-                  </button>   
+                  </button>  
                 </li>
 
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-              <a  className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <BsFillBookmarkFill className='mr-1 w-6 h-6'/>
                 About
-                <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                </svg>
+                
               </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
@@ -78,11 +84,9 @@ const BottomNavbar = () => {
               </div>
             </li>
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-              <a className=" hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                Timely
-                <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                </svg>
+              <a className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <IoNewspaper className='mr-1 w-6 h-6'/>
+                Timely        
               </a>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 
@@ -93,11 +97,9 @@ const BottomNavbar = () => {
                 </div>
             </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <AiFillMoneyCollect className='mr-1  w-6 h-6'/>
               Economic
-              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-              </svg>
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
@@ -107,11 +109,9 @@ const BottomNavbar = () => {
               </div>
           </li>
           <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
-            <a className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <MdLocalPolice className='ml-1 h-6 w-6'/>
               Politics
-              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-              </svg>
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
@@ -122,11 +122,9 @@ const BottomNavbar = () => {
               </div>
           </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <SiSociety6 className='mr-1 h-6 w-6'/>
               Social
-              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-              </svg>
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto"> 
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
@@ -136,11 +134,10 @@ const BottomNavbar = () => {
               </div>
           </li>
             <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-              <a className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <MdTour className='mr-1 h-6 w-6'/>
                 Tourism
-                <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                </svg>
+                
               </a>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                 <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
@@ -152,11 +149,9 @@ const BottomNavbar = () => {
                 </div>
             </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a  className="hover:text-[#3bb5b5] inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-sm text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              <AiTwotoneVideoCamera className='mr-1 h-6 w-6'/>
               Videos
-              <svg className="-mr-1 h-4 w-4  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-              </svg>
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
               <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
