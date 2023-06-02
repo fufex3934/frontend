@@ -5,7 +5,6 @@ import './BottomNav.css'
 import { useNavigate } from 'react-router-dom';
 import {AiFillHome,AiFillMoneyCollect,AiTwotoneVideoCamera} from "react-icons/ai";
 import { IoNewspaper } from 'react-icons/io5';
-import{FcAbout} from 'react-icons/fc';
 import {MdLocalPolice,MdTour} from 'react-icons/md';
 import {SiSociety6} from 'react-icons/si';
 import {BsFillBookmarkFill} from 'react-icons/bs';
@@ -35,7 +34,7 @@ const BottomNavbar = () => {
   return (
     
       <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
-      <div className="bg-white/100   p-4">
+      <div className="bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-2">

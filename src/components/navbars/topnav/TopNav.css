@@ -1,0 +1,10 @@
+button .change{
+    font-size: larger;
+    transition-duration: 1s;
+}
+button:hover .change{
+    color: white;
+}
+button .change:hover{
+    font-size: x-large;
+}
