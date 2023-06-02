@@ -1,6 +1,9 @@
 import React from 'react';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { BiAlarm } from 'react-icons/bi';
+import { BsFacebook } from 'react-icons/bs'
+import { BsLinkedin } from 'react-icons/bs'
+import { AiFillTwitterCircle } from 'react-icons/ai'
 
 const TopNav = () => {
   // Check if the device is a mobile device
@@ -28,13 +31,13 @@ const TopNav = () => {
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
         <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
-          Council
+          <BsFacebook/>
         </a>
         <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
-          Vacancies
+          <BsLinkedin/>
         </a>
         <a href="#" className="text-white ml-6 sm:ml-0 hover:text-orange-600">
-          Complaints
+          <AiFillTwitterCircle />
         </a>
       </div>
     </div>

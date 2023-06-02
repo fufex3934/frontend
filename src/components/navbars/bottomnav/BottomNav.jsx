@@ -5,7 +5,6 @@ import './BottomNav.css'
 import { useNavigate } from 'react-router-dom';
 import {AiFillHome,AiFillMoneyCollect,AiTwotoneVideoCamera} from "react-icons/ai";
 import { IoNewspaper } from 'react-icons/io5';
-import{FcAbout} from 'react-icons/fc';
 import {MdLocalPolice,MdTour} from 'react-icons/md';
 import {SiSociety6} from 'react-icons/si';
 import {BsFillBookmarkFill} from 'react-icons/bs';
