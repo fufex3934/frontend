@@ -57,8 +57,8 @@ const BottomNavbar = () => {
             </a>
           )}
 
-          <div className="hidden lg:block">
-            <ul className="flex items-center space-x-2">
+          <div className="hidden lg:block ">
+            <ul className="flex items-center space-x-5">
               <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
               <button onClick={()=>navigate('/')} className="inline-flex w-full cursor-pointer 
                   justify-center gap-x-0 bg-white px-3 py-2 text-xl
@@ -110,7 +110,7 @@ const BottomNavbar = () => {
           </li>
           <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
             <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <MdLocalPolice className='ml-1 h-6 w-6 text-[#3bb] change'/>
+              <MdLocalPolice className='mr-1 h-6 w-6 text-[#3bb] change'/>
               Politics
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -123,7 +123,7 @@ const BottomNavbar = () => {
           </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <SiSociety6 className='mr-1 h-6 w-6 text-[#3bb] change'/>
+                  <SiSociety6 className='mr-2 h-6 w-6 text-[#3bb] change'/>
               Social
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto"> 
@@ -150,7 +150,7 @@ const BottomNavbar = () => {
             </li>
           <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
             <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <AiTwotoneVideoCamera className='mr-1 h-6 w-6 text-[#3bb] change'/>
+                  <AiTwotoneVideoCamera className='mr-2 h-6 w-6 text-[#3bb] change'/>
               Videos
             </a>
               <div className="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -167,12 +167,7 @@ const BottomNavbar = () => {
             <li className=''>
               <Language/>
             </li>
-          <li className="text-gray-600 hover:text-orange-600 cursor-pointer relative left-[10px] font-serif">
-                <button onClick={()=>navigate('/report')} className="bg-transparent hover:bg-orange-700 text-[#329898] text-sm font-semibold hover:text-white p-3 border border-[#329898] 
-            rounded-0 overflow-hidden whitespace-nowrap transition-colors duration-300 ease-in-out">
-              Report an Issue
-            </button>
-          </li>
+          
             </ul>
           </div>
 

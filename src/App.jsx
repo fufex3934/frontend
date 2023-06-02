@@ -21,7 +21,7 @@ import SuccessStories from './components/body/NavDetailPages/SuccessStories';
 import TourismsPromotions from './components/body/NavDetailPages/TourismsPromotions';
 import Events from './components/body/NavDetailPages/Events';
 import NoMatch from './components/body/NavDetailPages/NoMatch';
-import ReportIssues from './components/body/NavDetailPages/ReportIssues';
+
 
 const App = () => {
   
@@ -48,7 +48,6 @@ const App = () => {
       <Route path='/video-success' element={<SuccessStories />} />
       <Route path='/video-tour' element={<TourismsPromotions />} />
       <Route path='/video-event' element={<Events />} />
-      <Route path='/report' element={<ReportIssues/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
