@@ -2,8 +2,9 @@ import React from 'react';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { BiAlarm } from 'react-icons/bi';
 import { BsFacebook } from 'react-icons/bs'
-import { BsLinkedin } from 'react-icons/bs'
+import { FaTelegram } from 'react-icons/fa'
 import { AiFillTwitterCircle } from 'react-icons/ai'
+import './TopNav.css'
 
 const TopNav = () => {
   // Check if the device is a mobile device
@@ -19,26 +20,26 @@ const TopNav = () => {
       <div className="flex flex-col sm:flex-row items-center relative left-8">
         <a
           href="tel:+25164963831"
-          className="text-white transition ease-in-out duration-300 decoration-0 flex items-center hover:text-orange-600 sm:mr-8"
+          className="text-white font-serif transition ease-in-out duration-300 decoration-0 flex items-center hover:text-orange-600 sm:mr-8"
         >
           <HiOutlinePhone className="text-red-200 mr-2 text-2xl" />
           <span className="text-sm ">Call on: 1800 123 4567</span>
         </a>
         <span className="text-white flex items-center mt-4 sm:mt-0">
           <BiAlarm className="text-red-200 mr-2 text-2xl" />
-          <span className="text-sm ">Open Hours: Mon - Fri 8.00 am - 6.00 pm</span>
+          <span className="text-sm font-serif">Open Hours: Mon - Fri 8.00 am - 6.00 pm</span>
         </span>
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
-        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
-          <BsFacebook/>
-        </a>
-        <a href="#" className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
-          <BsLinkedin/>
-        </a>
-        <a href="#" className="text-white ml-6 sm:ml-0 hover:text-orange-600">
-          <AiFillTwitterCircle />
-        </a>
+        <button className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+          <BsFacebook className='change' />
+        </button>
+        <button className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+          <FaTelegram className='change' />
+        </button>
+        <button className="text-white ml-6 sm:ml-0 hover:text-orange-600">
+          <AiFillTwitterCircle className='change' />
+        </button>
       </div>
     </div>
   );

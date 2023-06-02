@@ -34,7 +34,7 @@ const BottomNavbar = () => {
   return (
     
       <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
-      <div className="bg-white/100   p-4">
+      <div className="bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-2">
