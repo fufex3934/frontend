@@ -164,7 +164,7 @@ const BottomNavbar = () => {
               </ul>
               </div>
           </li>
-            <li className=''>
+            <li className='right-8 absolute'>
               <Language/>
             </li>
           
