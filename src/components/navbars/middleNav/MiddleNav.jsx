@@ -11,13 +11,13 @@ const MiddleNav = () => {
                   </a>
     
                 <h1 className='uppercase ml-6 text-white 
-                mt-6 font-semibold font-serif text-lg mt-10'>
+                   mt-10 font-semibold font-serif text-xl '>
                     Harar Government Communications Affairs Office
                     </h1>
                    <div className='flex justify-evenly absolute right-8'>
                                     <a href="#">
                     <img
-                      className="h-32 md:h-10 w-72 md:w-20 ml-6 mt-10"
+                      className="h-32 md:h-10 w-72 md:w-20 ml-6 mt-9"
                       src="images/har.png"
                       alt="Logo"
                     />
