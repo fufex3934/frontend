@@ -52,27 +52,27 @@ const HararData = () => {
   }, [counters]);
 
   return (
-    <div id="harar-data" className="bg-[#3bb5b5] h-auto w-screen flex flex-col items-center py-16">
+    <div id="harar-data" className="bg-[#3bb5b5] h-auto md:h-[70vh] w-screen flex flex-col items-center py-36 ">
   <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
     <div className="flex flex-col items-center">
-      <RiRunLine className="text-[#a5ff00] w-12 h-12" />
-      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.peopleCount}K</span>
-      <span className="text-white/95 text-sm">Total People lived in our city</span>
+      <RiRunLine className="text-[#a5ff00] w-16 h-16" />
+      <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.peopleCount}K</span>
+      <span className="text-white/95 text-lg md:ml-4">Total People lived in our city</span>
     </div>
     <div className="flex flex-col items-center">
-      <TbDirections className="text-[#a5ff00] w-12 h-12" />
-      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.regionSize.toFixed(1)}K</span>
-      <span className="text-white/95 text-sm">Square kilometers region covers</span>
+      <TbDirections className="text-[#a5ff00] w-16 h-16" />
+      <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.regionSize.toFixed(1)}K</span>
+      <span className="text-white/95 text-lg">Square kilometers region covers</span>
     </div>
     <div className="flex flex-col items-center">
-      <RiPlantLine className="text-[#a5ff00] w-12 h-12" />
-      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.gardenLand}%</span>
-      <span className="text-white/95 text-sm">Private & domestic garden land</span>
+      <RiPlantLine className="text-[#a5ff00] w-16 h-16" />
+      <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.gardenLand}%</span>
+      <span className="text-white/95 text-lg">Private & domestic garden land</span>
     </div>
     <div className="flex flex-col items-center">
-      <GiArchBridge className="text-[#a5ff00] w-12 h-12" />
-      <span className="text-white text-3xl font-bold mt-2 font-mono">{counters.homeOwnership.toFixed(2)}th</span>
-      <span className="text-white/95 text-sm">Average Costs of Home Ownership</span>
+      <GiArchBridge className="text-[#a5ff00] w-16 h-16" />
+      <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.homeOwnership.toFixed(2)}th</span>
+      <span className="text-white/95 text-lg">Average Costs of Home Ownership</span>
     </div>
   </div>
 </div>
