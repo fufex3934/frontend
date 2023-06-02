@@ -13,7 +13,7 @@ import Aos from 'aos';
 import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 const CustomApp = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     window.onload = () => {
@@ -86,7 +86,6 @@ const CustomApp = () => {
           <HararData />
           <UpcomingEvent />
           <News />
-          {/* <OnlineService /> */}
           <ExploreCity data={data} />
           <CityCouncil />
           <BottomImages />

@@ -53,7 +53,7 @@ const HararData = () => {
 
   return (
     <div id="harar-data" className="bg-[#3bb5b5] h-auto md:h-[70vh] w-screen flex flex-col items-center py-36 ">
-  <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 lg:-ml-[10vh]">
     <div className="flex flex-col items-center">
       <RiRunLine className="text-[#a5ff00] w-16 h-16" />
       <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.peopleCount}K</span>

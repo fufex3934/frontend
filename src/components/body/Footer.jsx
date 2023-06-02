@@ -62,16 +62,13 @@ const Footer = () => {
             </div>
             {/* right div */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
-              <div className="flex flex-col items-center md:items-start md:-ml-4 lg:-ml-36">
-                <p className="text-slate-500 text-sm mt-2 py-2">95 FF3, App Street Avenue<br />NSW 96209, Canada</p>
-                <div className="flex flex-col ">
+            <div className="flex flex-col lg:-ml-44 ">
                 <div className='flex'>
                 <BiAlarm className="text-slate-500 mr-2 mt-1" />
                   <span className="text-white">Opening Hours:</span>
                 </div>
                   <span className="ml-2 text-slate-500">Mon - Fri 8.00 am - 6.00 pm</span>
                 </div>
-              </div>
               <div className="flex flex-col items-center mt-4 md:mt-0 ">
                 <div className="relative my-2 flex items-center">
                   <HiOutlinePhone className="text-slate-500" />
