@@ -7,7 +7,6 @@ import MeetIdeologyLeader from './components/body/MeetIdeologyLeader';
 import HararData from './components/body/HararData';
 import UpcomingEvent from './components/body/UpcomingEvent';
 import News from './components/body/News';
-import OnlineService from './components/body/OnlineService';
 import Footer from './components/body/Footer';
 import BottomImages from './components/body/BottomImages';
 import Aos from 'aos';
@@ -87,7 +86,7 @@ const CustomApp = () => {
           <HararData />
           <UpcomingEvent />
           <News />
-          <OnlineService />
+          {/* <OnlineService /> */}
           <ExploreCity data={data} />
           <CityCouncil />
           <BottomImages />
