@@ -21,12 +21,12 @@ const TopNav = () => {
           href="tel:+25164963831"
           className="text-white transition ease-in-out duration-300 decoration-0 flex items-center hover:text-orange-600 sm:mr-8"
         >
-          <HiOutlinePhone className="text-orange-500 mr-2 text-2xl" />
-          <span className="text-sm font-semibold">Call on: 1800 123 4567</span>
+          <HiOutlinePhone className="text-red-200 mr-2 text-2xl" />
+          <span className="text-sm ">Call on: 1800 123 4567</span>
         </a>
         <span className="text-white flex items-center mt-4 sm:mt-0">
-          <BiAlarm className="text-orange-500 mr-2 text-2xl" />
-          <span className="text-sm font-semibold">Open Hours: Mon - Fri 8.00 am - 6.00 pm</span>
+          <BiAlarm className="text-red-200 mr-2 text-2xl" />
+          <span className="text-sm ">Open Hours: Mon - Fri 8.00 am - 6.00 pm</span>
         </span>
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
