@@ -119,10 +119,10 @@
                       style={{ animationDelay: `${index * 0.2}s` }} // Add delay for each item
                     />
                     <div className="absolute top-1/4 left-0 p-8 text-white">
-                      <h2 className="text-3xl md:text-5xl decoration-8 font-bold transition-all duration-300">
+                      <h2 className="text-3xl md:text-6xl lg:text-5xl decoration-8 font-bold transition-all duration-300">
                         {item.title}
                       </h2>
-                      <p className="mt-2 ml-2 text-xl">{item.detail}</p>
+                      <p className="mt-2 ml-2 text-xl md:text-2xl font-sans">{item.detail}</p>
                       <button className="mt-8 px-6 py-2 text-white bg-[#3bb5b5] hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
                         Discover More
                       </button>
@@ -132,7 +132,7 @@
               </div>
               {/* Navigation buttons */}
               <button
-                className="absolute top-80 md:top-[80vh] lg:top-[450px]  z-10 flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md  left-6 md:left-12 hover:bg-opacity-80 transition-colors duration-300 ease-in-out"
+                className="absolute hidden md:top-[80vh] lg:top-[450px]  z-10 md:flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md  left-1 md:left-12 hover:bg-opacity-80 transition-colors duration-300 ease-in-out"
                 data-carousel-prev
               >
                 <svg
@@ -151,7 +151,7 @@
                 </svg>
               </button>
               <button
-                className="absolute top-80 md:top-[80vh] lg:top-[450px]  z-10 flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md  right-6 md:right-12 hover:bg-opacity-80 transition-colors duration-300 ease-in-out"
+                className="absolute hidden  md:top-[80vh] lg:top-[450px]  z-10 md:flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-md  right-1 md:right-12 hover:bg-opacity-80 transition-colors duration-300 ease-in-out"
                 data-carousel-next
               >
                 <svg
