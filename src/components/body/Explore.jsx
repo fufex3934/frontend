@@ -1,9 +1,30 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './css/Explore.css';
 import 'aos/dist/aos.css'
-
+import createClient from '../../client';
 const Explore = () => {
-   
+        const [exploreData,setExploreData] = useState(null);
+
+        useEffect(()=>{
+            const fetchData = async ()=>{
+                try{
+                    const data = await createClient.fetch(`*[_type == "exploreService"]{
+                        exploreImage{
+                            asset->{
+                                _id,
+                                url
+                            },
+                            alt
+                        }
+                    }`);
+                    setExploreData(data);
+                    console.log(data);
+                }catch(error){
+                    console.error(error);
+                }
+            }
+            fetchData();
+        },[]);
     return (
         <>
             <div className='block ms-[150px] me-[150px] mt-[50px] p-5 main'>
@@ -27,16 +48,25 @@ const Explore = () => {
             <div className="main2">
                 <div className="sub-main-2">
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                        <img  src="images/dept.jpg" alt="" />
+                        <img  src={exploreData && exploreData[0] && exploreData[0].exploreImage.asset.url} 
+                        alt={ exploreData && exploreData[0] && exploreData[0].title} 
+                        className='w-[250vh] h-60'
+                        />
                         <a href="" className='text-md md:text-sm lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-7 whitespace-nowrap'>Service Departments</a>
                     </div>
                     <div className='text-center image relative' data-aos="fade-up"
                         data-aos-duration="1500">
-                        <img src="images/visitor.jpg" alt="" />
+                        <img src={exploreData && exploreData[1] && exploreData[1].exploreImage.asset.url}
+                         alt={ exploreData && exploreData[1] && exploreData[1].title}
+                         className='w-[250vh] h-60'
+                          />
                         <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</a>
                     </div>
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                        <img src="images/admin.jpg" alt="" />
+                        <img src={exploreData && exploreData[2] && exploreData[2].exploreImage.asset.url}
+                         alt={ exploreData && exploreData[2] && exploreData[2].title}
+                         className='w-[250vh] h-60'
+                         />
                         <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>Administrations</a>
                     </div>
                 </div>
