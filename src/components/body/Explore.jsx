@@ -18,7 +18,6 @@ const Explore = () => {
                         }
                     }`);
                     setExploreData(data);
-                    console.log(data);
                 }catch(error){
                     console.error(error);
                 }
