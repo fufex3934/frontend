@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+import React from 'react';
+=======
 import React,{useState,useEffect} from 'react'
 import Aos from 'aos';
+>>>>>>> 7ff956720f1662dd5ddef96f77cda51d8c687478
 import { RiFileTextFill } from 'react-icons/ri';
 import { MdOutlineAlarm }from 'react-icons/md';
 import { IoLocationOutline }from 'react-icons/io5';

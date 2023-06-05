@@ -20,6 +20,7 @@ import Testimonials from './components/body/NavDetailPages/Testimonials';
 import SuccessStories from './components/body/NavDetailPages/SuccessStories';
 import TourismsPromotions from './components/body/NavDetailPages/TourismsPromotions';
 import Events from './components/body/NavDetailPages/Events';
+import Leaders from './components/body/NavDetailPages/Leaders';
 import NoMatch from './components/body/NavDetailPages/NoMatch';
 import UpcomingEvent1 from './components/body/bodyDetailsPage/UpcomingEvent1';
 import UpcomingEvent2 from './components/body/bodyDetailsPage/UpcomingEvent2';
@@ -52,6 +53,7 @@ const App = () => {
       <Route path='/video-event' element={<Events />} />
       <Route path= '/upcoming-detail1' element={<UpcomingEvent1/>}/>
       <Route path= '/upcoming-detail2' element={<UpcomingEvent2/>}/>
+      <Route path='/leader' element={<Leaders />} />
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
