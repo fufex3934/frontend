@@ -1,10 +1,32 @@
-import { useNavigate } from 'react-router-dom';
-import React, { useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 import './css/MeetIdeologyLeader.css'
 import 'aos/dist/aos.css'
+import createClient from '../../client';
 const MeetIdeologyLeader = () => {
-    const navigate = useNavigate();
-    
+            const [leaderData,setLeaderData] = useState(null);
+            useEffect(()=>{
+                const fetchData = async ()=>{
+                    try{
+                    const data = await createClient.fetch(`*[_type == "meetLeader"]{
+                        descriptionOne,
+                        descriptionTwo,
+                        leaderImage{
+                            asset->{
+                                _id,
+                                url
+                            },
+                            alt
+                        },
+                        quote,
+                        name
+                    }`);
+                    setLeaderData(data);
+                    }catch(error){
+                        console.error(error);
+                    }
+                }
+                fetchData();
+            },[]);
   return (
     <>
     <div className='main medium-margin'>
@@ -13,13 +35,10 @@ const MeetIdeologyLeader = () => {
                 Meet Ideological leader for youth generation
             </h1>
             <p className='p1' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                Mayor Ordin Bedri is committed to solving problems for town
-                people across the state under his leadership.
+               {leaderData && leaderData[0] && leaderData[0].descriptionOne}
             </p>
             <p className='p2' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                Expanding access to affordable healthcare, improving skills, respecting 
-                working families as the City’s 20th mayor. 
-                Mayor Ordin was won in the serve a sixth term on Octorber 7, 2018.
+            {leaderData && leaderData[0] && leaderData[0].descriptionTwo}
             </p>
             <p className='qouet' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                 “Stand at the top of a cliff and jump off and build your wings on the way down.”<br/>
