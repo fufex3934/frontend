@@ -3,11 +3,11 @@ import Language from './Language';
 import '../../styles/navbar.css';
 import './BottomNav.css'
 import { useNavigate } from 'react-router-dom';
-import {AiFillHome,AiFillMoneyCollect,AiTwotoneVideoCamera} from "react-icons/ai";
+import { AiFillHome, AiFillMoneyCollect, AiTwotoneVideoCamera } from "react-icons/ai";
 import { IoNewspaper } from 'react-icons/io5';
-import {MdLocalPolice,MdTour} from 'react-icons/md';
-import {SiSociety6} from 'react-icons/si';
-import {BsFillBookmarkFill} from 'react-icons/bs';
+import { MdLocalPolice, MdTour } from 'react-icons/md';
+import { SiSociety6 } from 'react-icons/si';
+import { BsFillBookmarkFill } from 'react-icons/bs';
 const BottomNavbar = () => {
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(true);
@@ -32,8 +32,8 @@ const BottomNavbar = () => {
   }, []);
 
   return (
-    
-      <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
+
+    <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
       <div className="bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
@@ -60,123 +60,122 @@ const BottomNavbar = () => {
           <div className="hidden lg:block ">
             <ul className="flex items-center space-x-5">
               <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
-              <button onClick={()=>navigate('/')} className="inline-flex w-full cursor-pointer 
+                <button onClick={() => navigate('/')} className="inline-flex w-full cursor-pointer 
                   justify-center gap-x-0 bg-white px-3 py-2 text-xl
-                   text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white" 
+                   text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white"
                   id="menu-button" aria-expanded="true" aria-haspopup="true">
-                    <AiFillHome className='mr-1 w-6 text-[#3bb] change h-6'/>
-                    Home
-                  </button>  
-                </li>
+                  <AiFillHome className='mr-1 w-6 text-[#3bb] change h-6' />
+                  Home
+                </button>
+              </li>
 
-            <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-              <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <BsFillBookmarkFill className='mr-1 w-6 h-6 text-[#3bb] change'/>
-                About
-                
-              </a>
-              <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><button onClick={()=>navigate('/about')}  className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/about-leadership')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/about-history')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">History</button></li>
-                </ul>
-              </div>
-            </li>
-            <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-              <a className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <IoNewspaper className='mr-1 w-6 h-6 text-[#3bb] change'/>
-                Timely        
-              </a>
-                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                
-                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
-                    <li className="py-1"><button onClick={()=>navigate('/timely-news')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">News</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/timely-emergence')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Emergency</button></li>
-                </ul>
-                </div>
-            </li>
-          <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <AiFillMoneyCollect className='mr-1  w-6 h-6 text-[#3bb] change'/>
-              Economic
-            </a>
-              <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><button onClick={()=>navigate('/economy-policy')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Policies</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/economy-sectors')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Sectors</button></li>
-                </ul>
-              </div>
-          </li>
-          <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
-            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-              <MdLocalPolice className='mr-1 h-6 w-6 text-[#3bb] change'/>
-              Politics
-            </a>
-              <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-              <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><button onClick={()=>navigate('/politic-go')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Government Officials</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/politic-gs')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Government Structure</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/politic-news')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Political News</button></li>
-              </ul>
-              </div>
-          </li>
-          <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <SiSociety6 className='mr-2 h-6 w-6 text-[#3bb] change'/>
-              Social
-            </a>
-              <div className="group-hover:block dropdown-menu absolute hidden h-auto"> 
-              <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><button onClick={()=>navigate('/social-edu')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Education</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/social-health')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">HealthCare</button></li>
-              </ul>
-              </div>
-          </li>
-            <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-              <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <MdTour className='mr-1 h-6 w-6 text-[#3bb] change '/>
-                Tourism
-                
-              </a>
-                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
-                    <li className="py-1"><button onClick={()=>navigate('/tourism-mon')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Monuments</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/tourism-mus')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Museum</button></li>
-                    <li className="py-1"><button onClick={()=>navigate('/tourism-animal')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Animal Exhibition</button></li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <BsFillBookmarkFill className='mr-1 w-6 h-6 text-[#3bb] change' />
+                  About
 
-                </ul>
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 text-center shadow  ">
+                    <li className="py-1"><button onClick={() => navigate('/about')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/about-leadership')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/about-history')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Harar</button></li>
+                  </ul>
                 </div>
-            </li>
-          <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-            <a  className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <AiTwotoneVideoCamera className='mr-2 h-6 w-6 text-[#3bb] change'/>
-              Videos
-            </a>
-              <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-              <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                  <li className="py-1"><button onClick={()=>navigate('/video-doc')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Documentary</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/video-test')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Testimonials</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/video-success')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Success Stories</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/video-tour')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Tourism Promotions</button></li>
-                  <li className="py-1"><button onClick={()=>navigate('/video-event')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Events and Conferences</button></li>
-                  
-              </ul>
-              </div>
-          </li>
-            <li className='right-8 absolute'>
-              <Language/>
-            </li>
-          
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <a className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <IoNewspaper className='mr-1 w-6 h-6 text-[#3bb] change' />
+                  Timely
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
+                    <li className="py-1"><button onClick={() => navigate('/timely-news')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">News</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/timely-emergence')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Emergency</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <AiFillMoneyCollect className='mr-1  w-6 h-6 text-[#3bb] change' />
+                  Economic
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+                    <li className="py-1"><button onClick={() => navigate('/economy-policy')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Policies</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/economy-sectors')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Sectors</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <MdLocalPolice className='mr-1 h-6 w-6 text-[#3bb] change' />
+                  Politics
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+                    <li className="py-1"><button onClick={() => navigate('/politic-go')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Government Officials</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/politic-gs')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Government Structure</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/politic-news')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Political News</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <SiSociety6 className='mr-2 h-6 w-6 text-[#3bb] change' />
+                  Social
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+                    <li className="py-1"><button onClick={() => navigate('/social-edu')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Education</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/social-health')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">HealthCare</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <MdTour className='mr-1 h-6 w-6 text-[#3bb] change ' />
+                  Tourism
+
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
+                    <li className="py-1"><button onClick={() => navigate('/tourism-mon')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Monuments</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/tourism-mus')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Museum</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/tourism-animal')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Animal Exhibition</button></li>
+
+                  </ul>
+                </div>
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <AiTwotoneVideoCamera className='mr-2 h-6 w-6 text-[#3bb] change' />
+                  Videos
+                </a>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
+                    <li className="py-1"><button onClick={() => navigate('/video-doc')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Documentary</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/video-test')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Testimonials</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/video-success')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Success Stories</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/video-tour')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer whitespace-nowrap">Tourism Promotions</button></li>
+                    <li className="py-1"><button onClick={() => navigate('/video-event')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer whitespace-nowrap">Events and Conferences</button></li>
+
+                  </ul>
+                </div>
+              </li>
+              <li className='right-7 absolute'>
+                <Language />
+              </li>
+
             </ul>
           </div>
 
           <div className="block lg:hidden items-center ml-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400 ${
-                isOpen ? 'rotate-180' : ''
-              }`}
+              className={`flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400 ${isOpen ? 'rotate-180' : ''
+                }`}
             >
               <svg
                 className={`fill-current h-4 w-4 ${isOpen ? 'block' : 'block'}`}
@@ -185,7 +184,7 @@ const BottomNavbar = () => {
               >
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
-              
+
             </button>
           </div>
 
@@ -210,127 +209,127 @@ const BottomNavbar = () => {
                 </button>
               </div>
               <div className="flex flex-col w-80% h-full p-4 ">
-                    <ul className="space-y-4  ">
-                    <li className="group z-10 relative dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <button onClick={()=>navigate('/')}  className=" inline-flex   py-2 text-sm " >
-                        Home
-                      </button>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  cursor-pointer text-md font-serif ">
-                        <a  className="inline-flex  justify-between gap-x-[163px] py-2 text-sm " >
-                          About
-                          <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                          </svg>
-                        </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto ">
-                          
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/about')}  className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/about-leadership')}  className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/about-history')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">History</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a  className="inline-flex  justify-between gap-x-40   py-2 text-sm " >
-                        Timely
-                        <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                        </svg>
-                      </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/timely-news')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">News</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/timely-emergence')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Emergency</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a  className="inline-flex  justify-between gap-x-[142px] py-2 text-sm " >
-                        Economic
-                        <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                        </svg>
-                      </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/economy-policy')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Policies</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/economy-sectors')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Sectors</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                        <a  className="inline-flex  justify-between gap-x-[160px]  py-2 text-sm " >
-                          Politics
-                          <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                          </svg>
-                        </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/politic-go')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Government Officials</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/politic-gs')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Government Structure</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/politic-news')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Political News</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                        <a className="inline-flex  justify-between gap-x-[169px]   py-2 text-sm " >
-                          Social
-                          <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                          </svg>
-                        </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button  onClick={()=>navigate('/social-edu')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Education</button></li>
-                              <li className="py-1"><button  onClick={()=>navigate('/social-health')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">HealthCare</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                        <a className="inline-flex  justify-between gap-x-[156px]   py-2 text-sm " >
-                          Tourism
-                          <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                          </svg>
-                        </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/tourism-mon')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Monuments</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/tourism-mus')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Museums</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/tourism-animal')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Animal Exhibition</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                      <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                        <a className="inline-flex  justify-between gap-x-[166px]  py-2 text-sm " >
-                          Videos
-                          <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                          </svg>
-                        </a>
-                          <div className="group-hover:block dropdown-menu relative hidden h-auto">
-                          <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
-                              <li className="py-1"><button onClick={()=>navigate('/video-doc')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Documentary</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/video-test')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Testimonials</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/video-success')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Success Stories</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/video-tour')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Tourism Promotions</button></li>
-                              <li className="py-1"><button onClick={()=>navigate('/video-event')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Events and Conferences</button></li>
-                          </ul>
-                          </div>
-                      </li>
-                    </ul>
+                <ul className="space-y-4  ">
+                  <li className="group z-10 relative dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <button onClick={() => navigate('/')} className=" inline-flex   py-2 text-sm " >
+                      Home
+                    </button>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[163px] py-2 text-sm " >
+                      About
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto ">
+
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/about')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">About Us</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/about-leadership')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Leadership</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/about-history')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">History</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-40   py-2 text-sm " >
+                      Timely
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/timely-news')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">News</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/timely-emergence')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Emergency</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[142px] py-2 text-sm " >
+                      Economic
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/economy-policy')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Policies</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/economy-sectors')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Sectors</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[160px]  py-2 text-sm " >
+                      Politics
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/politic-go')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Government Officials</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/politic-gs')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Government Structure</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/politic-news')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Political News</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[169px]   py-2 text-sm " >
+                      Social
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/social-edu')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Education</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/social-health')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">HealthCare</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[156px]   py-2 text-sm " >
+                      Tourism
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/tourism-mon')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Monuments</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/tourism-mus')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Museums</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/tourism-animal')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Animal Exhibition</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <a className="inline-flex  justify-between gap-x-[166px]  py-2 text-sm " >
+                      Videos
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+                      <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
+                        <li className="py-1"><button onClick={() => navigate('/video-doc')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Documentary</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/video-test')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-1 cursor-pointer">Testimonials</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/video-success')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Success Stories</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/video-tour')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Tourism Promotions</button></li>
+                        <li className="py-1"><button onClick={() => navigate('/video-event')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-1 hover:-ml-5  cursor-pointer">Events and Conferences</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
               </div>
-           </div>
+            </div>
           )}
         </ul>
       </div>
     </nav>
-     
+
   );
 };
 

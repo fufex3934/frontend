@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useEffect } from 'react'
 import './css/MeetIdeologyLeader.css'
 import 'aos/dist/aos.css'
 const MeetIdeologyLeader = () => {
+    const navigate = useNavigate();
     
   return (
     <>
@@ -23,14 +25,14 @@ const MeetIdeologyLeader = () => {
                 “Stand at the top of a cliff and jump off and build your wings on the way down.”<br/>
                 <span>– Ordin Bedri, Mayor</span>
             </p>
-            <a href="">
+            <button onClick={() => navigate('/leader')} >
                 <div className='youtubeIcon' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="5000">
                     <div className='triangle' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000"></div>
                 </div>
                 <span className='span' data-aos-duration="5000" data-aos="fade-up" data-aos-easing="linear">Video Intro<br />
                     About Our Mayor
                 </span>
-            </a>
+            </button>
         </div>
         <div className='main-image'>
             <img src="images/mayor.jpeg" alt="" className="person" data-aos-duration="2000" data-aos="fade-up" data-aos-easing="linear" />
