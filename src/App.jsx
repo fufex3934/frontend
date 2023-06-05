@@ -24,6 +24,7 @@ import Leaders from './components/body/NavDetailPages/Leaders';
 import NoMatch from './components/body/NavDetailPages/NoMatch';
 import UpcomingEvent1 from './components/body/bodyDetailsPage/UpcomingEvent1';
 import UpcomingEvent2 from './components/body/bodyDetailsPage/UpcomingEvent2';
+import HomeNewsDetails from './components/body/NavDetailPages/NewsDetails/HomeNewsDetails';
 
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
       <Route path= '/upcoming-detail1' element={<UpcomingEvent1/>}/>
       <Route path= '/upcoming-detail2' element={<UpcomingEvent2/>}/>
       <Route path='/leader' element={<Leaders />} />
+      <Route path='/news/:slug' element = {<HomeNewsDetails/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
