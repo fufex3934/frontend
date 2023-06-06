@@ -10,7 +10,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import createClient from '../../../../client';
 import { useParams } from 'react-router-dom';
 
-const HomeNewsDetails = () => {
+const NationalNewsDetails = () => {
   const [singlePost, setSinglePost] = useState({});
   const [newsList, setNewsList] = useState([]);
   const { slug } = useParams();
@@ -47,7 +47,7 @@ const HomeNewsDetails = () => {
 
     const fetchNewsList = async () => {
       try {
-        const newsData = await createClient.fetch(`*[_type == "home" && !(slug.current == "${slug}")]{
+        const newsData = await createClient.fetch(`*[_type == "nationalNews" && !(slug.current == "${slug}")]{
           title,
           slug,
           image{
@@ -180,4 +180,4 @@ const HomeNewsDetails = () => {
   );
 };
 
-export default HomeNewsDetails;
+export default NationalNewsDetails;

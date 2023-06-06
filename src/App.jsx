@@ -25,7 +25,14 @@ import NoMatch from './components/body/NavDetailPages/NoMatch';
 import UpcomingEvent1 from './components/body/bodyDetailsPage/UpcomingEvent1';
 import UpcomingEvent2 from './components/body/bodyDetailsPage/UpcomingEvent2';
 import HomeNewsDetails from './components/body/NavDetailPages/NewsDetails/HomeNewsDetails';
-
+import HarariNewsDetails from './components/body/NavDetailPages/NewsDetails/HarariNewsDetails';
+import HararifNews from './components/body/NavDetailPages/News/HararifNews';
+import NationalNews from './components/body/NavDetailPages/News/NationalNews';
+import NationalNewsDetails from './components/body/NavDetailPages/NewsDetails/NationalNewsDetails';
+import AfricaNews from './components/body/NavDetailPages/News/AfricaNews';
+import AfricaNewsDetails from './components/body/NavDetailPages/NewsDetails/AfricaNewsDetails';
+import InternationalNews from './components/body/NavDetailPages/News/InternationalNews';
+import InternationalNewsDetails from './components/body/NavDetailPages/NewsDetails/InternationalNewsDetails';
 
 const App = () => {
   
@@ -56,6 +63,14 @@ const App = () => {
       <Route path= '/upcoming-detail2' element={<UpcomingEvent2/>}/>
       <Route path='/leader' element={<Leaders />} />
       <Route path='/news/:slug' element = {<HomeNewsDetails/>}/>
+      <Route path='/harari-news' element = {<HararifNews/>}/>
+      <Route path='/harari-news/:slug' element = {<HarariNewsDetails/>}/>
+      <Route path='/national-news' element = {<NationalNews/>}/>
+      <Route path='/national-news/:slug' element = {<NationalNewsDetails/>}/>
+      <Route path='/africa-news' element = {<AfricaNews/>}/>
+      <Route path='/africa-news/:slug' element = {<AfricaNewsDetails/>}/>
+      <Route path='/international-news' element = {<InternationalNews/>}/>
+      <Route path='/international-news/:slug' element = {<InternationalNewsDetails/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
