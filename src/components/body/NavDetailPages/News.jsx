@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { AiFillHome } from 'react-icons/ai';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import {BsLinkedin,BsTelegram,BsYoutube} from 'react-icons/bs';
 import { formatDistanceToNow } from 'date-fns';
 import createClient from '../../../client';
 import { useTrail, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
 import {BiTimeFive} from 'react-icons/bi';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import {BsLinkedin,BsTelegram,BsYoutube} from 'react-icons/bs';
+import NewsNav from '../../navbars/NewsNav';
+
 function News() {
   const [homeNews, setHomeNews] = useState([]);
   
@@ -56,82 +57,7 @@ function News() {
 
   return (
     <>
-      {/* Navigation */}
-      <nav className="bg-white fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Home Icon */}
-            <a href="/" className="flex items-center cursor-pointer text-slate-700 hover:bg-[#84cc39]  hover:text-white px-3 py-2 rounded-md">
-              <AiFillHome className=" h-6 w-6 mr-2" />
-              <span >Home</span>
-            </a>
-
-            {/* Navigation */}
-            <div className="hidden md:block">
-              <div className="ml-4 md:ml-10 flex items-center space-x-4">
-                <a
-                  href="/harari"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  Harari News
-                </a>
-                <a
-                  href="/national"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  National News
-                </a>
-                <a
-                  href="/africa"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  Africa News
-                </a>
-                <a
-                  href="/international"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  International News
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Mobile Navigation */}
-      <div className="md:hidden bg-white fixed top-16 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-2">
-            <div className="flex items-center space-x-1">
-              <a
-                href="/harari"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Harari News
-              </a>
-              <a
-                href="/national"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-              >
-                National News
-              </a>
-              <a
-                href="/africa"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Africa News
-              </a>
-              <a
-                href="/international"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
-              >
-                International News
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NewsNav/>
  
       {/* Home News section */}
   <section className="bg-gray-100 py-8 relative">
@@ -193,42 +119,39 @@ function News() {
           </animated.div>
         ))}
     </div>
+  
   </div>
 </section>
      {/* footer part */}
-
-  
-     <footer className="bg-[#132244] py-24 mt-[800vh] md:mt-[210vh] lg:mt-[270vh]">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex items-center justify-between">
-      <p className="text-gray-300 text-sm">
-        &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
-      </p>
-      <div className="flex items-center space-x-4">
-        <a href="#" className="text-gray-300 hover:text-white">
-          <FaFacebook size={24} />
-        </a>
-        <a href="#" className="text-gray-300 hover:text-white">
-          <FaTwitter size={24} />
-        </a>
-        <a href="#" className="text-gray-300 hover:text-white">
-          <FaInstagram size={24} />
-        </a>
-        <a href="#" className="text-gray-300 hover:text-white">
-          <BsLinkedin size={24} />
-        </a>
-        <a href="#" className="text-gray-300 hover:text-white">
-          <BsTelegram size={24} />
-        </a>
-        <a href="#" className="text-red-800 hover:text-white">
-          <BsYoutube size={24} />
-        </a>
+    <footer className="bg-[#132244] py-24 mt-[850vh] md:mt-[210vh] lg:mt-[270vh] ">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="flex items-center justify-between">
+        <p className="text-gray-300 text-sm">
+          &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
+        </p>
+        <div className="flex items-center space-x-4">
+          <a href="#" className="text-gray-300 hover:text-white">
+            <FaFacebook size={24} />
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <FaTwitter size={24} />
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <FaInstagram size={24} />
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <BsLinkedin size={24} />
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            <BsTelegram size={24} />
+          </a>
+          <a href="#" className="text-red-800 hover:text-white">
+            <BsYoutube size={24} />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-
+  </footer>
     </>
   );
 }
