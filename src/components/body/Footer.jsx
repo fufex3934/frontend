@@ -91,29 +91,25 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-12">
             <div className='ml-16 md:ml-0'>
-              <p className="text-white text-lg font-bold">Service Request</p>
+              <p className="text-white text-lg font-bold">Usefull Links</p>
               <div className="py-3">
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Apply for City Job
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Request a 311 service
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Get a Parking Permit
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Building Permit
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Online Birth Certificate
-                </span>
-                <span className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> Trade License
-                </span>
+                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> https://harari.gov.et
+                </Link>
+                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> https://harari.gov.et
+                </Link>
+                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> https://harari.gov.et
+                </Link>
+                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> https://harari.gov.et
+                </Link>
+                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> https://harari.gov.et
+                </Link>
               </div>
             </div>
 
