@@ -28,6 +28,8 @@ import InternationalNews from './components/body/NavDetailPages/News/Internation
 import InternationalNewsDetails from './components/body/NavDetailPages/NewsDetails/InternationalNewsDetails';
 import Woreda from './components/body/Woreda';
 import WoredaDetails from './components/body/bodyDetailsPage/WoredaDetails';
+import ContactUs from './components/body/ContactUs';
+
 
 const App = () => {
   
@@ -38,6 +40,7 @@ const App = () => {
       <Route path='/about-leadership' element={<Leadership />} />
       <Route path='/about-history' element={<History />} />
       <Route path='/timely-news' element={<News />} />
+      <Route path='/contact-us' element={<ContactUs/>}/>
       <Route path='/timely-emergence' element={<Emergency />} />
       <Route path='/economy-policy' element={<Policies />} />
       <Route path='/economy-sectors' element={<Sectors />} />

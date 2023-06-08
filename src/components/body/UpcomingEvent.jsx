@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import Aos from 'aos';
 import { RiFileTextFill } from 'react-icons/ri';
 import { MdOutlineAlarm }from 'react-icons/md';
 import { IoLocationOutline }from 'react-icons/io5';
@@ -7,6 +6,7 @@ import './css/UpcomingEvent.css';
 import createClient from '../../client';
 import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const event= [
     {id:1,name:'event',text1: 'Upcoming Events'},
@@ -15,6 +15,7 @@ const event= [
 
 
 const UpcomingEvent = () => {
+    const navigate = useNavigate();
     const [upcomingData,setUpcomingData] = useState(null);
     const date1 = upcomingData && upcomingData[0] && new Date(upcomingData[0].date);
     const formattedDate1 = date1 ? format(date1, 'MMMM d, yyyy @ HH:mm') : '';
@@ -52,7 +53,7 @@ const UpcomingEvent = () => {
                           <h1>{item.text1}</h1>
                       </div>
                        <div className='float-right'>
-                          <a href="">{item.text2}</a>
+                          <button onClick={() => navigate('/events')}>{item.text2}</button>
                         </div>
                   </div>
               ))}
