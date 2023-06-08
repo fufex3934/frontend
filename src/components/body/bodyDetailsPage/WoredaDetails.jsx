@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { FiMapPin } from 'react-icons/fi';
 import { BiPhone } from 'react-icons/bi';
@@ -148,8 +148,12 @@ const WoredaDetails = () => {
   if (!selectedWoreda) {
     return <p>Woreda not found.</p>; // Handle the case when the woreda ID is not valid
   }
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
 
   return (
+    
     <>
       <Navs />
       <div className="container mx-auto p-8 mt-18 md:mt-24 lg:my-10">

@@ -53,7 +53,10 @@ function HararifNews() {
         from: { opacity: 0, transform: 'scale(0.8)' },
         config: { mass: 1, tension: 180, friction: 12 },
       });
-
+      useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+      }, []);
+    
   return (
     <>
       <NewsNav/>

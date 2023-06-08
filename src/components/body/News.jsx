@@ -1,68 +1,98 @@
-import React from 'react'
-import { BiComment } from 'react-icons/bi'
-import { HiOutlineArrowLongRight } from 'react-icons/hi2'
-import { useNavigate } from 'react-router'
-import './css/News.css'
+import React, { useEffect, useState } from 'react';
+import { BiComment } from 'react-icons/bi';
+import { HiOutlineArrowLongRight } from 'react-icons/hi2';
+import { Link, useNavigate } from 'react-router-dom';
+import createClient from '../../client';
+
 const News = () => {
-    const navigate=useNavigate()
+  const navigate = useNavigate();
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await createClient.fetch(
+          `*[_type == "home"] | order(time desc){
+            image{
+              asset->{
+                _id,
+                url
+              },
+              alt
+            },
+            title,
+            slug,
+            time
+          }[0..2]`
+        );
+        setNews(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const formattedTime = (time) =>
+    time
+      ? new Date(time).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })
+      : '';
+      useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+      }, []);
+    
   return (
-    <div className='main-news'>
-        <div className='sub-news'>
-            <h1>News and <br/>Publications</h1>
-            <p>The news about recent activities<br/>for needed peoples.</p>
-            <button onClick={() => navigate('/news/:slug')}>More News</button>
-        </div>
+    <div className=" bg-gray-100 p-6 shadow-lg">
+      <div className="">
+        <h1 className="text-4xl text-[#329898]">News and Publications</h1>
+        <p className="text-gray-500 text-lg">The news about recent activities for needed peoples.</p>
+        <button
+          className="text-lg text-[#329898] border border-[#329898] hover:bg-[#329898] hover:text-white px-4 py-2 mt-4"
+          onClick={() => navigate('/timely-news')}
+        >
+          More News
+        </button>
+      </div>
 
-        <div className='news-show'>
-            <a href="">
-                <img src="images/new1.jpg" alt="" />
-                <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2023</span>
-            </a>
-            <div className="p-6">
-                <p className=''>In
-                    <a href="" className='ms-1 hover:text-[#329898] op'>Harari</a>,
-                    <a href="" className='ms-1 hover:text-[#329898] op'>Economic Culture</a><br />
-                    <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
-                </p>
-                <a href="" className='text-2xl hover:text-[#329898] font-serif a'>Metro Road Design Plan <br />2025</a><br />
-                <a href="" className='text-md flex font-light mt-6 continue hover:text-[#329898]'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
+      {news.length >= 3 && (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          {news.slice(0, 3).map((item, index) => (
+            <div className="bg-white rounded-lg shadow-md " key={index}>
+              <Link to={`/news/${news[index].slug.current}`}>
+                <img src={item?.image.asset.url} alt={item?.image.alt} className="w-full h-48 object-cover rounded-t-lg" />
+                
+              </Link>
+              <div className="p-8 ">
+              <div className="text-white  bg-[#329898] p-2 flex items-center  mb-4 w-36 h-8 text-lg">
+                  {formattedTime(item?.time)}
+                </div>
+                <span className="flex items-center text-green-600 text-lg">
+                  <BiComment className="mr-1" />Comment off
+                </span>
+                <Link to = {`/news/${news[index].slug.current}`}
+                  href=""
+                  className="text-2xl hover:text-[#329898] font-sans text-[#141414] block mt-4"
+                >
+                  {item?.title}
+                </Link>
+                <Link to = {`/news/${news[index].slug.current}`}
+                  href=""
+                  className="text-md flex font-light mt-6 text-[#329898] hover:text-[#329898]"
+                >
+                  Continue Reading
+                  <HiOutlineArrowLongRight className="ml-2" />
+                </Link>
+              </div>
             </div>
+          ))}
         </div>
-
-        <div className='news-show'>
-            <a href="">
-                <img src="images/new2.jpg" alt="" />
-                <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2023</span>
-            </a>
-            <div className="p-6">
-                  <p className=''>In
-                      <a href="" className='ms-1 hover:text-[#329898] op'>Harari</a>,
-                      <a href="" className='ms-1 hover:text-[#329898] op'>Hyenas of Harar</a><br />
-                      <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
-                  </p>
-                  <a href="" className='text-2xl hover:text-[#329898] font-serif a'>Spotted Hyenas in Harar <br />2023</a><br />
-                  <a href="" className='text-md flex font-light mt-6 continue hover:text-[#329898]'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
-            </div>
-        </div>
-
-        <div className='news-show'>
-            <a href="">
-                <img  src="images/new3.jpg" alt="" />
-                <span className='text-white bg-[#329898] p-2 ms-8 spa'>July 24, 2023</span>
-            </a>
-            <div className="p-6">
-                <p className=''>In
-                    <a href="" className='ms-1 hover:text-[#329898] op'>Harari</a>,
-                    <a href="" className='ms-1 hover:text-[#329898] op'>Iconic Leader's</a><br />
-                    <span className='flex p-2'><BiComment className='mt-2 mr-1 -ml-2' />Comment off</span>
-                </p>
-                  <a href="" className='text-2xl hover:text-[#329898] font-serif a'>Conversational Leadership <br />2023</a><br />
-                <a href="" className='text-md flex font-light mt-6 continue hover:text-[#329898]'>Continue Reading<HiOutlineArrowLongRight className='ms-2 mt-2' /></a>
-            </div>
-        </div>
-
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default News;

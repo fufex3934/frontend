@@ -45,10 +45,15 @@ const UpcomingEvent1 = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
+
   // Function to resolve image URLs using Sanity's imageUrlBuilder
   const builder = imageUrlBuilder(createClient);
   const urlFor = (source) => builder.image(source);
-
+  
   return (
     <>
       <Navs />
