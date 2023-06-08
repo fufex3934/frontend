@@ -3,7 +3,7 @@ import { HiOutlinePhone } from 'react-icons/hi';
 import { FiMail } from 'react-icons/fi';
 import { BsFacebook, BsTelegram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
-import { FaTwitter, FaTelegram, FaYoutube, FaFacebookSquare } from 'react-icons/fa';
+// import { FaTwitter, FaTelegram, FaYoutube, FaFacebookSquare, FaPhoneSquare } from 'react-icons/fa';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import './css/Footer.css';
@@ -18,34 +18,18 @@ const Footer = () => {
             <button onClick={() => navigate('/about')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500 whitespace-nowrap">
               About Us
             </button>
-            <button onClick={()=>navigate('/')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
+            <button className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
               Services
             </button>
-            <button onClick={() => navigate('/upcoming-detail1')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
+            <button  className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
               Events
             </button>
             <button onClick={() => navigate('/timely-news')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
               News
             </button>
-            <button onClick={()=>navigate('/')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
+            <button onClick={() => navigate('/contact-us')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
               Contact
             </button>
-          </div>
-
-          <div className="flex mt-4 md:mt-0">
-            <p className="text-slate-300 text-sm">Connect With Us</p>
-            <Link to='https://www.facebook.com/people/Harari-Government-communication-affairs-Office/' target="_blank" className="ml-6 -mt-1 mr-2">
-              <FaFacebookSquare className="rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white" />
-            </Link>
-            <Link to='https://twitter.com/HarariGovComm/status/1559545087117377538' target="_blank" className="ml-1 -mt-1 mr-2">
-              <FaTwitter className="rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white" />
-            </Link>
-            <Link to='https://t.me/s/HarariGovernmentCommunication' target="_blank" className="ml-1 -mt-1 mr-2">
-              <FaTelegram className="rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white" />
-            </Link>
-            <Link to='https://www.youtube.com/@hararicommunication82' target="_blank" className="ml-1 -mt-1">
-              <FaYoutube className="rounded-full bg-white p-2 w-8 h-8 hover:bg-orange-600 cursor-pointer hover:text-white" />
-            </Link>
           </div>
         </div>
 
@@ -96,13 +80,13 @@ const Footer = () => {
               <p className="text-white text-lg font-bold">Usefull Links</p>
               <div className="py-3">
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> https://harari.gov.et
+                  <BiChevronRight /> Harari Official Websit
                 </Link>
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> https://harari.gov.et
+                  <BiChevronRight />Harari Innovation Center
                 </Link>
-                <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> https://harari.gov.et
+                <Link to={'https://harari.prosperity'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
+                  <BiChevronRight /> Harari Prosperity Official Websit
                 </Link>
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
                   <BiChevronRight /> https://harari.gov.et

@@ -1,8 +1,10 @@
 import React,{useState,useEffect} from 'react';
+import { useNavigate } from 'react-router';
 import './css/Explore.css';
 import 'aos/dist/aos.css'
 import createClient from '../../client';
 const Explore = () => {
+        const navigate = useNavigate();
         const [exploreData,setExploreData] = useState(null);
 
         useEffect(()=>{
@@ -38,7 +40,7 @@ const Explore = () => {
                         </h3>
                     </div>
                     <div className="text-center float-right mt-4 sub-sub-main1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                        <button className="bg-[#329898] text-3xl font-serif hover:bg-[#ff0000] text-white  py-2 px-4 rounded-0">
+                        <button onClick={() => navigate('/services')} className="bg-[#329898] text-3xl font-serif hover:bg-[#ff0000] text-white  py-2 px-4 rounded-0">
                             Explore Service
                         </button>
                     </div>

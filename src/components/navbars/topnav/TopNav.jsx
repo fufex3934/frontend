@@ -19,11 +19,11 @@ const TopNav = () => {
     <div className="bg-[#3bb5b5] w-full  p-2 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-col sm:flex-row items-center relative left-8">
         <a
-          href="tel:+25164963831"
+          href="tel:+251-25-666-00-00"
           className="text-white font-serif transition ease-in-out duration-300 decoration-0 flex items-center hover:text-orange-600 sm:mr-8"
         >
           <HiOutlinePhone className="text-red-200 mr-2 text-2xl" />
-          <span className="text-sm ">Call on: 1800 123 4567</span>
+          <span className="text-sm ">Call on: +251-25-666-00-00</span>
         </a>
         <span className="text-white flex items-center mt-4 sm:mt-0">
           <BiAlarm className="text-red-200 mr-2 text-2xl" />

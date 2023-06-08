@@ -1,14 +1,16 @@
 import React from 'react'
 import { BiComment } from 'react-icons/bi'
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
+import { useNavigate } from 'react-router'
 import './css/News.css'
 const News = () => {
+    const navigate=useNavigate()
   return (
     <div className='main-news'>
         <div className='sub-news'>
             <h1>News and <br/>Publications</h1>
             <p>The news about recent activities<br/>for needed peoples.</p>
-            <button>More News</button>
+            <button onClick={() => navigate('/news/:slug')}>More News</button>
         </div>
 
         <div className='news-show'>

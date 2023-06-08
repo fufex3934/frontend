@@ -33,6 +33,8 @@ import AfricaNews from './components/body/NavDetailPages/News/AfricaNews';
 import AfricaNewsDetails from './components/body/NavDetailPages/NewsDetails/AfricaNewsDetails';
 import InternationalNews from './components/body/NavDetailPages/News/InternationalNews';
 import InternationalNewsDetails from './components/body/NavDetailPages/NewsDetails/InternationalNewsDetails';
+import ContactUs from './components/body/ContactUs';
+
 
 const App = () => {
   
@@ -43,6 +45,7 @@ const App = () => {
       <Route path='/about-leadership' element={<Leadership />} />
       <Route path='/about-history' element={<History />} />
       <Route path='/timely-news' element={<News />} />
+      <Route path='/contact-us' element={<ContactUs/>}/>
       <Route path='/timely-emergence' element={<Emergency />} />
       <Route path='/economy-policy' element={<Policies />} />
       <Route path='/economy-sectors' element={<Sectors />} />
