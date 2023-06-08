@@ -136,7 +136,7 @@ const HomeNewsDetails = () => {
                     <img
                       src={news.image?.asset?.url}
                       alt={news.image?.alt}
-                      className="w-80 h-48 object-cover"
+                      className="w-80 h-48 object-cover "
                     />
                     <h4 className="text-xl font-semibold font-serif text-[#141414]
                      bg-[#f6f6f6] hover:text-orange-700 hover:underline mr-12">
