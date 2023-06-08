@@ -62,7 +62,7 @@ function HararifNews() {
   <section className="bg-gray-100 py-8 relative">
   <div className=" absolute max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 top-48 md:top-28">
     <h2 className="text-4xl font-bold mb-8
-     text-[#84cc39] hover:underline text-center font-serif
+     text-[#329898] hover:underline text-center font-serif
      leading-snug tracking-tight
       cursor-pointer">
       Harari Most Recent News
