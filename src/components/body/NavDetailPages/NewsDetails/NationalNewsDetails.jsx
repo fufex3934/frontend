@@ -108,7 +108,7 @@ const NationalNewsDetails = () => {
                 <img
                   src={urlFor(singlePost.image.asset).url()}
                   alt={singlePost?.image?.alt}
-                  className="md:w-full h-[390px] object-cover"
+                  className="md:w-full h-[390px] object-cover "
                 />
               )}
               <p className="text-[#141414] mb-4 mt-8">{formattedTime}</p>

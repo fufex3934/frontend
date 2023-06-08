@@ -67,7 +67,7 @@ const News = () => {
                 
               </Link>
               <div className="p-8 ">
-              <div className="text-white  bg-[#329898] p-2 flex items-center  mb-4 w-36 h-8 text-lg">
+              <div className="text-white  bg-[#329898] p-2 flex items-center  mb-4 w-36 h-10 text-lg">
                   {formattedTime(item?.time)}
                 </div>
                 <span className="flex items-center text-green-600 text-lg">
@@ -81,7 +81,7 @@ const News = () => {
                 </Link>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""
-                  className="text-md flex font-light mt-6 text-[#329898] hover:text-[#329898]"
+                  className="text-md flex font-light mt-6 text-[#329898] hover:text-red-700"
                 >
                   Continue Reading
                   <HiOutlineArrowLongRight className="ml-2" />

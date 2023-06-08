@@ -80,7 +80,7 @@ function InternationalNews() {
                   <img
                     src={internationalNews[index].image.asset.url}
                     alt={internationalNews[index].title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover hover:scale-[1.3] transition-all duration-700 cursor-pointer"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
                     <p className="text-white text-sm flex items-center justify-center">
