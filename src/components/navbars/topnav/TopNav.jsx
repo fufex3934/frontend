@@ -5,7 +5,7 @@ import { BsFacebook } from 'react-icons/bs'
 import { FaTelegram } from 'react-icons/fa'
 import { AiFillTwitterCircle } from 'react-icons/ai'
 import './TopNav.css'
-
+import { Link } from 'react-router-dom';
 const TopNav = () => {
   // Check if the device is a mobile device
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -31,12 +31,12 @@ const TopNav = () => {
         </span>
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
-        <button className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+        <Link to = 'https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           <BsFacebook className='change' />
-        </button>
-        <button className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+        </Link>
+        <Link to='https://t.me/HarariGovernmentCommunication' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           <FaTelegram className='change' />
-        </button>
+        </Link>
         <button className="text-white ml-6 sm:ml-0 hover:text-orange-600">
           <AiFillTwitterCircle className='change' />
         </button>

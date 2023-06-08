@@ -1,6 +1,7 @@
       import React, { useEffect, useRef, useState } from 'react';
       import './css/Welcome.css';
       import createClient from '../../client';
+import { Link } from 'react-router-dom';
 
       const Welcome = () => {
         const [welcomeData, setWelcomeData] = useState([]);
@@ -171,7 +172,7 @@
               </button>
             </div>
             <div className='bg-[#3bb5b5] outer  w-full flex justify-center items-end relative sm:h-[100vh] md:h-[68vh] lg:h-[60vh]'>
-        <div className='bg-white inner  md:w-full lg:w-auto md:mt-[10vh] lg:mt-auto md:mx-8 -top-14 md:-top-16 absolute md:grid-cols-3  lg:grid-cols-6 gap-4 '>
+        <div className='bg-white inner  md:w-full lg:w-[200vh] md:mt-[10vh] lg:mt-auto md:mx-8 -top-14 md:-top-16 absolute md:grid-cols-3  lg:grid-cols-6 gap-4 '>
         <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full">
           <svg
@@ -198,11 +199,11 @@
             </g>
           </svg>
         </div>
-        <span className="text-sm  text-slate-700
+        <Link to='/woreda' className="text-lg  text-slate-900 font-thin font-serif
         hover:text-[#3bb5b5] hover:cursor-pointer
           hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Your Government
-          </span>
+          Woreda
+          </Link>
         
       </div>
 
@@ -234,10 +235,10 @@
       </svg>
 
         </div>
-        <span className="text-sm 
-        font-medium text-slate-700 hover:text-[#3bb5b5] hover:cursor-pointer
+        <span className="text-lg  text-slate-900 font-thin font-serif
+         hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Jobs and Unemployment
+          Offices
           </span>
       </div>
 
@@ -264,10 +265,10 @@
       </g>
       </svg>
         </div>
-        <span className="text-sm 
-        font-medium text-slate-700 hover:text-[#3bb5b5] hover:cursor-pointer
+        <span className="text-lg  text-slate-900 font-thin font-serif
+         hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Business and Industry
+          Gallery
           </span>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
@@ -292,11 +293,11 @@
       </svg>
 
         </div>
-        <span className="text-sm 
-        font-medium text-slate-700 hover:text-[#3bb5b5] hover:cursor-pointer
+        <Link to = '/about-leadership' className="text-lg  text-slate-900 font-thin font-serif
+         hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Roads and Transport
-          </span>
+          Leaders
+          </Link>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full ">
@@ -333,10 +334,9 @@
       </svg>
 
         </div>
-        <span className="text-sm 
-        font-medium text-slate-700 hover:text-[#3bb5b5] hover:cursor-pointer
+        <span className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Culture and Recreation
+          Services
           </span>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
@@ -358,11 +358,10 @@
       </svg>
 
         </div>
-        <span className="text-sm
-        font-medium text-slate-700 hover:text-[#3bb5b5] hover:cursor-pointer
+        <span className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2
           hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
-          Justice, Safety and the Law
+          Geography
           </span>
       </div>
           
