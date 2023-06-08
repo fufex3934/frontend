@@ -1,0 +1,165 @@
+.contact-us{
+    margin-top: 5%;
+    /* box-shadow: grey 0px 5px 15px; */
+    padding: 2%;
+}
+.contact-us .contact-us-info{
+    /* margin: auto; */
+    /* box-shadow: red 0px 5px 15px; */
+    margin-bottom: 5%;
+    border-bottom: 2px solid #3bb;
+    padding-bottom: 2%;
+    text-align: center;
+    align-items: center;
+}
+.contact-us .contact-us-info div{
+    margin-bottom: 2%;
+}
+.contact-us .contact-us-info div a{
+    position: relative;
+    transition-duration: 1s;
+}
+.contact-us .contact-us-info div a:hover{
+    color: #3bb;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-us .contact-us-form-map{
+    /* box-shadow: blue 0px 5px 15px; */
+    padding: 2%;
+    display: flex;
+}
+.contact-us .contact-us-form-map .contact-us-form{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.contact-us .contact-us-form-map .contact-us-form form{
+    box-shadow: grey 0px 5px 14px;
+    padding-top: 15%;
+    width: 80%;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form button{
+    position: relative;
+    left: 75%;
+    border: #3bb 2px solid;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form input{
+    height: 40px;
+}
+
+.contact-us .contact-us-form-map .contact-us-form form .my-form .my-input{
+    margin-bottom: 3%;
+    width: 100%;
+    border-bottom: 2px solid #3bb;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form .my-input:focus{
+    outline: none;
+    box-shadow: #3bb 0px 0px 5px;
+    border: none;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form input::placeholder{
+    text-align: start;
+    position: relative;
+    top: calc(100% - 1em);
+    transform: translateY(-100%);
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form input:focus::placeholder{
+    color: transparent;
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form textarea::placeholder{
+    text-align: start;
+    position: relative;
+    top: calc(100% - 1em);
+    transform: translateY(100%);
+}
+.contact-us .contact-us-form-map .contact-us-form form .my-form textarea:focus::placeholder{
+    color: transparent;
+}
+.contact-us .contact-us-form-map .location-map{
+    width: 50%;
+}
+@media screen and (max-width: 428px) {
+    .contact-us {
+        margin-top: 40%;
+        /* box-shadow: grey 0px 5px 15px; */
+    }
+    .contact-us .contact-us-info div{
+        padding-bottom: 5%;
+    }
+    .contact-us .contact-us-form-map {
+        flex-direction: column;
+    }
+    .contact-us .contact-us-form-map .contact-us-form {
+        width: 100%;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form{
+        width: 100%;
+        box-shadow: none;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form .my-form{
+        width: 90%;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form .my-form input::placeholder{
+        font-size: larger;
+    }
+    .contact-us .contact-us-form-map .location-map{
+        width: 100%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .contact-us .contact-us-form-map .location-map iframe{
+        width: 300px;
+        height: 400px;
+        margin: auto;
+    }
+}
+@media screen and (min-width:767px) and (max-width:888px) {
+    .contact-us {
+        margin-top:25%;
+        /* box-shadow: grey 0px 5px 15px; */
+    }
+    .contact-us .contact-us-info div {
+        padding-bottom: 3%;
+    }
+    .contact-us .contact-us-info div a{
+        font-size: larger;
+    }
+    .contact-us .contact-us-form-map {
+        flex-direction: column;
+    }
+    .contact-us .contact-us-form-map .contact-us-form {
+        width: 100%;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form {
+        width: 100%;
+        box-shadow: none;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form .my-form {
+        width: 70%;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form .my-form .my-input{
+        margin-bottom: 5%;
+    }
+    .contact-us .contact-us-form-map .contact-us-form form .my-form button {
+        left: 74%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: x-large;
+    }
+    
+    .contact-us .contact-us-form-map .location-map {
+        width: 100%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    
+    .contact-us .contact-us-form-map .location-map iframe {
+        margin: auto;
+    }
+}
