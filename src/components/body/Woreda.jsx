@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { FiMapPin } from 'react-icons/fi';
 import Navs from '../navbars/navs';
@@ -6,6 +6,10 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
 const Woreda = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   const woredas = [
     { id: 1, name: 'Abadir Woreda', icon: <FiMapPin size={24} /> },
     { id: 2, name: 'Shenkor Woreda', icon: <FiMapPin size={24} /> },

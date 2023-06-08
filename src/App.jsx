@@ -1,4 +1,5 @@
 import CustomApp from './CustomApp'
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutUs from './components/body/NavDetailPages/AboutUs';
 import Leadership from './components/body/NavDetailPages/Leadership';
@@ -32,7 +33,10 @@ import ContactUs from './components/body/ContactUs';
 
 
 const App = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   return (
     <Routes>
       <Route path='/' element={<CustomApp />} />

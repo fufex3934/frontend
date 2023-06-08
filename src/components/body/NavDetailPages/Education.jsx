@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import { motion } from 'framer-motion';
 import Navs from '../../navbars/navs';
 import Footer from '../Footer';
@@ -10,6 +10,10 @@ import { FaTwitter, FaInstagram,FaFacebook,FaYoutube } from 'react-icons/fa';
 
 const Education = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
 
   const handlePrevSlide = () => {
     setActiveSlide((prevSlide) => (prevSlide > 0 ? prevSlide - 1 : 0));
