@@ -11,7 +11,7 @@ const NewsNav = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Home Icon */}
-            <Link to="/timely-news" className="flex items-center cursor-pointer text-slate-700 hover:bg-[#84cc39]  hover:text-white px-3 py-2 rounded-md">
+            <Link to="/" className="flex items-center cursor-pointer text-slate-700 hover:bg-[#84cc39]  hover:text-white px-3 py-2 rounded-md">
               <AiFillHome className=" h-6 w-6 mr-2" />
               <span >Home</span>
             </Link>
