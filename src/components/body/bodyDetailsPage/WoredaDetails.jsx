@@ -83,7 +83,7 @@ const WoredaDetails = () => {
     {
       id: 6,
       name: "Hakim Woreda",
-      location: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.213456254397!2d42.103050573975054!3d9.314345690758804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bd0489332695%3A0x90725365c65ac424!2sHakim%20Woreda%20Adminstration!5e0!3m2!1sen!2snl!4v1686167093001!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      location: `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15748.853824600976!2d42.1056255!3d9.3143457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bd0489332695%3A0x90725365c65ac424!2sHakim%20Woreda%20Adminstration!5e0!3m2!1sen!2snl!4v1686220714262!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
       address: 'Gibrina Square, Harar ',
       phone: '+025 666 9184',
       fax: '+0254660268',
