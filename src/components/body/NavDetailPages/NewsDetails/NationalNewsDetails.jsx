@@ -145,7 +145,7 @@ const NationalNewsDetails = () => {
             </div>
           </div>
         </motion.div>
-        <Link to='/' className='text-[#84cc39] hover:underline text-lg  '>Back to News Page</Link>
+        <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
       <footer className="bg-[#132244] py-24   ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">

@@ -12,10 +12,10 @@ const Woreda = () => {
     { id: 3, name: "Jin'ala Woreda", icon: <FiMapPin size={24} /> },
     { id: 4, name: "Amir Nur Woreda", icon: <FiMapPin size={24} /> },
     { id: 5, name: "Aboker Woreda", icon: <FiMapPin size={24} /> },
-    { id: 3, name: "Hakim Woreda", icon: <FiMapPin size={24} /> },
-    { id: 3, name: "Dire Teyara Woreda", icon: <FiMapPin size={24} /> },
-    { id: 3, name: "Erer Woreda", icon: <FiMapPin size={24} /> },
-    { id: 3, name: "Sofi Woreda", icon: <FiMapPin size={24} /> },
+    { id: 6, name: "Hakim Woreda", icon: <FiMapPin size={24} /> },
+    { id: 7, name: "Dire Teyara Woreda", icon: <FiMapPin size={24} /> },
+    { id: 8, name: "Erer Woreda", icon: <FiMapPin size={24} /> },
+    { id: 9, name: "Sofi Woreda", icon: <FiMapPin size={24} /> },
     // Add more woredas as needed
   ];
 

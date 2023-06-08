@@ -68,7 +68,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[0] && upcomingData[0].title}</a>
+                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}</a>
                     </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <MdOutlineAlarm className='relative top-1' />
@@ -91,7 +91,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[1] && upcomingData[1].title}</a>
+                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}</a>
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <MdOutlineAlarm className='relative top-1'/>
