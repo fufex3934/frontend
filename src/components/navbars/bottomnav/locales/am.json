@@ -1,5 +1,40 @@
 {
-    "greeting": "ሀሎ",
-    "welcome": "እንኳን ወደ ድረ ገጻችን በደህና መጡ"
+    "header": "የሀረር መንግስት ኮሙዩኒኬሽን ጉዳዮች ጽ/ቤት",
+    "navbar": {
+      "home": "ቤት",
+      "about": "ስለ",
+      "timely": "ወቅታዊ",
+      "economic": "ኢኮኖሚያዊ",
+      "politics": "ፖለቲካ",
+      "social": "ማህበራዊ",
+      "tourism": "ቱሪዝም",
+      "videos": "ቪዲዮዎች"
+    },
+    "dropdown":{
+      "aboutUs":"ስለ እኛ",
+      "harar":"ሐረር",
+      "news":"ዜና",
+      "emergency":"ድንገተኛ አደጋ",
+      "policies":"ፖሊሲዎች",
+      "sectors":"ዘርፎች",
+      "go":"የመንግስት ባለስልጣናት",
+      "gs":"የመንግስት መዋቅር",
+      "education":"ትምህርት",
+      "healthcare":"የጤና ጥበቃ",
+      "monuments":"ሀውልቶች",
+      "museum":"ሙዚየም",
+      "animalex":"የእንስሳት ኤግዚቢሽን"
+    },
+    "welcome":{
+      "woredas":"ወረዳዎች",
+      "offices":"ቢሮዎች",
+      "gallery":"ማዕከለ-ስዕላት",
+      "leaders":"መሪዎች",
+      "services":"አገልግሎቶች",
+      "geograpy":"ጂኦግራፊ",
+      "text":"በሐረር የመኖር፣ የመሥራት፣ የመጎብኘት እና የኢንቨስትመንት ኦፊሴላዊ መመሪያ",
+      "explore":"የበለጠ እንመርምር"
+    }
+    
   }
   

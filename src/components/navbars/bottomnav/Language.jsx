@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Language = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const { i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languageOptions = [
     { label: 'English', value: 'en' },
@@ -13,6 +15,7 @@ const Language = () => {
 
   const languageChangeHandler = (selectedValue) => {
     setSelectedLanguage(selectedValue);
+    i18n.changeLanguage(selectedValue); // Change the language in i18next
   };
 
   const languageDropdown = (
@@ -22,8 +25,8 @@ const Language = () => {
       className="ml-4 border text-lg rounded-0 p-2 border-grey h-12 w-40"
     >
       {languageOptions.map((option) => (
-        <option key={option.value} value={option.value} >
-          {option.label} 
+        <option key={option.value} value={option.value}>
+          {option.label}
         </option>
       ))}
     </select>
@@ -31,7 +34,7 @@ const Language = () => {
 
   return (
     <ul>
-      <li className=" flex items-center text-[#1e293b]  ">
+      <li className="flex items-center text-[#1e293b]">
         {/* Your existing code */}
         {languageDropdown}
       </li>
