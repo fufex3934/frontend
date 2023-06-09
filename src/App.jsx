@@ -30,6 +30,8 @@ import InternationalNewsDetails from './components/body/NavDetailPages/NewsDetai
 import Woreda from './components/body/Woreda';
 import WoredaDetails from './components/body/bodyDetailsPage/WoredaDetails';
 import ContactUs from './components/body/ContactUs';
+import Offices from './components/body/Offices';
+import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 
 
 const App = () => {
@@ -68,6 +70,8 @@ const App = () => {
       <Route path='/international-news/:slug' element = {<InternationalNewsDetails/>}/>
       <Route path='/woreda' element = {<Woreda/>}/>
       <Route path='/woreda-details/:id' element = {<WoredaDetails/>}/>
+      <Route path='/offices' element = {<Offices/>}/>
+      <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

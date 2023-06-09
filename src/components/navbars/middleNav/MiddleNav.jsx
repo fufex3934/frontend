@@ -1,5 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 const MiddleNav = () => {
+  const {t} = useTranslation();
   return (
     <div className=' hidden md:hidden lg:flex bg-[#329898] h-28 relative'>
                     <a href="/">
@@ -12,7 +14,7 @@ const MiddleNav = () => {
     
                 <h1 className='uppercase ml-6 text-white 
                    mt-10 font-semibold font-serif text-xl  -tracking-tight '>
-                    Harar Government Communications Affairs Office
+                    {t('header')}
                     </h1>
                    <div className='flex justify-evenly absolute right-8'>
                                     <a href="#">

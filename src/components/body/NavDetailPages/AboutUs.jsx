@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import Footer from '../Footer'
 import '../../body/css/AboutUs.css'
 import Navs from '../../navbars/navs'
-
+import { useTranslation } from 'react-i18next';
 const data=[
   {
     heading:"Mission",
