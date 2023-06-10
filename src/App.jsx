@@ -32,6 +32,7 @@ import WoredaDetails from './components/body/bodyDetailsPage/WoredaDetails';
 import ContactUs from './components/body/ContactUs';
 import Offices from './components/body/Offices';
 import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
+import Gallery from './components/body/Gallery';
 
 
 const App = () => {
@@ -72,6 +73,7 @@ const App = () => {
       <Route path='/woreda-details/:id' element = {<WoredaDetails/>}/>
       <Route path='/offices' element = {<Offices/>}/>
       <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
+      <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

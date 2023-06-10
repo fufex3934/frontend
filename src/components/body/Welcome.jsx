@@ -267,11 +267,12 @@
       </g>
       </svg>
         </div>
-        <span className="text-lg  text-slate-900 font-thin font-serif
+        <Link to ='/gallery'
+         className="text-lg  text-slate-900 font-thin font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
           {t('welcome.gallery')}
-          </span>
+          </Link>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full ">
