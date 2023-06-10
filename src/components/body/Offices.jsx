@@ -27,7 +27,7 @@ const Offices = () => {
         { id: 18, name: "State Council Office", icon: <img src='/images/offices/vice.jpg'  /> },
         { id: 19, name: "Police Commission", icon: <img src='/images/offices/vice.jpg'  /> },
         { id: 20, name: "Environment Protection Authority", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 21, name: "Environment Protection Authority", icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 21, name: "Technical and Vocational Education Agency", icon: <img src='/images/offices/vice.jpg'  /> },
         { id: 22, name: "Harari Mass Media Agency", icon: <img src='/images/offices/mass.png'  /> },
         { id: 23, name: "Water And Severage Authority", icon: <img src='/images/offices/water.jpg'  /> },
         { id: 24, name: "Harar Region Prosperity Party", icon: <img src='/images/offices/pp.jpg'  /> },
