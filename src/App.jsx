@@ -1,4 +1,5 @@
 import CustomApp from './CustomApp'
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutUs from './components/body/NavDetailPages/AboutUs';
 import Leadership from './components/body/NavDetailPages/Leadership';
@@ -29,10 +30,16 @@ import InternationalNewsDetails from './components/body/NavDetailPages/NewsDetai
 import Woreda from './components/body/Woreda';
 import WoredaDetails from './components/body/bodyDetailsPage/WoredaDetails';
 import ContactUs from './components/body/ContactUs';
+import Offices from './components/body/Offices';
+import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
+import Gallery from './components/body/Gallery';
 
 
 const App = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   return (
     <Routes>
       <Route path='/' element={<CustomApp />} />
@@ -64,6 +71,9 @@ const App = () => {
       <Route path='/international-news/:slug' element = {<InternationalNewsDetails/>}/>
       <Route path='/woreda' element = {<Woreda/>}/>
       <Route path='/woreda-details/:id' element = {<WoredaDetails/>}/>
+      <Route path='/offices' element = {<Offices/>}/>
+      <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
+      <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

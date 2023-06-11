@@ -1,5 +1,42 @@
-{
-    "greeting": "Hello",
-    "welcome": "Welcome to our website"
+{  
+    "header": "HARAR GOVERNMENT COMMUNICATIONS AFFAIRS OFFICE",
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "timely": "Timely",
+      "economic": "Economic",
+      "politics": "Politics",
+      "social": "Social",
+      "tourism": "Tourism",
+      "videos": "Videos"
+    },
+    "dropdown":{
+      "aboutUs":"About Us",
+      "harar":"Harar",
+      "news":"News",
+      "emergency":"Emergency",
+      "policies":"Policies",
+      "sectors":"Sectors",
+      "go":"Government Officials",
+      "gs":"Governments Structure",
+      "education":"Education",
+      "healthcare":"HealthCare",
+      "monuments":"Monuments",
+      "museum":"Museum",
+      "animalex":"Animal Exhibition"
+    },
+    "welcome":{
+      "woredas":"Districts",
+      "offices":"Offices",
+      "gallery":"Gallery",
+      "leaders":"Leaders",
+      "services":"Services",
+      "geograpy":"Geograpy",
+      "text":"The official guide to living, working, visiting, and investing in Harar",
+      "explore":"Let's explore more"
+    }
+    
+    
   }
+  
   

@@ -53,6 +53,10 @@ function AfricaNews() {
         from: { opacity: 0, transform: 'scale(0.8)' },
         config: { mass: 1, tension: 180, friction: 12 },
       });
+      useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+      }, []);
+    
 
   return (
     <>
@@ -62,7 +66,7 @@ function AfricaNews() {
   <section className="bg-gray-100 py-8 relative">
   <div className=" absolute max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 top-48 md:top-28">
     <h2 className="text-4xl font-bold mb-8
-     text-[#84cc39] hover:underline text-center font-serif
+     text-[#329898] hover:underline text-center font-serif
      leading-snug tracking-tight
       cursor-pointer">
      Africa Most Recent News
@@ -77,7 +81,7 @@ function AfricaNews() {
                   <img
                     src={africaNews[index].image.asset.url}
                     alt={africaNews[index].title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover hover:scale-[1.3] transition-all duration-700 cursor-pointer"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
                     <p className="text-white text-sm flex items-center justify-center">

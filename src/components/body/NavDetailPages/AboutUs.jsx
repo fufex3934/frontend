@@ -1,8 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Footer from '../Footer'
 import '../../body/css/AboutUs.css'
 import Navs from '../../navbars/navs'
-
+import { useTranslation } from 'react-i18next';
 const data=[
   {
     heading:"Mission",
@@ -15,6 +15,10 @@ const data=[
 ]
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   return (
     <>
       <Navs/>

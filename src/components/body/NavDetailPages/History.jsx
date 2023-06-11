@@ -5,6 +5,10 @@ import { motion } from 'framer-motion';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const History = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   const imageVariants = {
     hidden: { opacity: 0, scale: 0 },
     visible: { opacity: 1, scale: 1 },

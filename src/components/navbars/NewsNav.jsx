@@ -11,7 +11,7 @@ const NewsNav = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Home Icon */}
-            <Link to="/timely-news" className="flex items-center cursor-pointer text-slate-700 hover:bg-[#84cc39]  hover:text-white px-3 py-2 rounded-md">
+            <Link to="/" className="flex items-center cursor-pointer text-slate-700 hover:bg-[#329898]  hover:text-white px-3 py-2 rounded-md">
               <AiFillHome className=" h-6 w-6 mr-2" />
               <span >Home</span>
             </Link>
@@ -21,25 +21,25 @@ const NewsNav = () => {
               <div className="ml-4 md:ml-10 flex items-center space-x-4">
                 <Link
                   to='/harari-news'
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Harari News
                 </Link>
                 <Link
                   to="/national-news"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   National News
                 </Link>
                 <Link
                   to="/africa-news"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Africa News
                 </Link>
                 <Link
                   to="/international-news"
-                  className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   International News
                 </Link>
@@ -56,25 +56,25 @@ const NewsNav = () => {
             <div className="flex items-center space-x-1">
               <a
                 href="/harari"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
               >
                 Harari News
               </a>
               <a
                 href="/national"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
               >
                 National News
               </a>
               <a
                 href="/africa"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
               >
                 Africa News
               </a>
               <a
                 href="/international"
-                className="text-slate-600 hover:bg-[#84cc39] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                className="text-slate-600 hover:bg-[#329898] hover:text-white px-3 py-2 rounded-md text-lg font-medium"
               >
                 International News
               </a>

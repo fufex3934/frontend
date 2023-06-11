@@ -221,7 +221,12 @@ const Leadership = () => {
   };
   useEffect(()=>{
     Aos.init();
-},[])
+},[]);
+
+useEffect(() => {
+  window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+}, []);
+
 
   return (
     <>

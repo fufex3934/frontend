@@ -75,7 +75,10 @@ const AfricaNewsDetails = () => {
         day: 'numeric',
       })
     : '';
-
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+    }, []);
+  
   // Function to resolve image URLs using Sanity's imageUrlBuilder
   const builder = imageUrlBuilder(createClient);
   const urlFor = (source) => builder.image(source);
@@ -117,7 +120,7 @@ const AfricaNewsDetails = () => {
                   projectId="9ik05vf8"
                   dataset="production"
                   imageOptions={{ w: 800, h: 600, fit: 'max' }}
-                  serializers={{ types: { image: ({ node }) => <img src={urlFor(node).url()} alt={node?.alt} className='m-4' /> } }}
+                  serializers={{ types: { image: ({ node }) => <img src={urlFor(node).url()} alt={node?.alt} className='m-4 ' /> } }}
                 />
               )}
             </div>
@@ -133,7 +136,7 @@ const AfricaNewsDetails = () => {
                     <img
                       src={news.image?.asset?.url}
                       alt={news.image?.alt}
-                      className="w-80 h-48 object-cover"
+                      className="w-80 h-48 object-cover "
                     />
                     <h4 className="text-xl font-semibold font-serif text-[#141414]
                      bg-[#f6f6f6] hover:text-orange-700 hover:underline mr-12">
@@ -145,7 +148,7 @@ const AfricaNewsDetails = () => {
             </div>
           </div>
         </motion.div>
-        <Link to='/' className='text-[#84cc39] hover:underline text-lg  '>Back to News Page</Link>
+        <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
       <footer className="bg-[#132244] py-24   ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">

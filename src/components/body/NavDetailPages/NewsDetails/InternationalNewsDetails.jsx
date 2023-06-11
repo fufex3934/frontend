@@ -75,7 +75,10 @@ const NationalNewsDetails = () => {
         day: 'numeric',
       })
     : '';
-
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+    }, []);
+  
   // Function to resolve image URLs using Sanity's imageUrlBuilder
   const builder = imageUrlBuilder(createClient);
   const urlFor = (source) => builder.image(source);
@@ -104,7 +107,7 @@ const NationalNewsDetails = () => {
                 <img
                   src={urlFor(singlePost.image.asset).url()}
                   alt={singlePost?.image?.alt}
-                  className="md:w-full h-[390px] object-cover"
+                  className="md:w-full h-[390px] object-cover "
                 />
               )}
               <p className="text-[#141414] mb-4 mt-8">{formattedTime}</p>
@@ -145,7 +148,7 @@ const NationalNewsDetails = () => {
             </div>
           </div>
         </motion.div>
-        <Link to='/' className='text-[#84cc39] hover:underline text-lg  '>Back to News Page</Link>
+        <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
       <footer className="bg-[#132244] py-24   ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">

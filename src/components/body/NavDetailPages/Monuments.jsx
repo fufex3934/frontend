@@ -1,6 +1,4 @@
-import React from 'react'
-import { IoIosHeartDislike } from 'react-icons/io'
-import { FcLike } from 'react-icons/fc'
+import React,{useEffect} from 'react'
 import Footer from '../Footer'
 import Navs from '../../navbars/navs'
 import '../css/Monuments.css'
@@ -16,6 +14,10 @@ const monuments_data = [
   { name: 'D', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'jugel-hospital.jpg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } }
 ];
 const Monuments = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
+
   return (
     <>
       <Navs/>

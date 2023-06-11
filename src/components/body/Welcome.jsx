@@ -1,10 +1,12 @@
       import React, { useEffect, useRef, useState } from 'react';
       import './css/Welcome.css';
       import createClient from '../../client';
-import { Link } from 'react-router-dom';
+      import { Link } from 'react-router-dom';
+      import { useTranslation } from 'react-i18next';
 
       const Welcome = () => {
         const [welcomeData, setWelcomeData] = useState([]);
+        const {t} = useTranslation();
         
         useEffect(() => {
           const fetchData = async () => {
@@ -202,7 +204,7 @@ import { Link } from 'react-router-dom';
         <Link to='/woreda' className="text-lg  text-slate-900 font-thin font-serif
         hover:text-[#3bb5b5] hover:cursor-pointer
           hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Woreda
+          {t('welcome.woredas')}
           </Link>
         
       </div>
@@ -235,11 +237,11 @@ import { Link } from 'react-router-dom';
       </svg>
 
         </div>
-        <span className="text-lg  text-slate-900 font-thin font-serif
+        <Link to='/offices' className="text-lg  text-slate-900 font-thin font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Offices
-          </span>
+          {t('welcome.offices')}
+          </Link>
       </div>
 
 
@@ -265,11 +267,12 @@ import { Link } from 'react-router-dom';
       </g>
       </svg>
         </div>
-        <span className="text-lg  text-slate-900 font-thin font-serif
+        <Link to ='/gallery'
+         className="text-lg  text-slate-900 font-thin font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Gallery
-          </span>
+          {t('welcome.gallery')}
+          </Link>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full ">
@@ -296,7 +299,7 @@ import { Link } from 'react-router-dom';
         <Link to = '/about-leadership' className="text-lg  text-slate-900 font-thin font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Leaders
+          {t('welcome.leaders')}
           </Link>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
@@ -336,7 +339,7 @@ import { Link } from 'react-router-dom';
         </div>
         <span className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
-          Services
+          {t('welcome.services')}
           </span>
       </div>
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
@@ -361,16 +364,16 @@ import { Link } from 'react-router-dom';
         <span className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2
           hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
-          Geography
+          {t('welcome.geograpy')}
           </span>
       </div>
           
         </div>
         <p className='text-white welcome-p font-serif font-medium text-lg md:text-xl pb-8'>
-          The official guide to living, working, visiting, and investing in Harar
+        {t('welcome.text')}
           <span>
             <button className="ml-4 mt-4 pb-5 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
-              Let's explore more
+            {t('welcome.explore')}
             </button>
           </span>
         </p>

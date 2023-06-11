@@ -1,5 +1,40 @@
 {
-    "greeting": "Akkam",
-    "welcome": "Baga gara marsariitii keenyaa dhuftan"
+  
+    "header": "WAAJJIRA DHIMMOOTA KOMUNIKEESHIINII MOOTUMMAA HARAR",
+    "navbar": {
+      "home": "Mana",
+      "about": "Waa'ee",
+      "timely": "Yeroodhaan",
+      "economic": "Diinagdee",
+      "politics": "Siyaasa",
+      "social": "Hawaasummaa",
+      "tourism": "Tuuriizimii",
+      "videos": "Viidiyoo"
+    },
+    "dropdown":{
+      "aboutUs":"Waa'ee Keenya",
+      "harar":"Harari",
+      "news":"Oduu",
+      "emergency":"Atattama",
+      "policies":"Imaammata",
+      "sectors":"Seektaroota",
+      "go":"Qondaaltota Mootummaa",
+      "gs":"Caasaa Mootummootaa",
+      "education":"Barumsa",
+      "healthcare":"Eegumsa Fayyaa",
+      "monuments":"Siidaalee",
+      "museum":"Godambaa",
+      "animalex":"Agarsiisa Beeyladaa"
+    },
+    "welcome":{
+      "woredas":"Aanaalee",
+      "offices":"Waajjiraalee",
+      "gallery":"Galmee",
+      "leaders":"Hoggantoota",
+      "services":"Tajaajila",
+      "geograpy":"Ji’ograafii",
+      "text":"Qajeelfama  Harar keessa jiraachuu, hojjechuu, daawwannaa, fi invastimantii",
+      "explore":"Mee caalaatti haa qorannu"
+    }
   }
   
