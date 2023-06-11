@@ -1,0 +1,16 @@
+.musuem{
+    margin: 0.5%;
+    box-shadow: 0px 0px 15px grey;
+    text-align: center;
+    padding: 2%;
+}
+.musuem .link{
+    border: 1px solid grey;
+    background-color: #3bb;
+    color: white;
+}
+.musuem .link:hover{
+    color: #3bb;
+    background-color: aliceblue;
+    border-color: #3bb;
+}
