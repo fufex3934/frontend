@@ -72,11 +72,11 @@ const BottomNavbar = () => {
               </li>
 
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" >
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" >
                   <BsFillBookmarkFill className='mr-1 w-6 h-6 text-[#3bb] change' />
                   {t('navbar.about')}
 
-                </a>
+                </button>
                 <div className="  group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-48 bg-white  px-6 py-8 text-center shadow  ">
                     <li className="py-1"><button onClick={() => navigate('/about')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-16 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.aboutUs')}</button></li>
@@ -85,10 +85,10 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <a className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <button className=" hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <IoNewspaper className='mr-1 w-6 h-6 text-[#3bb] change' />
                   {t('navbar.timely')}
-                </a>
+                </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
 
                   <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
@@ -98,10 +98,10 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <AiFillMoneyCollect className='mr-1  w-6 h-6 text-[#3bb] change' />
                   {t('navbar.economic')}
-                </a>
+                </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
                     <li className="py-1"><button onClick={() => navigate('/economy-policy')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-16 hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.policies')}</button></li>
@@ -110,10 +110,10 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <MdLocalPolice className='mr-1 h-6 w-6 text-[#3bb] change' />
                   {t('navbar.politics')}
-                </a>
+                </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
                     <li className="py-1"><button onClick={() => navigate('/politic-go')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.go')}</button></li>
@@ -123,10 +123,10 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <SiSociety6 className='mr-2 h-6 w-6 text-[#3bb] change' />
                   {t('navbar.social')}
-                </a>
+                </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
                     <li className="py-1"><button onClick={() => navigate('/social-edu')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-12 hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.education')}</button></li>
@@ -135,11 +135,11 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl text-[#1e293b] " id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <MdTour className='mr-1 h-6 w-6 text-[#3bb] change ' />
                   {t('navbar.tourism')}
 
-                </a>
+                </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
                     <li className="py-1"><button onClick={() => navigate('/tourism-mon')} className="block text-gray-900  text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-12 hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.monuments')}</button></li>
@@ -207,12 +207,12 @@ const BottomNavbar = () => {
                     </button>
                   </li>
                   <li className="group z-10  dropdown   text-white  cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[163px] py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[163px] py-2 text-sm " >
                     {t('navbar.about')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto ">
 
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
@@ -222,12 +222,12 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-40   py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-40   py-2 text-sm " >
                     {t('navbar.timely')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
 
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
@@ -237,12 +237,12 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[142px] py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[142px] py-2 text-sm " >
                     {t('navbar.economic')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
 
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
@@ -252,12 +252,12 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[160px]  py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[160px]  py-2 text-sm " >
                     {t('navbar.politics')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
                         <li className="py-1"><button onClick={() => navigate('/politic-go')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-12 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">Government Officials</button></li>
@@ -266,12 +266,12 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[169px]   py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[169px]   py-2 text-sm " >
                     {t('navbar.social')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
                         <li className="py-1"><button onClick={() => navigate('/social-edu')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-16 hover:-ml-5  hover:py-2 cursor-pointer">Education</button></li>
@@ -280,12 +280,12 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[156px]   py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[156px]   py-2 text-sm " >
                     {t('navbar.tourism')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                       </svg>
-                    </a>
+                    </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
                       <ul className="top-0 w-40 bg-[#1e293b] px-6 py-8 shadow  ">
                         <li className="py-1"><button onClick={() => navigate('/tourism-mon')} className="block text-white text-sm hover:bg-[#3bb5b5] hover:text-white hover:px-16 hover:-ml-5  hover:py-2 cursor-pointer">Monuments</button></li>
@@ -295,9 +295,9 @@ const BottomNavbar = () => {
                     </div>
                   </li>
                   <Link to = 'https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
-                    <a className="inline-flex  justify-between gap-x-[166px]  py-2 text-sm " >
+                    <button className="inline-flex  justify-between gap-x-[166px]  py-2 text-sm " >
                     {t('navbar.videos')}
-                    </a>
+                    </button>
                   </Link>
                 </ul>
               </div>

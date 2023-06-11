@@ -20,7 +20,10 @@ const ContactUs = () => {
               <a href='tel:+251-25-666-00-00'><span className='relative left-1'>Phone: +251-25-666-00-00</span></a>
             </div>
             <div>
-            <a href="mailto:example@example.com"><span>Email: hararigovcomaffaris@gmail.com</span></a>
+            <a href="mailto:example@example.com"><span>Email: Hararicommunication@gmail.com</span></a>
+            </div>
+            <div>
+            <a href="tel:0254660268"><span>Fax Number: 0254660268</span></a>
             </div>
           </div>
           <div className="contact-us-form-map">

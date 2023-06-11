@@ -37,9 +37,9 @@ const TopNav = () => {
         <Link to='https://t.me/HarariGovernmentCommunication' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           <FaTelegram className='change' />
         </Link>
-        <button className="text-white ml-6 sm:ml-0 hover:text-orange-600">
+        <Link to='https://twitter.com/HarariGovComm/status/1559545087117377538' target='_blank' className="text-white ml-6 sm:ml-0 hover:text-orange-600">
           <AiFillTwitterCircle className='change' />
-        </button>
+        </Link>
       </div>
     </div>
   );
