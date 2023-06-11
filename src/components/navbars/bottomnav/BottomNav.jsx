@@ -150,10 +150,10 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <a className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <span className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl  text-[#1e293b]" id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <AiTwotoneVideoCamera className='mr-2 h-6 w-6 text-[#3bb] change' />
                   {t('navbar.videos')}
-                </a>
+                </span>
               </Link>
               <li className='right-7 absolute'>
                 <Language />

@@ -13,7 +13,7 @@ import Aos from 'aos';
 import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 const CustomApp = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     window.onload = () => {
