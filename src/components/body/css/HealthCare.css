@@ -1,0 +1,105 @@
+
+.main-health .health{
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8%;
+    box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.75);
+    padding-right: 15%;
+}
+.main-health .health .health-description{
+    padding-top: 6%;
+    position: relative;
+    left: 25%;
+}
+.main-health .health .health-icon{
+    width: 50%;
+    /* box-shadow: grey 0px 0px 15px; */
+    display: flex;
+    justify-content: center;
+    
+}
+.main-health .hospitals{
+  margin: 5%;
+  /* box-shadow: grey 0px 0px 10px; */
+}
+.main-health .hospitals .hospitals-title{
+    margin-bottom: 6%;
+}
+.main-health .hospitals .hospital{
+    display: flex;
+    margin-bottom: 5%;
+    /* box-shadow: red 0px 0px 10px; */
+}
+.main-health .hospitals .hospital .description{
+    margin:auto ;
+    /* box-shadow: grey 0px 0px 10px; */
+    width: 50%;
+}
+.main-health .hospitals .hospital .hospital-image{
+    width: 35%;
+}
+@media screen and (max-width:428px) {
+    .main-health .health{
+       margin-top: 40%;
+       margin-bottom: 10%;
+       padding-right: 0%;
+       flex-direction: column;
+    }
+    .main-health .health .health-description{
+        left: 5%;
+        /* right: 2%; */
+        justify-content: center;
+    }
+    .main-health .health .health-description h1 {
+        font-size:50px;
+        margin-bottom: 2%;
+    }
+    .main-health .health .health-description h3{
+        font-size: 40px;
+    }
+    .main-health .health .health-description p{
+        font-size: medium;
+        line-break: unset;
+        width: 90%;
+    }
+    .main-health .health .health-icon{
+        width: 100%;
+    }
+    .main-health .hospitals .hospital{
+        flex-direction: column;
+    }
+    .main-health .hospitals .hospital .description{
+        width: 100%;
+    }
+    .main-health .hospitals .hospital .hospital-image{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
+@media screen and (min-width:766px) and (max-width:888px){
+    .main-health .health {
+        margin-top: 10%;
+        flex-direction: column;
+    }
+    .main-health .health .health-description{
+        left: 20%;
+    }
+    .main-health .health .health-icon {
+        width: 100%;
+    }
+    .main-health .hospitals .hospital .description {
+        width: 100%;
+    }
+    .main-health .health .health-description p{
+        width: 70%;
+        font-size: 22px;
+    }
+    .main-health .hospitals .hospital {
+        flex-direction: column;
+    }
+    .main-health .hospitals .hospital .hospital-image {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
