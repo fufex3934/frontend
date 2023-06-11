@@ -1,0 +1,117 @@
+.monument-container{
+    margin: auto;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+.monument-container .head{
+    /* box-shadow: 0px 0px 10px indigo; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.monument-container .head h1{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.monument-container .monument{
+    /* box-shadow: 0px 0px 5px grey; */
+    display: flex;
+    columns: 4;
+    flex-wrap: wrap;
+}
+.monument-container .monument .layout{
+    margin: auto;
+    width: 23%; 
+    /* box-shadow: 0px 2px 5px green; */
+    height: 40vh;
+    margin-bottom: 2%;
+}
+.monument-container .monument .layout .image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.monument-container .monument .layout .image .icon{
+    /* box-shadow: 0px 0px 15px rgb(4, 255, 0); */
+    position: relative;
+    top: 50%;
+    text-align: center;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 50%;
+    
+}
+.monument-container .monument .layout .image:hover .icon{
+    visibility: visible;
+}
+.monument-container .monument .layout .image .icon .hov-effect{
+    position: absolute;
+    transition-duration: 1.5s;
+    top: 80%;
+}
+
+.monument-container .monument .layout .image:hover .icon .hov-effect{
+    top: 0%;
+}
+
+.monument-container .monument .layout .only-icons{
+    text-align: right;
+    padding-right: 5%;
+}
+.monument-container .monument .layout .only-icons button:hover{
+    transition-duration: 2s;
+    color: rgb(5, 238, 48);
+}
+@media screen and (max-width:320px) {
+    .monument-container .monument .layout .image:hover .icon{
+        height: 80%;
+    }
+    .monument-container .monument .layout .image:hover .icon .hov-effect{
+        top: 0%;
+    }
+    .monument-container .monument .layout .image .icon{
+            top: 20%;
+    }
+}
+@media screen and (max-width:428px) {
+    .monument-container {
+            margin: auto;
+            padding-bottom: 0%;
+            margin-top: 40%;
+    }
+    .monument-container .head h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .monument-container .monument{
+        flex-direction: column;
+        padding: 4%;
+    }
+    .monument-container .monument .layout{
+        width: 100%;
+        margin-bottom: 15%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:888px){
+    .monument-container{
+        margin-top: 20%;
+    }
+    .monument-container .head{
+        margin-bottom: 4%;
+    }
+    .monument-container .monument{
+        columns: 2;
+        flex-wrap: wrap;
+    }
+    .monument-container .monument .layout{
+        width: 45%;
+        margin-bottom: 8%;
+    }
+    .monument-container .monument .layout .only-icons{
+        margin-top: 5%;
+    }
+}
