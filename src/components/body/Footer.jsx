@@ -1,15 +1,31 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { HiOutlinePhone } from 'react-icons/hi';
 import { FiMail } from 'react-icons/fi';
 import { BsFacebook, BsTelegram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
-// import { FaTwitter, FaTelegram, FaYoutube, FaFacebookSquare, FaPhoneSquare } from 'react-icons/fa';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import './css/Footer.css';
-
+import axios from 'axios';
 const Footer = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send the email to the backend
+      const response = await axios.post('http://localhost:3000/api/subscribe', { email });
+      // Clear the email input field and display success message
+      setEmail('');
+      setMessage(response.data.message);
+    } catch (error) {
+      // Display error message if the subscription failed
+      setMessage('An error occurred. Please try again later.');
+    }
+  };
   return (
     <div className="bg-[#132244]">
       <div className="container mx-auto py-8 px-4">
@@ -121,15 +137,20 @@ const Footer = () => {
                 <p className="text-slate-500 text-sm">
                   Sign up for our newsletter and get the latest news and updates directly to your inbox.
                 </p>
-                <div className="mt-4 flex -ml-10 md:-ml-10 lg:-ml-0">
+                <div >
+                  <form onSubmit={handleSubscribe} className="mt-4 flex -ml-10 md:-ml-10 lg:-ml-0">
                   <input
                     className="w-64 bg-white  py-2 px-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                     type="email"
-                    placeholder="Enter your email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   />
                   <button className="bg-red-500  py-3 px-3   text-white text-sm hover:bg-red-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500">
                     Subscribe
                   </button>
+                  </form>
+                  <p className= 'text-green-200'>{message}</p>
                 </div>
               </div>
             </div>

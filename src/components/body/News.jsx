@@ -75,9 +75,9 @@ const News = () => {
                 </span>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""
-                  className="text-2xl hover:text-[#329898] font-sans text-[#141414] block mt-4"
+                  className="text-2xl hover:text-[#329898] font-serif tracking-tight font-bold text-[#141414] block mt-4"
                 >
-                  {item?.title}
+                  {`${item?.title.substring(0,70)}...`}
                 </Link>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""

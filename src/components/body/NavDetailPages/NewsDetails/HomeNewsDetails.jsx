@@ -12,7 +12,7 @@ import { useParams } from 'react-router-dom';
 
 const HomeNewsDetails = () => {
   const [singlePost, setSinglePost] = useState({});
-  const [newsList, setNewsList] = useState([]);
+  const [newsList, setNewsList] = useState([]);1
   const { slug } = useParams();
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const HomeNewsDetails = () => {
             },
             alt
           }
-        }[0...11]`);
+        }`);
         setNewsList(newsData);
       } catch (error) {
         console.error(error);
@@ -86,7 +86,7 @@ const HomeNewsDetails = () => {
   return (
     <>
       <NewsNav />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 sm:mb-72  mt-36 md:mt-16"
           initial={{ opacity: 0 }}
@@ -150,7 +150,7 @@ const HomeNewsDetails = () => {
         </motion.div>
         <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
-      <footer className="bg-[#132244] py-24   ">
+      <footer className="bg-[#132244] py-24  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between">
             <p className="text-gray-300 text-sm">

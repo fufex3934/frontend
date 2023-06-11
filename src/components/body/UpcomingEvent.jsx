@@ -68,7 +68,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}</a>
+                        <a href="" className='text-2xl  font-serif tracking-tight font-bold text-[#141414] hover:text-[#329898]'>{`${upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}...`}</a>
                     </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <MdOutlineAlarm className='relative top-1' />
@@ -76,7 +76,7 @@ const UpcomingEvent = () => {
                       </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <IoLocationOutline className='relative top-1' />
-                          <span className='pl-2'>{upcomingData && upcomingData[0] && upcomingData[0].place}</span>
+                          <span className='pl-2'>{upcomingData && upcomingData[0] && upcomingData[0].place.substring(0,40)}</span>
                       </div>
                     <div className="mt-8">
                         <Link to='/upcoming-detail1' className='hover:bg-[#329898] hover:text-white'style={{border:'1px solid grey',padding:'10px'}}>More Details</Link>
@@ -91,7 +91,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl text-slate-600 font-semibold'>{upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}</a>
+                        <a href="" className='text-2xl  font-serif tracking-tight font-bold text-[#141414] hover:text-[#329898]'>{`${upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}...`}</a>
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <MdOutlineAlarm className='relative top-1'/>
@@ -99,7 +99,7 @@ const UpcomingEvent = () => {
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <IoLocationOutline className='relative top-1'/>
-                        <span className='pl-2'>{upcomingData && upcomingData[1] && upcomingData[1].place}</span>
+                        <span className='pl-2'>{upcomingData && upcomingData[1] && upcomingData[1].place.substring(0,40)}</span>
                     </div>
                     <div className="mt-8">
                         <Link to='/upcoming-detail2' className='hover:bg-[#329898] hover:text-white' style={{ border: '1px solid grey', padding: '10px' }}>More Details</Link>
