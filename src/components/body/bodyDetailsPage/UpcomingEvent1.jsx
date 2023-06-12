@@ -9,7 +9,7 @@ import { BsFillShareFill } from 'react-icons/bs';
 
 const UpcomingEvent1 = () => {
   const [upcomingEvent1Data, setUpcomingEventData] = useState(null);
-
+  const [loading,setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,9 +37,11 @@ const UpcomingEvent1 = () => {
           },
         }`);
         setUpcomingEventData(data[0]);
-        console.log(data);
+        setLoading(false);
+       
       } catch (error) {
         console.error(error);
+        setLoading(false);
       }
     };
     fetchData();

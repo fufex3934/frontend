@@ -38,14 +38,14 @@ const MeetIdeologyLeader = () => {
                 Meet Ideological leader for youth generation
             </h1>
             <p className='p1' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-               {leaderData && leaderData[0] && leaderData[0].descriptionOne}
+               {leaderData && leaderData[0] && leaderData[0].descriptionOne.substring(0,105)}
             </p>
             <p className='p2' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-            {leaderData && leaderData[0] && leaderData[0].descriptionTwo}
+            {leaderData && leaderData[0] && leaderData[0].descriptionTwo.substring(0,180)}
             </p>
             <p className='qouet' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-                “Stand at the top of a cliff and jump off and build your wings on the way down.”<br/>
-                <span>– Ordin Bedri, Mayor</span>
+            {leaderData && leaderData[0] && leaderData[0].quote.substring(0,80)}<br/>
+                <span>–  {leaderData && leaderData[0] && leaderData[0].name}</span>
             </p>
             <button>
                 <Link to='https://www.youtube.com/@hararicommunication82' target='_blank'>
