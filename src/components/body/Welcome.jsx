@@ -361,11 +361,11 @@
       </svg>
 
         </div>
-        <span className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
+        <Link to='/geography' className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2
           hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
           {t('welcome.geograpy')}
-          </span>
+          </Link>
       </div>
           
         </div>
