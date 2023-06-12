@@ -9,6 +9,7 @@ import { BsFillShareFill } from 'react-icons/bs';
 
 const UpcomingEvent2 = () => {
   const [upcomingEvent1Data, setUpcomingEventData] = useState(null);
+  const [loading,setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,9 +38,10 @@ const UpcomingEvent2 = () => {
           },
         }`);
         setUpcomingEventData(data[1]);
-        console.log(data);
+        setLoading(false);
       } catch (error) {
         console.error(error);
+        setLoading(false);
       }
     };
     fetchData();
@@ -57,7 +59,15 @@ const UpcomingEvent2 = () => {
   return (
     <>
       <Navs />
-      <div className="container mx-auto max-w-7xl">
+      {
+        loading ? (
+          <div className="flex items-center justify-center h-screen">
+         <div className="animate-spin rounded-full h-10 w-10 border-t-2 
+          border-b-2 border-[#329898] transition-all duration-700">
+         </div>
+        </div>
+        ):(
+          <div className="container mx-auto max-w-7xl">
         {upcomingEvent1Data && (
           <motion.div
             className=""
@@ -114,6 +124,9 @@ const UpcomingEvent2 = () => {
           </motion.div>
         )}
       </div>
+        )
+      }
+      
       <Footer />
     </>
   );

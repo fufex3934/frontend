@@ -66,10 +66,10 @@ const UpcomingEvent = () => {
                         <img src={upcomingData && upcomingData[0] && upcomingData[0].upcomingImage.asset.url} alt={upcomingData && upcomingData[0] && upcomingData[0].upcomingImage.alt} />
                     </div>
                     <div className='pt-4'>
-                          <a href="" className='text-[#329898] text-lg'>Conference</a><br />
+                          <Link to= '/upcoming-detail1' className='text-[#329898] text-lg'>Conference</Link><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}...`}</a>
+                        <Link to = '/upcoming-detail1' className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}...`}</Link>
                     </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <MdOutlineAlarm className='relative top-1' />
@@ -89,10 +89,10 @@ const UpcomingEvent = () => {
                         <img src={upcomingData && upcomingData[0] && upcomingData[1].upcomingImage.asset.url} alt={upcomingData && upcomingData[1] && upcomingData[1].upcomingImage.alt} />
                     </div>
                     <div className='pt-4'>
-                          <a href="" className='text-[#329898] text-lg'>Conference</a><br />
+                          <Link to= '/upcoming-detail2' className='text-[#329898] text-lg'>Conference</Link><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}...`}</a>
+                        <Link to = '/upcoming-detail2' className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}...`}</Link>
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <MdOutlineAlarm className='relative top-1'/>
