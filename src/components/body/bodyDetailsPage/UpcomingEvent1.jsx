@@ -6,6 +6,7 @@ import Navs from '../../navbars/navs';
 import Footer from '../Footer';
 import { motion } from 'framer-motion';
 import { BsFillShareFill } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
 
 const UpcomingEvent1 = () => {
   const [upcomingEvent1Data, setUpcomingEventData] = useState(null);
@@ -118,11 +119,13 @@ const UpcomingEvent1 = () => {
                         ),
                       },
                     }}
+                    className='text-lg font-light  font-serif leading-snug tracking-tight mx-4 md:mx-0 lg:mx-0'
                   />
                 )}
               </div>
             </motion.div>
           )}
+           <Link to='/' className='text-[#329898] hover:underline text-lg my-auto '>Back to Home Page</Link>
         </div>
         )
       }
