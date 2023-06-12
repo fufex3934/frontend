@@ -75,13 +75,13 @@ const News = () => {
                 </span>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""
-                  className="text-2xl hover:text-[#329898] font-serif tracking-tight font-bold text-[#141414] block mt-4"
+                  className="text-xl text-[#329898] hover:underline font-serif leading-snug tracking-tight font-bold  block mt-4"
                 >
                   {`${item?.title.substring(0,70)}...`}
                 </Link>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""
-                  className="text-md flex font-light mt-6 text-[#329898] hover:text-red-700"
+                  className="text-md flex font-semibold leading-snug tracking-tight mt-6 text-gray-600 hover:text-red-700"
                 >
                   Continue Reading
                   <HiOutlineArrowLongRight className="ml-2" />

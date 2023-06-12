@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { RiFileTextFill } from 'react-icons/ri';
+
 import { MdOutlineAlarm }from 'react-icons/md';
 import { IoLocationOutline }from 'react-icons/io5';
 import './css/UpcomingEvent.css';
@@ -7,6 +7,7 @@ import createClient from '../../client';
 import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import CityDocuments from './CityDocuments';
 
 const event= [
     {id:1,name:'event',text1: 'Upcoming Events'},
@@ -68,7 +69,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-2xl  font-serif tracking-tight font-bold text-[#141414] hover:text-[#329898]'>{`${upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}...`}</a>
+                        <a href="" className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[0] && upcomingData[0].title.substring(0,50)}...`}</a>
                     </div>
                       <div className='pt-2 whitespace-nowrap flex text-center'>
                           <MdOutlineAlarm className='relative top-1' />
@@ -91,7 +92,7 @@ const UpcomingEvent = () => {
                           <a href="" className='text-[#329898] text-lg'>Conference</a><br />
                     </div>
                     <div className='pt-2'>
-                        <a href="" className='text-2xl  font-serif tracking-tight font-bold text-[#141414] hover:text-[#329898]'>{`${upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}...`}</a>
+                        <a href="" className='text-xl  font-serif leading-snug tracking-tight font-bold text-[#329898] hover:underline'>{`${upcomingData && upcomingData[1] && upcomingData[1].title.substring(0,60)}...`}</a>
                     </div>
                     <div className='pt-2 whitespace-nowrap flex text-center'>
                         <MdOutlineAlarm className='relative top-1'/>
@@ -108,33 +109,7 @@ const UpcomingEvent = () => {
             </div>
         </div>
         
-        <div className='sub-main-upcoming-event-right'>
-            <h1>City Document</h1>
-            <div className='unnderline'>
-                <div className='left-top-icon'>
-                    <RiFileTextFill className='text-white text-6xl relative top-0 mx-auto text-center'/>
-                </div>
-                <div className='div-under-line'>
-                  <a href="">Veichle Parking License</a><br />
-                  <span>July 24, 2020</span>
-                </div>
-                <div className='div-under-line'>
-                  <a href="">City Board Applications</a><br />
-                  <span>July 24, 2020</span>
-                </div>
-                <div className='div-under-line'>
-                  <a href="">Road Transport Forms</a><br />
-                  <span>July 24, 2020</span>
-                </div>
-                <div className='div-under-line'>
-                  <a href="">Economy Growth Report</a><br />
-                  <span>July 24, 2020</span>
-                </div>
-                <div className='pt-4 ms-[70px] mb-5'>
-                    <a href="" className='text-blue-600/100 hover:text-red-600 more'>More Documents &gt;</a>
-                </div>
-            </div>
-        </div>
+        <CityDocuments/>
    </div>
   )
 }
