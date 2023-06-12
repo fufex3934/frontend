@@ -1,16 +1,39 @@
 .musuem{
-    margin: 0.5%;
+    margin-top: 1%;
     box-shadow: 0px 0px 15px grey;
     text-align: center;
-    padding: 2%;
+    padding-top: 7.7%;
+    background-image: url('harar_musuem.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 80vh;
 }
 .musuem .link{
-    border: 1px solid grey;
     background-color: #3bb;
     color: white;
 }
 .musuem .link:hover{
     color: #3bb;
     background-color: aliceblue;
-    border-color: #3bb;
+}
+.free-gallary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.free-gallary img{
+    display: flex;
+    width: 23%;
+    margin-top: 3%;
+    margin-right: 1%;
+}
+.description{
+    display: flex;
+    justify-content: center;
+}
+.description div{
+    margin-top: 1%;
+    width: 30%;
 }

@@ -2,7 +2,8 @@ import React,{useEffect} from 'react'
 import Footer from '../Footer'
 import Navs from '../../navbars/navs'
 import '../css/Monuments.css'
-
+import { FcLike } from 'react-icons/fc'
+import { IoIosHeartDislike } from 'react-icons/io'
 const monuments_data = [
   { name: 'A', p:'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'harari-general-hospital.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
   { name: 'A', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'harari-general-hospital.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
