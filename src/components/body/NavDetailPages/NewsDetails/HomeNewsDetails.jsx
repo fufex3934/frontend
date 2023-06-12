@@ -12,7 +12,7 @@ import { useParams } from 'react-router-dom';
 
 const HomeNewsDetails = () => {
   const [singlePost, setSinglePost] = useState({});
-  const [newsList, setNewsList] = useState([]);1
+  const [newsList, setNewsList] = useState([]);
   const { slug } = useParams();
 
   useEffect(() => {
@@ -121,6 +121,7 @@ const HomeNewsDetails = () => {
                   dataset="production"
                   imageOptions={{ w: 800, h: 600, fit: 'max' }}
                   serializers={{ types: { image: ({ node }) => <img src={urlFor(node).url()} alt={node?.alt} className='m-4' /> } }}
+                  className='text-lg font-light  font-serif leading-snug tracking-tight'
                 />
               )}
             </div>
@@ -136,10 +137,9 @@ const HomeNewsDetails = () => {
                     <img
                       src={news.image?.asset?.url}
                       alt={news.image?.alt}
-                      className="w-80 h-48 object-cover "
+                      className="w-80 h-48 object-cover mb-2 "
                     />
-                    <h4 className="text-xl font-semibold font-serif text-[#141414]
-                     bg-[#f6f6f6] hover:text-orange-700 hover:underline mr-12">
+                    <h4 className="text-lg font-semibold hover:underline text-[#329898] font-serif leading-snug tracking-tight mr-12">
                       {news.title}
                     </h4>
                   </div>

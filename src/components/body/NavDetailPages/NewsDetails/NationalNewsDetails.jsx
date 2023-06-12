@@ -57,7 +57,7 @@ const NationalNewsDetails = () => {
             },
             alt
           }
-        }[0...11]`);
+        }`);
         setNewsList(newsData);
       } catch (error) {
         console.error(error);
@@ -79,7 +79,6 @@ const NationalNewsDetails = () => {
       window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
     }, []);
   
-
   // Function to resolve image URLs using Sanity's imageUrlBuilder
   const builder = imageUrlBuilder(createClient);
   const urlFor = (source) => builder.image(source);
@@ -87,7 +86,7 @@ const NationalNewsDetails = () => {
   return (
     <>
       <NewsNav />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 sm:mb-72  mt-36 md:mt-16"
           initial={{ opacity: 0 }}
@@ -108,7 +107,7 @@ const NationalNewsDetails = () => {
                 <img
                   src={urlFor(singlePost.image.asset).url()}
                   alt={singlePost?.image?.alt}
-                  className="md:w-full h-[390px] object-cover "
+                  className="md:w-full h-[390px] object-cover"
                 />
               )}
               <p className="text-[#141414] mb-4 mt-8">{formattedTime}</p>
@@ -122,6 +121,7 @@ const NationalNewsDetails = () => {
                   dataset="production"
                   imageOptions={{ w: 800, h: 600, fit: 'max' }}
                   serializers={{ types: { image: ({ node }) => <img src={urlFor(node).url()} alt={node?.alt} className='m-4' /> } }}
+                  className='text-lg font-light  font-serif leading-snug tracking-tight'
                 />
               )}
             </div>
@@ -137,10 +137,9 @@ const NationalNewsDetails = () => {
                     <img
                       src={news.image?.asset?.url}
                       alt={news.image?.alt}
-                      className="w-80 h-48 object-cover"
+                      className="w-80 h-48 object-cover mb-2 "
                     />
-                    <h4 className="text-xl font-semibold font-serif text-[#141414]
-                     bg-[#f6f6f6] hover:text-orange-700 hover:underline mr-12">
+                    <h4 className="text-lg font-semibold hover:underline text-[#329898] font-serif leading-snug tracking-tight mr-12">
                       {news.title}
                     </h4>
                   </div>
@@ -151,7 +150,7 @@ const NationalNewsDetails = () => {
         </motion.div>
         <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
-      <footer className="bg-[#132244] py-24   ">
+      <footer className="bg-[#132244] py-24  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between">
             <p className="text-gray-300 text-sm">
