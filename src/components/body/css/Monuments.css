@@ -12,16 +12,18 @@
 .monument-container .head h1{
     font-size: 45px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3bb;
 }
 .monument-container .monument{
     /* box-shadow: 0px 0px 5px grey; */
     display: flex;
     columns: 4;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .monument-container .monument .layout{
     margin: auto;
-    width: 23%; 
+    width: 25%; 
     /* box-shadow: 0px 2px 5px green; */
     height: 40vh;
     margin-bottom: 2%;
