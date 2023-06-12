@@ -116,7 +116,7 @@ const Footer = () => {
             <div className='ml-16 md:ml-0'>
               <p className="text-white text-lg font-bold">Follow Us</p>
               <div className="py-3">
-                <Link to='https://www.facebook.com/people/Harari-Government-communication-affairs-Office/' target="_blank" className="text-slate-500 text-sm py-1 mb-1 cursor-pointer flex items-center hover:text-red-600">
+                <Link to='https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target="_blank" className="text-slate-500 text-sm py-1 mb-1 cursor-pointer flex items-center hover:text-red-600">
                   <BsFacebook className='mr-1 text-blue-500' /> Facebook
                 </Link>
                 <Link to='https://t.me/s/HarariGovernmentCommunication' target="_blank" className="text-slate-500 text-sm py-1 mb-1 cursor-pointer flex items-center hover:text-red-600">

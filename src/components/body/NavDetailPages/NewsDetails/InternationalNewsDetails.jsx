@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom';
 const InternationalNewsDetails = () => {
   const [singlePost, setSinglePost] = useState({});
   const [newsList, setNewsList] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { slug } = useParams();
 
   useEffect(() => {
@@ -40,8 +41,10 @@ const InternationalNewsDetails = () => {
           time
         }`);
         setSinglePost(data[0]);
+        setLoading(false);
       } catch (error) {
         console.error(error);
+        setLoading(false);
       }
     };
 
@@ -59,8 +62,10 @@ const InternationalNewsDetails = () => {
           }
         }`);
         setNewsList(newsData);
+        setLoading(false);
       } catch (error) {
         console.error(error);
+        setLoading(false);
       }
     };
 
@@ -86,7 +91,15 @@ const InternationalNewsDetails = () => {
   return (
     <>
       <NewsNav />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between">
+      {
+        loading ? (
+          <div className="flex items-center justify-center h-screen">
+          <div className="animate-spin rounded-full h-10 w-10 border-t-2 
+           border-b-2 border-[#329898] transition-all duration-700">
+          </div>
+         </div>
+        ):(
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10  flex flex-col justify-between">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 sm:mb-72  mt-36 md:mt-16"
           initial={{ opacity: 0 }}
@@ -150,6 +163,9 @@ const InternationalNewsDetails = () => {
         </motion.div>
         <Link to='/timely-news' className='text-[#329898] hover:underline text-lg  '>Back to News Page</Link>
       </div>
+        )
+      }
+      
       <footer className="bg-[#132244] py-24  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between">

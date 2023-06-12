@@ -23,8 +23,6 @@ const CityDocuments = () => {
         }`;
         const response = await createClient.fetch(query);
 
-        console.log('Fetched documents:', response); // Log the response to check the data structure
-
         // Update state with fetched documents
         setDocuments(response);
       } catch (error) {
@@ -83,7 +81,7 @@ const CityDocuments = () => {
               >
                 {document.title.substring(0, 16)}
               </label>
-              <span className='ml-4 md:ml-8'>{formatTime(document.time)}</span>
+              <span className='ml-4 md:ml-8 whitespace-nowrap'>{formatTime(document.time)}</span>
             </div>
             {selectedDocument === documentIndex && (
               <div className='mt-2'>
