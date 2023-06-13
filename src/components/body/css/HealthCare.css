@@ -35,6 +35,7 @@
     margin:auto ;
     /* box-shadow: grey 0px 0px 10px; */
     width: 50%;
+    flex-direction: column;
 }
 .main-health .hospitals .hospital .hospital-image{
     width: 35%;
