@@ -34,6 +34,7 @@ import Offices from './components/body/Offices';
 import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 import Gallery from './components/body/Gallery';
 import Geography from './components/body/Geography'
+import Services from './components/body/Services';
 
 const App = () => {
   useEffect(() => {
@@ -75,6 +76,7 @@ const App = () => {
       <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
       <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='/geography' element={<Geography/>}/>
+      <Route path='/services' element = {<Services/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

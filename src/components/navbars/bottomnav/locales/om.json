@@ -1,6 +1,6 @@
 {
   
-    "header": "WAAJJIRA DHIMMOOTA KOMUNIKEESHIINII MOOTUMMAA HARAR",
+    "header": "WAAJJIRA DHIMMOOTA KOMUNIKEESHIINII MOOTUMMAA NAANNOO HARAR",
     "navbar": {
       "home": "Mana",
       "about": "Waa'ee",
@@ -35,6 +35,61 @@
       "geograpy":"Ji’ograafii",
       "text":"Qajeelfama  Harar keessa jiraachuu, hojjechuu, daawwannaa, fi invastimantii",
       "explore":"Mee caalaatti haa qorannu"
+    },
+    "footer":{
+      "about":"Waa'ee Keenya",
+      "services":"Tajaajila",
+      "events":"Taateewwan",
+      "news":"Oduu",
+      "contact":"Quunnamuu",
+      "header":"Waajjira Dhimmoota Kominikeeshinii Mootummaa Naannoo Harar",
+      "open":"Sa'aatii Baniinsaa:",
+      "phone":"Bilbila:",
+      "email":"Imeelii:",
+      "links":"Hidhamtoota Faayidaa Qaban",
+      "follow":"Nu Hordofaa",
+      "newsletter":"Barruu Oduu",
+      "subscribe":"Barruu oduu keenyaaf subscribe gochuun oduu fi odeeffannoo haaraa kallattiin inbox keessanitti argadhaa."
+    },
+    "meetLeader":{
+      "header":"Hoggantoota Sirrii Dhaloota Borii Oomishan Quunnamuu"
+    },
+    "newsPublications":{
+      "header":"Oduu fi Maxxansaalee",
+      "text":"Oduu waa'ee sochiiwwan tibbanaa ummatootaaf barbaachisoo ta'an.",
+      "moreNews":"Oduu Dabalataa"
+    },
+    "exploreCity":{
+      "header":"Wantoota Ijoo Magaalaa Qoradhu"
+    },
+    "hararData":{
+      "people":"Waliigala Namoota Magaalaa keenyaa keessa Jiraataniii",
+      "area":"Uwwisa Naanoo Iskuweer kiiloo meetiraan",
+      "land":"Lafa iddoo biqiltuu dhuunfaa & mana keessaa",
+      "cost":"Baasii Giddugaleessaa Abbummaa Manaa"
+    },
+    "cityCouncil":{
+      "header":"Mana Maree Magaalaa waliin wal arguu",
+      "text":"Manni maree magaalattii humnoota ol’aanoo dhugaa akka bulchiinsaatti biyyattii geggeessan qaba."
+    },
+    "dropdownDetails":{
+      "about-mission":"Ergama",
+      "mission-content":"Damee Komunikeeshinii, Odeeffannoo fi Miidiyaa Mootummaa keessatti gahee adda duree taphachuu fi imaammata, tarsiimoo, karooraa fi sagantaalee bu'uuraa irratti hubannoo hawaasaa ummata gidduutti waljijjiiruun odeeffannoo bal'aa taasisuudhaan milkaa'ina mul'ata keenyaa haala bu'a qabeessa ta'een qindeessuuf.",
+      "about-vision":"Mul'ata",
+      "vision-content":"Ummanni bara 2023 dhimmoota bu'uuraa naannoo fi biyyaalessaa irratti hirmaannaa badhaadhaa, roga hedduu qabuun waliigaltee irra ga'uu arguu.",
+      "header":"Waajjira Dhimmoota Kominikeeshinii Mootummaa Naannoo Harar",
+      "coreValues":"Duudhaalee Ijoo",
+      "sincerity":"Iklaasa",
+      "loyalty":"Amanamummaa",
+      "responsibility":"Itti-gaafatamummaa",
+      "respect":"Kabajaa fi Tokkummaa",
+      "faith":"Amantii Humna Injifannoo",
+      "collaboration":"Walta'iinsaa fi hojii garee",
+      "leadership":"Ulaagaa hoggansa",
+      "takingres":"Itti Gaafatamummaa Fudhachuu",
+      "location":"Argama Keenya"
     }
+    
+    
   }
   

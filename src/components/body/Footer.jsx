@@ -7,10 +7,12 @@ import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import './css/Footer.css';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const {t} = useTranslation();
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
@@ -32,19 +34,19 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="flex py-4 md:py-0">
             <button onClick={() => navigate('/about')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500 whitespace-nowrap">
-              About Us
+              {t('footer.about')}
             </button>
             <button className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
-              Services
+            {t('footer.services')}
             </button>
             <button  className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
-              Events
+            {t('footer.events')}
             </button>
             <button onClick={() => navigate('/timely-news')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
-              News
+            {t('footer.news')}
             </button>
             <button onClick={() => navigate('/contact-us')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
-              Contact
+            {t('footer.contact')}
             </button>
           </div>
         </div>
@@ -54,13 +56,13 @@ const Footer = () => {
         <footer className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* left div */}
-            <div className="flex items-start md:-ml-10 lg:-ml-44 l">
+            <div className="flex items-start md:-ml-10 lg:-ml-48 ">
               <a href="#">
                 <img className="h-16 w-16 rounded-full " src="./harar.png" alt="Logo" />
               </a>
               <a href="#">
-                <h1 className="text-slate-300 text-base ml-2 font-bold md:text-xl">
-                  Harar Government<br /> Communication Affairs Office
+                <h1 className="text-slate-300 text-base ml-2 font-bold md:text-xl  w-[300px]">
+                {t('footer.header')}
                 </h1>
               </a>
             </div>
@@ -69,21 +71,21 @@ const Footer = () => {
               <div className="flex flex-col lg:-ml-44 ">
                 <div className='flex'>
                   <BiAlarm className="text-slate-500 mr-2 mt-1" />
-                  <span className="text-white">Opening Hours:</span>
+                  <span className="text-white">{t('footer.open')}</span>
                 </div>
                 <span className="ml-2 text-slate-500">Mon - Fri 8.00 am - 6.00 pm</span>
               </div>
               <div className="flex flex-col items-center mt-4 md:mt-0 ">
                 <div className="relative my-2 flex items-center">
                   <HiOutlinePhone className="text-slate-500" />
-                  <span className="text-white ml-4">Phone:</span>
+                  <span className="text-white ml-4">{t('footer.phone')}</span>
                   <span className="ml-2 text-slate-500 hover:text-red-600 cursor-pointer whitespace-nowrap">
                     1800 123 4567
                   </span>
                 </div>
                 <div className="relative my-2 flex items-center">
                   <FiMail className="text-slate-500" />
-                  <span className="text-white ml-5">Email:</span>
+                  <span className="text-white ml-5">{t('footer.email')}</span>
                   <span className="-mr-4 text-slate-500 hover:text-red-600 cursor-pointer">
                     harar@gmail.com
                   </span>
@@ -93,7 +95,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-12">
             <div className='ml-16 md:ml-0'>
-              <p className="text-white text-lg font-bold">Usefull Links</p>
+              <p className="text-white text-lg font-bold">{t('footer.links')}</p>
               <div className="py-3">
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-500 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
                   <BiChevronRight /> Harari Official Websit
@@ -114,7 +116,7 @@ const Footer = () => {
             </div>
 
             <div className='ml-16 md:ml-0'>
-              <p className="text-white text-lg font-bold">Follow Us</p>
+              <p className="text-white text-lg font-bold">{t('footer.follow')}</p>
               <div className="py-3">
                 <Link to='https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target="_blank" className="text-slate-500 text-sm py-1 mb-1 cursor-pointer flex items-center hover:text-red-600">
                   <BsFacebook className='mr-1 text-blue-500' /> Facebook
@@ -132,10 +134,10 @@ const Footer = () => {
             </div>
 
             <div className='ml-16 md:ml-0'>
-              <p className="text-white text-lg font-bold">Newsletter</p>
+              <p className="text-white text-lg font-bold">{t('footer.newsletter')}</p>
               <div className="py-3">
                 <p className="text-slate-500 text-sm">
-                  Sign up for our newsletter and get the latest news and updates directly to your inbox.
+                {t('footer.subscribe')}
                 </p>
                 <div >
                   <form onSubmit={handleSubscribe} className="mt-4 flex -ml-10 md:-ml-10 lg:-ml-0">

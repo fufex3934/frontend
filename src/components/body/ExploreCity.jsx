@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './css/ExploreCity.css'
-
+import {useTranslation} from 'react-i18next';
 const ExploreCity = (props) => {
+  const {t} = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -57,7 +58,7 @@ const ExploreCity = (props) => {
   return (
     <div className='main-container'>
         <div className='heading'>
-          <h1 className='font-semibold'>Explore City Highlights</h1>
+          <h1 className='font-semibold'>{t('exploreCity.header')}</h1>
         </div>
         <div className='slideshow-container'>
           <Slider {...settings}>

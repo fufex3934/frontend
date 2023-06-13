@@ -3,10 +3,11 @@ import { BiComment } from 'react-icons/bi';
 import { HiOutlineArrowLongRight } from 'react-icons/hi2';
 import { Link, useNavigate } from 'react-router-dom';
 import createClient from '../../client';
-
+import { useTranslation } from 'react-i18next';
 const News = () => {
   const navigate = useNavigate();
   const [news, setNews] = useState([]);
+  const {t} = useTranslation();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -48,13 +49,13 @@ const News = () => {
   return (
     <div className=" bg-gray-100 p-6 shadow-lg">
       <div className="">
-        <h1 className="text-4xl text-[#329898]">News and Publications</h1>
-        <p className="text-gray-500 text-lg">The news about recent activities for needed peoples.</p>
+        <h1 className="text-4xl text-[#329898]">{t('newsPublications.header')}</h1>
+        <p className="text-gray-500 text-lg">{t('newsPublications.text')}</p>
         <button
           className="text-lg text-[#329898] border border-[#329898] hover:bg-[#329898] hover:text-white px-4 py-2 mt-4"
           onClick={() => navigate('/timely-news')}
         >
-          More News
+          {t('newsPublications.moreNews')}
         </button>
       </div>
 
