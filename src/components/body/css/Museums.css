@@ -37,3 +37,48 @@
     margin-top: 1%;
     width: 30%;
 }
+@media screen and (max-width:429px) {
+    .musuem{
+        margin-top: 40%;
+        height: 60vh;
+        padding-top: 15%;
+    }
+    .musuem h1{
+        font-size: larger;
+    }
+    .free-gallary{
+        flex-direction: column;
+        padding: 1% 2%;
+    }
+    .free-gallary img{
+        width: 100%;
+    }
+    .description {
+        flex-direction: column;
+        padding: 0% 5%;
+    }
+    .description div{
+        width: 100%;
+        border-bottom: 2px #3bb dashed;
+    }
+}
+@media screen and (min-width:768px) and (max-width:888px){
+    .musuem{
+        margin-top: 15%;
+        padding-top: 15%;
+        height: 60vh;
+    }
+    .musuem h1 {
+        font-size: xx-large;
+    }
+    .musuem .link{
+        font-size: 35px;
+    }
+    .free-gallary img {
+        width: 45%;
+    }
+    .description div{
+        width: 35%;
+        border-right: 2px dotted #3bb;
+    }
+}

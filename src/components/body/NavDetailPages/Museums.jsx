@@ -39,17 +39,17 @@ const Museums = () => {
     </div>
     <div className='description mt-2'>
       <div className="text-center">
-        <p className=' font-mono'>Harari</p>
-        <p className=' relative -left-5 font-mono'>Musuem</p>
-        <p className=' font-mono'>Gallary</p>
+        <p className=' font-mono md:text-2xl'>Harari</p>
+        <p className=' relative  md:text-2xl -left-5 font-mono'>Musuem</p>
+        <p className=' font-mono md:text-2xl'>Gallary</p>
       </div>
       <div className="text-center">
-        <h1 className='text-xl font-mono mb-2'>Musuem Location</h1>
-        <p>Located in Harari Ethiopia</p>
+        <h1 className='text-xl font-mono mb-2 md:text-2xl'>Musuem Location</h1>
+        <p className='md:text-xl'>Located in Harari Ethiopia</p>
       </div>
       <div className="text-center">
-        <h1 className='textl-xl font-mono'>Hours</h1>
-          <p>Open (Monday – Sunday) from 8am to 12pm and 2pm to 6pm</p>
+        <h1 className='textl-xl font-mono md:text-2xl'>Hours</h1>
+          <p className='md:text-xl'>Open (Monday – Sunday) from 8am to 12pm and 2pm to 6pm</p>
       </div>
     </div>
    
