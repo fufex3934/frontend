@@ -4,9 +4,11 @@
 
         import { AiOutlineMail } from 'react-icons/ai';
         import createClient from '../../client';
-        const CityCouncil = () => {
+        import { useTranslation } from 'react-i18next';
+const CityCouncil = () => {
           const [hoveredIndexes, setHoveredIndexes] = useState([]);
           const [cityCouncilData, setCityCouncilData] = useState(null);
+          const {t} = useTranslation();
 
           useEffect(()=>{
             const fetchData = async ()=>{
@@ -43,10 +45,10 @@
           return (
             <div className='bg-[#f8f5f4] h-[110vh] w-screen mt-8 '>
               <p className='text-[#202b5d] mx-4 ml-16 md:ml-[30vh] lg:ml-[75vh] text-2xl md:text-3xl lg:text-4xl font-extrabold font-serif whitespace-nowrap pt-8 md:pt-20'>
-                Meet City Council
+                {t('cityCouncil.header')}
               </p>
               <p className='ml-7 md:ml-[18vh] lg:ml-[50vh] text-slate-400 mt-3'>
-                The city council has the real superpowers as administration to lead the country.
+              {t('cityCouncil.text')}
               </p>
               <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mx-8 mt-8'>
                 <div

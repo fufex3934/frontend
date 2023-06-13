@@ -1,5 +1,5 @@
 {  
-    "header": "HARAR GOVERNMENT COMMUNICATIONS AFFAIRS OFFICE",
+    "header": "HARAR REGION GOVERNMENT COMMUNICATIONS AFFAIRS OFFICE",
     "navbar": {
       "home": "Home",
       "about": "About",
@@ -34,6 +34,59 @@
       "geograpy":"Geograpy",
       "text":"The official guide to living, working, visiting, and investing in Harar",
       "explore":"Let's explore more"
+    },
+    "footer":{
+      "about":"About Us",
+      "services":"Services",
+      "events":"Events",
+      "news":"News",
+      "contact":"Contact",
+      "header":"Harar Region Government Communication Affairs Office",
+      "open":"Opening Hours:",
+      "phone":"Phone:",
+      "email":"Email:",
+      "links":"Useful Links",
+      "follow":"Follow Us",
+      "newsletter":"Newsletter",
+      "subscribe":"Subscribe for our newsletter and get the latest news and updates directly to your inbox."
+    },
+    "meetLeader":{
+      "header":"Meet Ideological leader for youth generation"
+    },
+    "newsPublications":{
+      "header":"News and Publications",
+      "text":"The news about recent activities for needed peoples.",
+      "moreNews":"More News"
+    },
+    "exploreCity":{
+      "header":"Explore City Highlights"
+    },
+    "hararData":{
+      "people":"Total People lived in our city",
+      "area":"Square kilometers region covers",
+      "land":"Private & domestic garden land",
+      "cost":"Average Costs of Home Ownership"
+    },
+    "cityCouncil":{
+      "header":"Meet City Council",
+      "text":"The city council has the real superpowers as administration to lead the country."
+    },
+    "dropdownDetails":{
+      "about-mission":"Mission",
+      "mission-content":"To play a leading role in the Government Communication, Information and Media Sector and to effectively coordinate the success of our vision by developing public awareness on basic policies, strategies, plans and programs through a comprehensive exchange of information among the people.",
+      "about-vision":"Vision",
+      "vision-content":"To see the people of 2023 come to an agreement on basic regional and national issues with a rich, multifaceted participation.",
+      "header":"Harar Region Government Communication Affairs Office",
+      "coreValues":"Core Values",
+      "sincerity":"Sincerity",
+      "loyalty":"Loyalty",
+      "responsibility":"Responsibility",
+      "respect":"Respect and Unity",
+      "faith":"Faith in the Power of Victory",
+      "collaboration":"Collaboration and teamwork",
+      "leadership":"Leadership qualifications",
+      "takingres":"Taking Responsibility",
+      "location":"Our Location"
     }
     
     

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { RiRunLine, RiPlantLine } from 'react-icons/ri';
 import { TbDirections } from 'react-icons/tb';
 import { GiArchBridge } from 'react-icons/gi';
-
+import {useTranslation} from 'react-i18next';
 const HararData = () => {
+  const {t} = useTranslation();
   const [counters, setCounters] = useState({
     peopleCount: 0,
     regionSize: 0,
@@ -57,22 +58,22 @@ const HararData = () => {
     <div className="flex flex-col items-center">
       <RiRunLine className="text-[#a5ff00] w-16 h-16" />
       <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.peopleCount}K</span>
-      <span className="text-white/95 text-lg md:ml-4">Total People lived in our city</span>
+      <span className="text-white/95 text-lg md:ml-4">{t('hararData.people')}</span>
     </div>
     <div className="flex flex-col items-center">
       <TbDirections className="text-[#a5ff00] w-16 h-16" />
       <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.regionSize.toFixed(1)}K</span>
-      <span className="text-white/95 text-lg">Square kilometers region covers</span>
+      <span className="text-white/95 text-lg">{t('hararData.area')}</span>
     </div>
     <div className="flex flex-col items-center">
       <RiPlantLine className="text-[#a5ff00] w-16 h-16" />
       <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.gardenLand}%</span>
-      <span className="text-white/95 text-lg">Private & domestic garden land</span>
+      <span className="text-white/95 text-lg">{t('hararData.land')}</span>
     </div>
     <div className="flex flex-col items-center">
       <GiArchBridge className="text-[#a5ff00] w-16 h-16" />
       <span className="text-white text-4xl font-bold mt-2 font-mono">{counters.homeOwnership.toFixed(2)}th</span>
-      <span className="text-white/95 text-lg">Average Costs of Home Ownership</span>
+      <span className="text-white/95 text-lg">{t('hararData.cost')}</span>
     </div>
   </div>
 </div>

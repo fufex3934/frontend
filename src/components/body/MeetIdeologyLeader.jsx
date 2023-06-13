@@ -4,9 +4,11 @@ import 'aos/dist/aos.css'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import createClient from '../../client';
+import { useTranslation } from 'react-i18next';
 const MeetIdeologyLeader = () => {
             const navigate = useNavigate();
             const [leaderData,setLeaderData] = useState(null);
+            const {t} = useTranslation();
             useEffect(()=>{
                 const fetchData = async ()=>{
                     try{
@@ -35,7 +37,7 @@ const MeetIdeologyLeader = () => {
     <div className='main medium-margin'>
         <div className='main-text'>
             <h1 className='h1' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
-                Meet Ideological leader for youth generation
+                {t('meetLeader.header')}
             </h1>
             <p className='p1' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                {leaderData && leaderData[0] && leaderData[0].descriptionOne.substring(0,105)}
