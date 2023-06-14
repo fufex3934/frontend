@@ -61,7 +61,7 @@ const Explore = () => {
                          alt={ exploreData && exploreData[1] && exploreData[1].title}
                          className='w-[250vh] h-60'
                           />
-                        <button onClick={() => navigate('/services')}  className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</button>
+                        <button onClick={() => navigate('/city-vistor-guid')}  className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</button>
                     </div>
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                         <img src={exploreData && exploreData[2] && exploreData[2].exploreImage.asset.url}

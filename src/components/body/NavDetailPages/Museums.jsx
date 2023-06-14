@@ -37,7 +37,7 @@ const Museums = () => {
             ))
           }
     </div>
-    <div className='description mt-2'>
+    <div className='description mt-2 flex'>
       <div className="text-center">
         <p className=' font-mono md:text-2xl'>Harari</p>
         <p className=' relative  md:text-2xl -left-5 font-mono'>Musuem</p>
@@ -49,7 +49,7 @@ const Museums = () => {
       </div>
       <div className="text-center">
         <h1 className='textl-xl font-mono md:text-2xl'>Hours</h1>
-          <p className='md:text-xl'>Open (Monday – Sunday) from 8am to 12pm and 2pm to 6pm</p>
+        <p className='md:text-xl'>Open (Monday – Sunday) from 8am to 12pm and 2pm to 6pm</p>
       </div>
     </div>
    
