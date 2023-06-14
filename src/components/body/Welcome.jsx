@@ -201,9 +201,10 @@
             </g>
           </svg>
         </div>
-        <Link to='/woreda' className="text-lg  text-slate-900 font-thin font-serif
+        <Link to='/woreda' className="text-xl  text-[#1e293b]  font-serif
         hover:text-[#3bb5b5] hover:cursor-pointer
-          hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+          hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20
+           hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.woredas')}
           </Link>
         
@@ -237,9 +238,10 @@
       </svg>
 
         </div>
-        <Link to='/offices' className="text-lg  text-slate-900 font-thin font-serif
+        <Link to='/offices' className="text-xl  text-[#1e293b]  font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20
+         hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.offices')}
           </Link>
       </div>
@@ -268,9 +270,10 @@
       </svg>
         </div>
         <Link to ='/gallery'
-         className="text-lg  text-slate-900 font-thin font-serif
+         className="text-xl  text-[#1e293b]  font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+        hover:border-b-2  md:hover:py-2 hover:mx-4 
+        md:hover:mx-20 hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.gallery')}
           </Link>
       </div>
@@ -296,9 +299,10 @@
       </svg>
 
         </div>
-        <Link to = '/about-leadership' className="text-lg  text-slate-900 font-thin font-serif
+        <Link to = '/about-leadership' className="text-xl  text-[#1e293b] font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+        hover:border-b-2  md:hover:py-2 hover:mx-4 
+        md:hover:mx-20 hover:border-gray-300 leading-snug tracking-tight">
           {t('welcome.leaders')}
           </Link>
       </div>
@@ -337,8 +341,9 @@
       </svg>
 
         </div>
-        <Link to='/sanity' className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+        <Link to='/sanity' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
+        hover:border-b-2  md:hover:py-2 leading-snug tracking-tight
+        hover:mx-4 md:hover:mx-20 hover:border-gray-300">
           {t('welcome.services')}
           </Link>
       </div>
@@ -361,8 +366,8 @@
       </svg>
 
         </div>
-        <Link to='/geography' className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2
+        <Link to='/geography' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
+        hover:border-b-2  md:hover:py-2 leading-snug tracking-tight
           hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
           {t('welcome.geograpy')}
           </Link>

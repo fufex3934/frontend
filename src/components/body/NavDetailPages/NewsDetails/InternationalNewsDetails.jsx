@@ -168,8 +168,8 @@ const InternationalNewsDetails = () => {
       
       <footer className="bg-[#132244] py-24  ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between">
-            <p className="text-gray-300 text-sm">
+          <div className="flex items-center justify-between flex-col md:flex-row">
+            <p className="text-gray-300 text-sm mb-4">
               &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
             </p>
             <div className="flex items-center space-x-4">

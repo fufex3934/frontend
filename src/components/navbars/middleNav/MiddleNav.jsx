@@ -13,7 +13,7 @@ const MiddleNav = () => {
                   </a>
     
                 <h1 className='uppercase ml-6 text-white 
-                   mt-10 font-semibold font-serif text-xl  -tracking-tight '>
+                   mt-10 font-semibold font-serif text-xl  leading-snug tracking-tight '>
                     {t('header')}
                     </h1>
                    <div className='flex justify-evenly absolute right-8'>
