@@ -22,15 +22,17 @@
 .image:hover img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.main2 .sub-main-2 .image a{
+.main2 .sub-main-2 .image button{
   background-color:#329898;
   font-size: large;
   position: relative;
   top: -5%;
   left: -10%;
 }
-.main2 .sub-main-2 .image:hover a {
-  background-color: #ff0000;
+.main2 .sub-main-2 .image:hover button {
+  background-color: white;
+  color: #329898;
+  border: 2px solid #329898;
 }
 @media screen and (max-width:415px) {
     .main{
@@ -58,7 +60,8 @@
       background-color: rgb(88, 88, 100);
     }
     .main .sub-main .sub-sub-main1 button:hover{
-          background-color: rgb(211,63,61);
+          background-color:white;
+          color: #329898;
     }
     .main .sub-main .sub-sub-main h3{
       visibility: hidden;
@@ -120,7 +123,7 @@
  .main2 .sub-main-2 .image {
    margin-bottom: 10%;
  }
- .main2 .sub-main-2 .image a{
+ .main2 .sub-main-2 .image button{
   font-size: 40px;
   padding: 25px;
   border-bottom-left-radius: 35%;
