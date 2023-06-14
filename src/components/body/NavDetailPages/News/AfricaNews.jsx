@@ -72,7 +72,7 @@ function AfricaNews() {
          </div>
         ):(
           <section className="bg-gray-100 py-8  min-h-screen flex-grow  ">
-          <div className=" absolute max-w-7xl  px-4 sm:px-6 lg:px-8 top-48 md:top-28 container mx-auto">
+          <div className=" absolute max-w-7xl  px-4 sm:px-6 lg:px-8 top-24 md:top-24 container mx-auto">
          
               <h2 className="text-4xl font-bold mb-8 text-[#329898] hover:underline text-center font-serif leading-snug tracking-tight cursor-pointer">
                 Africa Most Recent News
@@ -134,7 +134,7 @@ function AfricaNews() {
       }
       
      {/* footer part */}
-     <footer className="bg-[#132244] py-24  mt-[650vh] md:mt-[180vh] lg:mt-[240vh] ">
+     <footer className="bg-[#132244] py-24  mt-[750vh] md:mt-[200vh] lg:mt-[240vh] ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between">
             <p className="text-gray-300 text-sm">
