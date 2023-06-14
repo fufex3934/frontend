@@ -8,14 +8,16 @@ import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import CityDocuments from './CityDocuments';
+import { useTranslation } from 'react-i18next';
 
-const event= [
-    {id:1,name:'event',text1: 'Upcoming Events'},
-    {id:2, name: 'event', text2: `See All Events >` }
-];
 
 
 const UpcomingEvent = () => {
+    const {t} = useTranslation();
+    const event= [
+        {id:1,name:'event',text1: `${t('upcomingEvents.text1')}`},
+        {id:2, name: 'event', text2: `${t('upcomingEvents.text2')}` }
+    ];
     const navigate = useNavigate();
     const [upcomingData,setUpcomingData] = useState(null);
     const date1 = upcomingData && upcomingData[0] && new Date(upcomingData[0].date);

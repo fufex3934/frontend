@@ -122,7 +122,7 @@
                       style={{ animationDelay: `${index * 0.2}s` }} // Add delay for each item
                     />
                     <div className="absolute top-1/4 left-0 p-8 text-white">
-                      <h2 className="text-3xl md:text-6xl lg:text-5xl decoration-8 font-bold transition-all duration-300">
+                      <h2 className="text-2xl  md:text-6xl lg:text-5xl decoration-8 font-bold transition-all duration-300">
                         {item.title}
                       </h2>
                       <p className="mt-2 ml-2 text-xl md:text-2xl font-sans">{item.detail}</p>
@@ -337,7 +337,7 @@
       </svg>
 
         </div>
-        <Link to='/services' className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
+        <Link to='/sanity' className="text-lg  text-slate-900 font-thin font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20 hover:border-gray-300">
           {t('welcome.services')}
           </Link>

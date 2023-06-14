@@ -34,7 +34,7 @@ import Offices from './components/body/Offices';
 import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 import Gallery from './components/body/Gallery';
 import Geography from './components/body/Geography'
-import Services from './components/body/Services';
+import SanityAuth from './sanityAuth/SanityAuth';
 
 const App = () => {
   useEffect(() => {
@@ -52,7 +52,6 @@ const App = () => {
       <Route path='/timely-emergence' element={<Emergency />} />
       <Route path='/economy-policy' element={<Policies />} />
       <Route path='/economy-sectors' element={<Sectors />} />
-      <Route path='/politic-go' element={<GovernmentOfficials />} />
       <Route path='/politic-gs' element={<GovernmentStructures />} />
       <Route path='/social-edu' element={<Education />} />
       <Route path='/social-health' element={<HealthCare />} />
@@ -76,7 +75,7 @@ const App = () => {
       <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
       <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='/geography' element={<Geography/>}/>
-      <Route path='/services' element = {<Services/>}/>
+      <Route path='/sanity/*' element = {<SanityAuth/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

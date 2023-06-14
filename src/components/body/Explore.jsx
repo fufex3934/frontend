@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router';
 import './css/Explore.css';
 import 'aos/dist/aos.css'
 import createClient from '../../client';
+import { useTranslation } from 'react-i18next';
 const Explore = () => {
+    const {t} = useTranslation();
         const navigate = useNavigate();
         const [exploreData,setExploreData] = useState(null);
 
@@ -32,16 +34,13 @@ const Explore = () => {
 
                 <div className='inline w-full sub-main'>
                     <div className="block text-start float-left sub-sub-main">
-                        <h3 className="text-3xl  font-bold text-[#329898] font-serif" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-                            Let's Explore Local Services,
-                        </h3>
-                        <h3 className="text-3xl  font-bold text-[#329898] font-serif" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-                            Programs & Initiatives.
+                        <h3 className="text-3xl  font-bold text-[#329898] font-serif  md:w-[450px] lg:w-[600px]" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
+                            {t('exploreService.header')}
                         </h3>
                     </div>
-                    <div className="text-center float-right mt-4 sub-sub-main1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                    <div className="text-center float-right -mt-12 md:mt-4 sub-sub-main1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                         <button onClick={() => navigate('/services')} className="bg-[#329898] text-3xl font-serif hover:bg-[#ff0000] text-white  py-2 px-4 rounded-0">
-                            Explore Service
+                            {t('exploreService.btn')}
                         </button>
                     </div>
                 </div>
