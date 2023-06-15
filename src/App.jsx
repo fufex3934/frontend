@@ -8,7 +8,6 @@ import News from './components/body/NavDetailPages/News';
 import Emergency from './components/body/NavDetailPages/Emergency';
 import Policies from './components/body/NavDetailPages/Policies';
 import Sectors from './components/body/NavDetailPages/Sectors';
-import GovernmentOfficials from './components/body/NavDetailPages/GovernmentOfficials';
 import GovernmentStructures from './components/body/NavDetailPages/GovernmentStructures';
 import Education from './components/body/NavDetailPages/Education';
 import HealthCare from './components/body/NavDetailPages/HealthCare';
@@ -34,7 +33,7 @@ import Offices from './components/body/Offices';
 import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 import Gallery from './components/body/Gallery';
 import Geography from './components/body/Geography'
-import Services from './components/body/Services';
+import SanityAuth from './sanityAuth/SanityAuth';
 import ServiceDepartment from './components/body/ServiceDepartment';
 import CityVistorGuid from './components/body/CityVistorGuid';
 
@@ -54,33 +53,32 @@ const App = () => {
       <Route path='/timely-emergence' element={<Emergency />} />
       <Route path='/economy-policy' element={<Policies />} />
       <Route path='/economy-sectors' element={<Sectors />} />
-      <Route path='/politic-go' element={<GovernmentOfficials />} />
       <Route path='/politic-gs' element={<GovernmentStructures />} />
       <Route path='/social-edu' element={<Education />} />
       <Route path='/social-health' element={<HealthCare />} />
       <Route path='/tourism-mon' element={<Monuments />} />
       <Route path='/tourism-mus' element={<Museums />} />
       <Route path='/tourism-animal' element={<AnimalExhibition />} />
-      <Route path='/upcoming-detail1' element={<UpcomingEvent1 />} />
-      <Route path='/upcoming-detail2' element={<UpcomingEvent2 />} />
-      <Route path='/news/:slug' element={<HomeNewsDetails />} />
-      <Route path='/harari-news' element={<HararifNews />} />
-      <Route path='/harari-news/:slug' element={<HarariNewsDetails />} />
-      <Route path='/national-news' element={<NationalNews />} />
-      <Route path='/national-news/:slug' element={<NationalNewsDetails />} />
-      <Route path='/africa-news' element={<AfricaNews />} />
-      <Route path='/africa-news/:slug' element={<AfricaNewsDetails />} />
-      <Route path='/international-news' element={<InternationalNews />} />
-      <Route path='/international-news/:slug' element={<InternationalNewsDetails />} />
-      <Route path='/woreda' element={<Woreda />} />
-      <Route path='/woreda-details/:id' element={<WoredaDetails />} />
-      <Route path='/offices' element={<Offices />} />
-      <Route path='/office-details/:id' element={<OfficesDetails />} />
-      <Route path='/gallery' element={<Gallery />} />
-      <Route path='/geography' element={<Geography />} />
-      <Route path='/services' element={<Services />} />
-      <Route path='/service-department' element={<ServiceDepartment />} />
-      <Route path='/city-vistor-guid' element={<CityVistorGuid/>} />
+      <Route path= '/upcoming-detail1' element={<UpcomingEvent1/>}/>
+      <Route path= '/upcoming-detail2' element={<UpcomingEvent2/>}/>
+      <Route path='/news/:slug' element = {<HomeNewsDetails/>}/>
+      <Route path='/harari-news' element = {<HararifNews/>}/>
+      <Route path='/harari-news/:slug' element = {<HarariNewsDetails/>}/>
+      <Route path='/national-news' element = {<NationalNews/>}/>
+      <Route path='/national-news/:slug' element = {<NationalNewsDetails/>}/>
+      <Route path='/africa-news' element = {<AfricaNews/>}/>
+      <Route path='/africa-news/:slug' element = {<AfricaNewsDetails/>}/>
+      <Route path='/international-news' element = {<InternationalNews/>}/>
+      <Route path='/international-news/:slug' element = {<InternationalNewsDetails/>}/>
+      <Route path='/woreda' element = {<Woreda/>}/>
+      <Route path='/woreda-details/:id' element = {<WoredaDetails/>}/>
+      <Route path='/offices' element = {<Offices/>}/>
+      <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
+      <Route path='/gallery' element = {<Gallery/>}/>
+      <Route path='/geography' element={<Geography/>}/>
+      <Route path='/sanity/*' element = {<SanityAuth/>}/>
+      <Route path='/service-department' element={<ServiceDepartment/>}/>
+      <Route path='//city-vistor-guid' element={<CityVistorGuid/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
