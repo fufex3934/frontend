@@ -1,0 +1,53 @@
+.vistor{
+    background-image: linear-gradient( to right top, #051937,#004d7a,#008793,#00bf72,#a8ee10);
+    text-align: center;
+    color: white;
+    padding: 4% 0%;
+}
+.vistor h1{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.vistor p{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+.layout .visits{
+    box-shadow: 0px 15px 15px -15px #3bb;
+    margin-bottom: 2%;
+    width: 30%;
+    padding: 1%;
+}
+.layout .description{
+    margin-top: 5%;
+}
+.layout .description h1{
+    font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+}
+.layout .visits .call{
+    /* box-shadow: #00bf72 0px 0px 15px; */
+    margin-top: 3%;
+    text-align: center;
+}
+.layout .visits .call .icon{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    /* box-shadow: blue 0px 0px 15px; */
+    padding: 2%;
+}
+.layout .visits .call .icon:hover{
+    color: #3bb;
+    font-size:large;
+    transition-duration: 1.5s;
+}
