@@ -4,33 +4,34 @@ import { FiMapPin } from 'react-icons/fi';
 import Navs from '../navbars/navs';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
+import {useTranslation} from 'react-i18next';
 const Offices = () => {
+  const {t} = useTranslation();
     const offices = [
-        { id: 1, name: 'Harari Revenue Authority', icon: <img src='/images/offices/COUNCIL.jpg'  /> },
-        { id: 2, name: 'Harari Office of the Auditor General', icon: <img src='/images/offices/download.png'  /> },
-        { id: 3, name: "Harari Education Bureau", icon: <img src='/images/offices/edu.jpg'  /> },
-        { id: 4, name: "Municipality Of Harar City", icon: <img src='/images/offices/mun.jpg'  /> },
-        { id: 5, name: "Vice President of Harari People's Region and Head of Agriculture Development Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 6, name: "Harari Ethics and Anti-Corruption Commission", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 7, name: "Harar Health Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 8, name: "Attorney General", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 9, name: "Urban Construction Development Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 10, name: "Cultural Heritage And Tourism Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 11, name: "Peace and Security Administration Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 12, name: "Public Service and Human Resource development Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 13, name: "Office of Women, Youth and Children", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 14, name: "Transport and Road Development Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 15, name: "Enterprise Development and Industry Bureau", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 16, name: "President Office", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 17, name: "Supreme Court", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 18, name: "State Council Office", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 19, name: "Police Commission", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 20, name: "Environment Protection Authority", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 21, name: "Technical and Vocational Education Agency", icon: <img src='/images/offices/vice.jpg'  /> },
-        { id: 22, name: "Harari Mass Media Agency", icon: <img src='/images/offices/mass.png'  /> },
-        { id: 23, name: "Water And Severage Authority", icon: <img src='/images/offices/water.jpg'  /> },
-        { id: 24, name: "Harar Region Prosperity Party", icon: <img src='/images/offices/pp.jpg'  /> },
+        { id: 1, name: `${t('offices.hrevenue')}`, icon: <img src='/images/offices/COUNCIL.jpg'  /> },
+        { id: 2, name: `${t('offices.hoffice')}`, icon: <img src='/images/offices/download.png'  /> },
+        { id: 3, name: `${t('offices.heducation')}`, icon: <img src='/images/offices/edu.jpg'  /> },
+        { id: 4, name: `${t('offices.municapl')}`, icon: <img src='/images/offices/mun.jpg'  /> },
+        { id: 5, name: `${t('offices.vicep')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 6, name: `${t('offices.hethics')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 7, name: `${t('offices.hhealth')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 8, name: `${t('offices.attorney')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 9, name: `${t('offices.urban')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 10, name: `${t('offices.culture')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 11, name: `${t('offices.peace')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 12, name: `${t('offices.public')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 13, name: `${t('offices.women')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 14, name: `${t('offices.transport')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 15, name: `${t('offices.enterprise')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 16, name: `${t('offices.poffice')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 17, name: `${t('offices.scourt')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 18, name: `${t('offices.scouncil')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 19, name: `${t('offices.police')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 20, name: `${t('offices.environment')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 21, name: `${t('offices.technical')}`, icon: <img src='/images/offices/vice.jpg'  /> },
+        { id: 22, name: `${t('offices.media')}`, icon: <img src='/images/offices/mass.png'  /> },
+        { id: 23, name: `${t('offices.water')}`, icon: <img src='/images/offices/water.jpg'  /> },
+        { id: 24, name: `${t('offices.prosperity')}`, icon: <img src='/images/offices/pp.jpg'  /> },
         
         // Add more woredas as needed
       ];
@@ -41,7 +42,7 @@ const Offices = () => {
     <>
       <Navs/>
       <div className="container mx-auto p-8 mt-28 md:mt-28 lg:my-10">
-      <h1 className="text-4xl font-semibold mb-8 text-center text-gray-800">Harari Region Government Offices</h1>
+      <h1 className="text-4xl font-semibold mb-8 text-center text-gray-800">{t('offices.header')}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {offices.map((office) => (
