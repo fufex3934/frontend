@@ -39,7 +39,7 @@ const Explore = () => {
                         </h3>
                     </div>
                     <div className="text-center float-right -mt-32 md:mt-4 sub-sub-main1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                        <button onClick={() => navigate('/services')} className="bg-[#329898] text-3xl font-serif hover:bg-[#ff0000] text-white  py-2 px-4 rounded-0">
+                        <button onClick={() => navigate('/services')} className="bg-[#329898] text-3xl font-serif hover:bg-white hover:text-[#3bb] text-white  py-2 px-4 rounded-0">
                             {t('exploreService.btn')}
                         </button>
                     </div>
@@ -52,7 +52,7 @@ const Explore = () => {
                         alt={ exploreData && exploreData[0] && exploreData[0].title} 
                         className='w-[250vh] h-60'
                         />
-                        <a href="" className='text-md md:text-sm lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-7 whitespace-nowrap'>Service Departments</a>
+                        <button onClick={() => navigate('/service-department')} className='text-md md:text-sm lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-7 whitespace-nowrap'>Service Departments</button>
                     </div>
                     <div className='text-center image relative' data-aos="fade-up"
                         data-aos-duration="1500">
@@ -60,14 +60,14 @@ const Explore = () => {
                          alt={ exploreData && exploreData[1] && exploreData[1].title}
                          className='w-[250vh] h-60'
                           />
-                        <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</a>
+                        <button onClick={() => navigate('/city-vistor-guid')}  className='text-md md:text-lg lg:text-sm absolute bottom-15  text-white p-2 hover:shadow-lg left-20 whitespace-nowrap'>City Visitors Guide</button>
                     </div>
                     <div className='text-center image relative' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
                         <img src={exploreData && exploreData[2] && exploreData[2].exploreImage.asset.url}
                          alt={ exploreData && exploreData[2] && exploreData[2].title}
                          className='w-[250vh] h-60'
                          />
-                        <a href="" className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>Administrations</a>
+                        <button onClick={() => navigate('/services')} className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>Administrations</button>
                     </div>
                 </div>
             </div>

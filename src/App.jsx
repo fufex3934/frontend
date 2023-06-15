@@ -8,7 +8,6 @@ import News from './components/body/NavDetailPages/News';
 import Emergency from './components/body/NavDetailPages/Emergency';
 import Policies from './components/body/NavDetailPages/Policies';
 import Sectors from './components/body/NavDetailPages/Sectors';
-import GovernmentOfficials from './components/body/NavDetailPages/GovernmentOfficials';
 import GovernmentStructures from './components/body/NavDetailPages/GovernmentStructures';
 import Education from './components/body/NavDetailPages/Education';
 import HealthCare from './components/body/NavDetailPages/HealthCare';
@@ -35,6 +34,8 @@ import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 import Gallery from './components/body/Gallery';
 import Geography from './components/body/Geography'
 import SanityAuth from './sanityAuth/SanityAuth';
+import ServiceDepartment from './components/body/ServiceDepartment';
+import CityVistorGuid from './components/body/CityVistorGuid';
 
 const App = () => {
   useEffect(() => {
@@ -48,7 +49,7 @@ const App = () => {
       <Route path='/about-leadership' element={<Leadership />} />
       <Route path='/about-history' element={<History />} />
       <Route path='/timely-news' element={<News />} />
-      <Route path='/contact-us' element={<ContactUs/>}/>
+      <Route path='/contact-us' element={<ContactUs />} />
       <Route path='/timely-emergence' element={<Emergency />} />
       <Route path='/economy-policy' element={<Policies />} />
       <Route path='/economy-sectors' element={<Sectors />} />
@@ -76,6 +77,8 @@ const App = () => {
       <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='/geography' element={<Geography/>}/>
       <Route path='/sanity/*' element = {<SanityAuth/>}/>
+      <Route path='/service-department' element={<ServiceDepartment/>}/>
+      <Route path='//city-vistor-guid' element={<CityVistorGuid/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

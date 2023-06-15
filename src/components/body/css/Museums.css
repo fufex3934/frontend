@@ -30,12 +30,15 @@
     margin-right: 1%;
 }
 .description{
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
+    /* box-shadow: #3bb 0px 0px 15px; */
+    margin-bottom: 2%;
 }
 .description div{
     margin-top: 1%;
     width: 30%;
+    /* box-shadow: #3bb 0px 0px 15px; */
 }
 @media screen and (max-width:429px) {
     .musuem{
