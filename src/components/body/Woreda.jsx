@@ -4,22 +4,23 @@ import { FiMapPin } from 'react-icons/fi';
 import Navs from '../navbars/navs';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 const Woreda = () => {
+  const {t} = useTranslation()
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
   }, []);
 
   const woredas = [
-    { id: 1, name: 'Abadir Woreda', icon: <FiMapPin size={24} /> },
-    { id: 2, name: 'Shenkor Woreda', icon: <FiMapPin size={24} /> },
-    { id: 3, name: "Jin'ala Woreda", icon: <FiMapPin size={24} /> },
-    { id: 4, name: "Amir Nur Woreda", icon: <FiMapPin size={24} /> },
-    { id: 5, name: "Aboker Woreda", icon: <FiMapPin size={24} /> },
-    { id: 6, name: "Hakim Woreda", icon: <FiMapPin size={24} /> },
-    { id: 7, name: "Dire Teyara Woreda", icon: <FiMapPin size={24} /> },
-    { id: 8, name: "Erer Woreda", icon: <FiMapPin size={24} /> },
-    { id: 9, name: "Sofi Woreda", icon: <FiMapPin size={24} /> },
+    { id: 1, name: `${t('woredas.abadir')}`, icon: <FiMapPin size={24} /> },
+    { id: 2, name: `${t('woredas.shenkor')}`, icon: <FiMapPin size={24} /> },
+    { id: 3, name: `${t('woredas.jinala')}`, icon: <FiMapPin size={24} /> },
+    { id: 4, name: `${t('woredas.amir')}`, icon: <FiMapPin size={24} /> },
+    { id: 5, name: `${t('woredas.aboker')}`, icon: <FiMapPin size={24} /> },
+    { id: 6, name: `${t('woredas.hakim')}`, icon: <FiMapPin size={24} /> },
+    { id: 7, name: `${t('woredas.direteyara')}`, icon: <FiMapPin size={24} /> },
+    { id: 8, name: `${t('woredas.erer')}`, icon: <FiMapPin size={24} /> },
+    { id: 9, name: `${t('woredas.sofi')}`, icon: <FiMapPin size={24} /> },
     // Add more woredas as needed
   ];
 
@@ -27,7 +28,7 @@ const Woreda = () => {
     <>
        <Navs/>
        <div className="container mx-auto p-8 mt-28 md:mt-28 lg:my-10">
-      <h1 className="text-4xl font-semibold mb-8 text-center text-gray-800">Harari Woreda's</h1>
+      <h1 className="text-4xl font-semibold mb-8 text-center text-gray-800">{t('woredas.header')}</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {woredas.map((woreda) => (
