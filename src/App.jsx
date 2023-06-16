@@ -33,10 +33,10 @@ import Offices from './components/body/Offices';
 import OfficesDetails from './components/body/bodyDetailsPage/OfficesDetails';
 import Gallery from './components/body/Gallery';
 import Geography from './components/body/Geography'
-import SanityAuth from './sanityAuth/SanityAuth';
 import ServiceDepartment from './components/body/ServiceDepartment';
 import CityVistorGuid from './components/body/CityVistorGuid';
-import Adminstration from './components/body/Adminstration'
+import Adminstration from './components/body/Adminstration';
+import Services from './components/body/Services';
 
 const App = () => {
   useEffect(() => {
@@ -77,7 +77,7 @@ const App = () => {
       <Route path='/office-details/:id' element = {<OfficesDetails/>}/>
       <Route path='/gallery' element = {<Gallery/>}/>
       <Route path='/geography' element={<Geography/>}/>
-      <Route path='/sanity/*' element = {<SanityAuth/>}/>
+      <Route path='/service' element = {<Services/>}/>
       <Route path='/service-department' element={<ServiceDepartment/>}/>
       <Route path='/city-vistor-guid' element={<CityVistorGuid/>}/>
       <Route path='/city-adminstration' element={<Adminstration/>}/>

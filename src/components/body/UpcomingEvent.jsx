@@ -56,7 +56,7 @@ const UpcomingEvent = () => {
                           <h1>{item.text1}</h1>
                       </div>
                        <div className='float-right'>
-                          <button onClick={() => navigate('/events')}>{item.text2}</button>
+                          <button onClick={() => navigate('/timely-news')} className='text-[#329898] hover:underline'>{item.text2}</button>
                         </div>
                   </div>
               ))}

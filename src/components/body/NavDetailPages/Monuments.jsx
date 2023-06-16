@@ -30,13 +30,13 @@ const Monuments = () => {
         <div className="monument">
         {
           monuments_data.map((monument)=>(
-            <div className="layout">
+            <div className="layout" key={monument.id}>
                 <div className="image" style={{backgroundImage:`url(${monument.image})`}}>
                   <div className="icon">
-                    <p className='hov-effect'>
+                    <div className='hov-effect'>
                       <span className='text-white text-xl'>Over View</span>
                       <p className='text-white'>{monument.p}</p>
-                    </p>
+                    </div>
                   </div>
                 </div>
                 <div className="only-icons mt-2">
