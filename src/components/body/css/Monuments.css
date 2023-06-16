@@ -20,10 +20,12 @@
     columns: 4;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+    padding: 0% 5%;
 }
 .monument-container .monument div{
     width: 25%;
-    padding: 2%;
+    padding: 1%;
 }
 .monument-container .monument .layout{
     margin: auto;

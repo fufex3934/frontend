@@ -44,6 +44,7 @@ const Monuments = () => {
                 <img src={src.image} alt="" />
                 <button className='mr-3'>{src.icons.icon1}</button>
                 <button>{src.icons.icon2}</button>
+                <p>{src.p}</p>
               </div>
             ))
           }
