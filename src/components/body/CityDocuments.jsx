@@ -77,11 +77,11 @@ const CityDocuments = () => {
               <label
                 htmlFor={`doc-${documentIndex}`}
                 className='text-sm text-slate-600 hover:text-[#329898] hover:underline cursor-pointer
-                 font-serif leading-snug tracking-tight font-bold'
+                  '
               >
-                {document.title.substring(0, 16)}
+                {`${document.title.substring(0, 16)}...`}
               </label>
-              <span className='ml-4 md:ml-8 whitespace-nowrap'>{formatTime(document.time)}</span>
+              <span className='ml-4 md:ml-8 whitespace-nowrap text-sm'>{formatTime(document.time)}</span>
             </div>
             {selectedDocument === documentIndex && (
               <div className='mt-2'>
