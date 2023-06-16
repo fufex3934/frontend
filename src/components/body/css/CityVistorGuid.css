@@ -51,3 +51,24 @@
     font-size:large;
     transition-duration: 1.5s;
 }
+@media screen and (max-width:428px) {
+    .vistor{
+        margin-top: 25%;
+    }
+    .layout .visits{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px) {
+    .vistor{
+        margin-top: 40%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:888px){
+    .vistor{
+        margin-top: 10%;
+    }
+    .layout .visits{
+        width: 49%;
+    }
+}
