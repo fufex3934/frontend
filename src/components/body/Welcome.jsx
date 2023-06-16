@@ -3,10 +3,11 @@
       import createClient from '../../client';
       import { Link } from 'react-router-dom';
       import { useTranslation } from 'react-i18next';
-
+      import { useNavigate } from 'react-router-dom';
       const Welcome = () => {
         const [welcomeData, setWelcomeData] = useState([]);
         const {t} = useTranslation();
+        const navigate = useNavigate();
         
         useEffect(() => {
           const fetchData = async () => {
@@ -121,14 +122,15 @@
                       alt={item.alt}
                       style={{ animationDelay: `${index * 0.2}s` }} // Add delay for each item
                     />
-                    <div className="absolute top-1/4 left-0 p-8 text-white mx-auto">
+                    <div className="absolute top-1/4 left-0 p-8 text-white ">
                       <h2 className="text-2xl  md:text-6xl lg:text-5xl decoration-8 font-bold transition-all duration-300">
                         {item.title}
                       </h2>
                       <p className="mt-2 ml-2 text-xl md:text-2xl font-sans">{item.detail}</p>
-                      {/* <button className="mt-8 px-6 py-2 text-white bg-[#3bb5b5] hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
+                      <button onClick={()=>navigate('/gallery')}
+                        className="mt-8 px-6 py-2 text-white bg-[#3bb5b5] hover:bg-cyan-800 transition-colors duration-300 ease-in-out">
                         Discover More
-                      </button> */}
+                      </button>
                     </div>
                   </div>
                 ))}
@@ -374,14 +376,15 @@
       </div>
           
         </div>
-        {/* <p className='text-white welcome-p font-serif font-medium text-lg md:text-xl pb-8'>
+        <p className='text-white welcome-p font-serif font-medium text-lg md:text-xl pb-8'>
         {t('welcome.text')}
           <span>
-            <button className="ml-4 mt-4 pb-5 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
+            <button onClick={()=>navigate('/city-vistor-guid')}
+             className="ml-4 mt-4 pb-5 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
             {t('welcome.explore')}
             </button>
           </span>
-        </p> */}
+        </p>
       </div>
 
           </div>
