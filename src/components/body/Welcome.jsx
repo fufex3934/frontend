@@ -341,7 +341,7 @@
       </svg>
 
         </div>
-        <Link to='/sanity' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
+        <Link to='/service' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 leading-snug tracking-tight
         hover:mx-4 md:hover:mx-20 hover:border-gray-300">
           {t('welcome.services')}
