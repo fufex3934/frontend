@@ -70,9 +70,8 @@
 .main-upcoming-event .sub-main-upcoming-event-right .left-top-icon{
     border-radius: 10%;
     background-color: #329898;
-    width: 90%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    width: 60%;
+    padding: 1% 0% 1% 18%;
 }
 .main-upcoming-event .sub-main-upcoming-event-right h1{
     color: #08143c;

@@ -67,7 +67,7 @@ const Explore = () => {
                          alt={ exploreData && exploreData[2] && exploreData[2].title}
                          className='w-[250vh] h-60'
                          />
-                        <button onClick={() => navigate('/services')} className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>Administrations</button>
+                        <button onClick={() => navigate('/city-adminstration')} className='text-md md:text-lg lg:text-sm absolute bottom-15 text-white p-2 hover:shadow-lg left-20'>City Administrations</button>
                     </div>
                 </div>
             </div>
