@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import './language.css'
 
 const Language = () => {
   const { i18n } = useTranslation();
@@ -22,7 +23,7 @@ const Language = () => {
     <select
       value={selectedLanguage}
       onChange={(e) => languageChangeHandler(e.target.value)}
-      className="ml-4 border text-lg rounded-0 p-2 border-grey h-12 w-40"
+      className="ml-4 border text-lg rounded-0 p-2 border-grey h-12 w-40 outline-none focus:outline-none"
     >
       {languageOptions.map((option) => (
         <option key={option.value} value={option.value}>
@@ -36,7 +37,7 @@ const Language = () => {
     <ul>
       <li className="flex items-center text-[#1e293b]">
         {/* Your existing code */}
-        {languageDropdown}
+         {languageDropdown}
       </li>
     </ul>
   );
