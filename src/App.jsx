@@ -36,7 +36,7 @@ import Geography from './components/body/Geography'
 import ServiceDepartment from './components/body/ServiceDepartment';
 import CityVistorGuid from './components/body/CityVistorGuid';
 import Adminstration from './components/body/Adminstration';
-import Services from './components/body/Services';
+import Services from './components/body/Services';o
 
 const App = () => {
   useEffect(() => {

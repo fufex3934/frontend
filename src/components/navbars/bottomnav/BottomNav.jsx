@@ -178,7 +178,7 @@ const BottomNavbar = () => {
 
             </ul>
           </div>
-
+                 {/* for mobile */}
           <div className="block lg:hidden items-center ml-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -216,6 +216,7 @@ const BottomNavbar = () => {
                   </svg>
                 </button>
               </div>
+              
               <div className="flex flex-col w-80% h-full p-4 ">
                 <ul className="space-y-4  ">
                   <li className="group z-10 relative dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
