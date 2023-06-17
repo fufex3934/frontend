@@ -79,9 +79,9 @@ const BottomNavbar = () => {
 
                 </button>
                 <div className="  group-hover:block dropdown-menu absolute hidden h-auto">
-                  <ul className="top-0 w-48 bg-white  px-6 py-8 text-center shadow  ">
-                    <li className="py-1"><button onClick={() => navigate('/about')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-10 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.aboutUs')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/about-history')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[70px] hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.harar')}</button></li>
+                  <ul className="top-0 w-52 bg-white py-8 text-center shadow li ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/about')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white  cursor-pointer whitespace-nowrap">{t('dropdown.aboutUs')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/about-history')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer">{t('dropdown.harar')}</button></li>
                   </ul>
                 </div>
               </li>
@@ -95,9 +95,9 @@ const BottomNavbar = () => {
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
 
-                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
-                    <li className="py-1"><button onClick={() => navigate('/timely-news')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[70px] hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.news')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/timely-emergence')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[40px] hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.emergency')}</button></li>
+                  <ul className="top-0 w-52 bg-white py-8 shadow ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer">{t('dropdown.news')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-emergence')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer whitespace-nowrap">{t('dropdown.emergency')}</button></li>
                   </ul>
                 </div>
               </li>
@@ -110,9 +110,9 @@ const BottomNavbar = () => {
                   {t('navbar.economic')}
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><button onClick={() => navigate('/economy-policy')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[50px] hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.policies')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/economy-sectors')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[50px] hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.sectors')}</button></li>
+                  <ul className="top-0 w-52 bg-white py-8 shadow  ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/economy-policy')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer">{t('dropdown.policies')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/economy-sectors')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer">{t('dropdown.sectors')}</button></li>
                   </ul>
                 </div>
               </li>
@@ -125,10 +125,9 @@ const BottomNavbar = () => {
                   {t('navbar.politics')}
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                  <ul className="top-0 w-52 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><button onClick={() => navigate('/about-leadership')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-2 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.go')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/politic-gs')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-4 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.gs')}</button></li>
-                    
+                  <ul className="top-0 w-52 bg-white py-8 shadow  ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/about-leadership')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white  py-2 cursor-pointer whitespace-nowrap">{t('dropdown.go')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/politic-gs')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer whitespace-nowrap">{t('dropdown.gs')}</button></li> 
                   </ul>
                 </div>
               </li>
@@ -140,9 +139,9 @@ const BottomNavbar = () => {
                   {t('navbar.social')}
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow  ">
-                    <li className="py-1"><button onClick={() => navigate('/social-edu')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-14 hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.education')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/social-health')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-8 hover:-ml-5  hover:py-2 cursor-pointer whitespace-nowrap">{t('dropdown.healthcare')}</button></li>
+                  <ul className="top-0 w-52 bg-white py-8 shadow  ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/social-edu')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer">{t('dropdown.education')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/social-health')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer whitespace-nowrap">{t('dropdown.healthcare')}</button></li>
                   </ul>
                 </div>
               </li>
@@ -156,15 +155,14 @@ const BottomNavbar = () => {
 
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-                  <ul className="top-0 w-48 bg-white  px-6 py-8 shadow ">
-                    <li className="py-1"><button onClick={() => navigate('/tourism-mon')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[54px] hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.monuments')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/tourism-mus')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-12 hover:-ml-5  hover:py-2 cursor-pointer">{t('dropdown.museum')}</button></li>
-                    <li className="py-1"><button onClick={() => navigate('/tourism-animal')} className="block text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-5 hover:py-2 hover:-ml-5  cursor-pointer whitespace-nowrap">{t('dropdown.animalex')}</button></li>
-
+                  <ul className="top-0 w-52 bg-white py-8 shadow ">
+                    <li className="w-full border-t-[1px] border-[#3bb]"><button onClick={() => navigate('/tourism-mon')} className="block w-full text-gray-900 py-2  text-md hover:bg-[#3bb5b5] hover:text-white hover:px-[54px] cursor-pointer">{t('dropdown.monuments')}</button></li>
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/tourism-mus')} className="block w-full text-gray-900 py-2 text-md hover:bg-[#3bb5b5] hover:text-white  cursor-pointer">{t('dropdown.museum')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/tourism-animal')} className="block w-full text-gray-900 py-2 text-md hover:bg-[#3bb5b5] hover:text-white  cursor-pointer whitespace-nowrap">{t('dropdown.animalex')}</button></li>
                   </ul>
                 </div>
               </li>
-              <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
+              <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown link  text-gray-600  cursor-pointer text-md font-serif ">
                 <span className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0 
                  bg-white px-3 py-2 text-xl  text-[#1e293b] font-serif leading-snug tracking-tight" 
                  id="menu-button" aria-expanded="true" aria-haspopup="true">

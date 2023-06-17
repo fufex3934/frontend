@@ -1,10 +1,7 @@
-button .change{
+.link .change{
     font-size: larger;
     transition-duration: 1s;
 }
-button:hover .change{
-    color: white;
-}
-button .change:hover{
-    font-size: x-large;
+.link:hover .change{
+    font-size: 21px;
 }

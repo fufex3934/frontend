@@ -1,3 +1,7 @@
 ul li:hover .change{
     color: aliceblue;
 }
+.link:hover .change{
+    color: aliceblue;
+}
+

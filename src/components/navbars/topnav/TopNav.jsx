@@ -31,13 +31,13 @@ const TopNav = () => {
         </span>
       </div>
       <div className="flex mt-4 relative right-6 sm:mt-0">
-        <Link to = 'https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+        <Link to = 'https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600 link">
           <BsFacebook className='change' />
         </Link>
-        <Link to='https://t.me/HarariGovernmentCommunication' target='_blank' className="text-white ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
+        <Link to='https://t.me/HarariGovernmentCommunication' target='_blank' className="text-white link ml-6 sm:ml-0 sm:mr-6 hover:text-orange-600">
           <FaTelegram className='change' />
         </Link>
-        <Link to='https://twitter.com/HarariGovComm/status/1559545087117377538' target='_blank' className="text-white ml-6 sm:ml-0 hover:text-orange-600">
+        <Link to='https://twitter.com/HarariGovComm/status/1559545087117377538' target='_blank' className="text-white link ml-6 sm:ml-0 hover:text-orange-600">
           <AiFillTwitterCircle className='change' />
         </Link>
       </div>
