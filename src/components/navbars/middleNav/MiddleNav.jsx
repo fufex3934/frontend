@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Logo from '/images/har.png';
 const MiddleNav = () => {
   const {t} = useTranslation();
   return (
@@ -20,7 +21,7 @@ const MiddleNav = () => {
                                     <a href="#">
                     <img
                       className="h-32 md:h-10 w-72 md:w-20 ml-6 mt-9"
-                      src="images/har.png"
+                      src={Logo}
                       alt="Logo"
                     />
                   </a>

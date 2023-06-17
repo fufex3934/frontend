@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import './css/Footer.css';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
+import Logo from '/harar.png';
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -59,7 +60,7 @@ const Footer = () => {
             {/* left div */}
             <div className="flex items-start md:-ml-96 lg:-ml-48 space-x-4 ml-6  ">
               <Link to ='/'>
-                <img className="h-10 w-40  mt-1 md:mt-0  md:h-12  object-cover md:w-12 rounded-full mr-10 md:mr-0" src="./harar.png" alt="Logo" />
+                <img className="h-10 w-40  mt-1 md:mt-0  md:h-12  object-cover md:w-12 rounded-full mr-10 md:mr-0" src={Logo} alt="Logo" />
               </Link>
               <Link to = '/'>
                 <h1 className="text-slate-300 text-base md:whitespace-nowrap lg:whitespace-break-spaces text-start  font-bold md:text-2xl lg:text-lg  w-[300px]">
