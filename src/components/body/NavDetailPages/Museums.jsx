@@ -27,9 +27,14 @@ const Museums = () => {
     </div>
     <div className="art-history text-center mt-8">
       <h1 className='text-4xl font-mono text-[#3bb] text-center'>Art And History Musuem</h1>
-      <h1 className='text-4xl text-[#3bb] text-center'>Free Gellary</h1>
+      
     </div>
-    
+    <div className=" flex justify-center my-5 text-xl p-6">
+        <p className='p-4' style={{width:'58%',boxShadow:'0px 0px 10px grey'}}>When it comes to museum, Harar is a magnificent destination for all lovers of art and culture. Whether you're interested in Ethiopian history, modern art or science and technology
+          –
+          the museums in Harar won't let you down! The choice of exhibitions and venues is huge. Here we present you some of Harar's great museum monuments.</p>
+    </div>
+      <h1 className='text-4xl text-[#3bb] text-center'>Free Monument Gellary</h1>
     <div className="free-gallary">
           {
             gallary.map((image)=>(

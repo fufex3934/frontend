@@ -36,7 +36,7 @@ const Monuments = () => {
         <div className="head">
           <h1>Harari Historic Monuments</h1>
         </div>
-        <h1 className='text-center font-mono text-[#3bb] text-3xl'>Free Gallary</h1>
+        <h1 className='text-center font-mono text-[#3bb] text-4xl'>Free Gallary</h1>
         <div className="monument">
           {
             monuments_data.map((src)=>(

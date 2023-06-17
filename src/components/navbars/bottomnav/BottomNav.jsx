@@ -164,7 +164,7 @@ const BottomNavbar = () => {
                   </ul>
                 </div>
               </li>
-              <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+              <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
                 <span className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0 
                  bg-white px-3 py-2 text-xl  text-[#1e293b] font-serif leading-snug tracking-tight" 
                  id="menu-button" aria-expanded="true" aria-haspopup="true">
