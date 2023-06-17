@@ -1,0 +1,96 @@
+.adminstration{
+    box-shadow: 0px 8px 8px -8px #008793;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: azure;
+    padding: 3%;
+    background-image: linear-gradient(to right top,rgb(6, 198, 246),rgb(93, 93, 84),rgb(4, 202, 246),rgb(93, 93, 84),rgb(41, 194, 233));
+}
+.welcome{
+    text-align: center;
+    padding: 2% 0%;
+}
+.area-interst{
+    /* box-shadow: 0px 0px 15px grey; */
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+}
+.area-interst .area{
+    display: flex;
+    justify-content: center;
+}
+.area-interst .area .interst{
+    width: 33%;
+    padding: 2%;
+    margin: 1%;
+    box-shadow: #525454 0px 0px 4px;
+    text-align: center;
+}
+.area-interst .area .interst:hover{
+    box-shadow: 0px 0px 10px #008793;
+    transition-duration: 1s;
+}
+.area-interst .area .interst:hover h1{
+    color: #008793;
+    transition-duration: 1s;
+}
+.life-style{
+    /* box-shadow: #008793 0px 0px 15px; */
+    padding: 0% 5%;
+}
+/* .life-style .life{
+    box-shadow: 0px 0px 15px blue;
+} */
+.life-style .life h1{
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #3bb;
+}
+.life-style .style-layout{
+    display: flex;
+    justify-content: center;
+}
+.life-style .style{
+    box-shadow: grey 0px 5px 5px -5px;
+    width: 30%;
+    padding:2%;
+}
+.follow-us{
+    padding: 5%;
+    margin: auto;
+}
+.follow-us .follow{
+    /* box-shadow: 0px 0px 15px green; */
+    margin: auto;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #3bb;
+}
+.follow-us .layout-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 5px 5px -5px grey;
+    margin: auto;
+    padding-bottom: 1.5%;
+}
+.follow-us .layout-us .link{
+    /* box-shadow: #afb2b2 0px 0px 5px; */
+    width: 15%;
+    margin: auto;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow-us .layout-us .link:hover{
+    box-shadow: rgb(69, 229, 250) 0px 0px 5px;
+    transition-duration: 1s;
+}
+.follow-us .layout-us .link .sm-icon{
+    margin-right: 5%;
+}

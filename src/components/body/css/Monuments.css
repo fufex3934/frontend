@@ -27,60 +27,8 @@
     width: 25%;
     padding: 1%;
 }
-.monument-container .monument .layout{
-    margin: auto;
-    width: 25%; 
-    /* box-shadow: 0px 2px 5px green; */
-    height: 40vh;
-    margin-bottom: 2%;
-}
-.monument-container .monument .layout .image{
-    box-shadow: #3bb 0px 0px 15px;
-}
-.monument-container .monument .layout .image .icon{
-    /* box-shadow: 0px 0px 15px rgb(4, 255, 0); */
-    position: relative;
-    top: 20%;
-    text-align: center;
-    padding-right: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    visibility: hidden;
-    overflow-y: hidden;
-    height: 80%;
-    
-}
-.monument-container .monument .layout .image:hover .icon{
-    visibility: visible;
-}
-.monument-container .monument .layout .image .icon .hov-effect{
-    position: absolute;
-    transition-duration: 1.5s;
-    top: 80%;
-}
-
-.monument-container .monument .layout .image:hover .icon .hov-effect{
-    top: 0%;
-}
-
-.monument-container .monument .layout .only-icons{
-    text-align: right;
-    padding-right: 5%;
-}
-.monument-container .monument .layout .only-icons button:hover{
-    transition-duration: 2s;
-    color: rgb(5, 238, 48);
-}
 @media screen and (max-width:320px) {
-    .monument-container .monument .layout .image:hover .icon{
-        height: 80%;
-    }
-    .monument-container .monument .layout .image:hover .icon .hov-effect{
-        top: 0%;
-    }
-    .monument-container .monument .layout .image .icon{
-            top: 20%;
-    }
+    
 }
 @media screen and (max-width:428px) {
     .monument-container {
@@ -96,7 +44,7 @@
         flex-direction: column;
         padding: 4%;
     }
-    .monument-container .monument .layout{
+    .monument-container .monument div{
         width: 100%;
         margin-bottom: 15%;
     }
@@ -112,11 +60,11 @@
         columns: 2;
         flex-wrap: wrap;
     }
-    .monument-container .monument .layout{
-        width: 45%;
+    .monument-container .monument div{
+        width: 50%;
         margin-bottom: 8%;
     }
-    .monument-container .monument .layout .only-icons{
-        margin-top: 5%;
+    .monument-container .monument div p{
+        font-size: larger;
     }
 }
