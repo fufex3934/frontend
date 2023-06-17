@@ -36,7 +36,7 @@ const BottomNavbar = () => {
   return (
 
     <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
-      <div className="bg-white/100 py-6  p-4">
+      <div className="bg-[#3bb5b5] md:bg-[#3bb5b5] lg:bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-1">
@@ -52,7 +52,7 @@ const BottomNavbar = () => {
 
           {!isOpen && (
             <a href="#">
-              <h1 className="text-[#083344] ml-4 md:ml-2 font-bold flex-grow 
+              <h1 className="text-white md:text-white lg:text-[#083344] ml-4 md:ml-2 font-bold flex-grow 
                whitespace-wrap text-sm md:text-lg md:uppercase  lg:hidden font-sans leading-snug tracking-tight">
                 {t('header')}
               </h1>
@@ -176,11 +176,11 @@ const BottomNavbar = () => {
 
             </ul>
           </div>
-
+                 {/* for mobile */}
           <div className="block lg:hidden items-center ml-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400 ${isOpen ? 'rotate-180' : ''
+              className={`flex items-center px-3 py-2 rounded text-white lg:text-black-500 hover:text-black-400 ${isOpen ? 'rotate-180' : ''
                 }`}
             >
               <svg
@@ -214,6 +214,7 @@ const BottomNavbar = () => {
                   </svg>
                 </button>
               </div>
+              
               <div className="flex flex-col w-80% h-full p-4 ">
                 <ul className="space-y-4  ">
                   <li className="group z-10 relative dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
