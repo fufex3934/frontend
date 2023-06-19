@@ -29,7 +29,7 @@ const OfficesDetails = () => {
             location:'<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15748.857476247716!2d42.1166823!3d9.3142647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bd09ec7c9013%3A0x7a5033c42f6935c7!2sHarari%20Audit%20General!5e0!3m2!1sen!2snl!4v1686372091181!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
             mission:`${t('officeDetails.hoffice-mission-content')}`,
             vision:`${t('officeDetails.hoffice-vision-content')}`,
-            coreValues:`${t('officeDetails.hoffice-vision-coreValues-content')}`,
+            coreValues:`${t('officeDetails.hoffice-coreValues-content')}`,
             address: 'Unknown ',
             phone: '+025 666 9184',
             fax: '+0254660268',
