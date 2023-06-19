@@ -9,7 +9,7 @@ const city=[
     head: 'About City Of Harare', to: '/about-history', description: 'All about the capital of Harare, its government and administration: People, projects, facts and figures'
   },
   {
-    head:'Animal Exhibition',to:'/',description:''
+    head: 'Animal Exhibition', to: '/', description:'A weird and wonderful experience that attracts visitors to Harar, and that is the hyena men of Harar.'
   },
   {
     head:'Historic Monuments',to:'/tourism-mon',description:'The choice of exhibitions and venues. Here we will present you some of Harars great museum monuments.'
