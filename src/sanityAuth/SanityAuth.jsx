@@ -3,6 +3,7 @@ import React, { useState,useEffect } from 'react';
 import { Route, Routes, Navigate,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaUserCog } from 'react-icons/fa';
+import {FcHome,FcFeedback} from 'react-icons/fc';
 
 function SanityAuth() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -192,10 +193,10 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
       }
     };
     return (
-      <div className="min-h-screen flex flex-col bg-gray-200">
-        <header className="py-4 px-8 bg-white shadow-md">
+      <div className="min-h-screen flex flex-col bg-[#f2f3f5]">
+        <header className="py-4 px-8 bg-[#1f2937] shadow-md">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-semibold text-slate-700">Admin Dashboard</h1>
+            <h1 className="text-3xl font-semibold text-slate-200">Admin Dashboard</h1>
             <button onClick= {()=>navigate('/create-account')}
             className='  px-4 py-2 text-sm font-medium text-white bg-[#329898] hover:bg-[#3bb5b5] rounded ml-[800px]'>
               Create Account
@@ -209,29 +210,40 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
           </div>
         </header>
         <main className="flex-grow flex flex-col lg:flex-row">
-          <aside className="w-full lg:w-1/4 bg-white p-4">
+          <aside className="w-full lg:w-1/4 bg-[#1f2937] p-4">
             <nav>
               <ul className="space-y-2">
                 <li>
                   <button
                     onClick={openSanityStudio}
-                    className="flex items-center justify-between px-4 py-2 rounded-md text-sm font-medium text-[#329898] hover:bg-[#3bb5b5] hover:text-white w-full"
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-red-500 hover:text-white w-full"
                   >
-                    <span className='text-md font-bold'>Go to CMS Studio</span>
                     <span className="text-lg">
                       <FaUserCog />
                     </span>
+                    <span className='text-md font-bold absolute left-16'>Go to CMS Studio</span>
                   </button>
                 </li>
                 <li>
                   <button
                     onClick={()=>navigate('/')}
-                    className="flex items-center justify-between px-4 py-2 rounded-md text-sm font-medium text-[#329898] hover:bg-[#3bb5b5] hover:text-white w-full"
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-purple-500 hover:text-white w-full"
                   >
-                    <span className='text-md font-bold'>Go to Home Page</span>
                     <span className="text-lg">
-                      <FaUserCog />
+                      <FcHome />
                     </span>
+                    <span className='text-md font-bold absolute left-16'>Go to Home Page</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={()=>navigate('/feedback')}
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-blue-400 hover:text-white w-full"
+                  >
+                    <span className="text-lg">
+                      <FcFeedback />
+                    </span>
+                    <span className='text-md font-bold absolute left-16'>See Feedbacks</span>
                   </button>
                 </li>
                 
@@ -273,7 +285,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                     <h1>{admin.email}</h1>
                   </div>
                   <div>
-                    <h1 className='ml-6'>*******</h1>
+                    <h1 className='ml-10'>*******</h1>
                   </div>
                   <div>
                     <h1>{admin.role}</h1>
@@ -294,7 +306,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
           </section>
           {/* Modal */}
         {isModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center z-10">
+          <div className="fixed inset-0 flex items-center justify-center z-10 w-[600px] ml-[50vh]">
             <div className="bg-white p-8 shadow-lg rounded">
               <h2 className="text-2xl mb-4">Edit Admin</h2>
               <input
