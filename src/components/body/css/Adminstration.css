@@ -51,6 +51,7 @@
 .life-style .style-layout{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .life-style .style{
     box-shadow: grey 0px 5px 5px -5px;
@@ -93,4 +94,58 @@
 }
 .follow-us .layout-us .link .sm-icon{
     margin-right: 5%;
+}
+@media screen and (max-width: 428px) {
+    .adminstration{
+        margin-top: 22%;
+        padding-top: 10%;
+    }
+    .adminstration h1{
+        font-size: 30px;
+    }
+    .welcome h1{
+        white-space: nowrap;
+        font-size: 27px;
+    }
+    .area-interst .area{
+        flex-direction: column;
+    }
+    .area-interst .area .interst{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .life-style .style-layout{
+        flex-direction: column;
+    }
+    .life-style .style{
+        width: 100%;
+    }
+    .follow-us .layout-us .link{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .adminstration {
+        margin-top: 35%;
+    }
+
+    .follow-us .layout-us .link {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width: 678px) and (max-width:888px) {
+    .life-style .style {
+        width: 100%;
+        text-align: center;
+    }
+    .life-style .style .src{
+        display: flex;
+        flex-direction: column;
+    }
+    .follow-us .layout-us .link {
+            width: 30%;
+            margin-bottom: 5%;
+    }
 }
