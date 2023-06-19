@@ -5,10 +5,12 @@ import { BsFacebook, BsTelegram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
+import {RiAdminLine} from 'react-icons/ri';
 import './css/Footer.css';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import Logo from '/harar.png';
+
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -49,6 +51,9 @@ const Footer = () => {
             </button>
             <button onClick={() => navigate('/contact-us')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
             {t('footer.contact')}
+            </button>
+            <button onClick={()=>navigate('/sanity')} className='absolute right-20  '>
+              <RiAdminLine className='text-slate-300 text-sm h-6 w-6 cursor-pointer hover:text-red-500'/>
             </button>
           </div>
         </div>
