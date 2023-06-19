@@ -1,4 +1,14 @@
-
+.top-sector-layout {
+    box-shadow: grey 0px 2px 2px -2px;
+    padding: 4% 0%;
+    align-items: center;
+    font-size: 40px;
+    background-image: url('es.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+}
 .layout{
     margin: 1%;
     padding: 1%;
@@ -18,20 +28,21 @@
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
-    border-bottom: #3bb inset 2px;
+    /* border-bottom: #3bb inset 2px; */
     padding-bottom: 1%;
 }
-
 .layout .main-con .content{
     display: flex;
-    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* box-shadow: #3bb 0px 0px 15px; */
+    margin-bottom: 5%;
 }
 .layout .main-con .content .content-container{
-    margin-right: 1%;
-    margin-left: 1%;
-    width: 25%;
-    border-right: #3bb dashed 2px;
-    padding-right: 2%;
+    width: 27%;
+    box-shadow: 0px 2px 5px grey;
+    padding: 2%;
+    margin: 2% 1%;
 }
 .layout .main-con .content .content-container .top{
     display: flex;
@@ -65,7 +76,7 @@
     }
     .layout .main-con .content .content-container {
         width: 100%;
-        border-bottom: #3bb inset 2px;
+        /* border-bottom: #3bb inset 2px; */
         padding-bottom: 5%;
     }
     .layout .main-con .content .content-container .top{
@@ -78,14 +89,16 @@
     .layout{
         margin-top: 20%;
     }
+    
     .layout .main-con .content {
         flex-direction: column;
+        margin-bottom: 0%;
     }
     .layout .main-con .content .content-container{
         width: 100%;
         flex-direction: column-reverse;
         columns: 2;
-        border-bottom: 2px dashed #3bb;
+       box-shadow: grey 0px 5px 5px -5px;
     }
     .layout .main-con .content .content-container .top {
         border: none;
