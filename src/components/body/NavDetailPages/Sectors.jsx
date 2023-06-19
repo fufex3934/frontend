@@ -12,6 +12,9 @@ const Sectors = () => {
   return (
     <>
     <Navs/>
+    <div className="top-sector-layout">
+      <h1 className="text-white mt-24 pl-8">We are in bussiness</h1>
+    </div>
     <div className='layout'>
       <div className="main-con">
         <div className="header">
@@ -24,7 +27,7 @@ const Sectors = () => {
                 <div className="top">
                   <h1>{item.header}</h1>
                   <div className="icon">
-                    <img src={item.image} alt=""/>
+                    <img src={item.image} alt="" style={{backgroundImage:'none'}}/>
                   </div>
                 </div>
                 <div className="bottom">
