@@ -52,7 +52,7 @@ const Footer = () => {
             <button onClick={() => navigate('/contact-us')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
             {t('footer.contact')}
             </button>
-            <button onClick={()=>navigate('/sanity')} className='absolute right-20  '>
+            <button onClick={()=>navigate('/sanity')} className='hidden lg:block absolute right-20  '>
               <RiAdminLine className='text-slate-300 text-sm h-6 w-6 cursor-pointer hover:text-red-500'/>
             </button>
           </div>

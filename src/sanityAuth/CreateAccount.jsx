@@ -22,6 +22,8 @@ const CreateAccount = () => {
       setEmail('');
       setPassword('');
       setRole('');
+      navigate('dashboard');
+
       console.log(response.data.message); // Log the response message
     } catch (error) {
       console.error(error);
