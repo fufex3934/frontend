@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './css/ExploreCity.css'
@@ -48,9 +49,9 @@ const ExploreCity = (props) => {
       <div className='indexs' key={index}>
           <img className='h-52 w-full ' src={item.image} alt="" />
           <div className='link-div'>
-            <p className='pb-3'><a href="">{item.text1}</a></p>
-            <h1 className='pb-3'><a href="">{item.text2}</a></h1>
-            <span className='pb-2'>{item.icon}</span>
+            <p className='pb-3'><Link to={item.url}>{item.text1}</Link></p>
+            <h1 className='pb-3'><Link to={item.url}>{item.text2}</Link></h1>
+            <Link to={item.url} className='pb-2'>{item.icon}</Link>
           </div>
       </div>
     );

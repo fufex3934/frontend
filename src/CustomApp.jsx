@@ -38,43 +38,50 @@ const CustomApp = () => {
       image: 'images/c9.jpg',
       text1: 'Leading,Culture',
       text2: 'Convetional Leaders',
-      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500'/>
+      url: '/about-leadership',
+      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-[#3bb]'/>
     },
     {
       image: 'images/car4.jpg',
       text1: 'Economics,Culture',
       text2: 'Business Agence',
-      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
+      url: '/economy-sectors',
+      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-[#3bb]' />
     },
     {
       image: 'images/car6.jpg',
-      text1: 'City Culture',
-      text2: 'City Center',
-      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
+      text1: 'Gallary',
+      text2: 'City Gallary',
+      url: '/gallery',
+      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-[#3bb]' />
     },
     {
       image: 'images/car8.jpg',
-      text1: 'Business',
-      text2: 'Cinema Teater',
-      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-red-500' />
+      text1: 'History, Culture',
+      text2: 'Harari Historic Monuments',
+      url: '/tourism-mon',
+      icon: <BsArrowRightCircle className='text-4xl  fill-white hover:fill-[#3bb]' />
     },
     {
       image: 'images/hararicity.jpg',
-      text1: 'Bussiness,Culture',
-      text2: 'Historic Building',
-      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
+      text1: 'Harar',
+      text2: 'History Of Ancient City',
+      url: '/about-history',
+      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-[#3bb]' />
     },
     {
       image: 'images/new2.jpg',
       text1: 'Business,Culture',
       text2: 'Animal Exibition',
-      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
+      url: '/tourism-animal',
+      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-[#3bb]' />
     },
     {
       image: 'images/musume.jpg',
       text1: 'Business ,Culture',
-      text2: 'Harari Musume',
-      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-red-500' />
+      text2: 'Art And History Musuem',
+      url:'/tourism-mus',
+      icon: <BsArrowRightCircle className='text-4xl fill-white hover:fill-[#3bb]' />
     },
     // Rest of the data array items
   ];
