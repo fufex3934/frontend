@@ -13,7 +13,7 @@ const Sectors = () => {
     <>
     <Navs/>
     <div className="top-sector-layout">
-      <h1 className="text-white mt-24 pl-8">We are in bussiness</h1>
+        <h1 className="text-white mt-8 font-serif pl-8 w-96">Entrepreneur Wishes To Be Seen Beyond His Status</h1>
     </div>
     <div className='layout'>
       <div className="main-con">
