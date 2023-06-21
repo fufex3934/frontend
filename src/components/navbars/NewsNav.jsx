@@ -20,7 +20,7 @@ const NewsNav = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="bg-[#3bb5b5] fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md">
+      <nav className="bg-[#329898] fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md">
         {/* Desktop Navigation */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">

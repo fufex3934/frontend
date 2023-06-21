@@ -37,12 +37,14 @@ import ServiceDepartment from './components/body/ServiceDepartment';
 import CityVistorGuid from './components/body/CityVistorGuid';
 import Adminstration from './components/body/Adminstration';
 import Services from './components/body/Services';
+import SanityAuth from './sanityAuth/SanityAuth';
+import FeedBack from './sanityAuth/FeedBack';
 
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
   }, []);
-
+  
   return (
     <Routes>
       <Route path='/' element={<CustomApp />} />
@@ -81,6 +83,9 @@ const App = () => {
       <Route path='/service-department' element={<ServiceDepartment/>}/>
       <Route path='/city-vistor-guid' element={<CityVistorGuid/>}/>
       <Route path='/city-adminstration' element={<Adminstration/>}/>
+     
+      <Route path = '/sanity/*' element ={<SanityAuth/>}/>
+      <Route path='/feed-back' element = {<FeedBack/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

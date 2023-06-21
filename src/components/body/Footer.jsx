@@ -5,9 +5,12 @@ import { BsFacebook, BsTelegram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import { BiChevronRight, BiAlarm } from 'react-icons/bi';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
+import {RiAdminLine} from 'react-icons/ri';
 import './css/Footer.css';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
+import Logo from '/harar.png';
+
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -49,6 +52,9 @@ const Footer = () => {
             <button onClick={() => navigate('/contact-us')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
             {t('footer.contact')}
             </button>
+            <button onClick={()=>navigate('/sanity')} className='hidden lg:block absolute right-20  '>
+              <RiAdminLine className='text-slate-300 text-sm h-6 w-6 cursor-pointer hover:text-red-500'/>
+            </button>
           </div>
         </div>
 
@@ -59,7 +65,7 @@ const Footer = () => {
             {/* left div */}
             <div className="flex items-start md:-ml-96 lg:-ml-48 space-x-4 ml-6  ">
               <Link to ='/'>
-                <img className="h-10 w-40  mt-1 md:mt-0  md:h-12  object-cover md:w-12 rounded-full mr-10 md:mr-0" src="./harar.png" alt="Logo" />
+                <img className="h-10 w-40  mt-1 md:mt-0  md:h-12  object-cover md:w-12 rounded-full mr-10 md:mr-0" src={Logo} alt="Logo" />
               </Link>
               <Link to = '/'>
                 <h1 className="text-slate-300 text-base md:whitespace-nowrap lg:whitespace-break-spaces text-start  font-bold md:text-2xl lg:text-lg  w-[300px]">

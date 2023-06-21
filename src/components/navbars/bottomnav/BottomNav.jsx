@@ -9,6 +9,7 @@ import { MdLocalPolice, MdTour } from 'react-icons/md';
 import { SiSociety6 } from 'react-icons/si';
 import { BsFillBookmarkFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
+import Logo from '/harar.png';
 const BottomNavbar = () => {
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(true);
@@ -18,7 +19,7 @@ const BottomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const hideHeight = 400; // Height at which you want to hide the navbar
+      const hideHeight = 250; // Height at which you want to hide the navbar
 
       if (scrollPosition > hideHeight) {
         setShowNavbar(true);
@@ -36,14 +37,14 @@ const BottomNavbar = () => {
   return (
 
     <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
-      <div className="bg-[#3bb5b5] md:bg-[#3bb5b5] lg:bg-white/100 py-6  p-4">
+      <div className="bg-[#329898] md:bg-[#329898] lg:bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-1">
               <a href="#">
                 <img
                   className="h-12 md:h-12 w-24 object-cover md:w-12 rounded-full lg:hidden"
-                  src="./harar.png"
+                  src={Logo}
                   alt="Logo"
                 />
               </a>
