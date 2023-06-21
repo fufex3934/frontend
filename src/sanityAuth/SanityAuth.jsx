@@ -1,6 +1,6 @@
 // Frontend code
 import React, { useState,useEffect } from 'react';
-import { Route, Routes, Navigate,useNavigate } from 'react-router-dom';
+import { Route, Routes, Navigate,useNavigate,Link } from 'react-router-dom';
 import axios from 'axios';
 import { FaUserCog } from 'react-icons/fa';
 import {FcHome,FcFeedback} from 'react-icons/fc';
@@ -103,6 +103,7 @@ function SanityAuth() {
             )
           }
         />
+        <Route path="/create-account" element = {<CreateAccount/>}/>
       </Routes>
     </div>
   );
@@ -117,7 +118,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
         <input
           type="email"
           placeholder="Email"
-          className="w-full mb-4 px-3 py-2 rounded border border-gray-300"
+          className="w-full mb-4 px-3 py-2 rounded border border-[#3bb5b5]"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -125,7 +126,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
         <input
           type="password"
           placeholder="Password"
-          className="w-full mb-4 px-3 py-2 rounded border border-gray-300"
+          className="w-full mb-4 px-3 py-2 rounded border border-[#3bb5b5]"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
@@ -142,65 +143,82 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
 }
 
   function Dashboard({ handleLogout, openSanityStudio ,admins,setAdmins}) {
-    const navigate = useNavigate();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [editedAdmin, setEditedAdmin] = useState(null);
-    const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editedAdmin, setEditedAdmin] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [adminToDelete, setAdminToDelete] = useState(null);
 
-    const openModal = (admin) => {
-      setEditedAdmin(admin);
-      setIsModalOpen(true);
-    };
+  const handleDelete = (admin) => {
+    setAdminToDelete(admin);
+    setShowDeleteModal(true);
+  };
 
-    const closeModal = () => {
-      setEditedAdmin(null);
-      setIsModalOpen(false);
-    };
+  const cancelDelete = () => {
+    setShowDeleteModal(false);
+    setAdminToDelete(null);
+  };
 
-    const handleEdit = (adminId) => {
-      const admin = admins.find((admin) => admin._id === adminId);
-      if (admin) {
-        openModal(admin);
-      }
-    };
+  const openModal = (admin) => {
+    setEditedAdmin(admin);
+    setIsModalOpen(true);
+  };
 
-    const handleDelete = async (adminId) => {
+  const closeModal = () => {
+    setEditedAdmin(null);
+    setIsModalOpen(false);
+  };
+
+  const handleEdit = (adminId) => {
+    const admin = admins.find((admin) => admin._id === adminId);
+    if (admin) {
+      openModal(admin);
+    }
+  };
+
+  const confirmDelete = async () => {
+    if (adminToDelete && adminToDelete.firstName) {
       try {
         // Make a request to delete the admin with the provided adminId
-        await axios.delete(`http://localhost:3000/admins/${adminId}`);
+        await axios.delete(`http://localhost:3000/admins/${adminToDelete._id}`);
 
         // Update the admins state by removing the deleted admin
-        setAdmins(admins.filter((admin) => admin._id !== adminId));
+        setAdmins(admins.filter((admin) => admin._id !== adminToDelete._id));
       } catch (error) {
         console.error(error);
         setErrorMessage('An error occurred while deleting the admin');
+      } finally {
+        setShowDeleteModal(false);
+        setAdminToDelete(null);
       }
-    };
+    }
+  };
 
-    // Function to save the edited admin to the database
-    const saveEditedAdmin = async () => {
-      try {
-        // Make a request to update the admin in the database
-        await axios.put(`http://localhost:3000/admins/${editedAdmin._id}`, editedAdmin);
+  // Function to save the edited admin to the database
+  const saveEditedAdmin = async () => {
+    try {
+      // Make a request to update the admin in the database
+      await axios.put(`http://localhost:3000/admins/${editedAdmin._id}`, editedAdmin);
 
-        // Update the admins state with the edited admin
-        setAdmins(admins.map((admin) => (admin._id === editedAdmin._id ? editedAdmin : admin)));
+      // Update the admins state with the edited admin
+      setAdmins(admins.map((admin) => (admin._id === editedAdmin._id ? editedAdmin : admin)));
 
-        closeModal();
-      } catch (error) {
-        console.error(error);
-        setErrorMessage('An error occurred while saving the edited admin');
-      }
-    };
+      closeModal();
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('An error occurred while saving the edited admin');
+    }
+  };
     return (
       <div className="min-h-screen flex flex-col bg-[#f2f3f5]">
-        <header className="py-4 px-8 bg-[#1f2937] shadow-md">
+        <header className="py-4 px-8 bg-[#1f2937] shadow-md fixed top-0 left-0 right-0">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-semibold text-slate-200">Admin Dashboard</h1>
-            <button onClick= {()=>navigate('/create-account')}
+            <Link to='/create-account'
             className='  px-4 py-2 text-sm font-medium text-white bg-[#329898] hover:bg-[#3bb5b5] rounded ml-[800px]'>
               Create Account
-              </button>
+              </Link>
             <button
               onClick={handleLogout}
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#329898] hover:bg-[#3bb5b5] rounded"
@@ -209,14 +227,14 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
             </button>
           </div>
         </header>
-        <main className="flex-grow flex flex-col lg:flex-row">
-          <aside className="w-full lg:w-1/4 bg-[#1f2937] p-4">
+        <main className="flex-grow flex flex-col lg:flex-row ">
+          <aside className="w-full lg:w-1/4 bg-[#1f2937] p-4 fixed top-[64px] bottom-0 ">
             <nav>
               <ul className="space-y-2">
                 <li>
                   <button
                     onClick={openSanityStudio}
-                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-red-500 hover:text-white w-full"
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b-4 hover:border-red-500 hover:text-white w-full"
                   >
                     <span className="text-lg">
                       <FaUserCog />
@@ -227,7 +245,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                 <li>
                   <button
                     onClick={()=>navigate('/')}
-                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-purple-500 hover:text-white w-full"
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b-4 hover:border-purple-500 hover:text-white w-full"
                   >
                     <span className="text-lg">
                       <FcHome />
@@ -237,8 +255,8 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                 </li>
                 <li>
                   <button
-                    onClick={()=>navigate('/feedback')}
-                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b hover:border-blue-400 hover:text-white w-full"
+                    onClick={()=>navigate('/feed-back')}
+                    className="flex items-center justify-between  px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:border-b-4 hover:border-blue-400 hover:text-white w-full"
                   >
                     <span className="text-lg">
                       <FcFeedback />
@@ -250,8 +268,8 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
               </ul>
             </nav>
           </aside>
-          <section className="flex-grow p-8">
-            <div className="grid grid-cols-1 md:grid-cols-6 gap-8 border-b border-black/70">
+          <section className="flex-grow p-8 ml-[25%] mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-8  border-[#329898] border-b-4">
               <div className="col-span-1 md:col-span-1">
                 <h1 className="font-semibold text-slate-600 text-xl">FirstName</h1>
               </div>
@@ -268,12 +286,16 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                 <h1 className="font-semibold text-slate-600 text-xl">Role</h1>
               </div>
               <div className="col-span-1 md:col-span-1 font-semibold text-slate-600 text-xl">
-                <h1>actions</h1>
+                <h1>Actions</h1>
               </div>
               
             </div>
             <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mt-4">
-            { admins.map((admin) => (
+            { 
+                admins.length === 0 ? (
+                  <p>No admins found.</p>
+            ):(
+              admins.map((admin) => (
                 <React.Fragment key={admin._id}>
                   <div>
                     <h1>{admin.firstName}</h1>
@@ -295,19 +317,31 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                     className="bg-[#3bb5b5] hover:bg-[#3bb5b5] text-white font-bold py-2 px-4 rounded mr-2">
                       Edit
                       </button>
-                    <button onClick={() => handleDelete(admin._id)}
-                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                      Delete
+                      <button
+                        onClick={() => handleDelete(admin)}
+                        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                      >
+                        Delete
                       </button>
                   </div>
                 </React.Fragment>
-              ))}
+              ))
+            )
+            }
             </div>
           </section>
+          {/* Render the ConfirmDeleteModal if showDeleteModal is true */}
+      {showDeleteModal && (
+        <ConfirmDeleteModal
+          admin={adminToDelete}
+          onCancel={cancelDelete}
+          onConfirm={confirmDelete}
+        />
+      )}
           {/* Modal */}
         {isModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center z-10 w-[600px] ml-[50vh]">
-            <div className="bg-white p-8 shadow-lg rounded">
+          <div className="fixed inset-0 flex items-center justify-center z-10  ml-[50vh]">
+            <div className="bg-white p-8 shadow-lg rounded flex flex-col">
               <h2 className="text-2xl mb-4">Edit Admin</h2>
               <input
                 type="text"
@@ -337,13 +371,16 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                 value={editedAdmin.password}
                 onChange={(e) => setEditedAdmin({ ...editedAdmin, password: e.target.value })}
               />
-              <input
+              <select
                 type="text"
                 placeholder="Role"
                 className="mb-4"
                 value={editedAdmin.role}
                 onChange={(e) => setEditedAdmin({ ...editedAdmin, role: e.target.value })}
-              />
+              >
+                <option value="super-admin">super-admin</option>
+                    <option value="sub-admin">sub-admin</option>
+              </select>
               <div className="flex justify-end">
                 <button
                   onClick={closeModal}
@@ -362,12 +399,153 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
           </div>
         )}
         </main>
+        
       
       </div>
     );
   }
 
+  //confirmation modal
+  
+  const ConfirmDeleteModal = ({ admin, onCancel, onConfirm }) => {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center z-10">
+        <div className="bg-white p-8 shadow-lg rounded">
+          <h2 className="text-2xl mb-4">Confirm Deletion</h2>
+          <p>Are you sure you want to delete {admin.firstName}?</p>
+          <div className="flex justify-end mt-6">
+            <button
+              onClick={onCancel}
+              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mr-2"
+            >
+              Cancel
+            </button>
+            <button
+              onClick={onConfirm}
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
 
+//create account
+function CreateAccount  ()  {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [role, setRole] = useState('');
+  const navigate = useNavigate();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3000/register', {
+        firstName,
+        lastName,
+        email,
+        password,
+        role,
+      });
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setPassword('');
+      setRole('');
+      navigate('dashboard');
 
+      console.log(response.data.message); // Log the response message
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  return (
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="bg-white p-8 rounded shadow max-w-md">
+        <h1 className="text-3xl font-semibold mb-6">Create Account</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+              First Name
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className="w-full px-3 py-2 rounded border border-gray-300"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+              Last Name
+            </label>
+            <input
+              type="text"
+              id="lastName"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              className="w-full px-3 py-2 rounded border border-gray-300"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-3 py-2 rounded border border-gray-300"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-3 py-2 rounded border border-gray-300"
+              required
+            />
+          </div>
+          <div className="mb-4">
+                <label htmlFor="role" className="block text-sm font-medium text-gray-700">
+                    Role
+                </label>
+                <select
+                    id="role"
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)}
+                    className="w-full px-3 py-2 rounded border border-gray-300"
+                    required
+                >
+                    <option value="super-admin">super-admin</option>
+                    <option value="sub-admin">sub-admin</option>
+                </select>
+        </div>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          >
+            Create Account
+          </button>
+        </form>
+      </div>
+    </div>
+  )
+};
 
 export default SanityAuth;

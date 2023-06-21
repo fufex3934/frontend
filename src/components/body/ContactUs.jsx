@@ -1,12 +1,36 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import Navs from '../navbars/navs'
 import Footer from './Footer'
 import './css/ContactUs.css'
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai'
+import axios from 'axios'
 const ContactUs = () => {
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [comment,setComment] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3000/feedback', {
+        name,
+        email,
+        comment,
+      });
+      setName('');
+      setEmail('');
+      setComment('');
+
+      console.log(response.data.message); // Log the response message
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
   }, []);
+  
 
   return (
     <>
@@ -28,19 +52,41 @@ const ContactUs = () => {
           </div>
           <div className="contact-us-form-map">
             <div className='contact-us-form'>
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <h1 className='text-center mb-10 text-[#3bb] text-2xl font-serif'>Your Comment</h1>
                 <div className='my-form'>
-                  <input type="text" placeholder='Your Name' className='my-input' />
+                  <input 
+                  type="text" 
+                  value={name}
+                  onChange={(e)=>setName(e.target.value)}
+                  placeholder='Your Name'
+                   className='my-input' 
+                   required
+                   />
                 </div>
                 <div className='my-form'>
-                  <input type="email" placeholder='Your Email' className='my-input' />
+                  <input
+                   type="email"
+                   value={email}
+                   onChange={(e)=>setEmail(e.target.value)}
+                    placeholder='Your Email' 
+                    className='my-input' 
+                    required
+                    />
                 </div>
                 <div className='my-form'>
-                <textarea rows="2" type="" placeholder='Your Comment' className='my-input'/>
+                <textarea
+                 rows="2" 
+                 type="text" 
+                 value={comment}
+                 onChange={(e)=>setComment(e.target.value)}
+                 placeholder='Your Comment' 
+                 className='my-input'
+                 required
+                 />
                 </div>
                 <div className='my-form'>
-                  <button className='px-4 py-2 text-[#3bb]'>Submit</button>
+                  <button type='submit' className='px-4 py-2 text-[#3bb]'>Submit</button>
                 </div>
               </form>
             </div>
