@@ -51,7 +51,7 @@ const Adminstration = () => {
         <h1 className='text-5xl mb-3'>Welcome To City Of Harare</h1>
     </div>
     <div className="welcome">
-        <h1 className='text-4xl mb-3 text-[#3bb] font-serif'>Harar City Adminstration</h1>
+      <h1 className='text-4xl mb-3 text-[#3bb] font-serif'>Harar City Adminstration</h1>
       <p className='text-xl'>With integrity, the Office of the City Administrator serves all Harare people and its visitors</p>
     </div>
     <div className="area-interst">
@@ -77,7 +77,7 @@ const Adminstration = () => {
           {
             life_style.map((life) => (
               <div className="style">
-                <div className="">
+                <div className="src">
                   <img src={life.src} alt="" />
                   <p>{life.description}</p>
                 </div>

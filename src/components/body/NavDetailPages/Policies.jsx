@@ -5,40 +5,34 @@ import '../css/Policies.css'
 
 const policies = [
   {
+    src:'al.png',
     heading: "Agriculture and rural development",
-    content: "The HGCAO common agricultural policy (CAP) ensures food security for citizens, affordable products and a sustainable management of natural resources."
+    content: "The Harari common agricultural policy (CAP) ensures food security for citizens, affordable products and a sustainable management of natural resources."
   },
   {
-    heading: "Banking and financial services",
-    content: "The Commission wants to ensure that banks and financial markets are properly regulated and supervised, for stability, competitiveness and transparency."
+    src: 'itl.jpeg',
+    heading: "Domostic And Foreign Trade",
+    content: "We want to ensure that trade between countries is fair and beneficial for all parties involved and to strengthen the domestic economy by protecting domestic industries from foreign competition and by promoting exports of quality products and to promote collaboration between countries"
   },
   {
-    heading: "Borders and security",
-    content: "Defending the HGCAO external borders and fighting organised crime are activities coordinated at HGCAO level by agencies like Frontex and Europol."
-  },
-  {
-    heading: "Budget",
-    content: "DG Budget allocates HGCAO funds, to allow implementation of EU policies and ensure the sound financial management of Commission services and institutions."
-  },
-  {
+    src: 'tl.jpeg',
     heading: "Business and industry",
-    content: "HGCAO industrial policy aims to increase the share of manufacturing in GDP. Small business and entrepreneurship ensure economic growth, innovation and jobs."
+    content: "The Harari industrial policy aims to increase the share of manufacturing in GDP. Small business and entrepreneurship ensure economic growth, innovation and jobs."
   },
   {
-    heading: "Climate action",
-    content: "The HGCAO wants to cut its greenhouse gas emissions and protect the ozone layer. It is also addressing the unavoidable impacts of a changing climate."
+    src: 'ecl.jpeg',
+    heading: "Economic Competition",
+    content: "The Harari police applies competition law to businesses that operate within the region and nation, to protect consumers and foster competition."
   },
   {
-    heading: "Competition",
-    content: "The HGCAO applies competition law to businesses that operate within the EU and internationally, to protect consumers and foster competition."
+    src: 'lll.jpeg',
+    heading: "Labor Law",
+    content: "We want to ensure that workers are treated fairly and that they are not exploited by their employers and also help to promote economic growth by ensuring that workers are paid fairly and that they have access to benefits such as health insurance and retirement plans"
   },
   {
-    heading: "Consumers",
-    content: "Maximising consumer participation and trust in the market and safeguarding and integrating into HGCAO policies the interests of consumers."
-  },
-  {
+    src: 'al.png',
     heading: "Culture and media",
-    content: "Find funding opportunities in the culture, media and communication fields"
+    content: "  To promote social cohesion by promoting cultural diversity and by providing opportunities for people to engage with different cultures."
   },
 ]
 
@@ -50,15 +44,22 @@ const Policies = () => {
   return (
     <>
       <Navs />
-      <div className='container'>
-        <div className="header">
-          <h1>Harari Government Communication Affairs Office Policies</h1>
+      <div className="wraper">
+        <div className="economic">
+          <h1>Economic Policy</h1>
         </div>
+        <div className="economic-definition">
+          <p>More efficient, more inclusive, more sustainable: Policies to support economic
+            Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
+        </div>
+      </div>
+      <div className='economic-container-layout'>
         {
           policies.map((item) => (
             <div key={item.heading} className="policies">
-              <h1 className='heading'>{item.heading}</h1>
-              <p className='description'>{item.content}</p>
+              <img src={item.src} alt="" srcset="" />
+              <h1 className=''>{item.heading}</h1>
+              <p className=''>{item.content}</p>
             </div>
           )
           )
