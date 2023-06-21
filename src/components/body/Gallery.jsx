@@ -19,53 +19,53 @@ const Gallery = () => {
       alt: 'Harar Mezoria',
     },
     {
-        src: '/images/gallery/g4.jpg',
-        alt: 'Harar Building',
-      },
-      {
-        src: '/images/gallery/g5.jpg',
-        alt: 'Harar Building',
-      },
-      {
-        src: '/images/gallery/g6.jpg',
-        alt: 'Harar City',
-      },
-      {
-        src: '/images/gallery/g7.jpg',
-        alt: 'Adiministration Buildinig',
-      },
-      {
-        src: '/images/gallery/g8.jpg',
-        alt: 'Real State',
-      },
-      {
-        src: '/images/gallery/g9.jpg',
-        alt: 'Harar City',
-      },
-      {
-        src: '/images/gallery/g10.jpg',
-        alt: 'Harar City of Peace',
-      },
-      {
-        src: '/images/gallery/g11.jpg',
-        alt: 'Police commission',
-      },
-      {
-        src: '/images/gallery/g12.jpg',
-        alt: 'Jegol Street',
-      },
-      {
-        src: '/images/gallery/g13.jpg',
-        alt: 'Harar City at Night',
-      },
-      {
-        src: '/images/gallery/g14.jpg',
-        alt: 'Harar City',
-      },
-      {
-        src: '/images/gallery/g15.jpg',
-        alt: 'Harar City',
-      },
+      src: '/images/gallery/g4.jpg',
+      alt: 'Harar Building',
+    },
+    {
+      src: '/images/gallery/g5.jpg',
+      alt: 'Harar Building',
+    },
+    {
+      src: '/images/gallery/g6.jpg',
+      alt: 'Harar City',
+    },
+    {
+      src: '/images/gallery/g7.jpg',
+      alt: 'Adiministration Buildinig',
+    },
+    {
+      src: '/images/gallery/g8.jpg',
+      alt: 'Real State',
+    },
+    {
+      src: '/images/gallery/g9.jpg',
+      alt: 'Harar City',
+    },
+    {
+      src: '/images/gallery/g10.jpg',
+      alt: 'Harar City of Peace',
+    },
+    {
+      src: '/images/gallery/g11.jpg',
+      alt: 'Police commission',
+    },
+    {
+      src: '/images/gallery/g12.jpg',
+      alt: 'Jegol Street',
+    },
+    {
+      src: '/images/gallery/g13.jpg',
+      alt: 'Harar City at Night',
+    },
+    {
+      src: '/images/gallery/g14.jpg',
+      alt: 'Harar City',
+    },
+    {
+      src: '/images/gallery/g15.jpg',
+      alt: 'Harar City',
+    },
     // Add more images here...
   ];
 
