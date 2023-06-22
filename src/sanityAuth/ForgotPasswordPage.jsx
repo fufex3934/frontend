@@ -5,13 +5,18 @@ function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
+    
+  const handleNavigation = () => {
+    // Navigate to a specific page
+    window.location.href = 'http://localhost:5173/sanity/dashboard/';
+  };
   const handleForgotPasswordSubmit = async (e) => {
     e.preventDefault();
 
     try {
       await axios.post('http://localhost:3000/forgot-password', { email });
       setSuccessMessage('Password reset instructions sent to your email address.');
+      handleNavigation();
     } catch (error) {
       console.error(error);
       setErrorMessage('Failed to initiate password reset process.');
@@ -20,7 +25,7 @@ function ForgotPasswordPage() {
 
   return (
     <div className="max-w-md mx-auto bg-white p-8 rounded shadow mt-8">
-      <h1 className="text-3xl font-semibold mb-6">Forgot Password</h1>
+      <h1 className="text-3xl font-semibold mb-6 text-slate-800">Forgot Password</h1>
       {successMessage ? (
         <p className="text-green-500 mb-4">{successMessage}</p>
       ) : (

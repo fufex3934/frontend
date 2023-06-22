@@ -47,7 +47,7 @@ const News = () => {
       }, []);
     
   return (
-    <div className=" bg-gray-100 p-6 shadow-lg">
+    <div className=" bg-gray-100 p-6 shadow-lg container mx-auto">
       <div className="">
         <h1 className="text-4xl text-[#329898]">{t('newsPublications.header')}</h1>
         <p className="text-gray-500 text-lg">{t('newsPublications.text')}</p>

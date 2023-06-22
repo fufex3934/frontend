@@ -112,8 +112,8 @@ function SanityAuth() {
 function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPassword }) {
   return (
     <div className="max-w-md mx-auto bg-white p-8 rounded shadow">
-      <h1 className="text-3xl font-semibold mb-6">Login</h1>
-      {errorMessage && <p className="text-red-500 mb-4">{errorMessage}</p>}
+      <h1 className="text-3xl font-semibold mb-6 text-slate-800">Login</h1>
+      {errorMessage && <p className="text-red-500 mb-4"></p>}
       <form onSubmit={handleLogin}>
         <input
           type="email"
@@ -138,7 +138,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
           Login
         </button>
       </form>
-      <p className="text-[#329898] mt-4 text-center">
+      <p className="text-[#329898] mt-4 text-center underline">
       <Link to="/forgot-password">Forgot Password?</Link>
     </p>
     </div>
