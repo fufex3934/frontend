@@ -6,7 +6,11 @@ function ResetPasswordPage() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
+  
+  const handleNavigation = () => {
+    // Navigate to a specific page
+    window.location.href = 'http://localhost:5173/sanity/dashboard/';
+  };
   const handleResetPasswordSubmit = async (e) => {
     e.preventDefault();
   
@@ -21,6 +25,7 @@ function ResetPasswordPage() {
       await axios.post('http://localhost:3000/reset-password', { token, newPassword });
   
       setSuccessMessage('Password reset successfully');
+      handleNavigation();
     } catch (error) {
       console.error(error);
       setErrorMessage('Failed to reset password.');
@@ -31,7 +36,7 @@ function ResetPasswordPage() {
 
   return (
     <div className="max-w-md mx-auto bg-white p-8 rounded shadow mt-8">
-      <h1 className="text-3xl font-semibold mb-6">Enter New Password</h1>
+      <h1 className="text-3xl font-semibold mb-6 text-slate-800">Enter New Password</h1>
       {successMessage ? (
         <p className="text-green-500 mb-4">{successMessage}</p>
       ) : (
