@@ -1,11 +1,13 @@
 import React,{useState} from 'react'
 import axios from 'axios';
+
 const CreateAccount = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('');
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ const CreateAccount = () => {
       setEmail('');
       setPassword('');
       setRole('');
-      navigate('dashboard');
+ 
 
       console.log(response.data.message); // Log the response message
     } catch (error) {
