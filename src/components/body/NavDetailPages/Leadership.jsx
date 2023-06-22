@@ -234,6 +234,14 @@ useEffect(() => {
   return (
     <>
       <Navs />
+      <div className="wraper">
+        <div className="economic">
+          <h1>Council Leaders</h1>
+        </div>
+        <div className="economic-definition">
+          <p>Members of the Harar Regional Government leadership team continue to redefine Good Governance and the critical role it plays in our global future.</p>
+        </div>
+      </div>
       <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
         <h1 className="text-3xl font-bold
          text-[#334155]  border-b-4 border-s-2 border-t-4 border-e-2 py-2

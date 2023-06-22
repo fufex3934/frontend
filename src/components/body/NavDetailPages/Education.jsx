@@ -151,6 +151,15 @@ const Education = () => {
   return (
     <>
       <Navs />
+      <div className="wraper">
+        <div className="economic">
+          <h1 className='text-4xl ml-6'>Education Program and Initiatives</h1>
+        </div>
+        <div className="economic-definition">
+          <p>More efficient, more inclusive, more sustainable: Policies to support economic
+            Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
+        </div>
+      </div>
       <div className="container mx-auto px-4 my-14">
         <h1 className="text-3xl font-bold my-8 text-slate-700 mb-18 text-center">Harar Government Education Program and Initiatives</h1>
         <Carousel

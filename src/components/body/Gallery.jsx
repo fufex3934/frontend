@@ -11,6 +11,7 @@ const Gallery = () => {
       original: '/images/gallery/g1.jpg',
       thumbnail: '/images/gallery/g1.jpg',
       originalAlt: 'Harar City',
+      sizes:1400
     },
     {
       original: '/images/gallery/g2.jpg',
