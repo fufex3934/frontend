@@ -41,6 +41,7 @@ import SanityAuth from './sanityAuth/SanityAuth';
 import FeedBack from './sanityAuth/FeedBack';
 import CreateAccount from './sanityAuth/CreateAccount';
 import ForgotPasswordPage from './sanityAuth/ForgotPasswordPage';
+import ResetPasswordPage from './sanityAuth/ResetPasswordPage';
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
@@ -88,6 +89,7 @@ const App = () => {
       <Route path = '/sanity/*' element ={<SanityAuth/>}/>
       <Route path='/feed-back' element = {<FeedBack/>}/>
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+      <Route path='/reset-password?/:token' element = {<ResetPasswordPage/>}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )

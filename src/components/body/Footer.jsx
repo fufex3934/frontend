@@ -35,7 +35,7 @@ const Footer = () => {
     <div className="bg-[#132244] ">
       <div className="container mx-auto  px-4 ">
         <div className="flex flex-col md:flex-row justify-between items-start">
-          <div className="flex py-4 md:py-0">
+          <div className="flex py-4 md:py-0 mt-4">
             <button onClick={() => navigate('/about')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500 whitespace-nowrap">
               {t('footer.about')}
             </button>
@@ -63,7 +63,7 @@ const Footer = () => {
         <footer className="container mx-auto py-8">
           <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
             {/* left div */}
-            <div className="flex items-start md:-ml-96 lg:-ml-48 space-x-4 ml-6  ">
+            <div className="flex items-start md:-ml-96 lg:-ml-1 space-x-4 ml-6  ">
               <Link to ='/'>
                 <img className="h-10 w-40  mt-1 md:mt-0  md:h-12  object-cover md:w-12 rounded-full mr-10 md:mr-0" src={Logo} alt="Logo" />
               </Link>
