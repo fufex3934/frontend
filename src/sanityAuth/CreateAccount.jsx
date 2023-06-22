@@ -8,7 +8,10 @@ const CreateAccount = () => {
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('');
   
-
+  const handleNavigation = () => {
+    // Navigate to a specific page
+    window.location.href = 'http://localhost:5173/sanity/dashboard/';
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -24,7 +27,7 @@ const CreateAccount = () => {
       setEmail('');
       setPassword('');
       setRole('');
- 
+      handleNavigation();
 
       console.log(response.data.message); // Log the response message
     } catch (error) {
@@ -34,7 +37,7 @@ const CreateAccount = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="bg-white p-8 rounded shadow max-w-md">
-        <h1 className="text-3xl font-semibold mb-6">Create Account</h1>
+        <h1 className="text-3xl font-semibold mb-6 text-slate-800">Create Account</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -45,7 +48,7 @@ const CreateAccount = () => {
               id="firstName"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="w-full px-3 py-2 rounded border border-gray-300"
+              className="w-full px-3 py-2 rounded border border-[#3bb5b5]"
               required
             />
           </div>
@@ -58,7 +61,7 @@ const CreateAccount = () => {
               id="lastName"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="w-full px-3 py-2 rounded border border-gray-300"
+              className="w-full px-3 py-2 rounded border border-[#3bb5b5]"
               required
             />
           </div>
@@ -71,7 +74,7 @@ const CreateAccount = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 rounded border border-gray-300"
+              className="w-full px-3 py-2 rounded border border-[#3bb5b5]"
               required
             />
           </div>
@@ -84,7 +87,7 @@ const CreateAccount = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 rounded border border-gray-300"
+              className="w-full px-3 py-2 rounded border border-[#3bb5b5]"
               required
             />
           </div>
@@ -96,7 +99,7 @@ const CreateAccount = () => {
                     id="role"
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
-                    className="w-full px-3 py-2 rounded border border-gray-300"
+                    className="w-full px-3 py-2 rounded border border-[#3bb5b5]"
                     required
                 >
                     <option value="super-admin">super-admin</option>
@@ -106,7 +109,7 @@ const CreateAccount = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            className="w-full bg-[#329898] text-white py-2 px-4 rounded hover:bg-[#3bb5b5]"
           >
             Create Account
           </button>
