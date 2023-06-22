@@ -32,6 +32,15 @@ const Monuments = () => {
   return (
     <>
       <Navs/>
+      <div className="wraper">
+        <div className="economic">
+          <h1>Harari Monuments</h1>
+        </div>
+        <div className="economic-definition">
+          <p>More efficient, more inclusive, more sustainable: Policies to support economic
+            Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
+        </div>
+      </div>
       <div className='monument-container'>
         <div className="head">
           <h1>Harari Historic Monuments</h1>
