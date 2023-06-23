@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    margin-top: -4%;
 }
 
 @media screen and (max-width:428px) {
