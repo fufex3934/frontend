@@ -33,6 +33,12 @@ const Geography = () => {
             <h3 className='text-blue-900 text-lg font-semibold'>9°18'49.9'' N 42°7.089' E</h3>
           </div>
         </div>
+        <div className="text-start mt-10 w-[58%] mx-auto">
+          <h1 className='font-semibold text-3xl text-slate-600 text-center mb-3'>Atitude and Longitude of Harar</h1>
+          <p className='text-lg'>
+            Harar, formerly written Harrar and known to its inhabitants as Gey, is a walled city in eastern Ethiopia. It was formerly the capital of Harergey and now the capital of the modern Harari ethno-political division (or kilil) of Ethiopia. The city is located on a hilltop in the eastern extension of the Ethiopian Highlands, about five hundred kilometers from Addis Ababa at an elevation of 1,885 meters. Based on figures from the Central Statistical Agency in 2005, Harar had an estimated total population of 122,000, of whom 60,000 were males and 62,000 were females.
+          </p>
+        </div>
         <div className="harar-google-map">
           <h1 className='text-center text-4xl text-[#3bb] font-mono mt-28'>Harari In Google Map Location</h1>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31497.842636474456!2d42.097549099085654!3d9.312848458641636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bda3c73a509d%3A0x47a0ad82e9e99ed6!2sHarar!5e0!3m2!1sen!2set!4v1686597056190!5m2!1sen!2set" width="1400" height='500'></iframe>
