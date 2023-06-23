@@ -7,213 +7,6 @@ import 'aos/dist/aos.css'
 import createClient from './../../../client';
 
 const Leadership = () => {
-<<<<<<< HEAD
-  const { t } = useTranslation();
-  const leaders = [
-    {
-      name: `${t('leadership.badri')}`,
-      role: `${t('leadership.badrijob')}`,
-      image: '/images/lema.jpg',
-      description: `${t('leadership.badridesc')}`,
-      additionalInfo: `${t('leadership.badriInfo')}`,
-      email: 'ordin@example.com',
-      phone: '+1 123 456 7890',
-    },
-    {
-      name: `${t('leadership.fethi')}`,
-      role: `${t('leadership.fethijob')}`,
-      image: '/images/leaders/fatihi.jpg',
-      description: `${t('leadership.fethidesc')}`,
-      additionalInfo: `${t('leadership.fethiInfo')}`,
-      email: 'fetihi@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.misra')}`,
-      role: `${t('leadership.misrajob')}`,
-      image: '/images/leaders/misra.jpg',
-      description: `${t('leadership.misradesc')}`,
-      additionalInfo: `${t('leadership.misraInfo')}`,
-      email: 'misra@example.com',
-      phone: '+1 123 456 7890',
-    },
-    {
-      name: `${t('leadership.usmael')}`,
-      role: `${t('leadership.usmaeljob')}`,
-      image: '/images/leaders/usmael.jpg',
-      description: `${t('leadership.usmaeldesc')}`,
-      additionalInfo: `${t('leadership.usmaelInfo')}`,
-      email: 'usmael@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.abdul')}`,
-      role: `${t('leadership.abduljob')}`,
-      image: '/images/leaders/abdul.jpeg',
-      description: `${t('leadership.abduldesc')}`,
-      additionalInfo: `${t('leadership.abdulInfo')}`,
-      email: 'abdul@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.henok')}`,
-      role: `${t('leadership.henokjob')}`,
-      image: '/images/leaders/henok.jpeg',
-      description: `${t('leadership.henokdesc')}`,
-      additionalInfo: `${t('leadership.henokInfo')}`,
-      email: 'henok@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.telahun')}`,
-      role: `${t('leadership.telahunjob')}`,
-      image: '/images/leaders/telahun.jpg',
-      description: `${t('leadership.telahundesc')}`,
-      additionalInfo: `${t('leadership.telahunInfo')}`,
-      email: 'telahun@example.com',
-      phone: '+1 123 456 7890',
-    },
-    {
-      name: `${t('leadership.abdulhakim')}`,
-      role: `${t('leadership.abdulhakimjob')}`,
-      image: '/images/leaders/abdulhakim.jfif',
-      description: `${t('leadership.abdulhakimdesc')}`,
-      additionalInfo: `${t('leadership.abdulhakimInfo')}`,
-      email: 'abdulhakim@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.abduljebar')}`,
-      role: `${t('leadership.abduljebarjob')}`,
-      image: '/images/leaders/abduljabar.jpeg',
-      description: `${t('leadership.abduljebardesc')}`,
-      additionalInfo: `${t('leadership.abduljebarInfo')}`,
-      email: 'abduljebar@example.com',
-      phone: '+1 123 456 7890',
-    },
-    {
-      name: `${t('leadership.arif')}`,
-      role: `${t('leadership.arifjob')}`,
-      image: '/images/leaders/arif.jpg',
-      description: `${t('leadership.arifdesc')}`,
-      additionalInfo: `${t('leadership.arifInfo')}`,
-      email: 'arif@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.ayub')}`,
-      role: `${t('leadership.ayubjob')}`,
-      image: '/images/leaders/ayub.jpg',
-      description: `${t('leadership.ayubdesc')}`,
-      additionalInfo: `${t('leadership.ayubInfo')}`,
-      email: 'ayub@example.com',
-      phone: '+1 987 654 3210',
-    },
-    {
-      name: `${t('leadership.bekele')}`,
-      role: `${t('leadership.bekelejob')}`,
-      image: '/images/leaders/bekele.jpg',
-      description: `${t('leadership.bekeledesc')}`,
-      additionalInfo: `${t('leadership.bekeleInfo')}`,
-      email: 'bekele@example.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.jafar')}`,
-      role: `${t('leadership.jafarjob')}`,
-      image: '/images/leaders/jafar.jpg',
-      description: `${t('leadership.jafardesc')}`,
-      additionalInfo: `${t('leadership.jafarInfo')}`,
-      email: 'jafar@example.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.sultan')}`,
-      role: `${t('leadership.sultanjob')}`,
-      image: '/images/leaders/sultan.jpg',
-      description: `${t('leadership.sultandesc')}`,
-      additionalInfo: `${t('leadership.sultanInfo')}`,
-      email: 'sultan@example.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.bushra')}`,
-      role: `${t('leadership.bushrajob')}`,
-      image: '/images/leaders/bushra.jpg',
-      description: `${t('leadership.bushradesc')}`,
-      additionalInfo: `${t('leadership.bushraInfo')}`,
-      email: 'bushra@example.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.tawalada')}`,
-      role: `${t('leadership.tawaladajob')}`,
-      image: '/images/leaders/tawlda.jpg',
-      description: `${t('leadership.tawaladadesc')}`,
-      additionalInfo: `${t('leadership.tawaladaInfo')}`,
-      email: 'teweteda@gmail.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.yasin')}`,
-      role: `${t('leadership.yasinjob')}`,
-      image: '/images/leaders/yasin.jpg',
-      description: `${t('leadership.yasindesc')}`,
-      additionalInfo: `${t('leadership.yasinInfo')}`,
-      email: 'yasin@gmail.com',
-      phone: '+251911541867',
-    },
-
-    {
-      name: `${t('leadership.amina')}`,
-      role: `${t('leadership.aminajob')}`,
-      image: '/images/leaders/amina.jpg',
-      description: `${t('leadership.aminadesc')}`,
-      additionalInfo: `${t('leadership.aminaInfo')}`,
-      email: 'amina@gmail.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.fariha')}`,
-      role: `${t('leadership.farihajob')}`,
-      image: '/images/leaders/fariha.jfif',
-      description: `${t('leadership.farihadesc')}`,
-      additionalInfo: `${t('leadership.farihaInfo')}`,
-      email: 'fariha@gmail.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.samira')}`,
-      role: `${t('leadership.samirajob')}`,
-      image: '/images/leaders/samira.jfif',
-      description: `${t('leadership.samiradesc')}`,
-      additionalInfo: `${t('leadership.samiraInfo')}`,
-      email: 'samira@gmail.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.teyeba')}`,
-      role: `${t('leadership.teyebajob')}`,
-      image: '/images/leaders/samira.jfif',
-      description: `${t('leadership.teyebadesc')}`,
-      additionalInfo: `${t('leadership.teyebaInfo')}`,
-      email: 'teyeba@gmail.com',
-      phone: '+251911541867',
-    },
-    {
-      name: `${t('leadership.delila')}`,
-      role: `${t('leadership.delilajob')}`,
-      image: '/images/leaders/delila.jpg',
-      description: `${t('leadership.deliladesc')}`,
-      additionalInfo: `${t('leadership.delilaInfo')}`,
-      email: 'delila@gmail.com',
-      phone: '+251911541867',
-    },
-
-
-    // Add more leaders as needed
-  ];
-=======
   
   const [leader,setLeader] = useState([]);
 
@@ -245,7 +38,6 @@ const Leadership = () => {
     };
     fetchData();
   }, []);
->>>>>>> 674b9c191453e8337996c526196e9abfee3cfb83
   const [selectedLeader, setSelectedLeader] = useState(null);
 
   const openProfileModal = (leader) => {
@@ -269,22 +61,6 @@ const Leadership = () => {
       <Navs />
       <div className="wraper">
         <div className="economic">
-<<<<<<< HEAD
-          <h1 className="text-3xl font-bold
-         text-white  py-2
-         text-center mt-8 mb-12 " data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
-            {t('leadership.header')}</h1>
-        </div>
-        <div className="economic-definition">
-          <p className='my-12 text-lg text-slate-500' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-            {t('leadership.text')}
-          </p>
-        </div>
-      </div>
-      <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
-
-
-=======
           <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">Council Leaders</h1>
         </div>
         <div className="economic-definition">
@@ -293,7 +69,6 @@ const Leadership = () => {
       </div>
       <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
         
->>>>>>> 674b9c191453e8337996c526196e9abfee3cfb83
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-16">
           {leader.map((leader, index) => (
             <motion.div
