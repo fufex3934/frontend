@@ -4,10 +4,10 @@ import Footer from '../Footer';
 import { motion } from 'framer-motion';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useTranslation } from 'react-i18next';
-
+import createClient from './../../../client';
 
 const Leadership = () => {
+<<<<<<< HEAD
   const { t } = useTranslation();
   const leaders = [
     {
@@ -213,6 +213,39 @@ const Leadership = () => {
 
     // Add more leaders as needed
   ];
+=======
+  
+  const [leader,setLeader] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await createClient.fetch(`*[_type == "leaders"] {
+          name,
+          role,
+          image{
+            asset->{
+              _id,
+              url
+            },
+            alt
+          },
+          description,
+          additionalInfo,
+          email,
+          phone,
+          time,
+        }`);
+        setLeader(data);
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+        
+      }
+    };
+    fetchData();
+  }, []);
+>>>>>>> 674b9c191453e8337996c526196e9abfee3cfb83
   const [selectedLeader, setSelectedLeader] = useState(null);
 
   const openProfileModal = (leader) => {
@@ -236,6 +269,7 @@ const Leadership = () => {
       <Navs />
       <div className="wraper">
         <div className="economic">
+<<<<<<< HEAD
           <h1 className="text-3xl font-bold
          text-white  py-2
          text-center mt-8 mb-12 " data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
@@ -250,8 +284,18 @@ const Leadership = () => {
       <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
 
 
+=======
+          <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">Council Leaders</h1>
+        </div>
+        <div className="economic-definition">
+          <p data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">Members of the Harar Regional Government leadership team continue to redefine Good Governance and the critical role it plays in our global future.</p>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
+        
+>>>>>>> 674b9c191453e8337996c526196e9abfee3cfb83
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-16">
-          {leaders.map((leader, index) => (
+          {leader.map((leader, index) => (
             <motion.div
               key={leader.name}
               className="flex flex-col items-center bg-white rounded-lg shadow hover:shadow-lg"
@@ -260,7 +304,7 @@ const Leadership = () => {
               transition={{ duration: 0.5, delay: index * 0.1, type: 'spring', stiffness: 200 }}
             >
               <motion.img
-                src={leader.image}
+                src={leader.image.asset.url}
                 alt={leader.name}
                 className="w-full h-56 object-cover rounded-t-lg"
                 initial={{ opacity: 0 }}
