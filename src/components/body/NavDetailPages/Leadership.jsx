@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import createClient from './../../../client';
-
+import {useTranslation} from 'react-i18next';
 const Leadership = () => {
-  
+  const {t} = useTranslation();
   const [leader,setLeader] = useState([]);
-
+  const [loading,setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -30,9 +30,10 @@ const Leadership = () => {
           time,
         }`);
         setLeader(data);
-        console.log(data);
+        setLoading(false);
       } catch (error) {
         console.error(error);
+        setLoading(false);
         
       }
     };
@@ -59,16 +60,24 @@ useEffect(() => {
   return (
     <>
       <Navs />
+      
       <div className="wraper">
         <div className="economic">
-          <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">Council Leaders</h1>
+          <h1 className='ml-4' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">{t('leadership.header1')}</h1>
         </div>
         <div className="economic-definition">
-          <p data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">Members of the Harar Regional Government leadership team continue to redefine Good Governance and the critical role it plays in our global future.</p>
+          <p data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">{t('leadership.desc')}</p>
         </div>
       </div>
-      <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
-        
+      {
+        loading ? (
+          <div className="flex items-center justify-center h-screen">
+          <div className="animate-spin rounded-full h-10 w-10 border-t-2 
+           border-b-2 border-[#329898] transition-all duration-700">
+          </div>
+         </div>
+        ):(
+          <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-16">
           {leader.map((leader, index) => (
             <motion.div
@@ -92,7 +101,7 @@ useEffect(() => {
                 <p className="text-gray-700 text-2xl">{leader.role}</p>
                 <p className="text-[#475569] text-sm mt-2">{leader.description}</p>
                 <button
-                  className="mt-4 px-4 py-2 text-white bg-[#0ea5e9] rounded hover:bg-[#5eead4]"
+                  className="mt-4 px-4 py-2 text-white bg-[#329898] rounded hover:bg-[#3bb5b5]"
                   onClick={() => openProfileModal(leader)}
                 >
                   View Profile
@@ -102,6 +111,9 @@ useEffect(() => {
           ))}
         </div>
       </div>
+        )
+      }
+      
       {selectedLeader && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
           <div className="bg-white rounded-lg p-8 max-w-md">
@@ -111,7 +123,7 @@ useEffect(() => {
             <p className="text-[#475569] mt-2">Email: {selectedLeader.email}</p>
             <p className="text-[#475569] mt-2">Phone: {selectedLeader.phone}</p>
             <button
-              className="mt-4 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+              className="mt-4 px-4 py-2 text-white bg-[#329898] rounded hover:bg-[#3bb5b5]"
               onClick={closeProfileModal}
             >
               Close

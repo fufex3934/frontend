@@ -32,7 +32,7 @@
       "gallery":"Galmee",
       "leaders":"Hoggantoota",
       "services":"Tajaajila",
-      "geograpy":"Ji’ograafii",
+      "geograpy":"Ji'ograafii",
       "text":"Qajeelfama  Harar keessa jiraachuu, hojjechuu, daawwannaa, fi invastimantii",
       "explore":"Mee caalaatti haa qorannu"
     },
@@ -331,8 +331,33 @@
       "media":"Aadaa fi miidiyaa",
       "mediadesc":"Heddumina aadaa guddisuudhaan akkasumas namoonni aadaa adda addaa waliin akka bobba'an carraa kennuudhaan walitti hidhamiinsa hawaasummaa guddisuu."
     
+     },
+     "leadership":{
+      "header1":"Hoggantoota Mana Maree",
+      "desc":"Miseensonni garee hoggansa Mootummaa Naannoo Harar Bulchiinsa Gaarii fi gahee murteessaa inni egeree keenya addunyaa keessatti qabu irra deebiin ibsuu itti fufaniiru."
+     },
+     "sectors":{
+      "header":"Abbootiin Qabeenyaa Sadarkaa Isaa Irra Darbe Akka Argamu Fedha",
+      "long":"Ilaalchi Yeroo Dheeraa Mala Keenyaaf Furtuudha...",
+      "agri":"Qonnaa",
+      "agrip1":"Liqii yeroo giddu galeessaa fi dheeraa kallattiin dhala dhaabbataa fi jijjiiramaa fi bakka barbaachisaa ta'etti yeroo ayyaana deebisanii kaffalamuun ni kennina.",
+      "agrip2":"Maamiltoota keenyaaf maallaqa faayinaansii guddaa karaa gahumsa qabuun walitti qabuuf liqii sindikeetii ni qopheessina.",
+      "health":"Kunuunsa Fayyaa",
+      "healthp1":"Liqii yeroo giddu galeessaa fi dheeraa kallattiin dhala dhaabbataa fi jijjiiramaa fi bakka barbaachisaa ta'etti yeroo ayyaana deebisanii kaffalamuun ni kennina.",
+      "healthp2":"Maamiltoota keenyaaf maallaqa faayinaansii guddaa karaa gahumsa qabuun walitti qabuuf liqii sindikeetii ni qopheessina.",
+      "education":"Barnoota",
+      "educationp1":"Kallattiin ykn al-kallattiin (karaa fandii) kaappitaala invast goona ykn michoota waliin invast goona.",
+      "educationp2":"Akka michuu invastimantii tokkootti kaappitaala tasgabbaa'aa, yeroo dheeraa ni kennina. Hojii ijoo isaanii keessatti itti fufiinsa walitti makuuf hoggantoota fandii fi dhaabbilee invastimantii waliin hojjenna - yeroo dheeraaf daldala milkaa'aa ijaaruu.",
+      "transport":"Geejjibuu",
+      "transportp1":"Wabiiwwan keenya fedhii addaa liqeessaa, gabaa fi liqeessitoota xiyyeeffannoo argatan akka guutaniif caaseffanna.",
+      "transportp2":"Maamiltoota keenyaaf maallaqa faayinaansii guddaa karaa gahumsa qabuun walitti qabuuf syndicated engin ni qopheessina.",
+      "industry":"Industirii fi Tuurizimii",
+      "industryp1":"Wabiiwwan keenya fedhii addaa liqeessaa, gabaa fi liqeessitoota xiyyeeffannoo argatan akka guutaniif caaseffanna.",
+      "industryp2":"Maamiltoota keenyaaf maallaqa faayinaansii guddaa karaa gahumsa qabuun walitti qabuuf syndicated engin ni qopheessina.",
+      "capacity":"Misooma Dandeettii",
+      "capacityp1":"Dhaabbata keessan cimsuuf sagantaa guddina dandeettii keenyaan beekumsaa fi dandeettii dabarsuudhaaf haala mijeessuu dandeenya.",
+      "capacityp2":"Meeshaalee ESG fandii invastimantii dhuunfaa fi dhaabbilee faayinaansii maayikiroo fi baankota dhaabbilee xixiqqaa fi giddu galeessaa (SME) ni dhiheessina."
      }
-      
     
     
     

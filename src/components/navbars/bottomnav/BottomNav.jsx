@@ -277,7 +277,7 @@ const BottomNavbar = () => {
                     </button>
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
                       <ul className="top-0 w-40 bg-[#1e293b] py-8 shadow  ">
-                        <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/politic-go')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer whitespace-nowrap">Government Officials</button></li>
+                        <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/about-leadership')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer whitespace-nowrap">Government Officials</button></li>
                         <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/politic-gs')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer whitespace-nowrap">Government Structure</button></li>
                       </ul>
                     </div>
