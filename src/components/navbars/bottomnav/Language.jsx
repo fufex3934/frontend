@@ -10,7 +10,7 @@ const Language = () => {
     { label: 'English', value: 'en' },
     { label: 'Afaan Oromoo', value: 'om' },
     { label: 'አማረኛ', value: 'am' },
-    { label: 'አደረኛ', value: 'ad' },
+    { label: 'Harari', value: 'ad' },
     // Add more language options as needed
   ];
 

@@ -86,15 +86,15 @@ const Footer = () => {
                 <div className="relative my-2 flex items-center">
                   <HiOutlinePhone className="text-slate-400" />
                   <span className="text-white ml-4">{t('footer.phone')}</span>
-                  <span className="ml-2 text-slate-400 hover:text-red-600 cursor-pointer whitespace-nowrap">
+                  <span className="mr-36 text-slate-400 hover:text-red-600 cursor-pointer whitespace-nowrap">
                     1800 123 4567
                   </span>
                 </div>
                 <div className="relative my-2 flex items-center">
                   <FiMail className="text-slate-400" />
                   <span className="text-white ml-5">{t('footer.email')}</span>
-                  <span className="-mr-4 text-slate-400 hover:text-red-600 cursor-pointer">
-                    harar@gmail.com
+                  <span  className=" text-slate-400 hover:text-red-600 cursor-pointer">
+                  Hararicommunication@gmail.com
                   </span>
                 </div>
               </div>

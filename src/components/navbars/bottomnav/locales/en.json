@@ -406,6 +406,29 @@
     "text5":"Barker Haines reported in 1840 that the majority of the population of Harar were Hararis; however, a few Oromo, Afar, Somali Issa, and Arabian traders of Yemen were also present. In 1855 Richard Francis Burton described Harar as having approximately 8,000 inhabitants: 3,000 Bedouins (referring to seasonal nomads who ), 2,500 Hararis, and 2,500 Somalis. Burton further reported a large Oromo presence leading to the town. During his visit in the Khedivate of Egypt occupation of the Emirate of Harar, researcher Paultischke describes Harar as having roughly 40,000 inhabitants, with 25,000 of these being Hararis, 6,000 Oromo, 5,000 Somalis, 3,000 Abyssinians, as well as a minority of Europeans and Asians.",
     "text6":"After the conquest of the Emirate of Harar by the Ethiopian Empire, an influx of Amhara settled in Harar and its surroundings. The Somali population of the town was decimated following the overthrow of Lij Iyasu by Abyssinian militias. The indigenous Harari natives who once were the majority within the walled city are now under 15% due to ethnic cleansing by the Haile Selassie regime. As a result of the repression by the Ethiopian regime, in the late 1970s, Hararis residing in Addis Ababa outnumbered those in Harar. According to Feener, the Harari have not recovered from the 1948 state-led crackdown on their population."
 
+   },
+   "economicPolicy":{
+    "header":"Economic Policy",
+    "desc":"More efficient, more inclusive, more sustainable: Policies to support economic Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital",
+    "agri":"Agriculture and rural development",
+    "agridesc":"The Harari common agricultural policy (CAP) ensures food security for citizens, affordable products and a sustainable management of natural resources.",
+    "trade":"Domestic And Foreign Trade",
+    "tradedesc":"We want to ensure that trade between countries is fair and beneficial for all parties involved and to strengthen the domestic economy by protecting domestic industries from foreign competition and by promoting exports of quality products and to promote collaboration between countries",
+    "industry":"Business and industry",
+    "industrydesc":"The Harari industrial policy aims to increase the share of manufacturing in GDP. Small business and entrepreneurship ensure economic growth, innovation and jobs.",
+    "economic":"Economic Competition",
+    "economicdesc":"The Harari police applies competition law to businesses that operate within the region and nation, to protect consumers and foster competition.",
+    "law":"Labor Law",
+    "lawdesc":"We want to ensure that workers are treated fairly and that they are not exploited by their employers and also help to promote economic growth by ensuring that workers are paid fairly and that they have access to benefits such as health insurance and retirement plans",
+    "media":"Culture and media",
+    "mediadesc":"To promote social cohesion by promoting cultural diversity and by providing opportunities for people to engage with different cultures."
+  
+   },
+   "sectors":{
+    "header":"Entrepreneur Wishes To Be Seen Beyond His Status",
+    "long":"A Long-Term View Is Key To Our Approach...",
+    "agri":"Agriculture",
+    "agridesc":""
    }
     
     
