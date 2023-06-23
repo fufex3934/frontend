@@ -241,7 +241,7 @@ const Education = () => {
 
         <Chart options={chartOptions} series={chartSeries} type="bar" height={350} />
 
-          <section className="my-8">
+          <section className="my-8 lg:mx-20">
           <h2 className="text-2xl font-bold mb-4 text-slate-700">Testimonials and Success Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -275,7 +275,7 @@ const Education = () => {
       </section> */}
 
 
-        <section className="my-8">
+        <section className="my-8 lg:mx-40">
           <h2 className="text-2xl font-bold mb-4 text-slate-700">Social Media Feeds</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {socialMediaFeeds.map((feed, index) => (
@@ -288,7 +288,7 @@ const Education = () => {
         </section>
 
 
-        <section className="my-8">
+        {/* <section className="my-8 lg:mx-10">
           <h2 className="text-2xl font-bold mb-4 text-slate-700">Student Resources</h2>
           <div>
             {studentResources.map((resource, index) => (
@@ -297,10 +297,10 @@ const Education = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        <section className="my-8">
-          <h2 className="text-2xl font-bold mb-4 text-slate-700">Location</h2>
+        <section className="my-8 lg:mx-20">
+          <h2 className="text-2xl font-bold mb-4 text-slate-700">Our Location</h2>
           <div className=" mr-3 md:ml-3">
             <iframe
               src={`https://maps.google.com/maps?q=${mapCoordinates.latitude},${mapCoordinates.longitude}&z=15&output=embed`}

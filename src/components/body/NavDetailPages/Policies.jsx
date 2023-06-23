@@ -48,7 +48,7 @@ const Policies = () => {
       <Navs />
       <div className="wraper">
         <div className="economic">
-          <h1>{t('economicPolicy.header')}</h1>
+          <h1 className='ml-4'>{t('economicPolicy.header')}</h1>
         </div>
         <div className="economic-definition">
           <p>{t('economicPolicy.desc')}</p>

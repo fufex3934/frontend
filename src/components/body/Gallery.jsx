@@ -1,7 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
-import './css/Gallery.css';
+import 'react-image-gallery/styles/css/image-gallery.css';
 import Navs from '../navbars/navs';
 import Footer from './Footer';
 
@@ -84,12 +83,34 @@ const Gallery = () => {
       originalAlt: 'Harar City',
     },
   ];
+
   return (
     <>
-      <Navs />
-      <ImageGallery items={images} slideOnThumbnailOver={true} />
-      <Footer/>
+    <Navs />
+    <div className="flex flex-col items-center ">
+      
+
+      <div className="max-w-6xl mx-auto mt-8">
+        <ImageGallery
+          items={images}
+          slideOnThumbnailOver={true}
+          showFullscreenButton={false}
+          showPlayButton={true}
+          renderCustomControls={null}
+          renderItem={({ original, originalAlt }) => (
+            <img
+              src={original}
+              alt={originalAlt}
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
+            />
+          )}
+        />
+      </div>   
+    </div>
+    <Footer />
     </>
+    
   );
 };
+
 export default Gallery;

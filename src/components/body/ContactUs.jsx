@@ -86,7 +86,7 @@ const ContactUs = () => {
                  />
                 </div>
                 <div className='my-form'>
-                  <button type='submit' className='px-4 py-2 text-[#3bb]'>Submit</button>
+                  <button type='submit' className='bg-transparent hover:bg-[#3bb5b5] text-[#329898] font-semibold hover:text-white py-2 px-4 border border-[#3bb5b5] hover:border-transparent rounded'>Submit</button>
                 </div>
               </form>
             </div>
