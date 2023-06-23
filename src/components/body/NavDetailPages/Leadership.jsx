@@ -13,7 +13,7 @@ const Leadership = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await createClient.fetch(`*[_type == "leaders"] {
+        const data = await createClient.fetch(`*[_type == "leaders"]| order(time asc)  {
           name,
           role,
           image{

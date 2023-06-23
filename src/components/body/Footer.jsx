@@ -76,11 +76,11 @@ const Footer = () => {
             {/* right div */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
               <div className="flex flex-col lg:-ml-44 ">
-                <div className='flex'>
+                <div className='flex justify-center'>
                   <BiAlarm className="text-slate-400 mr-2 mt-1" />
                   <span className="text-white">{t('footer.open')}</span>
                 </div>
-                <span className="ml-2 text-slate-400">Mon - Fri 8.00 am - 6.00 pm</span>
+                <span className="ml-[100px] lg:ml-[185px]  text-slate-400">Mon - Fri 8.00 am - 6.00 pm</span>
               </div>
               <div className="flex flex-col items-center mt-4 md:mt-0 ">
                 <div className="relative my-2 flex items-center">
