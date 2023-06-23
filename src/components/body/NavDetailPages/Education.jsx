@@ -156,12 +156,12 @@ const Education = () => {
           <h1 className='text-4xl ml-6'>Education Program and Initiatives</h1>
         </div>
         <div className="economic-definition">
-          <p>More efficient, more inclusive, more sustainable: Policies to support economic
-            Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
+          <p>More efficient, more inclusive, more sustainable: Education to support quality
+            Availability, affordability and proximity of education to job opportunities, education, culture and amenities are vital</p>
         </div>
       </div>
       <div className="container mx-auto px-4 my-14">
-        <h1 className="text-3xl font-bold my-8 text-slate-700 mb-18 text-center">Harar Government Education Program and Initiatives</h1>
+        <h1 className="text-xl font-bold my-8 text-slate-700 mb-18 text-center font-serif md:text-4xl">Harar Government Education Program and Initiatives</h1>
         <Carousel
       additionalTransfrom={0}
       arrows={false}
@@ -211,26 +211,26 @@ const Education = () => {
       {carouselImages.map((image, index) => (
         <div key={index} className="carousel-item">
           <motion.img
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto md:h-[70vh] rounded-lg"
             src={image}
             alt={`Education ${index + 1}`}
           />
         </div>
       ))}
     </Carousel>
-
+        <h1 className='mt-8 mb-2 text-center text-2xl font-bold font-serif text-text-slate-700 md:text-4xl lg:mt-10 lg:mb-8'>Our Education System</h1>
         {educationSections.map((section, index) => (
-          <section key={index} className="my-8">
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2">
-                <h2 className="text-2xl font-bold mb-4 text-slate-700">{section.title}</h2>
-                <p>{section.content}</p>
+          <section key={index} className="">
+            <div className="flex justify-center flex-col-reverse gap-2 mb-10 lg:flex-row items-center lg:gap-10">
+              <div className="lg:w-1/3">
+                <h2 className="text-xl font-bold font-serif mb-1 text-slate-700 md:text-3xl">{section.title}</h2>
+                <p className='text-lg md:text-xl'>{section.content}</p>
               </div>
-              <div className="md:w-1/2">
+              <div className="lg:w-1/3">
                 <img
-                  className="w-full h-auto rounded-lg mt-4 md:mt-0"
+                  className="w-full h-auto rounded-lg  md:mt-0"
                   src={section.image}
                   alt={section.title}
                 />
@@ -248,15 +248,15 @@ const Education = () => {
               <div key={index} className="p-6 bg-white rounded-lg shadow-md flex">
                 <img className="w-16 h-16 rounded-full mr-4" src={testimonial.image} alt={`Testimonial ${index}`} />
                 <div>
-                  <h3 className="text-lg font-bold mb-2 text-slate-700">{testimonial.name}</h3>
-                  <p className="text-gray-600">{testimonial.testimonial}</p>
+                  <h3 className="text-xl font-bold mb-2 text-slate-700">{testimonial.name}</h3>
+                  <p className="text-gray-600 md:font-bold">{testimonial.testimonial}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="my-8">
+        {/* <section className="my-8">
         <h2 className="text-2xl font-bold mb-4 text-slate-700">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map((event, index) => (
@@ -272,7 +272,7 @@ const Education = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
 
         <section className="my-8">
@@ -281,7 +281,7 @@ const Education = () => {
             {socialMediaFeeds.map((feed, index) => (
               <div key={index} className="p-4 bg-white rounded-lg shadow-md flex items-center">
                 <span className="text-3xl text-blue-500 mr-4">{feed.icon}</span>
-                <a href=""><p className="text-gray-800 hover:text-orange-600">{feed.feed}</p></a>
+                <a href=""><p className="text-gray-800 hover:text-orange-600 md:font-semibold">{feed.feed}</p></a>
               </div>
             ))}
           </div>
@@ -292,7 +292,7 @@ const Education = () => {
           <h2 className="text-2xl font-bold mb-4 text-slate-700">Student Resources</h2>
           <div>
             {studentResources.map((resource, index) => (
-              <div key={index} className="mb-4">
+              <div key={index} className="mb-4 md:font-semibold">
                 <a href={resource.link}>{resource.title}</a>
               </div>
             ))}
