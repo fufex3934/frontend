@@ -4,16 +4,7 @@ import Navs from '../../navbars/navs'
 import '../css/Monuments.css'
 import {FcLike} from 'react-icons/fc';
 import {IoIosHeartDislike} from 'react-icons/io';
-const image_Data=[
-  {image:'m1.jpeg'},
-  {image:'m2.jpeg'},
-  {image:'m3.jpeg'},
-  {image:'m4.jpeg'},
-  {image:'m5.jpeg'},
-  {image:'m6.jpeg'},
-  {image:'m7.jpg'},
-  {image:'m8.jpeg'},
-]
+
 const monuments_data = [
   { id: 1,name: 'A', p:'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'm1.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
   { id: 2, name: 'A', p: 'In the centre of Ras Makonnen Sq stands a rather Italian-looking, equestrian statue of the ras cast in bronze by the well-known Amhara artist Afewerk Tekle. The ras is said to look towards Somalia and the lands conquered here.The ras is also known as the father of the Emperor Haile Selassie.', image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
@@ -33,11 +24,11 @@ const Monuments = () => {
     <>
       <Navs/>
       <div className="wraper">
-        <div className="economic">
-          <h1>Harari Monuments</h1>
+        <div className="economic" style={{backgroundImage:'url("m2.jpeg")',backgroundPosition:'center',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+          <h1 className='text-[#5ff13e]'>Harari Monuments</h1>
         </div>
-        <div className="economic-definition">
-          <p>More efficient, more inclusive, more sustainable: Policies to support economic
+        <div className="economic-definition text-red-600" style={{ backgroundImage: 'url("m1.jpeg")', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+          <p style={{ color:'#f13ee5'}}>More efficient, more inclusive, more sustainable: Policies to support economic
             Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
         </div>
       </div>

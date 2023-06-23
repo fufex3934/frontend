@@ -37,7 +37,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding:5%;
-    box-shadow: 0px 0px 15px grey;
+    box-shadow: 0px 0px 5px grey;
     margin: 1%;
 }
 .economic-container-layout .policies{

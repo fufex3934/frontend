@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navs from '../../navbars/navs';
 import Footer from '../Footer';
 import { motion } from 'framer-motion';
@@ -48,13 +48,13 @@ const Leadership = () => {
   const closeProfileModal = () => {
     setSelectedLeader(null);
   };
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-},[]);
+  }, []);
 
-useEffect(() => {
-  window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
 
 
   return (
