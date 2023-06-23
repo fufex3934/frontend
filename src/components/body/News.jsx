@@ -78,9 +78,9 @@ const News = () => {
               <div className="text-white  bg-[#329898] p-2 flex items-center  mb-4 w-36 h-10 text-lg">
                   {formattedTime(item?.time)}
                 </div>
-                <span className="flex items-center text-green-600 text-lg">
-                  <BiComment className="mr-1" />Comment off
-                </span>
+                <Link to = '/contact-us' className="flex items-center text-green-600 text-lg">
+                  <BiComment className="mr-1" />Comment
+                </Link>
                 <Link to = {`/news/${news[index].slug.current}`}
                   href=""
                   className="text-xl text-[#329898] hover:underline font-serif leading-snug tracking-tight font-bold  block mt-4"
