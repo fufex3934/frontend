@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navs from '../../navbars/navs';
 import Footer from '../Footer';
 import { motion } from 'framer-motion';
@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const Leadership = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const leaders = [
     {
       name: `${t('leadership.badri')}`,
@@ -104,7 +104,7 @@ const Leadership = () => {
       name: `${t('leadership.ayub')}`,
       role: `${t('leadership.ayubjob')}`,
       image: '/images/leaders/ayub.jpg',
-      description:`${t('leadership.ayubdesc')}`,
+      description: `${t('leadership.ayubdesc')}`,
       additionalInfo: `${t('leadership.ayubInfo')}`,
       email: 'ayub@example.com',
       phone: '+1 987 654 3210',
@@ -163,7 +163,7 @@ const Leadership = () => {
       email: 'yasin@gmail.com',
       phone: '+251911541867',
     },
-    
+
     {
       name: `${t('leadership.amina')}`,
       role: `${t('leadership.aminajob')}`,
@@ -204,13 +204,13 @@ const Leadership = () => {
       name: `${t('leadership.delila')}`,
       role: `${t('leadership.delilajob')}`,
       image: '/images/leaders/delila.jpg',
-      description:`${t('leadership.deliladesc')}`,
+      description: `${t('leadership.deliladesc')}`,
       additionalInfo: `${t('leadership.delilaInfo')}`,
       email: 'delila@gmail.com',
       phone: '+251911541867',
     },
-    
-    
+
+
     // Add more leaders as needed
   ];
   const [selectedLeader, setSelectedLeader] = useState(null);
@@ -222,13 +222,13 @@ const Leadership = () => {
   const closeProfileModal = () => {
     setSelectedLeader(null);
   };
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-},[]);
+  }, []);
 
-useEffect(() => {
-  window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
+  }, []);
 
 
   return (
@@ -236,20 +236,20 @@ useEffect(() => {
       <Navs />
       <div className="wraper">
         <div className="economic">
-          <h1>Council Leaders</h1>
+          <h1 className="text-3xl font-bold
+         text-white  py-2
+         text-center mt-8 mb-12 " data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+            {t('leadership.header')}</h1>
         </div>
         <div className="economic-definition">
-          <p>Members of the Harar Regional Government leadership team continue to redefine Good Governance and the critical role it plays in our global future.</p>
+          <p className='my-12 text-lg text-slate-500' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
+            {t('leadership.text')}
+          </p>
         </div>
       </div>
       <div className="container mx-auto px-4 my-28 md:my-28 lg:my-16">
-        <h1 className="text-3xl font-bold
-         text-[#334155]  border-b-4 border-s-2 border-t-4 border-e-2 py-2
-         text-center mt-8 mb-12 bg-[#fef2f2]" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
-          {t('leadership.header')}</h1>
-        <p className='my-12 text-lg text-slate-500' data-aos-duration="1000" data-aos="fade-up" data-aos-easing="linear">
-        {t('leadership.text')}
-          </p>
+
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-16">
           {leaders.map((leader, index) => (
             <motion.div
