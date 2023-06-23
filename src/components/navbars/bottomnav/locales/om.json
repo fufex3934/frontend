@@ -358,7 +358,19 @@
       "capacityp1":"Dhaabbata keessan cimsuuf sagantaa guddina dandeettii keenyaan beekumsaa fi dandeettii dabarsuudhaaf haala mijeessuu dandeenya.",
       "capacityp2":"Meeshaalee ESG fandii invastimantii dhuunfaa fi dhaabbilee faayinaansii maayikiroo fi baankota dhaabbilee xixiqqaa fi giddu galeessaa (SME) ni dhiheessina."
      }
-    
+     ,
+     "museums":{
+       "exprience1":"Muuxannoo  Waggaa 5,000 ",
+       "exprience2":"Aartii Harar Musuem irratti",
+       "h1":"Musuem Aartii Fi Seenaa",
+       "desc":"Muuziyeemii yoo jennu Harar jaalalleewwan aartii fi aadaa hundaaf bakka ajaa'ibaati. Seenaa Itoophiyaa, aartii ammayyaa ykn saayinsii fi teeknooloojiif fedhii qabaattanis - muuziyeemonni Harar keessa jiran isin hin gaddisiisan! Filannoon agarsiisaa fi iddoowwan agarsiisaa guddaadha. Siidaalee muuziyeemii gurguddoo Harar keessaa muraasni kunoo isiniif dhiheessina.",
+       "h2":"Fakkiiwwan siidaa bilisaa",
+       "hgallery":"Galmee Muuziyeemii Hararii",
+       "mLocation":"Bakka Muuziyeemii",
+       "mldesc":"Harari Ethiopia keessatti argama",
+       "hour":"Sa'aatiiwwan",
+       "open":"Banaadha (Isniina - Wiixata) ganama sa'aatii 8 hanga galgala sa'aatii 12tti fi galgala sa'aatii 2 hanga galgala sa'aatii 6tti"
+     }
     
     
   }

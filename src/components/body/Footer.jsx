@@ -43,7 +43,7 @@ const Footer = () => {
              className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
             {t('footer.services')}
             </button>
-            <button  className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
+            <button  onClick={()=>navigate('/events')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
             {t('footer.events')}
             </button>
             <button onClick={() => navigate('/timely-news')} className="text-slate-300 text-sm mx-3 cursor-pointer hover:text-red-500">
