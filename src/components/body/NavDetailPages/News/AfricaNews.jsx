@@ -71,8 +71,8 @@ function AfricaNews() {
           </div>
          </div>
         ):(
-          <section className="bg-gray-100 py-8  min-h-screen flex-grow container mx-auto ">
-          <div className=" absolute max-w-7xl  px-4 sm:px-6 lg:px-8 top-4 md:top-24 ">
+          <section className="bg-gray-50  flex-grow">
+          <div className=" max-w-7xl px-4 sm:px-6 lg:px-8 container mx-auto mt-24 ">
          
               <h2 className="text-4xl font-bold mb-8 text-[#329898] hover:underline text-center font-serif leading-snug tracking-tight cursor-pointer">
                 Africa Most Recent News
@@ -127,40 +127,41 @@ function AfricaNews() {
                 })}
               </div>
           </div>
+          {/* Footer */}
+          <footer className="bg-[#132244] py-24 ">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-col md:flex-row items-center justify-between">
+                <p className="text-gray-300 text-sm mb-4">
+                  &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
+                </p>
+                <div className="flex items-center space-x-4">
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaFacebook size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaTwitter size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaInstagram size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <BsLinkedin size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <BsTelegram size={24} />
+                  </a>
+                  <a href="#" className="text-red-800 hover:text-white">
+                    <BsYoutube size={24} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
         </section>
         )
       }
       
-     {/* footer part */}
-     <footer className="bg-[#132244] py-24  mt-[750vh] md:mt-[200vh] lg:mt-[240vh] ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between flex-col md:flex-row">
-            <p className="text-gray-300 text-sm mb-4">
-              &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaFacebook size={24} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaTwitter size={24} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaInstagram size={24} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <BsLinkedin size={24} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <BsTelegram size={24} />
-              </a>
-              <a href="#" className="text-red-800 hover:text-white">
-                <BsYoutube size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+     
     </>
   );
 }
