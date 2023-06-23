@@ -99,7 +99,7 @@ const WoredaDetails = () => {
       id: 7,
       name: `${t('woredas.direteyara')}`,
       location: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62983.9049551848!2d42.041129156604725!3d9.377960076657946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bb9f8c9bd4c9%3A0xbeca8a3f20fb73d1!2sDire%20Teyara%2C%20Ethiopia!5e0!3m2!1sen!2snl!4v1686167512037!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-      address: `${t('woredaDetails.direteyaraLoc')}`,
+      address: `${t('woredaDetails.direteyaraloc')}`,
       phone: '+025 666 9184',
       fax: '+0254660268',
       email: 'direteyara@gmail.com',
