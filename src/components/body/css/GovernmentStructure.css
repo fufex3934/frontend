@@ -22,6 +22,8 @@
 .my-container .structure{
     /* box-shadow: grey 0px 0px 15px; */
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width:428px) {
     .my-container{
