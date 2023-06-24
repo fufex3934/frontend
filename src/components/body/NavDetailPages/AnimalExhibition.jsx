@@ -32,15 +32,15 @@ const AnimalExhibition = () => {
         <p className='lg:bottom-2 lg:mt-2 mb-3  lg:border lg:bg-neutral-50 lg:rounded-[20px]  lg:mx-[15px] p-5 hover:selection:bg-green-600 hover:visited:text-clip'>
           Written records indicate that spotted hyenas have been 
           present in the walled Ethiopian city of Harar for at least 500 years, where they
-         sanitise the city by feeding on its organic refuse.[1]
+         sanitise the city by feeding on its organic refuse.
          The practice of regularly feeding them did not begin until the 1960s.
          The first to put it into practice was a farmer who began feeding the hyenas 
          in order to stop them from attacking his livestock, with his descendants having s
-         continued the practice.[2] Some of the hyena men give each hyena a name they respond to,
+         continued the practice. Some of the hyena men give each hyena a name they respond to,
           and call to them using a "hyena dialect", a mixture of English and Oromo. 
           The hyena men feed the hyenas by mouth, using pieces of raw meat provided by spectators.[3] 
           Tourists usually organise to watch the spectacle through a guide for a negotiable rate.
-          [4] As of 2002, the practice is considered to be on the decline, 
+           As of 2002, the practice is considered to be on the decline, 
           with only two practicing hyena men left in Harar
         </p>
        </div>

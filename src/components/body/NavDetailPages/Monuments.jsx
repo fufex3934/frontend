@@ -7,7 +7,7 @@ import {IoIosHeartDislike} from 'react-icons/io';
 
 const monuments_data = [
   { id: 1,name: 'A', p:'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'm1.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
-  { id: 2, name: 'A', p: 'In the centre of Ras Makonnen Sq stands a rather Italian-looking, equestrian statue of the ras cast in bronze by the well-known Amhara artist Afewerk Tekle. The ras is said to look towards Somalia and the lands conquered here.The ras is also known as the father of the Emperor Haile Selassie.', image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
+  { id: 2, name: 'Ras Makonnen', p: 'In the centre of Ras Makonnen Sq stands a rather Italian-looking, equestrian statue of the ras cast in bronze by the well-known Amhara artist Afewerk Tekle. The ras is said to look towards Somalia and the lands conquered here.The ras is also known as the father of the Emperor Haile Selassie.', image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
   { id: 3, name: 'B', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'm8.jpeg', icons: { icon1: <FcLike/>, icon2: <IoIosHeartDislike />  } },
   { id: 4, name: 'B', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: '8.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
   { id: 5, name: 'B', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: '6.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
@@ -44,6 +44,7 @@ const Monuments = () => {
                 <img src={src.image} alt="" />
                 <button className='mr-3'>{src.icons.icon1}</button>
                 <button>{src.icons.icon2}</button>
+                <h1 className='text-xl text-blue-500'>{src.name}</h1>
                 <p>{src.p}</p>
               </div>
             ))
