@@ -41,13 +41,13 @@ const BottomNavbar = () => {
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-1">
-              <a href="#">
+              <Link to='/'>
                 <img
                   className="h-12 md:h-12 w-24 object-cover md:w-12 rounded-full lg:hidden"
                   src={Logo}
                   alt="Logo"
                 />
-              </a>
+              </Link>
             </div>
           )}
 
