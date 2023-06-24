@@ -74,7 +74,7 @@ function Events() {
          </div>
         ):(
           <section className="bg-gray-50  flex-grow ">
-          <div className=" max-w-7xl px-4 sm:px-6 lg:px-8 container mx-auto mt-36 ">
+          <div className=" max-w-7xl px-4 sm:px-6 lg:px-8 container mx-auto mt-36 md:mt-16 ">
             
               <h2 className="text-4xl font-bold mb-8 text-[#329898] hover:underline text-center font-serif leading-snug tracking-tight cursor-pointer">
                 Most Upcoming Events
