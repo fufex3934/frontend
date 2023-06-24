@@ -249,7 +249,7 @@
           </div>
          </div>
         ):(
-          <div className="container mx-auto px-4 py-8 my:24 md:my-10 ">
+          <div className="container mx-auto px-4 py-8 my:24 mt-8 md:my-10 ">
     <h1 className="text-4xl font-bold mb-8 text-center">{t('services.header')}</h1>
     <div className="flex items-center  mb-4">
       <button
