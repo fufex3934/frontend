@@ -6,10 +6,11 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Chart from 'react-apexcharts';
 import { FaTwitter, FaInstagram,FaFacebook,FaYoutube } from 'react-icons/fa';
-
+import { useTranslation } from 'react-i18next';
 
 const Education = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const {t}= useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
   }, []);
@@ -24,27 +25,27 @@ const Education = () => {
   };
   const educationSections = [
     {
-      title: 'Overview of Education System',
+      title: `${t('education.edutitle1')}`,
       content:
-        'The education system in Harari Region, Ethiopia, encompasses multiple levels of education, including primary, secondary, and tertiary education. It is governed by the Ministry of Education and follows national education policies and curriculum guidelines.',
+      `${t('education.educontent1')}`,
       image: '/images/education/ed1.jpg',
     },
     {
-      title: 'Programs and Initiatives',
+      title: `${t('education.edutitle2')}`,
       content:
-        'Highlight various government programs and initiatives related to education, such as scholarships, grants, vocational training, adult education, inclusive education, and special education programs.',
+      `${t('education.educontent2')}`,
       image: '/images/education/ed2.jpg',
     },
     {
-      title: 'Support Services',
+      title: `${t('education.edutitle3')}`,
       content:
-        'Access various support services available to students, including counseling, career guidance, special needs support, and extracurricular activities. Explore our educational resources, libraries, and online learning platforms.',
+      `${t('education.educontent3')}`,
       image: '/images/education/ed3.jpg',
     },
     {
-      title: 'Research and Statistics',
+      title: `${t('education.edutitle4')}`,
       content:
-        'Stay informed with educational research findings, statistical data, and reports related to educational performance, enrollment rates, graduation rates, and other relevant metrics.',
+      `${t('education.educontent4')}`,
       image: '/images/education/ed4.jpg',
     },
   ];
@@ -62,7 +63,7 @@ const Education = () => {
       id: 'education-chart',
     },
     xaxis: {
-      categories: ['Schools', 'Teachers 2', 'Students', 'library', 'materials'],
+      categories: [`${t('education.chart1')}`, `${t('education.chart2')}`, `${t('education.chart3')}`, `${t('education.chart4')}`, `${t('education.chart5')}`],
     },
   };
 
@@ -78,57 +79,38 @@ const Education = () => {
       name: 'John Doe',
       image:'/images/testimonial/test1.jpg',
       testimonial:
-        'The education system in Harari Region has provided me with excellent opportunities to grow and succeed. I am grateful for the dedicated teachers and supportive environment.',
+      `${t('education.t1')}`,
     },
     {
       name: 'Jane Smith',
       image:'/images/testimonial/test2.jpg',
       testimonial:
-        'As a teacher in Harari Region, I have witnessed the positive impact of the education system on students. It encourages holistic development and prepares them for a bright future.',
+      `${t('education.t2')}`,
     },
   ];
 
 
-  const events = [
-    {
-      title: 'Education Conference 2023',
-      date: 'July 15, 2023',
-      image:'/images/education/ed5.jpg',
-      location: 'Harari Region',
-    },
-    {
-      title: 'Workshop: Innovations in Teaching',
-      date: 'August 5, 2023',
-      image:'/images/education/ed6.jpg',
-      location: 'Harari Region',
-    },
-    {
-      title: 'Workshop: Innovations in Teaching',
-      date: 'August 5, 2023',
-      image:'/images/education/ed7.jpg',
-      location: 'Harari Region',
-    },
-  ];
+  
 
   const socialMediaFeeds = [
     {
-      platform: 'Twitter',
-      feed: 'Check out our latest article on inclusive education. #EducationForAll',
+     
+      feed: `${t('education.socialMf1')}`,
       icon: <FaTwitter />,
     },
     {
-      platform: 'Instagram',
-      feed: 'Explore the vibrant learning environment at our schools. #HarariEducation',
+      
+      feed: `${t('education.socialMf2')}`,
       icon: <FaInstagram />,
     },
     {
-      platform: 'Facebook',
-      feed: 'Join our community and stay updated with the latest educational news.',
+     
+      feed: `${t('education.socialMf2')}`,
       icon: <FaFacebook />,
     },
     {
-      platform: 'YouTube',
-      feed: 'Subscribe to our channel for educational videos and tutorials.',
+     
+      feed: `${t('education.socialMf3')}`,
       icon: <FaYoutube className='text-red-500' />,
     },
   ];
@@ -137,31 +119,20 @@ const Education = () => {
     longitude: 42.1150,
   };
 
-  const studentResources = [
-    {
-      title: 'Study Materials',
-      link: '/study-materials',
-    },
-    {
-      title: 'Online Learning Platforms',
-      link: '/online-learning',
-    },
-  ];
-
+ 
   return (
     <>
       <Navs />
       <div className="wraper">
         <div className="economic">
-          <h1 className='text-4xl ml-6'>Education Program and Initiatives</h1>
+          <h1 className='text-4xl ml-6'>{t('education.header')}</h1>
         </div>
         <div className="economic-definition">
-          <p>More efficient, more inclusive, more sustainable: Education to support quality
-            Availability, affordability and proximity of education to job opportunities, education, culture and amenities are vital</p>
+          <p>{t('education.p')}</p>
         </div>
       </div>
       <div className="container mx-auto px-4 my-14">
-        <h1 className="text-xl font-bold my-8 text-slate-700 mb-18 text-center font-serif md:text-4xl">Harar Government Education Program and Initiatives</h1>
+        <h1 className="text-xl font-bold my-8 text-slate-700 mb-18 text-center font-serif md:text-4xl">{t('education.header2')}</h1>
         <Carousel
       additionalTransfrom={0}
       arrows={false}
@@ -220,7 +191,7 @@ const Education = () => {
         </div>
       ))}
     </Carousel>
-        <h1 className='mt-8 mb-2 text-center text-2xl font-bold font-serif text-text-slate-700 md:text-4xl lg:mt-10 lg:mb-8'>Our Education System</h1>
+        <h1 className='mt-8 mb-2 text-center text-2xl font-bold font-serif text-text-slate-700 md:text-4xl lg:mt-10 lg:mb-8'>{t('education.oureducation')}</h1>
         {educationSections.map((section, index) => (
           <section key={index} className="">
             <div className="flex justify-center flex-col-reverse gap-2 mb-10 lg:flex-row items-center lg:gap-10">
@@ -242,7 +213,7 @@ const Education = () => {
         <Chart options={chartOptions} series={chartSeries} type="bar" height={350} />
 
           <section className="my-8 lg:mx-20">
-          <h2 className="text-2xl font-bold mb-4 text-slate-700">Testimonials and Success Stories</h2>
+          <h2 className="text-2xl font-bold mb-4 text-slate-700">{t('education.testimonialH')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="p-6 bg-white rounded-lg shadow-md flex">
@@ -256,27 +227,11 @@ const Education = () => {
           </div>
         </section>
 
-        {/* <section className="my-8">
-        <h2 className="text-2xl font-bold mb-4 text-slate-700">Upcoming Events</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {events.map((event, index) => (
-            <div key={index} className="p-4 border rounded-lg shadow-md">
-              <img
-                src={event.image}
-                alt={event.title}
-                className="w-full h-32 object-cover mb-4 rounded-lg"
-              />
-              <h3 className="text-lg font-bold mb-2 text-slate-700">{event.title}</h3>
-              <p className="text-gray-600 mb-2">Date: {event.date}</p>
-              <p className="text-gray-600">Location: {event.location}</p>
-            </div>
-          ))}
-        </div>
-      </section> */}
+        
 
 
         <section className="my-8 lg:mx-40">
-          <h2 className="text-2xl font-bold mb-4 text-slate-700">Social Media Feeds</h2>
+          <h2 className="text-2xl font-bold mb-4 text-slate-700">{t('education.socialH')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {socialMediaFeeds.map((feed, index) => (
               <div key={index} className="p-4 bg-white rounded-lg shadow-md flex items-center">
@@ -288,19 +243,10 @@ const Education = () => {
         </section>
 
 
-        {/* <section className="my-8 lg:mx-10">
-          <h2 className="text-2xl font-bold mb-4 text-slate-700">Student Resources</h2>
-          <div>
-            {studentResources.map((resource, index) => (
-              <div key={index} className="mb-4 md:font-semibold">
-                <a href={resource.link}>{resource.title}</a>
-              </div>
-            ))}
-          </div>
-        </section> */}
+       
 
         <section className="my-8 lg:mx-20">
-          <h2 className="text-2xl font-bold mb-4 text-slate-700">Our Location</h2>
+          <h2 className="text-2xl font-bold mb-4 text-slate-700">{t('education.location')}</h2>
           <div className=" mr-3 md:ml-3">
             <iframe
               src={`https://maps.google.com/maps?q=${mapCoordinates.latitude},${mapCoordinates.longitude}&z=15&output=embed`}
