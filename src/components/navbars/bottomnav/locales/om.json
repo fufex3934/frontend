@@ -403,6 +403,34 @@
       "beerdesc":"Biiraa Harar wixinee qorraa maasii biiraa Warshaa Biiraa Harar beekamaa keessatti mi'eeffadhaa.",
       "hyenaH":"WARAABEESSA HARAR HARKAAN SOORUU",
       "hyenadesc":" Hawwata turizimii gurguddoo Harar keessaa tokko paakkii haayinaa bosona waliin dhiyeenyaan wal arguudha."
+     },
+     "education":{
+      "header":"Sagantaa fi Inishiyeetiiwwan Barnootaa",
+      "p":"Caalaatti gahumsa kan qabu, caalaatti hunda hammate, caalaatti itti fufiinsa kan qabu: Barnoonni qulqullina deeggaru Argamuun, gatii madaalawaa fi dhiyeenya barnootaa carraa hojii, barnoota, aadaa fi mijaa'inaaf murteessaadha",
+      "header2":"Sagantaa fi Inishiyeetiiwwan Barnoota Mootummaa Harar",
+      "edutitle1":"Haala Waliigalaa Sirna Barnootaa",
+      "educontent1":"Sirni barnootaa Itiyoophiyaa Naannoo Hararii barnoota sadarkaa tokkoffaa, sadarkaa lammaffaa, fi sadarkaa olaanaa dabalatee sadarkaa barnootaa dachaa kan hammatedha. Ministeera Barnootaatiin kan bulfamu yoo ta'u, imaammata barnootaa fi qajeelfama kaarikulamii biyyoolessaa kan hordofudha.",
+      "edutitle2":"Sagantaa fi Inishiyeetiiwwan",
+      "educontent2":"Sagantaa fi jalqabbii mootummaa adda addaa barnootaan walqabatu kan akka scholarship, grant, leenjii ogummaa, barnoota ga'eessotaa, barnoota hunda hammate, fi sagantaa barnoota addaa calaqqisiisi.",
+      "edutitle3":"Tajaajila Deeggarsa",
+      "educontent3":"Tajaajila deeggarsa adda addaa barattootaaf kennamu, gorsa, qajeelfama hojii, deeggarsa fedhii addaa, fi sochiiwwan barnootaan ala ta'an dabalatee argachuu. Qabeenya barnootaa, mana kitaabaa, fi waltajjiiwwan barumsaa toora interneetii keenyaa qoradhu.",
+      "edutitle4":"Qorannoo fi Istaatistiksii",
+      "educontent4":"Argannoo qorannoo barnootaa, ragaa istaatiksii, fi gabaasa raawwii barnootaa, saffisa galmee, saffisa eebbaa, fi safartuuwwan barbaachisoo biroo wajjin walqabatan irratti odeeffannoo argadhaa.",
+      "chart1":"Manneen barnootaa",
+      "chart2":"Barsiisota",
+      "chart3":"Barattoota",
+      "chart4":"mana kitaabaa",
+      "chart5":"meeshaalee",
+      "testimonialH":"Dhugaa Ba'umsaa fi Seenaa Milkaa'ina",
+      "t1":"Sirni barnootaa Naannoo Hararii guddachuu fi milkaa'uuf carraa gaarii naaf kenneera. Barsiisota of kennanii fi naannoo deggersaa nuuf kennaniif galata guddaa qaba.",
+      "t2":"Akka barsiisaa Naannoo Harariitti dhiibbaa gaarii sirni barnootaa barattoota irratti qabu argeera. Guddina waliigalaa jajjabeessa, egeree ifa ta'eef isaan qopheessa.",
+      "socialH":"Feeds Miidiyaa Hawaasaa",
+      "socialMf1":"Barreeffama keenya isa haaraa waa'ee barnoota hunda hammate ilaalaa. #BarnootaHundaaf",
+      "socialMf2":"Manneen barnootaa keenya keessatti haala barumsaa socho'aa ta'e qoradhaa. #Barnoota Hararii",
+      "socialMf3":"Hawaasa keenya waliin ta'uun oduu barnootaa haaraa hordofaa.",
+      "socialMf4":"Viidiyoo fi barnoota barsiisaa argachuuf channel keenya subscribe godhaa.",
+      "location":"Bakka Keenya",
+      "oureducation":"Sirna Barnootaa Keenya"
      }
     
     
