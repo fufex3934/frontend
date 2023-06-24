@@ -28,6 +28,11 @@ const AnimalExhibition = () => {
       <div className='flex flex-auto justify-center w-full gap-10 bg-teal-600 box-border'>
       
         <img src="./hyenaman.jpg" alt=" hyenaman" className='w-[388px] h-[388px] rounded-full hover:scale-110 duration-300' />
+        <p className='lg:bottom-2 lg:mt-2 mb-3  lg:border lg:bg-neutral-50 lg:rounded-[20px]  lg:mx-[15px] p-5 hover:selection:bg-green-600 hover:visited:text-clip'>
+        Among the locals of Harar, Yusuf is known simply as the “hyena man”– a title he inherited from his father, 
+        Yusuf Saleh who began feeding hyenas in the 1960s to protect his livestock.
+         Over time, Saleh became familiar with the wild animals, naming them and even luring some into his home to feed
+        </p>
        
         <p className='lg:bottom-2 lg:mt-2 mb-3  lg:border lg:bg-neutral-50 lg:rounded-[20px]  lg:mx-[15px] p-5 hover:selection:bg-green-600 hover:visited:text-clip'>
           Written records indicate that spotted hyenas have been 
@@ -52,14 +57,14 @@ const AnimalExhibition = () => {
       <div className=" max-w-[1240px] border-emerald-950 mx-auto  bg-slate-50  grid md:grid-cols-3 py-5 gap-8 mt-10 rounded-2xl">
                 <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-full hover:scale-105 duration-300">
                     <img className="w-[360px] rounded-[10px] mx-auto bg-white hover:bg-violet-600" src="./hynish.jpg" alt=" Boss "  />
-                    <h2 className="text-2xl font-bold text-center py-8">GRAFF </h2>
-                    <p className=" text-center text-4xl px-1 font-medium"> ETB</p>
+                    <h2 className="text-2xl font-bold text-center py-8">Team Hyena </h2>
+                    <p className=" text-center text-4xl px-1 font-medium"> Hy</p>
                     <div className="font-medium text-center">
-                        <p className="py-2 border-b mx-6"> This is the </p>
-                        <p className="py-2 border-b mx-6">Graffi center</p>
-                        <p className="py-2 border-b mx-6">please come and visit</p>
+                        <p className="py-2 border-b mx-6"> This is the the group of  </p>
+                        <p className="py-2 border-b mx-6">hynena that is found </p>
+                        <p className="py-2 border-b mx-6">in Harar so you can come to visit hyena</p>
                     </div>
-                    <button className="bg-[#00df9a] text-black h-12 rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">Start Trial</button>
+                    <p className=" text-black h-12 rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">Welcome we are waitng for you </p>
                     
                     </div>
                     <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-full hover:scale-105 duration-300">
@@ -68,21 +73,21 @@ const AnimalExhibition = () => {
                        <p className=" text-center text-4xl px-1 font-medium"> please come to visit Us </p>
                         <div className="font-medium text-center">
                            <p className="py-2 border-b mx-6"> come to visit us and enjoy</p>
-                           <p className="py-2 border-b mx-6">1 Granted User</p>
-                           <p className="py-2 border-b mx-6">Send up to 2 GB</p>
+                           <p className="py-2 border-b mx-6">You get Entertainment </p>
+                           <p className="py-2 border-b mx-6">free Entertainment</p>
                        </div>
-                       <button className="bg-[#00df9a] text-black h-12 rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">Start Trial</button>
+                       <button className=" text-black h-12 rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">We are Ready </button>
                     </div>
                     <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-full  bg-gray-200 hover:scale-105 duration-300">
                         <img className="w-[360px] h-[288px] rounded-[10px] mx-auto bg-white" src="./hy.jpg" alt="" />
-                        <h2 className="text-2xl font-bold text-center py-8">Triple </h2>
-                        <p className=" text-center text-4xl px-1 font-medium"> 2000 ETB</p>
+                        <h2 className="text-2xl font-bold text-center py-8">Animal Exihibition </h2>
+                        <p className=" text-center text-4xl px-1 font-medium">It is found i Harar </p>
                         <div className="font-medium text-center">
-                             <p className="py-2 border-b mx-6"> 500 GB Storag</p>
-                             <p className="py-2 border-b mx-6">1 Granted User</p>
-                             <p className="py-2 border-b mx-6">Send up to 2 GB</p>
+                             <p className="py-2 border-b mx-6"> You get 24 hr service </p>
+                             <p className="py-2 border-b mx-6">Our station is always ready </p>
+                             <p className="py-2 border-b mx-6">to serve his customer</p>
                         </div>
-                        <button className="bg-[#00df9a] h-12 text-black rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">Start Trial</button>
+                        <button className="h-12 text-black rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">We are very happy for serving you</button>
                     
                   </div>
 
