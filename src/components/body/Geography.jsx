@@ -13,30 +13,30 @@ const Geography = () => {
           <img className='relative itwo float-right right-0 bottom-[352px]' src="harar-location.jpeg" width='350' height='200' alt="" />
         </div>
         <div className="text-center mt-24">
-          <h1 className='lg:text-3xl lg:font-serif mb-2'>Harar Geographic Coordinates</h1>
-          <p className='text-lg'>Harar is located at latitude 9.31387 and longitude 42.11815. It is part of Africa and the northern hemisphere.</p>
+          <h1 className='text-3xl font-serif mb-2'>Harar Geographic Coordinates</h1>
+          <p className='text-lg pl-5 text-start md:text-center'>Harar is located at latitude 9.31387 and longitude 42.11815. It is part of Africa and the northern hemisphere.</p>
         </div>
         <div className=' lg:flex lg:justify-center mt-7'>
-          <div className="border-blue-500 border lg:w-[20%] lg:text-center lg:mx-2">
+          <div className="border-blue-500 border text-center mb-3 lg:w-[20%] lg:text-center lg:mx-2">
             <h1 className='text-xl text-blue-600 font-semibold'>Decimal coordinates</h1>
             <p className='text-gray-400'>Simple standard</p>
             <h3 className='text-blue-600 text-lg font-semibold'>9.31387, 42.11815</h3>
           </div>
-          <div className="border-green-500 border lg:w-[20%] lg:text-center lg:mx-2 lg:py-2">
+          <div className="border-green-500 border text-center mb-3 lg:w-[20%] lg:text-center lg:mx-2 lg:py-2">
             <h1 className='text-xl text-green-500 font-semibold'>DD Coodinates</h1>
             <p className='text-gray-400'>Decimal Degrees</p>
             <h3 className='text-green-500 text-lg font-semibold'>9.3139° N 42.1182° E</h3>
           </div>
-          <div className="border-blue-900 border lg:w-[20%] lg:text-center lg:mx-2">
+          <div className="border-blue-900 border text-center lg:w-[20%] lg:text-center lg:mx-2">
             <h1 className='text-xl text-blue-900 font-semibold'>DMS Coordinates</h1>
             <p className='text-gray-400'>Degrees, Minutes and Seconds</p>
             <h3 className='text-blue-900 text-lg font-semibold'>9°18'49.9'' N 42°7.089' E</h3>
           </div>
         </div>
-        <div className="text-start mt-10 w-[58%] mx-auto">
+        <div className="text-start mt-10 w-full lg:w-[58%] mx-auto px-2">
           <h1 className='font-semibold text-3xl text-slate-600 text-center mb-3'>Atitude and Longitude of Harar</h1>
           <p className='text-lg'>
-            Harar, formerly written Harrar and known to its inhabitants as Gey, is a walled city in eastern Ethiopia. It was formerly the capital of Harergey and now the capital of the modern Harari ethno-political division (or kilil) of Ethiopia. The city is located on a hilltop in the eastern extension of the Ethiopian Highlands, about five hundred kilometers from Addis Ababa at an elevation of 1,885 meters. Based on figures from the Central Statistical Agency in 2005, Harar had an estimated total population of 122,000, of whom 60,000 were males and 62,000 were females.
+            <span className='font-serif text-xl font-semibold text-blue-600'>Harar</span>, formerly written Harrar and known to its inhabitants as Gey, is a walled city in eastern Ethiopia. It was formerly the capital of Harergey and now the capital of the modern Harari ethno-political division of Ethiopia. The city is located on a hilltop in the eastern extension of the Ethiopian Highlands, about five hundred kilometers from Addis Ababa at an elevation of 1,885 meters. Based on figures from the Central Statistical Agency in 2005, Harar had an estimated total population of 122,000, of whom 60,000 were males and 62,000 were females.
           </p>
         </div>
         <div className="harar-google-map">

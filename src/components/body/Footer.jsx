@@ -10,7 +10,6 @@ import './css/Footer.css';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import Logo from '/harar.png';
-
 const Footer = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -114,10 +113,10 @@ const Footer = () => {
                   <BiChevronRight /> Harari Prosperity Official Websit
                 </Link>
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-400 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> https://harari.gov.et
+                  <BiChevronRight /> Harar Tourism Websit
                 </Link>
                 <Link to={'https://harari.gov.et'} target='_blank' className="text-slate-400 text-sm py-1 cursor-pointer flex items-center hover:text-red-600">
-                  <BiChevronRight /> https://harari.gov.et
+                  <BiChevronRight /> Harar Teater Websit
                 </Link>
               </div>
             </div>

@@ -16,7 +16,7 @@ const GovernmentStructures = () => {
         <h1>Origanaizational Sturture Of Harari Government Communication Affaris Office</h1>
       </div>
       <div className="structure">
-        <img src="images/abiy.jpg" width='100%' alt="" />
+        <img src="images/structure.jpg" width='70%' alt="" />
       </div>
     </div>
     <Footer/>

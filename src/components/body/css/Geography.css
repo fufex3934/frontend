@@ -18,7 +18,7 @@
 
 @media screen and (max-width:428px) {
     .location{
-        margin-top: 26%;
+        margin-top: 29%;
         margin-bottom: -40%;
     }
     .location .ione{
@@ -33,6 +33,7 @@
     .harar-google-map{
         width: 100%;
         padding: 2%;
+        margin-top: -28%;
     }
     .harar-google-map h1{
         margin-bottom: 4%;
@@ -41,7 +42,7 @@
         width: 100%;
     } 
 }
-@media screen and (max-width:322px){
+@media screen and (max-width:321px){
     .harar-google-map {
         width: 100%; 
         padding: 1%;   
@@ -51,7 +52,7 @@
         margin-bottom: 5%;
     }
     .location{
-        margin-top: 40%;
+        margin-top: 39%;
         margin-bottom: -40%;
     }
     .location .ione {
