@@ -369,6 +369,39 @@
      "mldesc":"Located in Harari Ethiopia",
      "hour":"Hours",
      "open":"Open (Monday - Sunday) from 8am to 12pm and 2pm to 6pm"
+   },
+   "serviceDepartments":{
+    "header":"Government Communication Departments",
+    "header2":"Our Goverment Departments",
+    "p":"We are offering the following information's about us that what we actually.",
+    "lawHeader":"Constution and Law",
+    "lawdesc":"Aim for Nation Building and defining national flag anthem and other symbols",
+    "artHeader":"Art and Culture",
+    "artdesc":"If it is worth doing, we have got it. Find the center of tours and recreations",
+    "financeHeader":"Finance and Economy",
+    "financedesc":"Where we focus on how companies and investors evaluate risk and return",
+    "businessHeader":"Business & Industry",
+    "businessdesc":"Whole economic companies, people, and organizations are in production field",
+    "policeHeader":"Policing and Crime",
+    "policedesc":"Maintain and protect citizens from crimes and dangerous incidents that are unlawful",
+    "parkHeader":"Park and Recreation",
+    "parkdesc":"Our resources and services for the leisure, entertainment, and recreational pursuits"
+  
+   },"cityVisitors":{
+    "header":"Free City Vistor Guid",
+    "p":"Great Info Stright To Your Door",
+    "traditionH":"TRADITIONAL HOUSE IN HARAR",
+    "traditiondesc":"What makes Harar unique? You might wonder how the interior design of houses are more than decoration.",
+    "rasH":"RAS TAFARIS HOUSE",
+    "rasdesc":"Welcome to private collection of artefacts and information that witness culture and history of Harar",
+    "sherifH":"SHERIF PRIVATE MUSEUM",
+    "sherifdesc":"Welcome to the only private museum in Harar Ethiopia to meet the culture Of Harari People",
+    "jugolH":"THE FIVE GATES OF JUGOL",
+    "jugoldesc":"Come and visit five gates of jugel: Shoa Gate, Buda Gate, Erer Gate, Sanga Gate and Fallana Gate",
+    "beerH":"ENJOY A BEER AT HARAR BREWERY",
+    "beerdesc":"Enjoy a cold draught Harar beer in the beer garden of the famous Harar Brewery. ",
+    "hyenaH":"HAND FEED HYENAS OF HARAR",
+    "hyenadesc":"One of the major tourist attractions of Harar is an up close encounter with a pack of wild hyenas. "
    }
     
     
