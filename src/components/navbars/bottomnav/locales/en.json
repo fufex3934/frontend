@@ -336,7 +336,39 @@
     "header":"Entrepreneur Wishes To Be Seen Beyond His Status",
     "long":"A Long-Term View Is Key To Our Approach...",
     "agri":"Agriculture",
-    "agridesc":""
+    "agrip1":"We offer direct medium and long-term loans at both fixed and variable interest rates and with a repayment grace period where needed.",
+    "agrip2":"We arrange syndicated loans to raise larger financing amounts for our clients in an efficient way.",
+    "health":"Health Care",
+    "healthp1":"We offer direct medium and long-term loans at both fixed and variable interest rates and with a repayment grace period where needed.",
+    "healthp2":"We arrange syndicated loans to raise larger financing amounts for our clients in an efficient way.",
+    "education":"Eduction",
+    "educationp1":"We invest equity directly or indirectly (through funds) or we co-invest with partners.",
+    "educationp2":"As an investment partner, we provide stable, long-term capital. We work with fund managers and investee companies to integrate sustainability in their core operations - building a successful business for the long term.",
+    "transport":"Transportation",
+    "transportp1":"We structure our guarantees so that they meet the specific needs of the borrower, the market and the targeted creditors.",
+    "transportp2":"We arrange syndicated engin to raise larger financing amounts for our clients in an efficient way.",
+    "industry":"Industry and Tourism",
+    "industryp1":"We structure our guarantees so that they meet the specific needs of the borrower, the market and the targeted creditors.",
+    "industryp2":"We arrange syndicated engin to raise larger financing amounts for our clients in an efficient way.",
+    "capacity":"Capacity Development",
+    "capacityp1":"To strengthen your organization, we can facilitate the transfer of knowledge and skills with our capacity development programme. ",
+    "capacityp2":"We offer ESG toolkits for private equity investment funds and for microfinance institutions and small and medium enterprise (SME) banks."
+   },
+   "leadership":{
+    "header1":"Council Leaders",
+    "desc":"Members of the Harar Regional Government leadership team continue to redefine Good Governance and the critical role it plays in our global future."
+   },
+   "museums":{
+     "exprience1":"Experience 5,000 Years Of",
+     "exprience2":"Art At Harar Musuem",
+     "h1":"Art And History Musuem",
+     "desc":"When it comes to museum, Harar is a magnificent destination for all lovers of art and culture. Whether you're interested in Ethiopian history, modern art or science and technology - the museums in Harar won't let you down! The choice of exhibitions and venues is huge. Here we present you some of Harar's great museum monuments.",
+     "h2":"Free Monument Gellary",
+     "hgallery":"Harari Museum Gallery",
+     "mLocation":"Museum Location",
+     "mldesc":"Located in Harari Ethiopia",
+     "hour":"Hours",
+     "open":"Open (Monday - Sunday) from 8am to 12pm and 2pm to 6pm"
    }
     
     

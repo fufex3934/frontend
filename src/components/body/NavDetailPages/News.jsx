@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaTwitter,FaInstagram } from 'react-icons/fa';
 import { BsLinkedin, BsTelegram, BsYoutube } from 'react-icons/bs';
 import { formatDistanceToNow } from 'date-fns';
 import createClient from '../../../client';
@@ -77,8 +77,8 @@ function News() {
             </div>
            </div>
           ):(
-            <section className="bg-gray-100 py-8  min-h-screen flex-grow  ">
-            <div className=" absolute max-w-7xl  px-4 sm:px-6 lg:px-8 top-4 md:top-28 container mx-auto ">
+            <section className="bg-gray-50  flex-grow  ">
+            <div className=" max-w-7xl px-4 sm:px-6 lg:px-8 container mx-auto mt-24  ">
             
                 <h2 className="text-4xl font-bold mb-8 text-[#329898] hover:underline text-center font-serif leading-snug tracking-tight cursor-pointer">
                   Most Recent News
@@ -132,36 +132,40 @@ function News() {
                   })}
                 </div>
             </div>
+            {/* Footer */}
+          <footer className="bg-[#132244] py-24 ">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex flex-col md:flex-row items-center justify-between">
+                <p className="text-gray-300 text-sm mb-4">
+                  &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
+                </p>
+                <div className="flex items-center space-x-4">
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaFacebook size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaTwitter size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <FaInstagram size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <BsLinkedin size={24} />
+                  </a>
+                  <a href="#" className="text-gray-300 hover:text-white">
+                    <BsTelegram size={24} />
+                  </a>
+                  <a href="#" className="text-red-800 hover:text-white">
+                    <BsYoutube size={24} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
           </section>
           )
         }     
-      <footer className="bg-[#132244] py-24  mt-[730vh] md:mt-[180vh] lg:mt-[240vh] ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between flex-col md:flex-row">
-            <p className="text-gray-300 text-sm mb-6">
-              &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-4">
-              <Link to='https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/' target="_blank" className="text-gray-300 hover:text-white">
-                <FaFacebook size={24} />
-              </Link>
-              <Link to='https://twitter.com/HarariGovComm/status/1559545087117377538' target="_blank" className="text-gray-300 hover:text-white">
-                <FaTwitter size={24} />
-              </Link>
-             
-              <Link to = 'https://www.linkedin.com/in/hajera-adem-3aa36b131/' target='_blank' className="text-gray-300 hover:text-white">
-                <BsLinkedin size={24} />
-              </Link>
-              <Link to='https://t.me/s/HarariGovernmentCommunication' target="_blank" className="text-gray-300 hover:text-white">
-                <BsTelegram size={24} />
-              </Link>
-              <Link to='https://www.youtube.com/@hararicommunication82' target="_blank" className="text-red-800 hover:text-white">
-                <BsYoutube size={24} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+     
     </>
   );
 }
