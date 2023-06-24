@@ -370,6 +370,39 @@
        "mldesc":"Harari Ethiopia keessatti argama",
        "hour":"Sa'aatiiwwan",
        "open":"Banaadha (Isniina - Wiixata) ganama sa'aatii 8 hanga galgala sa'aatii 12tti fi galgala sa'aatii 2 hanga galgala sa'aatii 6tti"
+     },
+     "serviceDepartments":{
+      "header":"Kutaalee Komunikeeshinii Mootummaa",
+      "header2":"Kutaalee Mootummaa keenyaa",
+      "p":"Waa'ee keenya odeeffannoo armaan gadii dhiyeessaa jirra ",
+      "lawHeader":"Heeraa fi Seera",
+      "lawdesc":"Kaayyoo Ijaarsa Sabaa fi faaruu alaabaa biyyaalessaa fi mallattoolee biroo hiikuu",
+      "artHeader":"Aartii fi Aadaa",
+      "artdesc":"Yoo hojjechuun gatii qabaate arganneerra. Giddugala daawwannaa fi bashannanaa barbaadi",
+      "financeHeader":"Faayinaansii fi Diinagdee",
+      "financedesc":"Bakka akkaataa dhaabbileen fi invastaroota balaa fi bu'aa madaalan irratti xiyyeeffannu",
+      "businessHeader":"Daldalaa fi Industirii",
+      "businessdesc":"Dhaabbileen dinagdee guutuu, namoonni, fi dhaabbileen dirree oomishaa keessa jiru",
+      "policeHeader":"Poolisii fi Yakka",
+      "policedesc":"Yakkoota fi taateewwan balaa seeraan ala ta'an irraa lammiilee eeguu fi eeguu",
+      "parkHeader":"Paarkii fi Bashannanaa",
+      "parkdesc":"Qabeenyaa fi tajaajila keenya boqonnaa, bashannanaa fi bashannanaaf"
+    
+     },"cityVisitors":{
+      "header":"Qajeelfama Daawwattoota Magaalaa Bilisaa",
+      "p":"Info Guddaa Qajeelaa Balbala Keessanitti",
+      "traditionH":"MANA AADAA HARAR",
+      "traditiondesc":"Harar maaltu adda isa godha? Dizaayiniin keessaa manneen faaya caalaa akkamitti akka taʼe yaaduu dandeessa.",
+      "rasH":"MANA RAS TAFARI",
+      "rasdesc":"Baga gara walitti qabama dhuunfaa meeshaalee fi odeeffannoo aadaa fi seenaa Harar ragaa bahanitti dhuftan",
+      "sherifH":"MUUZIYEEMII DHUUNFAA SHERIF",
+      "sherifdesc":"Baga gara muuziyeemii dhuunfaa tokkicha Harar Ethiopia aadaa Ummata Hararii waliin wal arguuf dhuftan",
+      "jugolH":"KARRAA SHANAN JUGOL",
+      "jugoldesc":"Kottaa karra jugel shan daawwadhaa: Karra Shoa, Karra Budaa, Karra Erer, Karra Sanga fi Karra Fallana",
+      "beerH":" DHAABBATA BIIRAA HARARI",
+      "beerdesc":"Biiraa Harar wixinee qorraa maasii biiraa Warshaa Biiraa Harar beekamaa keessatti mi'eeffadhaa.",
+      "hyenaH":"WARAABEESSA HARAR HARKAAN SOORUU",
+      "hyenadesc":" Hawwata turizimii gurguddoo Harar keessaa tokko paakkii haayinaa bosona waliin dhiyeenyaan wal arguudha."
      }
     
     
