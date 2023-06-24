@@ -6,7 +6,7 @@ import {FcLike} from 'react-icons/fc';
 import {IoIosHeartDislike} from 'react-icons/io';
 
 const monuments_data = [
-  { id: 1, name: 'Al-Jami mosque', p:'A light painting of one of the Mosque in Harar old town. The people just thought we were mad, one running everywhere while the other farenji counted until 30! Everything was in the dark, no public light there.', image: 'm1.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
+  { id: 1, name: 'Al-Jami mosque', p:'A light painting of one of the Mosque in Harar old town. The people just thought we were mad, one running everywhere while the other farenji counted until 30! Everything was in the dark, no public light there.', image: 'alj.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
   { id: 2, name: 'Ras Makonnen', p: 'In the centre of Ras Makonnen Sq stands a rather Italian-looking, equestrian statue of the ras cast in bronze by the well-known Amhara artist Afewerk Tekle. The ras is said to look towards Somalia and the lands conquered here.The ras is also known as the father of the Emperor Haile Selassie.', image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
   { id: 3, name: 'B', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: 'm8.jpeg', icons: { icon1: <FcLike/>, icon2: <IoIosHeartDislike />  } },
   { id: 4, name: 'B', p: 'Ratione explicabo nam odit doloribus rem molestiae, maiores corrupti aperiam nesciunt ex adipisci, illum autem voluptatem ipsa. Numquam unde odit repudiandae nisi.', image: '8.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
