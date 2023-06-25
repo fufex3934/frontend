@@ -11,6 +11,7 @@
   import infrastructure from '/infrastructure.jpg';
   import economic from '/economic.jpg';
   import health from '/health.jpg';
+  import eep from '/EEP.jpg'
   import house from '/house.jpg';
   import disaster from '/disaster.jpg';
   import court from '/court.jpg';
@@ -128,7 +129,7 @@
         id: 12,
         title: `${t('services.putil')}`,
         description: `${t('services.putildesc')}`,
-        image: economic,
+        image: eep,
         availability: `${t('services.available')}`,
         expertTeam: `${t('services.expert')}`,
         category: `${t('services.socialWelfare')}`,
