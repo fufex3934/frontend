@@ -67,7 +67,7 @@ const AnimalExhibition = () => {
                        <button className=" text-black h-12 rounded-md font-medium w-[200px] mx-auto my-6 px-6 py-3'">{t('animal.p10')} </button>
                     </div>
                     <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-full  bg-gray-200 hover:scale-105 duration-300">
-                        <img className="w-[360px] h-[288px] rounded-[10px] mx-auto bg-white" src="./hy.jpg" alt="" />
+                        <img className="w-[360px] h-[288px] rounded-[10px] mx-auto bg-white" src="eagle.jpg" alt="" />
                         <h2 className="text-2xl font-bold text-center py-8">{t('animal.h7')}</h2>
                         <p className=" text-center text-4xl px-1 font-medium">{t('animal.h8')} </p>
                         <div className="font-medium text-center">
