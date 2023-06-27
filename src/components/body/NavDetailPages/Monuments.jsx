@@ -4,18 +4,20 @@ import Navs from '../../navbars/navs'
 import '../css/Monuments.css'
 import {FcLike} from 'react-icons/fc';
 import {IoIosHeartDislike} from 'react-icons/io';
+import { useTranslation } from 'react-i18next';
 
-const monuments_data = [
-  { id: 1, name: 'Al-Jami mosque', p:'A light painting of one of the Mosque in Harar old town. The people just thought we were mad, one running everywhere while the other farenji counted until 30! Everything was in the dark, no public light there.', image: 'alj.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
-  { id: 2, name: 'Ras Makonnen', p: 'In the centre of Ras Makonnen Sq stands a rather Italian-looking, equestrian statue of the ras cast in bronze by the well-known Amhara artist Afewerk Tekle. The ras is said to look towards Somalia and the lands conquered here.The ras is also known as the father of the Emperor Haile Selassie.', image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
-  { id: 3, name: 'Harari Cultural house', p:'The Harari Cultural House (Gey Gar)  Over a milinium since the Harari people used to construct their own houses using the porous stone (hashi un) and mud. This house is a three simple room type; the main front part, the interior and the stair. The roof of the house is covered with the properly sequenced timber', image: 'm8.jpeg', icons: { icon1: <FcLike/>, icon2: <IoIosHeartDislike />  } },
-  { id: 4, name: 'Quran Monument', p: 'Quran monuments are found in Harari City .It was build in the recent period by Harari Regional State government . It was found in Harari city at Hakim Woreda ,Aretegna subcity Square road',image:'quranmajeed.jpg' ,icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
-  { id: 5, name: 'Harari Dressing style', p: 'The Muslims of Harar wear colorful dress. The men often dress in red, purple or black. Harar is also famous for the work of its silversmiths, who craft beautiful anklets, necklaces, arm bands, silver chains, bangles and earrings out of the precious metal..', image: 'dress.jpg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
-  { id: 6, name: 'Jugol Wall', p: 'The Harar Jugol Wall is believed to have been built between the 13th and 16th centuries. The Harar Jugol Wall originally had five historic gates providing five entries into five different districts of the city. The wall was built as a defense in medieval times, an imposing 5m high and 3.5km long.', image: 'm6.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
-  { id: 7, name: 'Harari people traditional object', p: 'Harari people have its own traditional material that was they used for different purpose ie. they have the traditonal material during marriege ,for the for married girl ,for the gift to married man during their marriege day  thay also have the traditional ,material for fighting their enemy   ', image: '1.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
-  { id: 8, name: 'SHERIF PRIVATE MUSUEM', p: 'Home to a private Harari collection of old historically significant Harari and Arabic Manuscripts, religious and science Books which some date back to 700 years, Arm swords, Paints, Jewelry, Harar Coins, Basketry, Household tools, Weaponry, Audio and Music recordings and many artifacts', image: '5.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } }
-];
 const Monuments = () => {
+  const {t} = useTranslation();
+  const monuments_data = [
+    { id: 1, name: `${t('monuments.name1')}`, p:`${t('monuments.p1')}`, image: 'alj.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
+    { id: 2, name: `${t('monuments.name2')}`, p: `${t('monuments.p2')}`, image: 'm2.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } },
+    { id: 3, name: `${t('monuments.name3')}`, p:`${t('monuments.p3')}`, image: 'm8.jpeg', icons: { icon1: <FcLike/>, icon2: <IoIosHeartDislike />  } },
+    { id: 4, name: `${t('monuments.name4')}`, p: `${t('monuments.p4')}`,image:'quranmajeed.jpg' ,icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
+    { id: 5, name: `${t('monuments.name5')}`, p: `${t('monuments.p5')}`, image: 'dress.jpg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
+    { id: 6, name: `${t('monuments.name6')}`, p: `${t('monuments.p6')}`, image: 'm6.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
+    { id: 7, name: `${t('monuments.name7')}`, p: `${t('monuments.p7')}`, image: '1.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike />  } },
+    { id: 8, name: `${t('monuments.name8')}`, p: `${t('monuments.p8')}`, image: '5.jpeg', icons: { icon1: <FcLike />, icon2: <IoIosHeartDislike /> } }
+  ];
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when the component is mounted or updated
   }, []);
@@ -25,18 +27,17 @@ const Monuments = () => {
       <Navs/>
       <div className="wraper">
         <div className="economic" style={{backgroundImage:'url("m2.jpeg")',backgroundPosition:'center',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
-          <h1 className='text-[#5ff13e]'>Harari Monuments</h1>
+          <h1 className='text-[#5ff13e]'>{t('monuments.h1')}</h1>
         </div>
         <div className="economic-definition text-red-600" style={{ backgroundImage: 'url("m1.jpeg")', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
-          <p style={{ color:'#f13ee5'}}>More efficient, more inclusive, more sustainable: Policies to support economic
-            Availability, affordability and proximity of economy to job opportunities, education, culture and amenities are vital</p>
+          <p style={{ color:'#f13ee5'}}>`${t('monuments.p')}`</p>
         </div>
       </div>
       <div className='monument-container'>
         <div className="head">
-          <h1>Harari Historic Monuments</h1>
+          <h1>{t('monuments.h2')}</h1>
         </div>
-        <h1 className='text-center font-mono text-[#3bb] text-4xl'>Free Gallary</h1>
+        <h1 className='text-center font-mono text-[#3bb] text-4xl'>{t('monuments.freeg')}</h1>
         <div className="monument">
           {
             monuments_data.map((src)=>(

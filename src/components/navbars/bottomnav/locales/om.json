@@ -431,7 +431,51 @@
       "socialMf4":"Viidiyoo fi barnoota barsiisaa argachuuf channel keenya subscribe godhaa.",
       "location":"Bakka Keenya",
       "oureducation":"Sirna Barnootaa Keenya"
+     },"monuments":{
+      "h1":"Siidaalee Hararii",
+      "p":"Caalaatti bu'a qabeessa, caalaatti hunda hammate, caalaatti itti fufiinsa kan qabu: Imaammattoonni dinagdee deeggaran Argamuu, gatii madaalawaa fi dinagdeen carraa hojii, barnoota, aadaa fi mijaa'inaatti dhiyeenya qabaachuun murteessaadha",
+      "h2":"Siidaalee Seenaa Hararii",
+      "freeg":"Galmee Bilisaa",
+      "name1":"Masjiida Al-Jaamii",
+      "p1":"Fakkii ifaa Masjiida magaalaa durii Harar keessaa tokko. Ummanni akka nuti maraanne qofa itti fakkaate, tokko bakka hundatti fiigaa inni kaan immoo farenji hanga 30tti lakkaa'a! Wanti hundi dukkana keessa ture, ifa ummataa achitti hin turre.",
+      "name2":"Raas Makonnen jedhamuun beekama",
+      "p2":"Giddugala Ras Makonnen Sq keessatti siidaan fardaa kan baayyee Xaaliyaanii fakkaatu, kan ras kan artistii Amaaraa beekamaa Afewerk Tekle nadhii irraa darbatame dhaabbatee jira. Raasichi gara Somaaliyaa fi lafa asitti qabame akka ilaalu himama.Raas abbaa Emperor Hayilasillaasee jedhamuunis beekama.",
+      "name3":"Mana Aadaa Hararii",
+      "p3":"Manni Aadaa Hararii (Gey Gar) Erga ummanni Hararii dhagaa qola (hashi un) fi dhoqqee fayyadamuun mana ofii ijaaraa turee miliniyeemii tokkoo ol. Manni kun gosa kutaa salphaa sadii qaba; kutaa fuulduraa guddaa, keessaa fi sadarkaa. Foolli manaa muka sirnaan tartiiba qabuun haguugamee jira",
+      "name4":"Siidaa Qur'aanaa",
+      "p4":"Siidaan Qur'aanaa Magaalaa Hararii keessatti argama .Yeroo dhiyoo kana mootummaa Naannoo Harariitiin ijaarame . Magaalaa Hararitti Woreda Hakim ,Aretegna subcity Daandii Addabaabayii irratti argame",
+      "name5":"Harari Akkaataa Uffata",
+      "p5":"Muslimoonni Harar uffata halluu adda addaa qabu uffatu. Dhiironni yeroo baayyee uffata diimaa, diimaa ykn gurraacha uffatu. Harar hojii meetii hojjetaniinis beekamti, isaanis sibiilli gatii guddaa qabu kana keessaa jilba, jilba, harka, sansalata meetii, bangles fi gurraa babbareedoo hojjetan..",
+      "name6":"Ijaarsa Jugol",
+      "p6":"Dallaan Harar Jugol jaarraa 13ffaa fi 16ffaa gidduutti akka ijaarame ni amanama. Dallaan Harar Jugol jalqaba irratti karra seena qabeessa shan kan qabu yoo ta’u, seensa shan gara aanaalee magaalattii adda addaa shanitti kan kennu ture. Dallaan kun bara gidduu galeessaatti akka ittisaatti kan ijaarame yoo ta'u, olka'iinsi isaa 5m fi dheerinni isaa 3.5km kan ta'edha.",
+      "name7":"Ummanni Hararii aadaan mormu",
+      "p7":"Ummanni Hararii meeshaa aadaa mataa isaa qaba ture kan isaan kaayyoo adda addaaf itti fayyadaman jechuun. isaan yeroo fuudhaa fi heerumaa meeshaa aadaa ,intala heerumteef ,kennaa dhiira fuudheef guyyaa gaa'ela isaanii thay akkasumas aadaa ,meeshaa diina isaanii loluuf qabu",
+      "name8":"MUSUEM DHUUNFAA SHERIF",
+      "p8":"Home to a private Harari collection of old historically significant Harari and Arabic Manuscripts, religious and science Kitaabota kanneen gariin waggaa 700 keessa jiraatan, billaa hidhannoo, Faaya, Faaya, Saantima Harar, Basketry, Meeshaalee mana keessaa, Meeshaa waraanaa, Sagalee fi waraabbii Muuziqaa fi hedduu meeshaalee aadaa (artifacts) jedhaman"
+     },"administration":{
+      "welcome":"Baga Nagaan Gara Magaalaa Harargee Dhuftan",
+      "h1":"Bulchiinsa Magaalaa Harar",
+      "p1":"Amanamummaadhaan Waajjirri Bulchaa Magaalaa Ummata Haramaayaa fi daawwattoota ishee hunda ni tajaajila",
+      "area":"Naannoo Fedhii",
+      "life":"Akkaataa Jireenya Hararii",
+      "find":"Asirratti Nu Argachuu Dandeessu",
+      "head1":"Waa'ee Magaalaa Harargee",
+      "d1":"Waa'ee handhuura Harargee, mootummaa fi bulchiinsa ishee hunda: Namoota, pirojektoota, dhugaa fi lakkoofsa",
+      "head2":"Agarsiisa Beeyladaa",
+      "d2":"Muuxannoo ajaa'ibaa fi ajaa'ibaa daawwattoota gara Harar hawwatu, sun immoo dhiirota haayinaa Harar.",
+      "head3":"Siidaalee Seenaa",
+      "d3":"Filannoo agarsiisaa fi iddoowwan agarsiisaa. Asirratti siidaa muuziyeemii gurguddoo Harargee muraasa isiniif dhiheessina.",
+     "name1":"Uffata uffachuu",
+     "head4":"Harari Akkaataa Uffata",
+     "d4":"Muslimoonni Harar uffata halluu adda addaa qabu uffatu. Dhiironni yeroo baayyee uffata diimaa, diimaa ykn gurraacha uffatu. Harar hojii meetii hojjetaniinis beekamti, isaanis sibiilli gatii guddaa qabu kana keessaa jilba, jilba, harka, sansalata meetii, bangles fi gurraa babbareedoo hojjetan..",
+     "name2":"Nyaata Hanid",
+     "head5":"mataa",
+     "d5":"Foon re'ee kan halkan tokkoof baay'ee suuta danfisuun bilcheefamu, qodaa guddaa biyyee termite irraa hojjetame keessatti. Foon mi'aawaa ta'e sana booda soogidda cuuphaa mi'aawaa tamarind, lime, bishaanii fi berbere irraa hojjetame waliin nyaatama.",
+     "name3":"maqaa",
+     "head6":"mataa",
+     "d6":"Maqaa fi mataa ni jaallanna"
      }
+      
     
     
   }

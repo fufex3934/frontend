@@ -57,7 +57,7 @@ const CityDocuments = () => {
   const limitedDocuments = documents.slice(0, 8);
 
   return (
-    <div className='sub-main-upcoming-event-right'>
+    <div className='sub-main-upcoming-event-right shadow-xl'>
       <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-5 mb-8 '>City Document</h1>
       <div className='flex flex-col items-center lg:items-start'>
         <div className='left-top-icon mb-8'>

@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import enTranslation from './locales/en.json';
 import omTranslation from './locales/om.json';
 import amTranslation from './locales/am.json';
-import adTranslation from './locales/ad.json';
+
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -16,9 +16,7 @@ i18n.use(initReactI18next).init({
     am: {
       translation: amTranslation,
     },
-    ad: {
-      translation: adTranslation,
-    },
+    
   },
   fallbackLng: 'en', // Set the fallback language
   interpolation: {
