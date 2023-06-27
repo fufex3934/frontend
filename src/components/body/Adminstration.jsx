@@ -41,10 +41,10 @@ const Adminstration = () => {
       src: 'dress.jpg', description: `${t('administration.d4')}`, name: `${t('administration.name1')}`, head:`${t('administration.head4')}`
     },
     {
-      src:'1.jpeg',description:`${t('administration.head5')}`,name:`${t('administration.name2')}`,head:`${t('administration.head5')}`
+      src:'hgm.jpeg',description:`${t('administration.d5')}`,name:`${t('administration.name2')}`,head:`${t('administration.head5')}`
     },
     {
-      src:'1.jpeg',description:`${t('administration.head6')}`,name:`${t('administration.name3')}`,head:`${t('administration.head6')}`
+      src:'alj.jpeg',description:`${t('administration.d6')}`,name:`${t('administration.name3')}`,head:`${t('administration.head6')}`
     },
   ]
   return (
