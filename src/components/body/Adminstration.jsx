@@ -20,7 +20,7 @@ const life_style=[
     src: 'dress.jpg', description: 'The Muslims of Harar wear colorful dress. The men often dress in red, purple or black. Harar is also famous for the work of its silversmiths, who craft beautiful anklets, necklaces, arm bands, silver chains, bangles and earrings out of the precious metal..', name: 'Dressing', head:'Harari Dressing style'
   },
   {
-    src:'1.jpeg',description:'Goat meat that is cooked by being steamed very slowly overnight in a big pot made from termite soil. The succulent meat is then eaten with a spicy dipping sauce made from tamarind, lime, water and berbere.',name:' Hanid Food',head:'head'
+    src:'1.jpeg',description:'Goat meat that is cooked by being steamed very slowly overnight in a big pot made from termite soil. The succulent meat is then eaten with a spicy dipping sauce made from tamarind, lime, water and berbere.',name:' Hanid Food',head:'Harar Traditional Food'
   },
   {
     src: 'alj.jpeg', description: 'Other places and attractions worth visiting in the area are Juma Mosque (mosque, 3 min walk), Sherif Harari City Museum (museum, 5 min walk), Harar Brewery (brewery, 30 min walk).', name: 'Cities and Locations', head:'Popular Cities and Locations in Harar'
