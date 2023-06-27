@@ -23,7 +23,7 @@ const life_style=[
     src:'1.jpeg',description:'Goat meat that is cooked by being steamed very slowly overnight in a big pot made from termite soil. The succulent meat is then eaten with a spicy dipping sauce made from tamarind, lime, water and berbere.',name:' Hanid Food',head:'head'
   },
   {
-    src:'1.jpeg',description:'We love name and head',name:'name',head:'head'
+    src: 'alj.jpeg', description: 'Other places and attractions worth visiting in the area are Juma Mosque (mosque, 3 min walk), Sherif Harari City Museum (museum, 5 min walk), Harar Brewery (brewery, 30 min walk).', name: 'Cities and Locations', head:'Popular Cities and Locations in Harar'
   },
 ]
 const follow_us=[
