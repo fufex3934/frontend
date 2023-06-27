@@ -17,10 +17,10 @@ const city=[
 ]
 const life_style=[
   {
-    src:'1.jpeg',description:'We love name and head',name:'name',head:'head'
+    src: 'dress.jpg', description: 'The Muslims of Harar wear colorful dress. The men often dress in red, purple or black. Harar is also famous for the work of its silversmiths, who craft beautiful anklets, necklaces, arm bands, silver chains, bangles and earrings out of the precious metal..', name: 'Dressing', head:'Harari Dressing style'
   },
   {
-    src:'1.jpeg',description:'We love name and head',name:'name',head:'head'
+    src:'1.jpeg',description:'Goat meat that is cooked by being steamed very slowly overnight in a big pot made from termite soil. The succulent meat is then eaten with a spicy dipping sauce made from tamarind, lime, water and berbere.',name:' Hanid Food',head:'head'
   },
   {
     src:'1.jpeg',description:'We love name and head',name:'name',head:'head'
@@ -77,13 +77,13 @@ const Adminstration = () => {
           {
             life_style.map((life) => (
               <div className="style">
-                <div className="src">
+                <div className="src relative">
                   <img src={life.src} alt="" />
-                  <p>{life.description}</p>
+                  <p className=''>{life.description}</p>
                 </div>
                 <div className=''>
-                  <p>{life.name}</p>
-                  <h1>{life.head}</h1>
+                  <h3 className='text-blue-400'>{life.name}</h3>
+                  <h1 className='text-xl text-slate-800'>{life.head}</h1>
                 </div>
               </div>
             ))
