@@ -165,7 +165,7 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className='bg-[#132255]  h-20 relative'>
+      <div className='bg-[#06163a]  h-20 relative'>
       <p className="text-gray-300 text-sm   absolute top-6 md:top-10 lg:right-[420px] md:right-36 ml-6">
             &copy; {new Date().getFullYear()} Harar Government Communication Affairs Office. All rights reserved.
           </p>

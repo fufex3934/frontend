@@ -4,28 +4,7 @@ import { Link } from 'react-router-dom'
 import Navs from '../navbars/navs'
 import Footer from './Footer'
 import './css/Adminstration.css'
-const city=[
-  {
-    head: 'About City Of Harare', to: '/about-history', description: 'All about the capital of Harare, its government and administration: People, projects, facts and figures'
-  },
-  {
-    head: 'Animal Exhibition', to: '/', description:'A weird and wonderful experience that attracts visitors to Harar, and that is the hyena men of Harar.'
-  },
-  {
-    head:'Historic Monuments',to:'/tourism-mon',description:'The choice of exhibitions and venues. Here we will present you some of Harars great museum monuments.'
-  }
-]
-const life_style=[
-  {
-    src: 'dress.jpg', description: 'The Muslims of Harar wear colorful dress. The men often dress in red, purple or black. Harar is also famous for the work of its silversmiths, who craft beautiful anklets, necklaces, arm bands, silver chains, bangles and earrings out of the precious metal..', name: 'Dressing', head:'Harari Dressing style'
-  },
-  {
-    src:'1.jpeg',description:'Goat meat that is cooked by being steamed very slowly overnight in a big pot made from termite soil. The succulent meat is then eaten with a spicy dipping sauce made from tamarind, lime, water and berbere.',name:' Hanid Food',head:'head'
-  },
-  {
-    src:'1.jpeg',description:'We love name and head',name:'name',head:'head'
-  },
-]
+import { useTranslation } from 'react-i18next'
 const follow_us=[
   {
     link: '/', icon: <BsFacebook className='text-5xl text-blue-700' />,name:'Facebook',linkName:'link-url'
@@ -44,18 +23,42 @@ const follow_us=[
   },
 ]
 const Adminstration = () => {
+  const {t} = useTranslation();
+
+  const city=[
+    {
+      head: `${t('administration.head1')}`, to: '/about-history', description: `${t('administration.d1')}`
+    },
+    {
+      head: `${t('administration.head2')}`, to: '/', description:`${t('administration.d2')}`
+    },
+    {
+      head:`${t('administration.head3')}`,to:'/tourism-mon',description:`${t('administration.d3')}`
+    }
+  ]
+  const life_style=[
+    {
+      src: 'dress.jpg', description: `${t('administration.d4')}`, name: `${t('administration.name1')}`, head:`${t('administration.head4')}`
+    },
+    {
+      src:'1.jpeg',description:`${t('administration.head5')}`,name:`${t('administration.name2')}`,head:`${t('administration.head5')}`
+    },
+    {
+      src:'1.jpeg',description:`${t('administration.head6')}`,name:`${t('administration.name3')}`,head:`${t('administration.head6')}`
+    },
+  ]
   return (
    <>
     <Navs/>
     <div className='adminstration'> 
-        <h1 className='text-5xl mb-3'>Welcome To City Of Harare</h1>
+        <h1 className='text-5xl mb-3'>{t('administration.welcome')}</h1>
     </div>
     <div className="welcome">
-      <h1 className='text-4xl mb-3 text-[#3bb] font-serif'>Harar City Adminstration</h1>
-      <p className='text-xl'>With integrity, the Office of the City Administrator serves all Harare people and its visitors</p>
+      <h1 className='text-4xl mb-3 text-[#3bb] font-serif'>{t('administration.h1')}</h1>
+      <p className='text-xl'>{t('administration.p1')}</p>
     </div>
     <div className="area-interst">
-      <h1 className='text-3xl font-bold font-serif text-[#3bb] mb-2'>Area Of Interst</h1>
+      <h1 className='text-3xl font-bold font-serif text-[#3bb] mb-2'>{t('administration.area')}</h1>
       <div className="area">
       {
         city.map((city_data)=>(
@@ -71,7 +74,7 @@ const Adminstration = () => {
     </div>
     <div className="life-style">
       <div className="life">
-        <h1>Harari Lifestyle</h1>
+        <h1>{t('administration.life')}</h1>
       </div>
       <div className="style-layout">
           {
@@ -92,7 +95,7 @@ const Adminstration = () => {
     </div>
     <div className="follow-us">
       <div className="follow">
-        <h1>You Can Find Us Here</h1>
+        <h1>{t('administration.find')}</h1>
       </div>
       <div className="layout-us">
        {
