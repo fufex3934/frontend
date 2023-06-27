@@ -68,7 +68,7 @@ const AnimalExhibition = () => {
                     
                     </div>
                     <div className="w-full shadow-xl flex flex-col py-4 my-4 rounded-full hover:scale-105 duration-300">
-                       <img className="bg-white w-[360px] h-[288px] rounded-[10px] mx-auto" src="./hy.jpg" alt="HyenaMan" />
+                       <img className="bg-white w-[360px] h-[288px] rounded-[10px] mx-auto" src="eagle.jpg" alt="HyenaMan" />
                        <h2 className="text-2xl font-bold text-center py-8">Hyena  </h2>
                        <p className=" text-center text-4xl px-1 font-medium"> please come to visit Us </p>
                         <div className="font-medium text-center">
