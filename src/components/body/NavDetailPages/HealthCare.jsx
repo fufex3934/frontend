@@ -10,7 +10,8 @@ const hospitals_data= [
       h1: 'Hiwot Fana Specialized Hospital', p1: 'Our aim is to update the knowledge and skill of the Health & Hospital Administrators and other personnel involved in  the management of   health care organization through continuous education and research and to promote   and   grant recognition to research in the fields of Health and Hospital Management and to grant awards, scholarship and assistance in other suitable forms to meritorious individuals and institutions.', p2: 'Our vision is to improving the health and wellbeing of the population in our country'} },
   {
     id: 3, image: 'jugel-hospital.jpg', description: {
-      h1: 'Jugel Historic Hospital', p1: 'Our aim To promote a forum for the exchange of ideas and information among  health and hospital planners, academicians, administrators, various statutory bodies and the general public for the improvement of Hospital and Health Care delivery Systems and to develop norms and standards for accreditation of the Health Care Organization and adopt means of evaluation of such institutions, so as to improve the quality of health care in the community.', p2: 'Our Core objective is to ensure services are timely and accessible to all parts of the community we serve'} }
+      h1: 'Jugel Historic Hospital', p1: 'Our aim To promote a forum for the exchange of ideas and information among  health and hospital planners, academicians, administrators, various statutory bodies and the general public for the improvement of Hospital and Health Care delivery Systems and to develop norms and standards for accreditation of the Health Care Organization and adopt means of evaluation of such institutions, so as to improve the quality of health care in the community.', p2: 'Our Core objective is to ensure services are timely and accessible to all parts of the community we serve'} 
+  }
 ];
 
 const HealthCare = () => {
