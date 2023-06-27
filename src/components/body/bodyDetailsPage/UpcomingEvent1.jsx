@@ -114,7 +114,7 @@ const UpcomingEvent1 = () => {
                           <img
                             src={urlFor(node).url()}
                             alt={node?.alt}
-                            className="m-4"
+                            className="m-4 md:w-full h-[390px] object-cover"
                           />
                         ),
                       },
