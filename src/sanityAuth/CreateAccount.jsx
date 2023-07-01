@@ -15,7 +15,7 @@ const CreateAccount = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/register', {
+      const response = await axios.post('http://localhost:3000/users/register', {
         firstName,
         lastName,
         email,
@@ -29,7 +29,6 @@ const CreateAccount = () => {
       setRole('');
       handleNavigation();
 
-      console.log(response.data.message); // Log the response message
     } catch (error) {
       console.error(error);
     }

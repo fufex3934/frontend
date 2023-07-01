@@ -24,6 +24,7 @@ function SanityAuth() {
         });
         if (response.status === 200) {
           setAdmins(response.data.admins);
+        
         }
       } catch (error) {
         console.error(error);
@@ -39,7 +40,7 @@ function SanityAuth() {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:3000/login', { email, password });
+      const response = await axios.post('http://localhost:3000/users/login', { email, password });
     
       if (response.status === 200) {
         const token = response.data.token;
@@ -47,7 +48,7 @@ function SanityAuth() {
     
         try {
           // Fetch the user's role from the server
-          const roleResponse = await axios.get('http://localhost:3000/user/role');
+          const roleResponse = await axios.get('http://localhost:3000/users/role');
     
           if (roleResponse.status === 200) {
             const role = roleResponse.data.role; // Extract the role from roleResponse.data

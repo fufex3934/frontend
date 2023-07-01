@@ -22,7 +22,7 @@ function ResetPasswordPage() {
         return;
       }
   
-      await axios.post('http://localhost:3000/reset-password', { token, newPassword });
+      await axios.post('http://localhost:3000/users/reset-password', { token, newPassword });
   
       setSuccessMessage('Password reset successfully');
       handleNavigation();
