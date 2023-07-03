@@ -20,7 +20,7 @@ const FeedBack = () => {
 
   const confirmReply = async () => {
      try{
-         const response = axios.post('http://localhost:3000/reply',{
+         const response = axios.post('http://localhost:3000/feedback/reply',{
           email: userToReply.email,
          replyText: replyFeedBack,
          });
@@ -34,7 +34,7 @@ const FeedBack = () => {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/comments');
+        const response = await axios.get('http://localhost:3000/feedback/comments');
         if (response.status === 200) {
           setFeedBack(response.data.feedbacks);
         }

@@ -21,7 +21,7 @@ const Footer = () => {
 
     try {
       // Send the email to the backend
-      const response = await axios.post('http://localhost:4000/api/subscribe', { email });
+      const response = await axios.post('http://localhost:3000/api/subscribe', { email });
       // Clear the email input field and display success message
       setEmail('');
       setMessage(response.data.message);

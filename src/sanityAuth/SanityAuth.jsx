@@ -24,6 +24,7 @@ function SanityAuth() {
         });
         if (response.status === 200) {
           setAdmins(response.data.admins);
+        
         }
       } catch (error) {
         console.error(error);
@@ -39,7 +40,7 @@ function SanityAuth() {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:3000/login', { email, password });
+      const response = await axios.post('http://localhost:3000/users/login', { email, password });
     
       if (response.status === 200) {
         const token = response.data.token;
@@ -47,7 +48,7 @@ function SanityAuth() {
     
         try {
           // Fetch the user's role from the server
-          const roleResponse = await axios.get('http://localhost:3000/user/role');
+          const roleResponse = await axios.get('http://localhost:3000/users/role');
     
           if (roleResponse.status === 200) {
             const role = roleResponse.data.role; // Extract the role from roleResponse.data
@@ -111,36 +112,52 @@ function SanityAuth() {
 
 function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPassword }) {
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded shadow">
+    <div className="w-[500px] mx-auto bg-white p-8 rounded shadow">
       <h1 className="text-3xl font-semibold mb-6 text-slate-800">Login</h1>
       {errorMessage && <p className="text-red-500 mb-4"></p>}
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className='bg-white  rounded px-8 pt-6 pb-8 mb-4'>
+      <div className='mb-4'>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+      </label>
         <input
           type="email"
           placeholder="Email"
-          className="w-full mb-4 px-3 py-2 rounded border border-[#3bb5b5]"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline  " id="email"  
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        
+      </div>
+        <div className='mb-6'>
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
         <input
           type="password"
-          placeholder="Password"
-          className="w-full mb-4 px-3 py-2 rounded border border-[#3bb5b5]"
+          placeholder="******************"
+          className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
           value={password}
+          id="password"
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        <p class="text-red-500 text-xs italic">Please choose a strong password.</p>
+          </div> 
+        <div className='flex items-center justify-between'>
         <button
           type="submit"
-          className="w-full bg-[#329898] text-white py-2 px-4 rounded hover:bg-[#3bb5b5]"
+          className=" bg-[#329898] hover:bg-[#3bb5b5] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Login
         </button>
-      </form>
-      <p className="text-[#329898] mt-4 text-center underline">
+        <p className="inline-block align-baseline font-bold text-sm text-[#329898] hover:text-[#3bb5b5]">
       <Link to="/forgot-password">Forgot Password?</Link>
     </p>
+        </div>
+      </form>
+      
     </div>
   );
 }
