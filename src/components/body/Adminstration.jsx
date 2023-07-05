@@ -3,23 +3,24 @@ import { BsFacebook, BsTwitter, BsYoutube, BsTelegram, BsLinkedin } from 'react-
 import { Link } from 'react-router-dom'
 import Navs from '../navbars/navs'
 import Footer from './Footer'
+import MeetIdeologyLeader from './MeetIdeologyLeader'
 import './css/Adminstration.css'
 import { useTranslation } from 'react-i18next'
 const follow_us=[
   {
-    link: '/', icon: <BsFacebook className='text-5xl text-blue-700' />,name:'Facebook',linkName:'link-url'
+    link: '/', icon: <BsFacebook className='text-5xl text-blue-700 myIcon' />,name:'Facebook',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsTwitter className='text-5xl text-blue-500' />,name:'Twitter',linkName:'link-url'
+    link: '/', icon: <BsTwitter className='text-5xl text-blue-500 myIcon' />,name:'Twitter',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsYoutube className='text-5xl text-red-500' />,name:'Youtube',linkName:'link-url'
+    link: '/', icon: <BsYoutube className='text-5xl text-red-500 myIcon' />,name:'Youtube',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsTelegram className='text-5xl text-blue-400'/>,name:'Telegram',linkName:'link-url'
+    link: '/', icon: <BsTelegram className='text-5xl text-blue-400 myIcon'/>,name:'Telegram',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsLinkedin className='text-5xl text-blue-500'/>,name:'Linkedin',linkName:'link-url'
+    link: '/', icon: <BsLinkedin className='text-5xl text-blue-500 myIcon'/>,name:'Linkedin',linkName:'link-url'
   },
 ]
 const Adminstration = () => {
@@ -57,6 +58,7 @@ const Adminstration = () => {
       <h1 className='text-4xl mb-3 text-[#3bb] font-serif'>{t('administration.h1')}</h1>
       <p className='text-xl'>{t('administration.p1')}</p>
     </div>
+      <MeetIdeologyLeader/>
     <div className="area-interst">
       <h1 className='text-3xl font-bold font-serif text-[#3bb] mb-2'>{t('administration.area')}</h1>
       <div className="area">
@@ -105,8 +107,8 @@ const Adminstration = () => {
               {followUs.icon}
             </div>
             <div className="sm-icon-name">
-              <span className='text-2xl'>{followUs.name}</span>
-              <p className='text-[17px]'>{followUs.linkName}</p>
+              <span className='text-xl font-serif'>{followUs.name}</span>
+              <p className='text-[15px] italic'>{followUs.linkName}</p>
             </div>
           </Link>
         ))
