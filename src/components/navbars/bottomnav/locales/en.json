@@ -17,7 +17,7 @@
       "emergency":"Emergency",
       "policies":"Policies",
       "sectors":"Sectors",
-      "go":"Government Officials",
+      "go":"Administration",
       "gs":"Governments Structure",
       "education":"Education",
       "healthcare":"HealthCare",
@@ -452,7 +452,7 @@
     "name8":"SHERIF PRIVATE MUSUEM",
     "p8":"Home to a private Harari collection of old historically significant Harari and Arabic Manuscripts, religious and science Books which some date back to 700 years, Arm swords, Paints, Jewelry, Harar Coins, Basketry, Household tools, Weaponry, Audio and Music recordings and many artifacts"
    },"administration":{
-    "welcome":"Welcome To City Of Harare",
+    "welcome":"Welcome To City Of Harar",
     "h1":"Harar City Adminstration",
     "p1":"With integrity, the Office of the City Administrator serves all Harare people and its visitors",
     "area":"Area Of Interest",

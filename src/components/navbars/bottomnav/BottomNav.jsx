@@ -127,7 +127,7 @@ const BottomNavbar = () => {
                 </button>
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
                   <ul className="top-0 w-52 bg-white py-8 shadow  ">
-                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/about-leadership')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white  py-2 cursor-pointer whitespace-nowrap">{t('dropdown.go')}</button></li>
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/city-adminstration')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white  py-2 cursor-pointer whitespace-nowrap">{t('dropdown.go')}</button></li>
                     <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/politic-gs')} className="block w-full text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white py-2 cursor-pointer whitespace-nowrap">{t('dropdown.gs')}</button></li> 
                   </ul>
                 </div>

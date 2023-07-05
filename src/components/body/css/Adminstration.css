@@ -75,7 +75,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0px 5px 5px -5px grey;
+    /* box-shadow: 0px 5px 5px -5px grey; */
     margin: auto;
     padding-bottom: 1.5%;
 }
@@ -89,8 +89,12 @@
     align-items: center;
 }
 .follow-us .layout-us .link:hover{
-    box-shadow: rgb(69, 229, 250) 0px 0px 5px;
-    transition-duration: 1s;
+    color: #008793;
+    transition-duration: 1.5s;
+}
+.follow-us .layout-us .link:hover .myIcon{
+    color: #008793;
+    transition-duration: 1.5s;
 }
 .follow-us .layout-us .link .sm-icon{
     margin-right: 5%;
