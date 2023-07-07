@@ -76,7 +76,7 @@ const ExploreCity = (props) => {
   return (
     <div className='main-container bg-[#329898] pb-32 '>
       <div className='heading'>
-        <h1 className='font-semibold w-72 md:w-full text-center md:text-justify'>{t('exploreCity.header')}</h1>
+        <h1 className='font-semibold w-72 md:w-full text-center lg:text-justify'>{t('exploreCity.header')}</h1>
       </div>
       <div className='slideshow-container'>
         <Slider {...settings}>
