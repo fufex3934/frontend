@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import {useState,useEffect} from 'react';
 import { useNavigate } from 'react-router';
 import './css/Explore.css';
 import 'aos/dist/aos.css'
@@ -39,7 +39,7 @@ const Explore = () => {
                         </h3>
                     </div>
                     <div className="text-center float-right -mt-60 md:mt-4 sub-sub-main1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                        <button onClick={() => navigate('/service')} className="bg-[#329898] text-3xl font-serif hover:bg-white hover:text-[#3bb] text-white  py-2 px-4 rounded-0">
+                        <button onClick={() => navigate('/service')} className="bg-[#329898] text-3xl font-serif  hover:text-white text-white  py-2 px-4 rounded-0">
                             {t('exploreService.btn')}
                         </button>
                     </div>
