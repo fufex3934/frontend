@@ -1,12 +1,11 @@
-import React, {useState, useEffect } from 'react'
+import  {useState, useEffect } from 'react'
 import './css/MeetIdeologyLeader.css'
 import 'aos/dist/aos.css'
-import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import createClient from '../../client';
 import { useTranslation } from 'react-i18next';
 const MeetIdeologyLeader = () => {
-            const navigate = useNavigate();
+            
             const [leaderData,setLeaderData] = useState(null);
             const {t} = useTranslation();
             useEffect(()=>{
