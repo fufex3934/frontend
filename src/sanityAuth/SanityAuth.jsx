@@ -1,5 +1,5 @@
 // Frontend code
-import React, { useState,useEffect } from 'react';
+import React,  { useState,useEffect } from 'react';
 import { Route, Routes, Navigate,useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import { FaUserCog } from 'react-icons/fa';
@@ -84,7 +84,7 @@ function SanityAuth() {
   };
 
   const openSanityStudio = () => {
-    window.open('http://localhost:3333/','_blank');
+    window.open('https://hararigov.sanity.studio/','_blank');
   };
 
   return (
@@ -117,7 +117,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
       {errorMessage && <p className="text-red-500 mb-4"></p>}
       <form onSubmit={handleLogin} className='bg-white  rounded px-8 pt-6 pb-8 mb-4'>
       <div className='mb-4'>
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+      <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
         Email
       </label>
         <input
@@ -131,7 +131,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
         
       </div>
         <div className='mb-6'>
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
         Password
       </label>
         <input
@@ -143,7 +143,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <p class="text-red-500 text-xs italic">Please choose a strong password.</p>
+        <p className="text-red-500 text-xs italic">Please choose a strong password.</p>
           </div> 
         <div className='flex items-center justify-between'>
         <button
