@@ -8,16 +8,16 @@ import './css/Adminstration.css'
 import { useTranslation } from 'react-i18next'
 const follow_us=[
   {
-    link: '/', icon: <BsFacebook className='text-5xl text-blue-700 myIcon' />,name:'Facebook',linkName:'link-url'
+    link: 'https://www.facebook.com/p/Harari-Government-communication-affairs-Office-100064845514191/', icon: <BsFacebook className='text-5xl text-blue-700 myIcon' />,name:'Facebook',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsTwitter className='text-5xl text-blue-500 myIcon' />,name:'Twitter',linkName:'link-url'
+    link: 'https://twitter.com/HarariGovComm/status/1559545087117377538', icon: <BsTwitter className='text-5xl text-blue-500 myIcon' />,name:'Twitter',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsYoutube className='text-5xl text-red-500 myIcon' />,name:'Youtube',linkName:'link-url'
+    link: 'https://www.youtube.com/@hararicommunication82', icon: <BsYoutube className='text-5xl text-red-500 myIcon' />,name:'Youtube',linkName:'link-url'
   },
   {
-    link: '/', icon: <BsTelegram className='text-5xl text-blue-400 myIcon'/>,name:'Telegram',linkName:'link-url'
+    link: 'https://t.me/s/HarariGovernmentCommunication', icon: <BsTelegram className='text-5xl text-blue-400 myIcon'/>,name:'Telegram',linkName:'link-url'
   },
   {
     link: '/', icon: <BsLinkedin className='text-5xl text-blue-500 myIcon'/>,name:'Linkedin',linkName:'link-url'
