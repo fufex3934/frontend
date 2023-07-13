@@ -53,7 +53,7 @@
           const nextButton = document.querySelector('[data-carousel-next]');
 
           const items = carousel.querySelectorAll('[data-carousel-item]');
-          const interval = 5000; // Time between automatic slides in milliseconds
+          const interval = 3000; // Time between automatic slides in milliseconds
 
           const showItem = (index) => {
             items.forEach((item, i) => {
