@@ -34,7 +34,7 @@ const Explore = () => {
 
                 <div className='inline w-full sub-main'>
                     <div className="block text-start float-left sub-sub-main">
-                        <h3 className="text-3xl  font-bold text-[#329898] font-serif  md:w-[450px] lg:w-[600px]" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
+                        <h3 className="text-3xl  font-bold text-[#329898] font-serif  md:w-[500px] lg:w-full" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
                             {t('exploreService.header')}
                         </h3>
                     </div>
