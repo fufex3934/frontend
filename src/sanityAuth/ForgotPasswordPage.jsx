@@ -14,7 +14,7 @@ function ForgotPasswordPage() {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:3000/forgot-password', { email });
+      await axios.post('http://localhost:3000/users/forgot-password', { email });
       setSuccessMessage('Password reset instructions sent to your email address.');
       handleNavigation();
     } catch (error) {

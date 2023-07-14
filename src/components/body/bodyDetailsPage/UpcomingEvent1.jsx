@@ -136,4 +136,3 @@ const UpcomingEvent1 = () => {
 };
 
 export default UpcomingEvent1;
-``

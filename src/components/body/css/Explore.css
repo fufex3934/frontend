@@ -30,8 +30,8 @@
   left: -10%;
 }
 .main2 .sub-main-2 .image:hover button {
-  background-color: white;
-  color: #329898;
+  background-color: #329898;
+  color: white;
   border: 2px solid #329898;
 }
 @media screen and (max-width:415px) {
@@ -57,11 +57,11 @@
       left: 50px;
       font-size: 20px;
       white-space: nowrap;
-      background-color: rgb(88, 88, 100);
+      background-color: #0d9488;
     }
     .main .sub-main .sub-sub-main1 button:hover{
-          background-color:white;
-          color: #329898;
+          background-color:#329898;
+          color: white;
     }
     .main .sub-main .sub-sub-main h3{
       visibility: hidden;

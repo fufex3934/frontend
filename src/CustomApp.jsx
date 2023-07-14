@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs'
 import Navs from './components/navbars/navs';
 import Welcome from './components/body/Welcome';
@@ -8,10 +8,10 @@ import HararData from './components/body/HararData';
 import UpcomingEvent from './components/body/UpcomingEvent';
 import News from './components/body/News';
 import Footer from './components/body/Footer';
-import BottomImages from './components/body/BottomImages';
 import Aos from 'aos';
 import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
+import VideoList from './components/body/VideoList';
 const CustomApp = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -105,7 +105,8 @@ const CustomApp = () => {
           <News />
           <ExploreCity data={data} />
           <CityCouncil />
-          <BottomImages />
+          <VideoList/>
+          {/* <BottomImages /> */}
           <Footer />
         </div>
       )}

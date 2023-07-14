@@ -1,4 +1,4 @@
-      import React, { useEffect, useRef, useState } from 'react';
+      import  { useEffect, useRef, useState } from 'react';
       import './css/Welcome.css';
       import createClient from '../../client';
       import { Link } from 'react-router-dom';
@@ -53,7 +53,7 @@
           const nextButton = document.querySelector('[data-carousel-next]');
 
           const items = carousel.querySelectorAll('[data-carousel-item]');
-          const interval = 5000; // Time between automatic slides in milliseconds
+          const interval = 3000; // Time between automatic slides in milliseconds
 
           const showItem = (index) => {
             items.forEach((item, i) => {
@@ -380,7 +380,7 @@
         {t('welcome.text')}
           <span>
             <button onClick={()=>navigate('/city-vistor-guid')}
-             className="ml-4 mt-4 pb-5 hover:bg-gray-900 text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
+             className="ml-4 mt-4 pb-5 hover:bg-[#0d9488] text-white font-serif font-medium py-3 px-6 border-orange-500 hover:border-transparent">
             {t('welcome.explore')}
             </button>
           </span>

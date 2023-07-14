@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import {BsLinkedin,BsTelegram,BsYoutube} from 'react-icons/bs';
 import { formatDistanceToNow } from 'date-fns';
@@ -83,7 +83,7 @@ function Events() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 {trail.map((props, index) => {
-                  const { title, slug, upcomingImage, description, date, place } = events[index];
+                  const { title, slug, upcomingImage,  date, place } = events[index];
                   const formattedTime = formatDistanceToNow(new Date(date), { addSuffix: true });
   
                   return (
