@@ -31,7 +31,7 @@ const Adminstration = () => {
       head: `${t('administration.head1')}`, to: '/about-history', description: `${t('administration.d1')}`
     },
     {
-      head: `${t('administration.head2')}`, to: '/', description:`${t('administration.d2')}`
+      head: `${t('administration.head2')}`, to: '/tourism-animal', description:`${t('administration.d2')}`
     },
     {
       head:`${t('administration.head3')}`,to:'/tourism-mon',description:`${t('administration.d3')}`
