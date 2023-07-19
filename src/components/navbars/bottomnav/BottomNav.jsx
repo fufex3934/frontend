@@ -259,6 +259,23 @@ const BottomNavbar = () => {
                   </li>
                   <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
                     <button className="inline-flex  justify-between gap-x-40   py-2 text-md " >
+                    {t('navbar.news')}
+                      <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                    <div className="group-hover:block dropdown-menu relative hidden h-auto">
+
+                      <ul className="top-0 w-40 bg-[#1e293b] py-8 shadow  ">
+                        <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/harari-news')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">Harari News</button></li>
+                        <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/national-news')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">National News</button></li>
+                        <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/africa-news')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">Africa News</button></li>
+                        <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/international-news')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">International News</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="group z-10  dropdown   text-white  hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
+                    <button className="inline-flex  justify-between gap-x-40   py-2 text-md " >
                     {t('navbar.timely')}
                       <svg className=" h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
@@ -267,7 +284,7 @@ const BottomNavbar = () => {
                     <div className="group-hover:block dropdown-menu relative hidden h-auto">
 
                       <ul className="top-0 w-40 bg-[#1e293b] py-8 shadow  ">
-                        <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-news')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">News</button></li>
+                        <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/events')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">Upcoming Events</button></li>
                         <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-emergence')} className="block text-white text-md hover:bg-[#3bb5b5] hover:text-white w-full py-2 cursor-pointer">Emergency</button></li>
                       </ul>
                     </div>
