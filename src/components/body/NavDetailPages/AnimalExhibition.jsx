@@ -16,20 +16,17 @@ const AnimalExhibition = () => {
       <div className="animal-visit-head">
        <h1>{t('animal.h1')}</h1>
       </div>
-      <div className="animal-visit">
-      </div>
       <div className='lg:bg-white  lg:flex lg:flex-auto lg:justify-between lg:rounded-s-full'>
-       
-        <h1 className=' hover:text-lg hover:scale-110 hover:bg-green-700 uppercase text-black h-20 mt-6 ml-10 '>{t('animal.h2')} </h1>
+        <h1 className=' uppercase text-black h-20 mt-6 mx-auto text-center'>{t('animal.h2')} </h1>
         <img src="./zool.png" alt="" className='rounded-full'/>
       </div>
       <div className='rounded-lg'>
           <img src="./hyne2.jpg" alt=" Hyena exhibition " className='px-5 rounded-[10px] mb-10 w-full h-96 ' />  
       </div>
-      <div className='flex flex-auto justify-center w-full gap-10 bg-teal-600 box-border'>
+      <div className='flex flex-col lg:flex-auto lg:flex-row justify-center w-full gap-10 bg-teal-600 box-border'>
       
-        <img src="./hyenaman.jpg" alt=" hyenaman" className='w-[388px] h-[388px] rounded-full hover:scale-110 duration-300' />
-        <p className='lg:bottom-2 lg:mt-2 mb-3  lg:border lg:bg-neutral-50 lg:rounded-[20px]  lg:mx-[15px] p-5 hover:selection:bg-green-600 hover:visited:text-clip'>
+        <img src="./hyenaman.jpg" alt=" hyenaman" className='w-full lg:w-[388px] h-[388px] rounded-full lg:hover:scale-110 duration-300' />
+        <p className='lg:bottom-2 lg:mt-2 mb-1  lg:border lg:bg-neutral-50 lg:rounded-[20px]  lg:mx-[15px] p-5 pb-0 hover:selection:bg-green-600 hover:visited:text-clip'>
         {t('animal.p1')}
         </p>
        
