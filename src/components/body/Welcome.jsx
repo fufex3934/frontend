@@ -176,7 +176,7 @@
               </button>
             </div>
             <div className='bg-[#3bb5b5] outer  w-full flex justify-center items-end relative sm:h-[100vh] md:h-[68vh] lg:h-[60vh]'>
-        <div className='bg-white inner  md:w-full lg:w-[200vh] md:mt-[10vh] lg:mt-auto md:mx-8 -top-14 md:-top-16 absolute md:grid-cols-3  lg:grid-cols-6 gap-4 '>
+        <div className='bg-white inner  md:w-full lg:w-[200vh] md:mt-[10vh] lg:mt-auto md:mx-8 -top-14 md:-top-16 absolute md:grid-cols-3  lg:grid-cols-6 gap-4 md:flex md:justify-between'>
         <div className=" hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full">
           <svg
@@ -205,7 +205,7 @@
         </div>
         <Link to='/woreda' className="text-xl  text-[#1e293b]  font-serif
         hover:text-[#3bb5b5] hover:cursor-pointer
-          hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20
+          hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:10
            hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.woredas')}
           </Link>
@@ -242,7 +242,7 @@
         </div>
         <Link to='/offices' className="text-xl  text-[#1e293b]  font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
-        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:mx-20
+        hover:border-b-2  md:hover:py-2 hover:mx-4 md:hover:10
          hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.offices')}
           </Link>
@@ -275,7 +275,7 @@
          className="text-xl  text-[#1e293b]  font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 
-        md:hover:mx-20 hover:border-gray-300 leading-slug tracking-tight">
+        md:hover:10 hover:border-gray-300 leading-slug tracking-tight">
           {t('welcome.gallery')}
           </Link>
       </div>
@@ -304,7 +304,7 @@
         <Link to = '/about-leadership' className="text-xl  text-[#1e293b] font-serif
          hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 hover:mx-4 
-        md:hover:mx-20 hover:border-gray-300 leading-snug tracking-tight">
+        md:hover:10 hover:border-gray-300 leading-snug tracking-tight">
           {t('welcome.leaders')}
           </Link>
       </div> */}
@@ -345,7 +345,7 @@
         </div>
         <Link to='/service' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 leading-snug tracking-tight
-        hover:mx-4 md:hover:mx-20 hover:border-gray-300">
+        hover:mx-4 md:hover:10 hover:border-gray-300">
           {t('welcome.services')}
           </Link>
       </div>
@@ -370,7 +370,7 @@
         </div>
         <Link to='/geography' className="text-xl  text-[#1e293b]  font-serif hover:text-[#3bb5b5] hover:cursor-pointer
         hover:border-b-2  md:hover:py-2 leading-snug tracking-tight
-          hover:mx-4 md:hover:mx-20 hover:border-gray-300   md:hover:text-xs ">
+          hover:mx-4 md:hover:10 hover:border-gray-300   md:hover:text-xs ">
           {t('welcome.geograpy')}
           </Link>
       </div>
