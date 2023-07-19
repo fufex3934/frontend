@@ -12,6 +12,7 @@ import Aos from 'aos';
 import CityCouncil from './components/body/CityCouncil';
 import ExploreCity from './components/body/ExploreCity';
 import VideoList from './components/body/VideoList';
+import BottomImages from './components/body/BottomImages';
 const CustomApp = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -106,7 +107,7 @@ const CustomApp = () => {
           <ExploreCity data={data} />
           <CityCouncil />
           <VideoList/>
-          {/* <BottomImages /> */}
+          <BottomImages />
           <Footer />
         </div>
       )}
