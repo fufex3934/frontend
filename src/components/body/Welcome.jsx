@@ -279,7 +279,7 @@
           {t('welcome.gallery')}
           </Link>
       </div>
-      <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
+      {/* <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full ">
           
       <svg className="w-10 h-10 text-[#3bb5b5] fill-current hover:fill-white transform hover:scale-110 transition-transform duration-300" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +307,7 @@
         md:hover:mx-20 hover:border-gray-300 leading-snug tracking-tight">
           {t('welcome.leaders')}
           </Link>
-      </div>
+      </div> */}
       <div className="hover:shadow-2xl flex flex-col items-center justify-center p-5">
         <div className="p-5 hover:bg-[#3bb5b5]  hover:rounded-full ">
           

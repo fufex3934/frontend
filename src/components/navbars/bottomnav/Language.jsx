@@ -7,10 +7,10 @@ const Language = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languageOptions = [
-    { label: 'English', value: 'en' },
-    { label: 'Afaan Oromoo', value: 'om' },
-    { label: 'አማረኛ', value: 'am' },
     { label: 'Harari', value: 'ad' },
+    { label: 'Afaan Oromoo', value: 'om' },
+    { label: 'Amaharic', value: 'am' },
+    { label: 'English', value: 'en' },
     // Add more language options as needed
   ];
 

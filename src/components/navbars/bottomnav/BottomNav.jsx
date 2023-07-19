@@ -9,6 +9,7 @@ import { MdLocalPolice, MdTour } from 'react-icons/md';
 import { SiSociety6 } from 'react-icons/si';
 import { BsFillBookmarkFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
+import {BiNews} from 'react-icons/bi';
 import Logo from '/harar.png';
 const BottomNavbar = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const BottomNavbar = () => {
   return (
 
     <nav className={`navbar ${showNavbar ? 'fixed top-0 z-50 left-0 right-0 transition: all 300ms ease-in-out shadow-md' : ''} lg:block shadow-xl`}>
-      <div className="bg-[#329898] md:bg-[#329898] lg:bg-white/100 py-4  p-4">
+      <div className="bg-[#329898] md:bg-[#329898] lg:bg-white/100 py-6  p-4">
         <ul className="flex items-center">
           {!isOpen && (
             <div className="mr-1">
@@ -61,20 +62,20 @@ const BottomNavbar = () => {
           )}
 
           <div className="hidden lg:block ">
-            <ul className="flex items-center space-x-2">
+            <ul className="flex items-center ">
               <li className="group z-10 relative dropdown text-gray-600 text-md font-serif">
                 <button onClick={() => navigate('/')} className="inline-flex w-full cursor-pointer 
-                  justify-center gap-x-0 bg-white px-3 py-2 text-xl
+                  justify-center gap-x-0 bg-white px-2 py-2 text-xl
                    text-[#1e293b] hover:bg-[#3bb5b5] hover:text-white font-serif leading-snug tracking-tight"
                   id="menu-button" aria-expanded="true" aria-haspopup="true">
-                  <AiFillHome className='mr-1 w-6 text-[#3bb] change h-6' />
+                  <AiFillHome className='mr-1 w-6 text-[#3bb] change h-6 ' />
                   {t('navbar.home')}
                 </button>
               </li>
 
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-[#3bb5b5] cursor-pointer text-md font-serif ">
                 <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0 
-                 bg-white px-3 py-2 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" >
+                 bg-white px-2 py-2 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" >
                   <BsFillBookmarkFill className='mr-1 w-6 h-6 text-[#3bb] change' />
                   {t('navbar.about')}
 
@@ -88,7 +89,25 @@ const BottomNavbar = () => {
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
                 <button className=" hover:bg-[#3bb5b5] hover:text-white 
-                inline-flex w-full justify-center gap-x-0  bg-white px-3 py-2 
+                inline-flex w-full justify-center gap-x-0  bg-white px-2 py-2 
+                text-xl text-[#1e293b] font-serif leading-snug tracking-tight" 
+                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  <BiNews className='mr-1 w-6 h-6 text-[#3bb] change' />
+                  {t('navbar.news')}
+                </button>
+                <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+
+                  <ul className="top-0 w-52 bg-white py-8 shadow ">
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/harari-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer">{t('dropdown.harari-news')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/national-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer whitespace-nowrap">{t('dropdown.national-news')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/africa-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer whitespace-nowrap">{t('dropdown.africa-news')}</button></li>
+                    <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/international-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer whitespace-nowrap">{t('dropdown.international-news')}</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
+                <button className=" hover:bg-[#3bb5b5] hover:text-white 
+                inline-flex w-full justify-center gap-x-0  bg-white px-2 py-2 
                 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" 
                 id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <IoNewspaper className='mr-1 w-6 h-6 text-[#3bb] change' />
@@ -97,14 +116,14 @@ const BottomNavbar = () => {
                 <div className="group-hover:block dropdown-menu absolute hidden h-auto">
 
                   <ul className="top-0 w-52 bg-white py-8 shadow ">
-                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-news')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer">{t('dropdown.news')}</button></li>
+                    <li className="w-full border-y-[1px] border-[#3bb]"><button onClick={() => navigate('/events')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer">{t('dropdown.news')}</button></li>
                     <li className="w-full border-b-[1px] border-[#3bb]"><button onClick={() => navigate('/timely-emergence')} className="block w-full py-2 text-gray-900  text-md hover:bg-[#3bb5b5] hover:text-white cursor-pointer whitespace-nowrap">{t('dropdown.emergency')}</button></li>
                   </ul>
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
                 <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex 
-                w-full justify-center gap-x-0  bg-white px-3 
+                w-full justify-center gap-x-0  bg-white px-2 
                 py-2 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" id="menu-button" 
                 aria-expanded="true" aria-haspopup="true">
                   <AiFillMoneyCollect className='mr-1  w-6 h-6 text-[#3bb] change' />
@@ -119,7 +138,7 @@ const BottomNavbar = () => {
               </li>
               <li className=" group z-10 relative dropdown   text-gray-600  cursor-pointer text-md font-serif ">
                 <button className="hover:bg-[#3bb5b5] hover:text-white 
-                inline-flex w-full justify-center gap-x-0  bg-white px-3
+                inline-flex w-full justify-center gap-x-0  bg-white px-2
                  py-2 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" id="menu-button"
                   aria-expanded="true" aria-haspopup="true">
                   <MdLocalPolice className='mr-1 h-6 w-6 text-[#3bb] change' />
@@ -133,7 +152,7 @@ const BottomNavbar = () => {
                 </div>
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
-                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-3
+                <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0  bg-white px-2
                  py-2 text-xl text-[#1e293b] font-serif leading-snug tracking-tight" 
                  id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <SiSociety6 className='mr-2 h-6 w-6 text-[#3bb] change' />
@@ -148,7 +167,7 @@ const BottomNavbar = () => {
               </li>
               <li className="group z-10 relative dropdown   text-gray-600 hover:text-orange-600 cursor-pointer text-md font-serif ">
                 <button className="hover:bg-[#3bb5b5] hover:text-white inline-flex
-                 w-full justify-center gap-x-0  bg-white px-3 py-2 text-xl
+                 w-full justify-center gap-x-0  bg-white px-2 py-2 text-xl
                   text-[#1e293b] font-serif leading-snug tracking-tight" 
                  id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <MdTour className='mr-1 h-6 w-6 text-[#3bb] change ' />
@@ -165,7 +184,7 @@ const BottomNavbar = () => {
               </li>
               <Link to='https://www.youtube.com/channel/UCCwExJBZJTXiItcz1WLONVA' target='_blank' className="group z-10 relative dropdown link  text-gray-600  cursor-pointer text-md font-serif ">
                 <span className="hover:bg-[#3bb5b5] hover:text-white inline-flex w-full justify-center gap-x-0 
-                 bg-white px-3 py-2 text-xl  text-[#1e293b] font-serif leading-snug tracking-tight" 
+                 bg-white px-2 py-2 text-xl  text-[#1e293b] font-serif leading-snug tracking-tight" 
                  id="menu-button" aria-expanded="true" aria-haspopup="true">
                   <AiTwotoneVideoCamera className='mr-2 h-6 w-6 text-[#3bb] change' />
                   {t('navbar.videos')}
