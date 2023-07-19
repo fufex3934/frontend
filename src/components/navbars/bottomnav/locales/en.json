@@ -3,17 +3,22 @@
     "navbar": {
       "home": "Home",
       "about": "About",
+      "news":"News",
       "timely": "Timely",
       "economic": "Economic",
       "politics": "Politics",
       "social": "Social",
       "tourism": "Tourism",
-      "videos": "Videos"
+      "videos": "Media"
     },
     "dropdown":{
       "aboutUs":"About Us",
       "harar":"Harar",
-      "news":"News",
+      "harari-news":"Harari News",
+      "national-news":"National News",
+      "africa-news":"Africa News",
+      "international-news":"International News",
+      "news":"Upcoming Events",
       "emergency":"Emergency",
       "policies":"Policies",
       "sectors":"Sectors",
@@ -26,7 +31,7 @@
       "animalex":"Animal Exhibition"
     },
     "welcome":{
-      "woredas":"Districts",
+      "woredas":"Woreda",
       "offices":"Offices",
       "gallery":"Gallery",
       "leaders":"Leaders",

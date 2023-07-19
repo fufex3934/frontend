@@ -4,17 +4,22 @@
     "navbar": {
       "home": "Mana",
       "about": "Waa'ee",
+      "news":"Oduu",
       "timely": "Yeroodhaan",
       "economic": "Diinagdee",
       "politics": "Siyaasa",
       "social": "Hawaasummaa",
       "tourism": "Tuuriizimii",
-      "videos": "Viidiyoo"
+      "videos": "Miidiyaa"
     },
     "dropdown":{
       "aboutUs":"Waa'ee Keenya",
       "harar":"Harari",
-      "news":"Oduu",
+      "news":"Taateewwan Dhufan",
+      "harari-news":"Oduu Harari",
+      "national-news":"Oduu Biyyaalessaa",
+      "africa-news":"Oduu Afrikaa",
+      "international-news":"Oduu Addunyaa",
       "emergency":"Atattama",
       "policies":"Imaammata",
       "sectors":"Seektaroota",
