@@ -1,14 +1,14 @@
 {  
-    "header": "HARAR REGION GOVERNMENT COMMUNICATIONS AFFAIRS OFFICE",
+    "header": "ሐረሪ ሑስኒ ሑኩማ ተረኦት ሐጀ ተእሲስ",
     "navbar": {
       "home": "ሊሚ ስፍሐ",
       "about": "እኝ",
       "news":"ኽበር",
       "timely": "ወቂቲቤ",
-      "economic": "Economic",
+      "economic": "ኢኮኖሚያዊ",
       "politics": "ሲያሳ",
       "social": "ደይ ሐዋዝ",
-      "tourism": "Tourism",
+      "tourism": "ዘያርነት",
       "videos": "መትረኽብቲ"
     },
     "dropdown":{
@@ -20,15 +20,15 @@
       "international-news":"አለም ሑቁፍ ኽበር",
       "news":"ኽበር",
       "emergency":"ኢመርጀንሲ",
-      "policies":"Policies",
-      "sectors":"Sectors",
+      "policies":"ፖሊሲዎች",
+      "sectors":"ዘርፎች",
       "go":"እትሒጸጽሪ",
       "gs":"ሑኩማ ዊቀሮት",
       "education":"ደርሲ",
       "healthcare":"አፌት ቀም ቄረሖት",
       "monuments":"ሌጦት",
-      "museum":"Museum",
-      "animalex":"Animal Exhibition"
+      "museum":"ሙዚየም",
+      "animalex":"ሐየዋን ኤግዚቢሽን"
     },
     "welcome":{
       "woredas":"Woreda",

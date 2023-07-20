@@ -4,7 +4,8 @@ import { Route, Routes, Navigate,useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import { FaUserCog } from 'react-icons/fa';
 import {FcHome,FcFeedback} from 'react-icons/fc';
-
+import {MdOutlineEdit,MdDelete} from 'react-icons/md';
+import Analytics from './Analytics';
 function SanityAuth() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
@@ -286,6 +287,7 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                   </button>
                 </li>
                 
+                
               </ul>
             </nav>
           </aside>
@@ -336,13 +338,13 @@ function LoginPage({ handleLogin, errorMessage, email, setEmail, password, setPa
                   <div className='flex'>
                     <button onClick={() => handleEdit(admin._id)}
                     className="bg-[#3bb5b5] hover:bg-[#3bb5b5] text-white font-bold py-2 px-4 rounded mr-2">
-                      Edit
+                      <MdOutlineEdit/>
                       </button>
                       <button
                         onClick={() => handleDelete(admin)}
                         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                       >
-                        Delete
+                        <MdDelete/>
                       </button>
                   </div>
                 </React.Fragment>
